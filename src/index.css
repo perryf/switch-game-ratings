@@ -12,7 +12,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 button {
@@ -52,7 +52,7 @@ ul {
 
 li {
   background-color: white;
-  padding: 8px;
+  padding: 0;
 }
 
 li:hover {
@@ -62,4 +62,22 @@ li:hover {
 a {
   font-weight: 800;
   text-decoration: none;
+}
+
+.todo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-box p {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.todo-box button {
+  border-radius: 0;
+  /* margin: 0; */
+  /* max-width: 20px; */
 }
