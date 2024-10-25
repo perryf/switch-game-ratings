@@ -1,6 +1,6 @@
-## AWS Amplify React+Vite Starter Template
+## Switch Game Review
 
-This repository provides a starter template for creating applications using React+Vite and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+Review of Switch games, made with Amplify, React, Vite
 
 ## Overview
 
