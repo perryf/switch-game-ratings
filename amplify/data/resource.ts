@@ -1,32 +1,33 @@
-import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
+import { type ClientSchema, a, defineData } from '@aws-amplify/backend'
 
-/*== STEP 1 ===============================================================
-The section below creates a Todo database table with a "content" field. Try
-adding a new "isDone" field as a boolean. The authorization rule below
-specifies that any user authenticated via an API key can "create", "read",
-"update", and "delete" any "Todo" records.
-=========================================================================*/
 const schema = a.schema({
-  Todo: a
+  Game: a
     .model({
       content: a.string(),
-      isDone: a.boolean(),
+      datePlayed: a.date(),
+      developedBy: a.string(),
+      genre: a.string().array(),
+      name: a.string().required(),
+      publishedBy: a.string(),
+      releaseDate: a.string(),
+      rating: a.integer(), // 1 -5
+      remake: a.boolean()
     })
-    .authorization((allow) => [allow.publicApiKey()]),
-});
+    .authorization(allow => [allow.publicApiKey()])
+})
 
-export type Schema = ClientSchema<typeof schema>;
+export type Schema = ClientSchema<typeof schema>
 
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: "apiKey",
+    defaultAuthorizationMode: 'apiKey',
     // API Key is used for a.allow.public() rules
     apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
-  },
-});
+      expiresInDays: 30
+    }
+  }
+})
 
 /*== STEP 2 ===============================================================
 Go to your frontend source code. From your client-side code, generate a
