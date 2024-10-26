@@ -64,20 +64,18 @@ a {
   text-decoration: none;
 }
 
-.todo-box {
+.game-box {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.todo-box p {
+.game-box p {
   width: 100%;
   margin: 0;
   padding: 10px;
 }
 
-.todo-box button {
+.game-box button {
   border-radius: 0;
-  /* margin: 0; */
-  /* max-width: 20px; */
 }

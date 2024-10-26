@@ -1,4 +1,4 @@
-## Switch Game Review
+# Switch Game Review
 
 Review of Switch games, made with Amplify, React, Vite
 

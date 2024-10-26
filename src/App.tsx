@@ -1,41 +1,45 @@
 import { useEffect, useState } from 'react'
 import { generateClient } from 'aws-amplify/data'
-// import { useAuthenticator } from '@aws-amplify/ui-react'
 import type { Schema } from '../amplify/data/resource'
 
 const client = generateClient<Schema>()
 
 function App() {
-  // const { signOut } = useAuthenticator()
-
-  const [todos, setTodos] = useState<Array<Schema['Todo']['type']>>([])
+  const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
+  const [newGameName, setNewGameName] = useState<string>('')
 
   useEffect(() => {
-    client.models.Todo.observeQuery().subscribe({
-      next: data => setTodos([...data.items])
-    })
+    // TODO -> error handling
+    const fetchGames = async () => {
+      const { data } = await client.models.Game.list()
+      setGames(data)
+    }
+
+    fetchGames()
   }, [])
 
-  function createTodo() {
-    client.models.Todo.create({
-      content: window.prompt('Todo content'),
-      isDone: false
-    })
+  function createGame() {
+    client.models.Game.create({ name: newGameName })
+    setNewGameName('')
   }
 
-  function deleteTodo(id: string) {
-    client.models.Todo.delete({ id })
+  function deleteGames(id: string) {
+    client.models.Game.delete({ id })
   }
 
   return (
     <main>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
+      <h1>Switch Games</h1>
+      <input
+        value={newGameName}
+        onChange={e => setNewGameName(e.target.value)}
+      />
+      <button onClick={createGame}>+ create</button>
       <ul>
-        {todos.map(todo => (
-          <li className="todo-box" key={todo.id}>
-            <p>{todo.content}</p>
-            <button onClick={() => deleteTodo(todo.id)}>X</button>
+        {games.map(game => (
+          <li className="game-box" key={game.id}>
+            <p>{game.name}</p>
+            <button onClick={() => deleteGames(game.id)}>X</button>
           </li>
         ))}
       </ul>
