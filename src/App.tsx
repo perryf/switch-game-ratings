@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { generateClient } from 'aws-amplify/data'
 import type { Schema } from '../amplify/data/resource'
+import CreateGameForm from './createGameForm/CreateGameForm'
+import SwitchGameList from './switchGameList/SwitchGameList'
+// import { StorageImage } from '@aws-amplify/ui-react-storage'
 
 const client = generateClient<Schema>()
 
@@ -9,40 +12,28 @@ function App() {
   const [newGameName, setNewGameName] = useState<string>('')
 
   useEffect(() => {
-    // TODO -> error handling
-    const fetchGames = async () => {
-      const { data } = await client.models.Game.list()
-      setGames(data)
-    }
+    const sub = client.models.Game.observeQuery().subscribe({
+      next: ({ items }) => setGames([...items]),
+      error: error => console.warn(error)
+    })
 
-    fetchGames()
+    return () => sub.unsubscribe()
   }, [])
 
-  function createGame() {
-    client.models.Game.create({ name: newGameName })
+  async function createGame() {
+    await client.models.Game.create({ name: newGameName })
     setNewGameName('')
   }
 
-  function deleteGames(id: string) {
-    client.models.Game.delete({ id })
+  async function deleteGame(id: string) {
+    await client.models.Game.delete({ id })
   }
 
   return (
     <main>
       <h1>Switch Games</h1>
-      <input
-        value={newGameName}
-        onChange={e => setNewGameName(e.target.value)}
-      />
-      <button onClick={createGame}>+ create</button>
-      <ul>
-        {games.map(game => (
-          <li className="game-box" key={game.id}>
-            <p>{game.name}</p>
-            <button onClick={() => deleteGames(game.id)}>X</button>
-          </li>
-        ))}
-      </ul>
+      <CreateGameForm createGame={createGame} />
+      <SwitchGameList deleteGame={deleteGame} games={games} />
     </main>
   )
 }

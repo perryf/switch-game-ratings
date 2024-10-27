@@ -63,19 +63,3 @@ a {
   font-weight: 800;
   text-decoration: none;
 }
-
-.game-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.game-box p {
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-}
-
-.game-box button {
-  border-radius: 0;
-}
