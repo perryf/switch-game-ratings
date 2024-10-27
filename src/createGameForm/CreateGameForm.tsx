@@ -8,23 +8,25 @@ const newGameInit: SwitchGameTypeNew = {
   genre: [],
   imagePath: '',
   imagePathSmall: '',
-  multiplayer: false,
-  multiplayerType: [],
-  multiplayerNumberOfPlayers: 1,
+  lengthOfGame: '',
   mood: '', // turn into an array on submit
+  multiplayer: false,
+  multiplayerNumberOfPlayers: 1,
+  multiplayerType: '',
   name: '',
   onlineFeatures: false,
   onlineMultiplayer: false,
   price: 0,
   publishedBy: '',
-  releaseDate: '',
   rating: 1,
+  recommended: false,
+  releaseDate: '',
   remake: false,
   review: '',
   tags: ''
 }
 
-const switchGenreList = [
+const switchGenreList: { name: string; value: string }[] = [
   { name: 'Action', value: 'action' },
   { name: 'Adventure', value: 'adventure' },
   { name: 'Fighting', value: 'fighting' }, // TODO -> Better name for this?
@@ -91,10 +93,10 @@ function CreateGameForm(props: CreateGameFormProps) {
       {isCreating && (
         <form onSubmit={handleGameSubmit} className="create-form">
           <div>
-            <label htmlFor="game-name">Name</label>
+            <label htmlFor="name">Name *</label>
             <input
-              id="game-name"
-              name="game-name"
+              id="name"
+              name="name"
               onChange={handleUpdateGame}
               value={newGame.name}
             />
@@ -102,7 +104,7 @@ function CreateGameForm(props: CreateGameFormProps) {
 
           <div>
             <label htmlFor="review">Review</label>
-            <input
+            <textarea
               id="review"
               name="review"
               onChange={handleUpdateGame}
@@ -233,6 +235,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               multiple
               name="genre"
               onChange={handleUpdateSelectMulti}
+              size={switchGenreList.length}
               value={newGame.genre}
             >
               {switchGenreList.map(genre => (
@@ -263,7 +266,7 @@ function CreateGameForm(props: CreateGameFormProps) {
             />
           </div>
 
-          <button type="submit" disabled={!newGame.name}>
+          <button type="submit" disabled={!newGame.name || !newGame.rating}>
             Submit
           </button>
         </form>

@@ -9,18 +9,18 @@ const schema = a.schema({
       imagePath: a.string(),
       imagePathSmall: a.string(),
       lengthOfGame: a.string(), // small, medium, large
-      multiplayer: a.boolean(),
-      multiplayerType: a.string().array(), // co-op, partial co-op, versus, online, couch // ? maybe don't include this and just have info in onlineMultiplayer
-      multiplayerNumberOfPlayers: a.integer(),
       mood: a.string().array(), // chill, fast-paced, etc // ? maybe just include under tags?
+      multiplayer: a.boolean(),
+      multiplayerNumberOfPlayers: a.integer(),
+      multiplayerType: a.string().array(), // co-op, partial co-op, versus, online, couch // ? maybe don't include this and just have info in onlineMultiplayer
       name: a.string().required(),
       onlineFeatures: a.boolean(),
       onlineMultiplayer: a.boolean(),
       price: a.float(),
       publishedBy: a.string(),
-      releaseDate: a.string(),
-      rating: a.integer(), // 1 -5
+      rating: a.integer().required(), // 1 -5
       recommended: a.boolean(), // ? may not be needed
+      releaseDate: a.date(),
       remake: a.boolean(),
       review: a.string(),
       tags: a.string().array() // things like "indie", "funny" etc

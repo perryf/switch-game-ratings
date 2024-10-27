@@ -4,18 +4,19 @@ export interface SwitchGameTypeNew {
   genre?: string[]
   imagePath?: string
   imagePathSmall?: string
-  multiplayer?: false
-  multiplayerType?: string[]
-  multiplayerNumberOfPlayers?: number
+  lengthOfGame?: string
   mood?: string // turn into an array on submit
+  multiplayer?: false
+  multiplayerNumberOfPlayers: number
+  multiplayerType?: string // turn into array on submit
   name: string
-  onlineFeatures: boolean
-  onlineMultiplayer: boolean
+  onlineFeatures?: boolean
+  onlineMultiplayer?: boolean
   price: number
   publishedBy?: string
-  releaseDate?: string
-  rating?: number // 1 -5
+  rating: number // 1 -5
   recommended?: boolean
+  releaseDate?: string
   remake?: boolean
   review?: string
   tags?: string // turn into array on submit

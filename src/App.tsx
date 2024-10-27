@@ -21,15 +21,30 @@ function App() {
   }, [])
 
   async function createGame(newGame: SwitchGameTypeNew) {
+    // ? not sure if this is needed -- probably a better way
     const data = {
       ...newGame,
       mood: newGame.mood ? newGame.mood.split(',').map(m => m.trim()) : [],
-      tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : []
+      tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
+      multiplayerType: newGame.multiplayerType
+        ? newGame.multiplayerType.split(',').map(m => m.trim())
+        : [],
+      price: +newGame.price,
+      multiplayerNumberOfPlayers: +newGame.multiplayerNumberOfPlayers,
+      rating: +newGame.rating
     }
 
-    console.log(data)
+    delete newGame.genre
+    delete newGame.mood
+    delete newGame.tags
+    delete newGame.multiplayerType
 
-    // await client.models.Game.create(data)
+    // const dataTest = {
+    //   name: newGame.name,
+    //   rating: newGame.rating
+    // }
+
+    await client.models.Game.create(data)
   }
 
   async function deleteGame(id: string) {
