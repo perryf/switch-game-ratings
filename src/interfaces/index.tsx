@@ -1,14 +1,12 @@
-export interface SwitchGameTypeNew {
+interface SwitchGameBasic {
   datePlayed?: string // ? Date?
   developedBy?: string
   genre?: string[]
   imagePath?: string
   imagePathSmall?: string
   lengthOfGame?: string
-  mood?: string // turn into an array on submit
   multiplayer?: false
   multiplayerNumberOfPlayers: number
-  multiplayerType?: string // turn into array on submit
   name: string
   onlineFeatures?: boolean
   onlineMultiplayer?: boolean
@@ -19,6 +17,11 @@ export interface SwitchGameTypeNew {
   releaseDate?: string
   remake?: boolean
   review?: string
+}
+
+export interface SwitchGameTypeNew extends SwitchGameBasic {
+  mood?: string // turn into an array on submit
+  multiplayerType?: string // turn into array on submit
   tags?: string // turn into array on submit
 }
 

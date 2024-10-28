@@ -22,7 +22,12 @@ function App() {
 
   async function createGame(newGame: SwitchGameTypeNew) {
     // ? not sure if this is needed -- probably a better way
-    const data = {
+    // turns comma separated strings into arrays, changes numbers that are technically strings into numbers
+    const data: {
+      name: string
+      rating: number
+      [key: string]: string | boolean | number | string[]
+    } = {
       ...newGame,
       mood: newGame.mood ? newGame.mood.split(',').map(m => m.trim()) : [],
       tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
@@ -34,15 +39,10 @@ function App() {
       rating: +newGame.rating
     }
 
-    delete newGame.genre
-    delete newGame.mood
-    delete newGame.tags
-    delete newGame.multiplayerType
-
-    // const dataTest = {
-    //   name: newGame.name,
-    //   rating: newGame.rating
-    // }
+    // remove empty strings
+    Object.keys(data).forEach((key: string) => {
+      if (data[key] === '') delete data[key]
+    })
 
     await client.models.Game.create(data)
   }
