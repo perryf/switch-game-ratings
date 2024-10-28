@@ -92,91 +92,91 @@ function CreateGameForm(props: CreateGameFormProps) {
 
       {isCreating && (
         <form onSubmit={handleGameSubmit} className="create-form">
-          <div>
-            <label htmlFor="name">Name *</label>
-            <input
-              id="name"
-              name="name"
-              onChange={handleUpdateGame}
-              value={newGame.name}
-            />
+          <div className="create-form-row">
+            <div>
+              <label htmlFor="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                onChange={handleUpdateGame}
+                required
+                value={newGame.name}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="rating">Rating</label>
+              <input
+                id="rating"
+                name="rating"
+                max={5}
+                min={1}
+                onChange={handleUpdateGame}
+                required
+                step={1}
+                type="number"
+                value={newGame.rating}
+              />
+            </div>
           </div>
 
-          <div>
+          <div className="create-form-individual-box">
             <label htmlFor="review">Review</label>
             <textarea
               id="review"
               name="review"
               onChange={handleUpdateGame}
+              required
               value={newGame.review}
             />
           </div>
 
-          <div>
-            <label htmlFor="rating">Rating</label>
-            <input
-              id="rating"
-              name="rating"
-              onChange={handleUpdateGame}
-              step={1}
-              type="number"
-              value={newGame.rating}
-              min={1}
-              max={5}
-            />
+          <hr />
+
+          <div className="create-form-row">
+            <div>
+              <label htmlFor="developedBy">Developed By</label>
+              <input
+                id="developedBy"
+                name="developedBy"
+                onChange={handleUpdateGame}
+                value={newGame.developedBy}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="publishedBy">Published By</label>
+              <input
+                id="publishedBy"
+                name="publishedBy"
+                onChange={handleUpdateGame}
+                value={newGame.publishedBy}
+              />
+            </div>
           </div>
 
-          <div>
-            <label htmlFor="developedBy">Developed By</label>
-            <input
-              id="developedBy"
-              name="developedBy"
-              onChange={handleUpdateGame}
-              value={newGame.developedBy}
-            />
-          </div>
+          <div className="create-form-row">
+            <div>
+              <label htmlFor="releaseDate">Release Date</label>
+              <input
+                id="releaseDate"
+                name="releaseDate"
+                onChange={handleUpdateGame}
+                type="date"
+                value={newGame.releaseDate}
+              />
+            </div>
 
-          <div>
-            <label htmlFor="publishedBy">Published By</label>
-            <input
-              id="publishedBy"
-              name="publishedBy"
-              onChange={handleUpdateGame}
-              value={newGame.publishedBy}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="releaseDate">Release Date</label>
-            <input
-              id="releaseDate"
-              name="releaseDate"
-              onChange={handleUpdateGame}
-              type="date"
-              value={newGame.releaseDate}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="datePlayed">Date Played</label>
-            <input
-              id="datePlayed"
-              name="datePlayed"
-              onChange={handleUpdateGame}
-              type="date"
-              value={newGame.datePlayed}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="remake">Remake?</label>
-            <input
-              id="remake"
-              name="remake"
-              onChange={handleUpdateGame}
-              type="checkbox"
-              checked={newGame.remake}
-            />
+            <div>
+              <label htmlFor="datePlayed">Date Played</label>
+              <input
+                id="datePlayed"
+                name="datePlayed"
+                onChange={handleUpdateGame}
+                type="date"
+                value={newGame.datePlayed}
+              />
+            </div>
           </div>
 
           <div>
@@ -215,20 +215,9 @@ function CreateGameForm(props: CreateGameFormProps) {
             />
           </div>
 
-          <div>
-            <label htmlFor="price">Price</label>
-            <input
-              id="price"
-              name="price"
-              onChange={handleUpdateGame}
-              step={0.01}
-              type="number"
-              value={newGame.price}
-              min={0}
-            />
-          </div>
+          <hr />
 
-          <div>
+          <div className="create-form-individual-box">
             <label htmlFor="genre">Genre</label>
             <select
               id="genre"
@@ -244,6 +233,32 @@ function CreateGameForm(props: CreateGameFormProps) {
                 </option>
               ))}
             </select>
+          </div>
+
+          <div className="create-form-row">
+            <div>
+              <label htmlFor="price">Price</label>
+              <input
+                id="price"
+                name="price"
+                onChange={handleUpdateGame}
+                step={0.01}
+                type="number"
+                value={newGame.price}
+                min={0}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="remake">Remake?</label>
+              <input
+                id="remake"
+                name="remake"
+                onChange={handleUpdateGame}
+                type="checkbox"
+                checked={newGame.remake}
+              />
+            </div>
           </div>
 
           <div>
