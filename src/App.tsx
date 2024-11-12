@@ -1,15 +1,23 @@
 import { useEffect, useState } from 'react'
 import { generateClient } from 'aws-amplify/data'
+import { getGamesAmerica, getQueriedGamesAmerica } from 'nintendo-switch-eshop'
 import type { Schema } from '../amplify/data/resource'
 import { SwitchGameTypeNew } from './interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 // import { StorageImage } from '@aws-amplify/ui-react-storage'
 
+interface AllGames {
+  title: string
+  description: string
+  genres: string[]
+}
+
 const client = generateClient<Schema>()
 
 function App() {
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
+  const [allGames, setAllGames] = useState<AllGames[]>([])
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
@@ -18,6 +26,24 @@ function App() {
     })
 
     return () => sub.unsubscribe()
+  }, [])
+
+  useEffect(() => {
+    getGamesAmerica()
+      .then(json => {
+        console.log(json)
+
+        const marioGames = json.filter(game => {
+          if (game.title.includes('Mario')) return true
+        })
+
+        console.log(marioGames)
+
+        setAllGames(json)
+      })
+      .catch(err => console.error(err))
+
+    // getQueriedGamesAmerica()
   }, [])
 
   async function createGame(newGame: SwitchGameTypeNew) {
@@ -48,7 +74,9 @@ function App() {
   }
 
   async function deleteGame(id: string) {
-    await client.models.Game.delete({ id })
+    if (window.confirm('Are you sure you want to delete this game?')) {
+      await client.models.Game.delete({ id })
+    }
   }
 
   return (
