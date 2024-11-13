@@ -1,11 +1,36 @@
 import { useEffect, useState } from 'react'
 import { generateClient } from 'aws-amplify/data'
-import { getGamesAmerica, getQueriedGamesAmerica } from 'nintendo-switch-eshop'
+import {
+  getGamesAmerica,
+  getQueriedGamesAmerica,
+  getShopsAmerica,
+  getGamesEurope,
+  getGamesJapan
+} from 'nintendo-switch-eshop'
 import type { Schema } from '../amplify/data/resource'
+import { ownedGamesReviewable } from '../switch-games-owned'
+import switchGameListFull from '../switch-games-list-full.json'
 import { SwitchGameTypeNew } from './interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 // import { StorageImage } from '@aws-amplify/ui-react-storage'
+
+const shapeGameTitle = (title: string) => {
+  if (!title) return ''
+
+  return title
+    .replace(/\™/g, '')
+    .replace(/\©/g, '')
+    .replace(/\®/g, '')
+    .replace(/\’/g, '')
+    .replace(/\'/g, '')
+    .replace(/\:/g, '')
+    .replace(/\./g, '')
+    .replace(/\é/g, 'e')
+    .replace(/11/g, '') // needed for mortal kombat 11 --- not sure why it wasn't matching
+    .toLowerCase()
+    .trim()
+}
 
 interface AllGames {
   title: string
@@ -28,23 +53,15 @@ function App() {
     return () => sub.unsubscribe()
   }, [])
 
-  useEffect(() => {
-    getGamesAmerica()
-      .then(json => {
-        console.log(json)
+  // useEffect(() => {
+  //   getGamesAmerica()
+  //     .then(json => {
+  //       console.log(json)
 
-        const marioGames = json.filter(game => {
-          if (game.title.includes('Mario')) return true
-        })
-
-        console.log(marioGames)
-
-        setAllGames(json)
-      })
-      .catch(err => console.error(err))
-
-    // getQueriedGamesAmerica()
-  }, [])
+  //       // setAllGames(json)
+  //     })
+  //     .catch(err => console.error(err))
+  // }, [])
 
   async function createGame(newGame: SwitchGameTypeNew) {
     // ? not sure if this is needed -- probably a better way
@@ -78,6 +95,51 @@ function App() {
       await client.models.Game.delete({ id })
     }
   }
+
+  // console.log(ownedGamesReviewable)
+  // console.log(switchGameListFull)
+
+  const misc: any[] = []
+
+  const detailedGameList: any[] = []
+  const unfoundGameList: any[] = []
+
+  console.log(ownedGamesReviewable.filter((g: any) => g.missingFromAPI))
+
+  ownedGamesReviewable.forEach(
+    (ownedGame: { title: string; matchTitle?: string }) => {
+      const ownedGameTitle = ownedGame.matchTitle || ownedGame.title
+
+      // console.log(shapeGameTitle(ownedGameTitle))
+      const gameDataMatch = switchGameListFull.find(
+        (game: { title: string }) => {
+          if (
+            shapeGameTitle(game.title).includes('gator') &&
+            !misc.find(g => g.title === game.title)
+          ) {
+            misc.push(game)
+          }
+
+          return (
+            shapeGameTitle(ownedGameTitle) === shapeGameTitle(game.title) ||
+            shapeGameTitle(game.title).includes(shapeGameTitle(ownedGameTitle))
+          )
+          // ||
+          // shapeGameTitle(ownedGame.title).includes(shapeGameTitle(game.title))
+        }
+      )
+
+      if (gameDataMatch) {
+        detailedGameList.push({ ...gameDataMatch, myData: ownedGame })
+      } else {
+        unfoundGameList.push(ownedGame)
+      }
+    }
+  )
+
+  console.log(detailedGameList)
+  console.log(unfoundGameList)
+  console.log(misc)
 
   return (
     <main>

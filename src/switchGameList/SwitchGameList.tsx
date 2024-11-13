@@ -8,7 +8,6 @@ interface SwitchGameListProps {
 
 function SwitchGameList(props: SwitchGameListProps) {
   const { deleteGame, games } = props
-  console.log(games)
 
   return (
     <ul>
