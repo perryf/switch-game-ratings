@@ -28,3 +28,9 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 
 - `npx ampx sandbox`
 - `npm run dev` -- run these two commands concurrently
+
+## Resources & Data From
+
+- npm `nintendo-switch-eshop` -- wrapper around Switch Eshop
+- Nintendo.com
+- Wikipedia

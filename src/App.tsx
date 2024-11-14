@@ -7,30 +7,14 @@ import {
   getGamesEurope,
   getGamesJapan
 } from 'nintendo-switch-eshop'
+// import { StorageImage } from '@aws-amplify/ui-react-storage'
 import type { Schema } from '../amplify/data/resource'
-import { ownedGamesReviewable } from '../switch-games-owned'
-import switchGameListFull from '../switch-games-list-full.json'
+// import { ownedGamesReviewable } from '../switch-games-owned'
+// import switchGameListFull from '../switch-games-list-full.json'
+import { switchGamesOwnedMasterList } from '../switch-games-owned-details'
 import { SwitchGameTypeNew } from './interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
-// import { StorageImage } from '@aws-amplify/ui-react-storage'
-
-const shapeGameTitle = (title: string) => {
-  if (!title) return ''
-
-  return title
-    .replace(/\™/g, '')
-    .replace(/\©/g, '')
-    .replace(/\®/g, '')
-    .replace(/\’/g, '')
-    .replace(/\'/g, '')
-    .replace(/\:/g, '')
-    .replace(/\./g, '')
-    .replace(/\é/g, 'e')
-    .replace(/11/g, '') // needed for mortal kombat 11 --- not sure why it wasn't matching
-    .toLowerCase()
-    .trim()
-}
 
 interface AllGames {
   title: string
@@ -44,22 +28,17 @@ function App() {
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
   const [allGames, setAllGames] = useState<AllGames[]>([])
 
-  useEffect(() => {
-    const sub = client.models.Game.observeQuery().subscribe({
-      next: ({ items }) => setGames([...items]),
-      error: error => console.warn(error)
-    })
-
-    return () => sub.unsubscribe()
-  }, [])
+  // useEffect(() => {
+  //   const sub = client.models.Game.observeQuery().subscribe({
+  //     next: ({ items }) => setGames([...items]),
+  //     error: error => console.warn(error)
+  //   })
+  //   return () => sub.unsubscribe()
+  // }, [])
 
   // useEffect(() => {
   //   getGamesAmerica()
-  //     .then(json => {
-  //       console.log(json)
-
-  //       // setAllGames(json)
-  //     })
+  //     .then(json => { setAllGames(json) })
   //     .catch(err => console.error(err))
   // }, [])
 
@@ -96,50 +75,25 @@ function App() {
     }
   }
 
-  // console.log(ownedGamesReviewable)
-  // console.log(switchGameListFull)
+  console.log(switchGamesOwnedMasterList)
 
-  const misc: any[] = []
-
-  const detailedGameList: any[] = []
-  const unfoundGameList: any[] = []
-
-  console.log(ownedGamesReviewable.filter((g: any) => g.missingFromAPI))
-
-  ownedGamesReviewable.forEach(
-    (ownedGame: { title: string; matchTitle?: string }) => {
-      const ownedGameTitle = ownedGame.matchTitle || ownedGame.title
-
-      // console.log(shapeGameTitle(ownedGameTitle))
-      const gameDataMatch = switchGameListFull.find(
-        (game: { title: string }) => {
-          if (
-            shapeGameTitle(game.title).includes('gator') &&
-            !misc.find(g => g.title === game.title)
-          ) {
-            misc.push(game)
-          }
-
-          return (
-            shapeGameTitle(ownedGameTitle) === shapeGameTitle(game.title) ||
-            shapeGameTitle(game.title).includes(shapeGameTitle(ownedGameTitle))
-          )
-          // ||
-          // shapeGameTitle(ownedGame.title).includes(shapeGameTitle(game.title))
-        }
-      )
-
-      if (gameDataMatch) {
-        detailedGameList.push({ ...gameDataMatch, myData: ownedGame })
-      } else {
-        unfoundGameList.push(ownedGame)
-      }
+  const updatedData = switchGamesOwnedMasterList.map((game: any) => {
+    const images = {
+      boxart: game.boxart,
+      horizontalHeaderImage: game.horizontalHeaderImage,
+      descriptionImage: game.descriptionImage || ''
     }
-  )
 
-  console.log(detailedGameList)
-  console.log(unfoundGameList)
-  console.log(misc)
+    const updatedGame = { ...game, images }
+
+    delete updatedGame.boxart
+    delete updatedGame.horizontalHeaderImage
+    delete updatedGame.descriptionImage
+
+    return updatedGame
+  })
+
+  console.log(updatedData)
 
   return (
     <main>

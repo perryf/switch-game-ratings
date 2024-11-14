@@ -4,8 +4,8 @@ const schema = a.schema({
   Game: a
     .model({
       datePlayed: a.date(),
-      developedBy: a.string(),
-      genre: a.string().array(),
+      developers: a.string().array(),
+      genres: a.string().array(),
       imagePath: a.string(),
       imagePathSmall: a.string(),
       lengthOfGame: a.string(), // small, medium, large
@@ -16,8 +16,8 @@ const schema = a.schema({
       name: a.string().required(),
       onlineFeatures: a.boolean(),
       onlineMultiplayer: a.boolean(),
-      price: a.float(),
-      publishedBy: a.string(),
+      msrp: a.float(),
+      publishers: a.string(),
       rating: a.integer().required(), // 1 -5
       recommended: a.boolean(), // ? may not be needed
       releaseDate: a.date(),
