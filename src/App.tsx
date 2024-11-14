@@ -77,20 +77,19 @@ function App() {
 
   console.log(switchGamesOwnedMasterList)
 
-  const updatedData = switchGamesOwnedMasterList.map((game: any) => {
-    const images = {
-      boxart: game.boxart,
-      horizontalHeaderImage: game.horizontalHeaderImage,
-      descriptionImage: game.descriptionImage || ''
+  const updatedData = switchGamesOwnedMasterList.map((g: any) => {
+    const gameInfo = {
+      ...g.gameInfo,
+      lengthOfGame: '',
+      mood: [],
     }
 
-    const updatedGame = { ...game, images }
+    const myData = {
+      ...g.myData,
+      datePlayed: ''
+    }
 
-    delete updatedGame.boxart
-    delete updatedGame.horizontalHeaderImage
-    delete updatedGame.descriptionImage
-
-    return updatedGame
+    return { ...g, gameInfo, myData }
   })
 
   console.log(updatedData)
