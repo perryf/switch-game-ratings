@@ -40,7 +40,7 @@ const schema = a.schema({
         freeToStart: a.boolean(),
         generalFilters: a.string().array(),
         genres: a.string().array(),
-        lengthOfGame: a.enum(['', 'short', 'medium', 'long']),
+        lengthOfGame: a.string(),
         mood: a.string().array(), // chill, fast-paced, funny, etc
         msrp: a.float(),
         numOfPlayers: a.string(),
