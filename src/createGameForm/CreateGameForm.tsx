@@ -94,7 +94,7 @@ function CreateGameForm(props: CreateGameFormProps) {
         <form onSubmit={handleGameSubmit} className="create-form">
           <div className="create-form-row">
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name *</label>
               <input
                 id="name"
                 name="name"
@@ -105,7 +105,7 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
 
             <div>
-              <label htmlFor="rating">Rating</label>
+              <label htmlFor="rating">Rating *</label>
               <input
                 id="rating"
                 name="rating"
@@ -121,7 +121,7 @@ function CreateGameForm(props: CreateGameFormProps) {
           </div>
 
           <div className="create-form-individual-box">
-            <label htmlFor="review">Review</label>
+            <label htmlFor="review">Review *</label>
             <textarea
               id="review"
               name="review"
@@ -281,7 +281,10 @@ function CreateGameForm(props: CreateGameFormProps) {
             />
           </div>
 
-          <button type="submit" disabled={!newGame.name || !newGame.rating}>
+          <button
+            type="submit"
+            disabled={!newGame.name || !newGame.rating || !newGame.review}
+          >
             Submit
           </button>
         </form>

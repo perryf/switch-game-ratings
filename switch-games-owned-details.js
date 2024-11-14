@@ -3,7 +3,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Aggelos',
     description:
       'Step through time and discover a mesmerizing new action-RPG that looks like it was plucked straight out of the 16-bit era, but plays like a modern-day marvel! Inspired by non-linear Japanese retro adventures, Aggelos hurls players into the middle of a colossal struggle for survival as beings from another dimension threaten to invade the peaceful Kingdom of Lumen. Bursting with secrets and side-quests, and boasting slick melee combat that any 2D action game would envy, Aggelos is the perfect combination of retro style and modern-day game design. A VAST KINGDOM TO EXPLORE Venture through forests, seas, cave systems and ancient temples as you seek to uncover the magical elements needed to save the world from total annihilation. A CLASSICAL NON-LINEAR ADVENTURE Explore a sprawling world that gradually reveals itself, Metroidvania-style, as you gain new abilities and equipment. DEADLY ENCOUNTERS Thwart towering bosses and their tricky minions as you take on perilous mainline quests and optional odd-jobs for the people of Lumen. TACTICAL DEPTH Unlock magical abilities and high-level attacks, expertly chaining these immense powers together to clear screens of enemies in seconds. STUNNING SPRITE ART Forget out-of-place modern art: Aggelos boasts superlative character designs and animations while remaining proudly, and faithfully, 16-bit through and through. MEMORABLE CHIPTUNES Lose yourself to a retro-inspired soundtrack that floods the Kingdom of Lumen with life.',
-    releaseDateDisplay: '2019-04-25T07:00:00.000Z',
+    releaseDateDisplay: '2019-04-25',
     myData: {
       played: true,
       physicalCopy: false,
@@ -86,7 +86,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Axiom Verge 2',
     description:
       'The long awaited sequel to Axiom Verge, Axiom Verge 2 expands on the universe with completely new characters, abilities, and gameplay.',
-    releaseDateDisplay: '2021-08-11T07:00:00.000Z',
+    releaseDateDisplay: '2021-08-11',
     myData: {
       played: true,
       physicalCopy: false,
@@ -168,7 +168,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Blasphemous',
     description:
       'A foul curse has fallen upon the land of Cvstodia and all its inhabitants - it is simply known as The Miracle. Play as The Penitent One - a sole survivor of the massacre of the ‘Silent Sorrow’. Trapped in an endless cycle of death and rebirth, it’s down to you to free the world from this terrible fate and reach the origin of your anguish. Explore this nightmarish world of twisted religion and discover its many secrets hidden deep inside. Use devastating combos and brutal executions to smite the hordes of grotesque monsters and titanic bosses, who are all ready to rip your limbs off. Locate and equip relics, rosary beads and prayers that call on the powers of the heavens to aid you in your quest to break your eternal damnation. Key Features: Explore a Non-Linear World: Overcome fearsome enemies and deadly traps as you venture through a variety of different landscapes, and search for redemption in the dark gothic world of Cvstodia. Brutal Combat: Release the power of Mea Culpa, a sword born from guilt itself, to slaughter your foes. Acquire devastating new combos and special moves as you purge all in your path. Executions: Unleash your wrath and relish in the gory dismemberment of your adversaries - all in beautifully rendered, pixel-perfect execution animations. Customise Your Build: Discover and equip Relics, Rosary Beads, Prayers and Sword Hearts to give you the new abilities and stat boosts you need to survive. Experiment with different combinations to suit your playstyle. Epic Boss Battles: Hordes…',
-    releaseDateDisplay: '2019-09-10T07:00:00.000Z',
+    releaseDateDisplay: '2019-09-10',
     myData: {
       played: true,
       physicalCopy: false,
@@ -255,7 +255,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Bloodstained: Ritual of the Night',
     description:
       "Bloodstained: Ritual of the Night is a gothic horror action side-scrolling RPG set in 18th century England. A paranormal force has summoned a demon-infested castle, revealing crystal shards infused with tremendous magical power. Play as Miriam, an orphan scarred by an alchemist's curse which slowly crystallizes her body. To save humanity, and herself in the process, Miriam must fight through the castle and defeat the summoner, Gebel. Collect, craft and unlock a vast array of weapons, equipment and loot to defeat the countless minions and bosses of hell that await!",
-    releaseDateDisplay: '2019-06-25T07:00:00.000Z',
+    releaseDateDisplay: '2019-06-25',
     myData: {
       played: true,
       physicalCopy: false,
@@ -306,7 +306,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Borderlands Legendary Collection',
     description:
       'Get three times the mayhem, three times the loot, and three times the action with the Borderlands Legendary Collection! Kill bandits and beasts, collect powerful weaponry, and maybe even save the universe in Borderlands: Game of the Year Edition, Borderlands 2, and Borderlands: The Pre-Sequel, along with piles of bonus add-on content for each game, adding 100+ hours of gameplay at an incredible value*. Enjoy all three games solo or cooperatively with local two-player split-screen or four-player online play Borderlands: Game of the Year Edition - Discover the co-op shooter-looter that started it all, crammed with content and enhancements! Equip bazillions of guns as one of four trigger-happy mercenaries, each with unique RPG skills. Take on the lawless desolate planet Pandora in pursuit of powerful alien technology rumored to be inside an ancient Vault. Borderlands 2 - Play as one of six vault hunters attempting to liberate Pandora from evil mastermind and corporate CEO Handsome Jack. Make new friends, arm them with a bazillion weapons and fight alongside them in a relentless quest for revenge and redemption. Borderlands: The Pre-Sequel - Discover the story behind Borderlands 2 villain, Handsome Jack, and his rise to power. Set between the events of Borderlands and Borderlands 2, The Pre-Sequel gives you a whole lotta new gameplay and features the genre-blending fusion of shooter and RPG mechanics that players have come to love. *Borderlands 2: Commander Lilith & the Fight for Sanctuary add-content not included.',
-    releaseDateDisplay: '2020-05-29T07:00:00.000Z',
+    releaseDateDisplay: '2020-05-29',
     myData: {
       played: true,
       physicalCopy: false,
@@ -356,7 +356,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Borderlands: Game of the Year Edition',
     description:
       'Discover the co-op shooter-looter that started it all, crammed with content and enhancements! Equip bazillions of guns as one of 4 trigger-happy mercenaries, each with unique RPG skills. Take on the lawless desolate planet Pandora in pursuit of powerful alien technology: The Vault. With new weapons, visual upgrades, all 4 add-on packs and more! • Bazillions of Guns: Rocket-launching shotguns, enemy-torching revolvers, SMGs that fire lightning rounds, and tons more. • Radical Art Style: Traditional rendering combined with hand-drawn textures give Borderlands its iconic style. • Intense Vehicular Combat: Behind the wheel, engage in frenetic vehicle-to-vehicle combat. • Co-op Frenzy: Online or together on the couch.',
-    releaseDateDisplay: '2020-05-29T07:00:00.000Z',
+    releaseDateDisplay: '2020-05-29',
     myData: {
       played: true,
       physicalCopy: false,
@@ -405,7 +405,7 @@ export const switchGamesOwnedMasterList = [
     title: 'CHRONO CROSS: THE RADICAL DREAMERS EDITION',
     description:
       '"CHRONO CROSS: THE RADICAL DREAMERS EDITION" is a remaster of "CHRONO CROSS". The 3D models have been upgraded to HD, new illustrations have added, and all kinds of new features are now included. Additionally, the game that formed the bedrock of the story, "RADICAL DREAMERS - Le Trésor Interdit -", is included in this edition! CHRONO CROSS is an RPG that transcends time and space, unfolding across two interlinked parallel worlds. With over 40 party members to meet, people and dimensions will intertwine in this epic drama about the planet itself. New Features in the Remastered Edition ・3D models converted to HD ・Refined character illustrations ・Higher-quality background music ・Switch enemy encounters on or off ・Background filter feature ・Battle enhancement features to make combat easier ・Auto-battle function ・Switch between imitation pixel font and HD font ・Change screen resolution RADICAL DREAMERS - Le Trésor Interdit - "RADICAL DREAMERS - Le Trésor Interdit -" was released in 1996 as a standalone game, and has not been easily accesible for play in recent years. Players can experience the story that went on to become the basis for CHRONO CROSS in an audio novel format. Here, an alternate story of the RADICAL DREAMERS, a group of three thieves - Serge, Kid and Magil - unfolds in a parallel world. *You can switch between the new and old versions of the 3D models and illustrations. *The 3D models, illustrations, font and background filter cannot be toggled separately. They will all be switched together.',
-    releaseDateDisplay: '2022-04-07T07:00:00.000Z',
+    releaseDateDisplay: '2022-04-07',
     myData: {
       played: true,
       physicalCopy: false,
@@ -452,7 +452,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Cat Quest + Cat Quest II Pawsome Pack',
     description:
       'CAT QUEST Cat Quest is an open world RPG set in the pawsome world of cats! Leap into a grand adventure in purrsuit of the evil Drakoth and your catnapped sister! Explore Felingard\'s huge overworld map, risk life and limb delving into dungeons for epic loot, and lend a paw to a furry cast of characters in a flurry of side quests. Combat in Cat Quest takes place entirely in real time, allowing you to get close to enemies with a slash of your blade, dodge roll to avoid a counter-attack, and then finish them off with powerful magic! Wield the ancient spells of Lightnyan, Flamepurr, and Healpaw to vanquish your foes! (Fur real!) Outfit your catventurer with a whole basket of equipment! Prefurr casting spells? Don an arcane hood, robes, and a staff to bolster your mana reserves! Want to protect yourself from attack? Deck out your catventurer with chainmail armor to increase your health and provide an extra level of protection. Weapons, armor, and spells can be mixed and matched to create the purrfect combinations for your playstyle! The world of Felingard is littered with interesting places and people! Discover a possessed town whose residents lust for obscene amounts of meat, assist the mages Mewlin and Meowgan in their search to break a magic seal, and locate someone\'s missing delivery of "House of Parchments" and "The Pouncing Dead". Exploration is one of the main scratching posts of Cat Quest, and with locations such as Bermewda\'s Triangle, the Furbidden Fields, and Pawt City to explore,…',
-    releaseDateDisplay: '2020-08-27T07:00:00.000Z',
+    releaseDateDisplay: '2020-08-27',
     myData: {
       played: true,
       physicalCopy: false,
@@ -494,7 +494,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Celeste',
     description:
       'Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight, hand-crafted platformer from the creators of multiplayer classic TowerFall. • A narrative-driven, single-player adventure like mom used to make, with a charming cast of characters and a touching story of self-discovery • A massive mountain teeming with 700+ screens of hardcore platforming challenges and devious secrets • Brutal B-side chapters to unlock, built for only the bravest mountaineers • IGF “Excellence in Audio” finalist, with over 2 hours of original music led by dazzling live piano and catchy synth beats • Pie The controls are simple and accessible - simply jump, air-dash, and climb - but with layers of expressive depth to master, where every death is a lesson. Lightning-fast respawns keep you climbing as you uncover the mysteries of the mountain and brave its many perils. This is it, Madeline. Just breathe. You can do this.',
-    releaseDateDisplay: '2018-01-25T08:00:00.000Z',
+    releaseDateDisplay: '2018-01-25',
     myData: {
       played: true,
       physicalCopy: false,
@@ -540,7 +540,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Child of Light® Ultimate Edition',
     description:
       "Join Aurora on her journey to save her ailing father and a lost kingdom in the magical world of Lemuria –along the way she'll discover that her destiny may be far greater than she dreamed. From award-winners Patrick Plourde and Jeffrey Yohalem comes Child of Light®. Encounter eccentric creatures, from wicked witches to evil sea serpents, and discover the vast land of Lemuria. Fight alongside your allies to upgrade your stats, unlock unique abilities, and use unique gems to improve your skills. Work together with your allies to solve puzzles and search for mysteries. Experience a story carefully crafted in verse and rhyme with an original soundtrack by composer Coeur de pirate. Play anytime and anywhere. With Nintendo Switch™ you’ll be able to play on your TV, on the go, or with friends in tabletop mode.",
-    releaseDateDisplay: '2018-10-11T07:00:00.000Z',
+    releaseDateDisplay: '2018-10-11',
     myData: {
       played: true,
       physicalCopy: false,
@@ -622,7 +622,7 @@ export const switchGamesOwnedMasterList = [
     title: 'DARK SOULS™: REMASTERED',
     description:
       'Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning detail. DARK SOULS: REMASTERED includes the main game plus the Artorias of the Abyss DLC. This marks the franchise’s debut on a Nintendo platform, and for the first time ever can be played on-the-go with Nintendo Switch. Deep and Dark Universe— Delve into an epic dark fantasy universe stricken by the Curse. Explore its intricate world design, full of hidden passages, dungeons and secrets. Each End is a New Beginning— Each playthrough surprises you with new challenges and discoveries. Gameplay Richness and Possibilities— Use hundreds of unique weapon, armor, magic, and crafting combinations to create your own playstyle and gaming experience. The Way of the Multiplayer (up to 6 players)— Whatever your motivations are to play online – collaboration or confrontation, support or betrayal – you’ll find your true home among the nine covenants.',
-    releaseDateDisplay: '2018-10-19T07:00:00.000Z',
+    releaseDateDisplay: '2018-10-19',
     myData: {
       played: true,
       physicalCopy: false,
@@ -669,7 +669,7 @@ export const switchGamesOwnedMasterList = [
     title: 'DOOM (1993)',
     description:
       'Celebrate DOOM’s 25th anniversary with the re-release of the original DOOM (1993). First released in 1993, DOOM introduced millions of gamers to the fast-paced, white-knuckle, demon-slaying action the franchise is known for. Experience the classic demon-blasting fun that popularized the genre home or on-the-go. DOOM (1993) includes: - The expansion, Episode IV: Thy Flesh Consumed, with 9 additional action-packed levels - Local 4 player deathmatch - Local 4 player co-op',
-    releaseDateDisplay: '2019-07-26T07:00:00.000Z',
+    releaseDateDisplay: '2019-07-26',
     myData: {
       played: true,
       physicalCopy: false,
@@ -711,7 +711,7 @@ export const switchGamesOwnedMasterList = [
     title: 'DOOM® Eternal',
     description:
       'DOOM® Eternal, the award-winning game and “one of the best first-person shooters ever” according to GameRevolution, is coming to Nintendo Switch. Developed by id Software and Panic Button, DOOM Eternal is the direct sequel to DOOM®, winner of The Game Awards’ Best Action Game of 2016. Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear…is you. Features: Slayer Threat Level at Maximum Experience the ultimate combination of speed and power in DOOM Eternal—the next leap in first-person combat powered by idTech 7. Armed with a shoulder-mounted flamethrower, wrist-mounted blade, upgraded guns, new abilities and more, you’re the greatest demon slayer in existence. Push-Forward Combat Take what you need from your enemies. Glory Kill demons to recover health, incinerate them to receive armor and cut them down with the Chainsaw to stock up on ammo. Motion Aiming Ready Improve your aim with a control option that allows you to aim using gyro controls. The option can be used in conjunction with the control stick for the perfect blend of immersion and accuracy. Enter BATTLEMODE A new 2 versus 1 multiplayer experience pits a fully-armed DOOM Slayer against two player-controlled demons, fighting it out in a best-of-five round match of intense first-person combat.',
-    releaseDateDisplay: '2020-12-08T08:00:00.000Z',
+    releaseDateDisplay: '2020-12-08',
     myData: {
       played: true,
       physicalCopy: false,
@@ -753,7 +753,7 @@ export const switchGamesOwnedMasterList = [
     title: 'DRAGON QUEST® XI S: Echoes of an Elusive Age – Definitive Edition',
     description:
       'You are the Luminary, the hunted hero who will protect the land from destruction in the latest RPG from the iconic DRAGON QUEST® series. With a ragtag band of adventurers, you’ll engage in well-balanced, turn-based battles and embark on quests across the kingdom of Erdrea. Forge gear, develop party members’ skills, and alter their outfits without changing gear in this edition of the game! This version also lets you ride and attack with monsters on the field to earn experience points, as well as change between HD or 16-bit visuals, symphonic or synth music, and English or Japanese audio. Complete the tale with new character-focused stories, and travel to past DRAGON QUEST worlds! Across the land, you’ll meet the mysterious Tockles—creatures that allow you to visit 2D, 16-bit versions of areas from popular entries in the series like DRAGON QUEST IV and DRAGON QUEST VIII! It’s fun to see these classic worlds reimagined in retro style, meshing perfectly with the main game’s 2D mode. Like all past DRAGON QUEST games, this one’s character designs are based on the signature style of famed artist Akira Toriyama. Paired with the voiced dialogue, the rich personalities of your most loyal companions and fiercest enemies are brought to life, so you can fully immerse yourself in this quest to discover the Luminary’s true heritage and awaken your power. For a greater challenge, start the game with the Draconian Quest setting, and capture your favorite moments with Photo Mode!',
-    releaseDateDisplay: '2019-09-27T07:00:00.000Z',
+    releaseDateDisplay: '2019-09-27',
     myData: {
       played: true,
       physicalCopy: false,
@@ -807,7 +807,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Dexter Stardust : Adventures in Outer Space',
     description:
       'Space! Dexter Stardust barely escaped when the Vreesians, inhabitants of the menacing Planet X, sent a fleet of robots to destroy all life on Earth. Now, twenty years later, a mechanical man from the 10th planet seeks to communicate to Dexter a very important message - he is the key to saving both humans and Vreesians. Play the taco-loving Dexter Stardust as he, and his good friend Aurora, go on the greatest adventure of their lives and discover the mystery of the Robot from the Planet X! Classic Adventure Gameplay Created as a classic point and click adventure, you can walk, talk, and interact with everything in your surroundings. Use and pick up inventory items to solve puzzles in over 100 unique scenes. 5 Episodes in One Game Playing Dexter Stardust is like watching back to back episodes of a Saturday morning cartoon! With 5 total episodes, feel free to jump to or replay any episode you’d like at any time. Full Voice Acted All characters, cutscenes, and gameplay are completely voice acted! An Adventure for Everyone The whole family can go on a spacey adventure; with its non-violent gameplay, incredible story, logical puzzles, and easy controls, Dexter and gang are sure to jump off the screen and into your heart.',
-    releaseDateDisplay: '2022-03-03T08:00:00.000Z',
+    releaseDateDisplay: '2022-03-03',
     myData: {
       played: true,
       physicalCopy: false,
@@ -848,7 +848,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Dicey Dungeons',
     description:
       "In this new fast-paced deckbuilding roguelike from Terry Cavanagh, Chipzel, and Marlowe Dobbe, you'll fight monsters, find better loot, and level up your heroes as you work together to take down the Goddess of Fortune, Lady Luck herself. Balance your carefully planned strategies against the unknown of a dice roll. Play as six different characters, each with their own unique play styles and abilities. Master each class and figure out which one best fits your style in this charming world filled with a growing array of twists and secrets. Can you make it out alive? Maybe, but luck is definitely not on your side.",
-    releaseDateDisplay: '2020-12-15T08:00:00.000Z',
+    releaseDateDisplay: '2020-12-15',
     myData: {
       played: true,
       physicalCopy: false,
@@ -890,7 +890,7 @@ export const switchGamesOwnedMasterList = [
     title: "Don't Starve Together",
     description:
       "Don't Starve Together is the standalone multiplayer expansion of the uncompromising wilderness survival game, Don't Starve. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style. Play your way as you unravel the mysteries of this strange land. Cooperate with your friends in a private game, or take your chances with strangers online. Work with other players to survive the harsh environment, or strike out on your own. Do whatever it takes, but most importantly, Don't Starve.",
-    releaseDateDisplay: 'Spring 2022',
+    releaseDateDisplay: 'Spring 202',
     myData: {
       played: true,
       physicalCopy: false,
@@ -936,7 +936,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Doomsday Vault',
     description:
       'Rescue Earth’s precious plant life. In your robotic suit navigate a flooded city, break into an underground lair and explore ancient pyramids. Collect seeds and return them to the safety of the Vault. Nurture seeds to grow new sustainable crops. Unlock additional tools and items to customize your suit. Featuring: Adventure missions to find precious seeds for the Vault Challenge mode with races, mazes, scores and leaderboards Vault to nurture seeds into crops Challenging puzzles and gameplay to suit all ages and experience Engaging 3D environments Play as the iconic DV Robot character Robot suit customization Beautiful soundtrack and sound effects Helpful plant information',
-    releaseDateDisplay: '2021-08-05T07:00:00.000Z',
+    releaseDateDisplay: '2021-08-05',
     myData: {
       played: true,
       physicalCopy: false,
@@ -977,7 +977,7 @@ export const switchGamesOwnedMasterList = [
     title: 'ENDER LILIES: Quietus of the Knights',
     description:
       'Story: Long ago, in the distant reaches of Land\'s End... The unforeseen descent of the ""Rain"" transformed all living things into frenzied undead monstrosities known as the Blighted. Faced with a calamity far beyond their understanding with no recourse, the kingdom fell into ruin, with no end in sight to the accursed rain. Meanwhile, in the remnants of this ruined world, a young girl named Lily awakens in the depths of a church. About This Game: ""ENDER LILIES"" is a dark fantasy 2D action RPG that sees the players try to unravel the mystery of the kingdom destroyed by the \'""Rain of Death."" Players will journey through the sprawling and hauntedly beautiful locations of ""Land’s End,"" including a submerged forest, a sealed-off contaminated underground cavern, and a grand castle. In the many places you will visit on this sorrowful adventure, formidable bosses await that will gladly claim your life given even the slightest chance. Defeat these powerful foes and release them from their unending curse to turn them into allies. Overcome the challenges before you and search for the truth with powerful knights at your side. Key Features: ■ Immersive Exploration - An expansive and fully traversable map, open to numerous strategies. - Exploration will uncover many mysteries and discoveries to draw you in. - Complete freedom in which path to take and which bosses to confront. ■ Tense Battles and a Rewarding Adventure - Enjoy tense battles, where a wavering focus can lead one to a swift death. - Employ evasive maneuvers along with your…',
-    releaseDateDisplay: '2021-06-21T07:00:00.000Z',
+    releaseDateDisplay: '2021-06-21',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1019,7 +1019,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Eastward',
     description:
       'Escape the tyrannical clutches of a subterranean society and join Eastward’s unlikely duo on an exciting adventure to the land above! Discover beautiful yet bizarre settlements and make new friends as you travel across the world by rail. Combine John and Sam’s skills to solve dungeon puzzles, take down unusual enemies, and survive the deadly miasma. Can you uncover the truth behind Sam’s mystic powers and bring back harmony to Eastward’s ravaged lands? • Discover the wonderfully weird world of Eastward. Jump aboard the cross-country railway which spans this decaying continent, stopping off to explore its bustling towns, curious campsites and shady forests. • Fend off peculiar monsters and ferocious bosses with your weapon of choice - be it a gun, flamethrower or your trusty ol’ frying pan. • Switch between controlling John and Sam to solve environmental puzzles and fight your way through formidable dungeons, separating to unlock hidden paths or sticking together as you traverse a perilous landscape. • Get to know a quirky cast of characters with oodles of personality, as you immerse yourself in this heartwarming story-driven adventure, packed with fun and wacky humour. • Create deliciously authentic Eastwardian cuisine using (mostly) fresh, organic ingredients from toxic forests, infested mines and abandoned malls. These delicacies will grant health bonuses, power boosts and secret boons.',
-    releaseDateDisplay: '2021-09-16T07:00:00.000Z',
+    releaseDateDisplay: '2021-09-16',
     myData: {
       played: true,
       fullOrDemo: 'demo',
@@ -1108,7 +1108,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Figment',
     description:
       "A action-adventure set in the recesses of the human mind... Welcome to the world of Figment. A strange and surreal world; a place filled with our deepest thoughts, urges and memories, populated by the many voices we hear in our heads. This mind has been quiet and calm for many years. But something has changed. New thoughts have started to emerge - taking the shape of nightmarish creatures who spread fear wherever they go. The only hope is for the grumpy Dusty, the mind's former voice of courage, to get back to his old self and help the mind to face its fears. Join Dusty and his ever-optimistic friend, Piper, on an adventure through the different sides of the mind, solving puzzles to set things straight, beating back the nightmares and seeking to restore the courage that's been lost. “BEAUTIFULLY UNIQUE STUNNER IS ONE OF THE YEAR’S BEST GAMES” 9/10 – COG Connected “there is so much to love in Figment that you’ll adore spending time in its colourful world.” 9/10 – God is a Geek “It’s a dynamic score that is visualised in the world as it plays, and I adore it.” Rock Paper Shotgun A Whimsical Hand-Drawn World Experience how traditionally hand-painted brushstrokes come to life in a world filled with surreal art, colorful illustrations and charming characters. Experience the unique artstyles of the joyful Freedom Isles, the radiant Clockwork Town and the ominous Pathways. Enjoy a Full Score of Musical Performance Music is an integral part of Figment. Explore a rhythmic environment full…",
-    releaseDateDisplay: '2018-06-28T07:00:00.000Z',
+    releaseDateDisplay: '2018-06-28',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1193,7 +1193,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Fire Emblem™: Three Houses',
     description:
       'War is coming to the continent of Fódlan. Here, order is maintained by the Church of Seiros, which hosts the prestigious Officer’s Academy within its headquarters. You are invited to teach one of its three mighty houses, each comprised of students brimming with personality and represented by a royal from one of three territories. As their professor, you must lead your students in their academic lives and in turn-based, tactical RPG battles wrought with strategic, new twists to overcome. Which house, and which path, will you choose?',
-    releaseDateDisplay: '2019-07-26T07:00:00.000Z',
+    releaseDateDisplay: '2019-07-26',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1241,7 +1241,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Fortnite',
     description:
       'The Island you once knew has been turned upside down...literally. Step foot onto the new Island and explore every corner of an undiscovered world in Fortnite Chapter 3 Season 1: Flipped. Swing through the iconic Daily Bugle or slide into Sanctuary, homebase of The Foundation and The Seven. Join The Seven as they prepare for a looming war against the Imagined Order across a once-frozen landscape filled with new POIs and dangerous new weather conditions to test your skills. Plus earn XP beyond Battle Royale to level up your Battle Pass and unlock Spider-Man, The Foundation, and all the new Battle Pass cosmetics. See you on the flip side! Jump in to be the last one standing in the free 100-player Battle Royale. Build huge forts. Outwit your opponents. Earn your Victory. Squad up together online with friends in the same room or around the world! • BUILD & DESTROY - Shape the battlefield by building your own cover. Opponent hiding behind a wall? Take out their cover to get the edge. • GEAR UP - Board the battle bus and drop in on your favorite zone. Gather resources, collect gear, and battle your opponents! • SQUAD UP WITH FRIENDS - Team up online with your friends around the world or in the same room! • WEEKLY UPDATES & EVENTS - Updates constantly fuel the fun with new gameplay modes, outfits, weapons and items.',
-    releaseDateDisplay: '2018-06-12T07:00:00.000Z',
+    releaseDateDisplay: '2018-06-12',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1363,7 +1363,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Hades',
     description:
       "BATTLE OUT OF HELL As the immortal Prince of the Underworld, you'll wield the powers and mythic weapons of Olympus to break free from the clutches of the god of the dead himself, while growing stronger and unraveling more of the story with each unique escape attempt. UNLEASH THE FURY OF OLYMPUS The Olympians have your back! Meet Zeus, Athena, Poseidon, and many more, and choose from their dozens of powerful Boons that enhance your abilities. There are thousands of viable character builds to discover as you go. BEFRIEND GODS, GHOSTS, AND MONSTERS A fully-voiced cast of colorful, larger-than-life characters is waiting to meet you! Grow your relationships with them, and experience thousands of unique story events as you learn about what's really at stake for this big, dysfunctional family. BUILT FOR REPLAYABILITY New surprises await each time you delve into the ever-shifting Underworld, whose guardian bosses will remember you. Use the powerful Mirror of Night to grow permanently stronger, and give yourself a leg up the next time you run away from home. NOTHING IS IMPOSSIBLE Permanent upgrades mean you don't have to be a god yourself to experience the exciting combat and gripping story. Though, if you happen to be one, crank up the challenge and get ready for some white-knuckle action that will put your well-practiced skills to the test. SIGNATURE SUPERGIANT STYLE The rich, atmospheric presentation and unique melding of gameplay and narrative that's been core to Supergiant's games is here in full force: spectacular hand-painted environments and a blood-pumping original score…",
-    releaseDateDisplay: '2020-09-17T07:00:00.000Z',
+    releaseDateDisplay: '2020-09-17',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1411,7 +1411,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Hyrule Warriors: Age of Calamity',
     description:
       'Join the struggle that brought Hyrule to its knees. Learn more about Zelda, the four Champions, the King of Hyrule and more through dramatic cutscenes as they try to save the kingdom from Calamity. The Hyrule Warriors: Age of Calamity game is the only way to see firsthand what happened 100 years ago. - Battle hordes of Hyrule’s most formidable foes - From barbaric Bokoblins to towering Lynels, menacing monsters have emerged in droves. In addition to Link and Zelda, take control of characters like the four Champions and a young Impa. Use their distinct abilities to carve through hundreds of enemies to save Hyrule from the impending Calamity. If you have save data for the Legend of Zelda: Breath of the Wild game, you can get the in-game Training Sword bonus item. Equip this weapon and you’ll automatically hold a Pot Lid as a shield. This combo may also trigger the occasional Perfect Guard!',
-    releaseDateDisplay: '2020-11-20T08:00:00.000Z',
+    releaseDateDisplay: '2020-11-20',
     myData: {
       played: true,
       physicalCopy: true,
@@ -1498,7 +1498,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Into the Breach',
     description:
       "The remnants of human civilization are threatened by gigantic creatures breeding beneath the earth. You must control powerful mechs from the future to hold off this alien threat. Each attempt to save the world presents a new randomly generated challenge in this turn-based strategy game from the makers of FTL. Features: Defend the Cities: Civilian buildings power your mechs. Defend them from the Vek and watch your fire! Perfect Your Strategy: All enemy attacks are telegraphed in minimalistic, turn-based combat. Analyze your opponent's attack and come up with the perfect counter every turn. Build the Ultimate Mech: Find powerful new weapons and unique pilots as you battle the Vek infestation across Corporate-Nation islands. Another Chance: Failure is not an option. When you are defeated, send help back through time to save another timeline!",
-    releaseDateDisplay: '2018-08-28T07:00:00.000Z',
+    releaseDateDisplay: '2018-08-28',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1580,7 +1580,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Kirby™ and the Forgotten Land',
     description:
       'Float off on an all-new adventure as the powerful puffball, Kirby. Explore in 3D stages as you discover a mysterious world with abandoned structures from a past civilization—like a shopping mall?! Copy enemies’ abilities like the new Drill and Ranger and use them to attack, explore your surroundings, and save the kidnapped Waddle Dees from the ferocious Beast Pack alongside the mysterious Elfilin. Hope you’re hungry for an unforgettable adventure! Get a mouthful of real-world objects for all-new, powerful transformations Feeling hungry? Kirby can inhale real-world objects and transform using Mouthful Mode! Why get one drink from a vending machine when you can swallow the whole thing? Then, use your boxy body to shoot out cans at baddies. Consume a car to gain some wheels and slam through walls. Sit back and take it all in...literally. Join up with a pointy partner, Bandana Waddle Dee, in co-op play Pass a Joy-Con™ controller to a buddy to play as the spear-wielding Bandana Waddle Dee and help each other explore and battle through this colorful world. While Kirby can float and inhale enemies, Bandana Waddle Dee can spin and stab with his sturdy spear. Find friendship in this forgotten world and save the Waddle Dees! Float over obstacles and fight through enemies on your way to each stage’s goal as you slash, poke, freeze, and hammer using Kirby’s copy abilities. The tough puff is truly put to the test in dynamic boss battles that will keep you dancing about the arena. Choose from two difficulty modes for either…',
-    releaseDateDisplay: '2022-03-25T07:00:00.000Z',
+    releaseDateDisplay: '2022-03-25',
     myData: {
       played: true,
       physicalCopy: true,
@@ -1621,7 +1621,7 @@ export const switchGamesOwnedMasterList = [
     title: 'LIMBO',
     description:
       "Uncertain of his sister's fate, a boy enters LIMBO LIMBO is an award-winning indie adventure, critically acclaimed for its captivating puzzle design and immersive sound and visuals. Its dark, misty spaces and haunting narrative will stay with you forever. Winner of more than 100 awards, including: Gameinformer’s “Best Downloadable” Gamespot’s “Best Puzzle Game” Kotaku’s “The Best Indie Game” GameReactor’s “Digital Game of the Year” Spike TV’s “Best Independent Game” X-Play’s “Best Downloadable Game” IGN’s “Best Horror Game”",
-    releaseDateDisplay: '2018-06-28T07:00:00.000Z',
+    releaseDateDisplay: '2018-06-28',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1663,7 +1663,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Legend of Mana',
     description:
       'Set off on a journey to find the mystical Mana Tree seen in a dream, before discovering... the world map is empty! During your travels, you’ll acquire special artifacts; place these wherever you’d like on the map to bring towns and dungeons to life and advance the story. Meet a colorful cast of characters, square off against fearsome monsters, and complete quests in the vast world of Fa’Diel. Not only has the music been rearranged for this remaster, you can also alternate between the new and original soundtrack. Other features have also been added, including the ability to turn off enemy encounters, and the never-before released mini-game "Ring Ring Land".',
-    releaseDateDisplay: '2021-06-24T07:00:00.000Z',
+    releaseDateDisplay: '2021-06-24',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1793,7 +1793,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Mario + Rabbids Kingdom Battle Gold Edition',
     description:
       "This game is available for purchase exclusively on Nintendo eShop for Nintendo Switch. Gold Edition includes game and season pass: 8 new solo challenges + 5 co-op maps 16 new weapons. An exclusive world featuring a new hero, coming in early 2018. The Mushroom Kingdom has been torn apart by a mysterious vortex, transporting the chaotic Rabbids into this once-peaceful land. To restore order, Mario, Luigi, Princess Peach, and Yoshi must team up with a whole new crew: four Rabbids heroes! Together, they will battle with weapons through four worlds filled with combat, puzzles, and unpredictable enemies. Developed exclusively for the Nintendo Switch™ system, Mario + Rabbids Kingdom Battle is the best of the Mario and Rabbids franchises, combining all that you love about Mario's iconic universe with the side-splitting antics of the Rabbids.",
-    releaseDateDisplay: '2017-11-16T08:00:00.000Z',
+    releaseDateDisplay: '2017-11-16',
     myData: {
       played: true,
       physicalCopy: true,
@@ -1876,7 +1876,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Metroid™ Dread',
     description:
       'For a limited time, you can earn DOUBLE My Nintendo Gold Points on Metroid Dread. That means you can earn 10% in Gold Points*—which you can then use toward your next eligible digital game or DLC. Join bounty hunter Samus Aran as she tries to escape a deadly alien world in the critically-acclaimed Metroid Dread Upon investigating a mysterious transmission on Planet ZDR, Samus faces a mysterious foe that traps her in this dangerous world. The remote planet has been overrun by vicious alien lifeforms and murderous robots called E.M.M.I. Hunt or be hunted as you make your way through a labyrinth of enemies in Samus’ most intense side-scrolling adventure yet. Samus is more agile and capable than ever Guide Samus Aran, an intergalactic bounty hunter raised by an ancient tribe, and traverse the many environments of a dangerous world. Parkour over obstacles, slide through tight spaces, counter enemies, and battle your way through the planet. Through her countless missions, Samus has never experienced a threat like the dread of ZDR. Power up and find more ways to explore and secrets to uncover Gain abilities and return to previous areas to find new areas and hidden upgrades in classic Metroid™ gameplay. Planet ZDR’s sprawling map is home to many secrets to discover and powers to find. You’ll need to be prepared to evade and destroy E.M.M.I. robots and overcome the dread plaguing ZDR. New modes let you ease into ZDR or experience true Dread If this is your first time sprinting and shooting as Samus, the…',
-    releaseDateDisplay: '2021-10-08T07:00:00.000Z',
+    releaseDateDisplay: '2021-10-08',
     _distinctSeqID: 0,
     myData: {
       played: true,
@@ -1958,7 +1958,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Monster Boy and the Cursed Kingdom',
     description:
       "Enjoy a colorful action-adventure game made alongside Ryuichi Nishizawa, creator of the original Wonder Boy in Monster World series. Monster Boy and the Cursed Kingdom borrows the best from the classic series to deliver a fresh, modern adventure with fun gameplay, memorable music and gorgeous hand drawn animations. Can Jin save Monster World Kingdom? Help our young hero defeat challenging enemies, discover hidden locations, upgrade powerful equipment, and more! You'll also unlock special forms with unique skills used to open new paths where mighty bosses and secret treasures await. Feature Overview: - Six awesome forms with unique combat and platforming abilities to make your adventure exciting from start to finish. - Unlock new paths and secrets with special equipment: look for magic weapons and items that gradually open up the world. - Over 15 hours of epic adventure: explore the new Monster World in a vast interconnected environment. - Hand Drawn animations: characters and enemies come to life with detailed animations and fun facial expressions. - Soundtrack from iconic Japanese composers: Yuzo Koshiro, Motoi Sakuraba, Michiru Yamane, Keiki Kobayashi and Takeshi Yanagawa. - Full HD graphics at 60 fps: the game supports 1080p/60fps in TV mode and 720p/60fps in Nintendo Switch™ handheld mode. - HD rumble support: feel the action with high performance HD rumble support.",
-    releaseDateDisplay: '2018-12-04T08:00:00.000Z',
+    releaseDateDisplay: '2018-12-04',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2000,7 +2000,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Mortal Kombat 11',
     description:
       "Mortal Kombat 11 is the latest installment in the critically acclaimed franchise, providing a deeper and more personalized experience than ever before. The all new Custom Character Variations give you unprecedented control of your fighters to make them your own. Featuring a roster of new and returning Klassic Fighters, Mortal Kombat's best-in-class cinematic story mode continues the epic saga over 25 years in the making. Players take on the role of a variety of past and present characters in a time-bending new narrative that pits Raiden against Kronika, the Keeper of Time. Packed to the brim with multiple modes, including the Towers of Time, allowing players to test their skills through various challenges, providing more ways than ever to continue the Mortal Kombat 11 experience.",
-    releaseDateDisplay: '2019-04-22T07:00:00.000Z',
+    releaseDateDisplay: '2019-04-22',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2052,7 +2052,7 @@ export const switchGamesOwnedMasterList = [
     title: 'New Pokémon Snap™',
     description:
       'For a limited time, you can earn DOUBLE My Nintendo Gold Points on New Pokémon Snap. That means you can earn 10% in Gold Points*—which you can then use toward your next eligible digital game or DLC. Explore lush scenery on unknown islands to snap photos of Pokémon in their natural habitats Seek out and take in-game photographs of Pokémon in their native environments in the New Pokémon Snap™ game, only for the Nintendo Switch™ system! Snap photos from the NEO-ONE as you you encounter and research lively wild Pokémon. You might see unexpected expressions or behaviors—Pokémon patrolling their territory, playing, or lurking in out-of-the-way spots. Investigate the mysterious Illumina phenomenon Travel to the islands that make up the Lental region. In this region, some of the Pokémon and vegetation will appear to have a special glow. Research these Pokémon alongside Professor Mirror as you explore dense jungles, vast deserts, and more! Your observations of Pokémon thriving in the wild may help unravel the truth behind the Illumina phenomenon. The Pokémon pictures you take will be used to build your very own Pokémon Photodex! Save, edit, and share your favorite Pokémon photos Save photos to your personal in-game album to edit and adjust them. When you complete a course, you can adjust the brightness, blur, zoom and other aspects of your photo in Re-Snap mode. Then, add stickers, frames, and filters to add a personal touch. Share your favorite photos with family and friends in-game**. You can also see what kinds of photos everyone else is…',
-    releaseDateDisplay: '2021-04-30T07:00:00.000Z',
+    releaseDateDisplay: '2021-04-30',
     myData: {
       played: true,
       physicalCopy: true,
@@ -2094,7 +2094,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Owlboy',
     description:
       'Owlboy is a story-driven platform adventure game, where you can fly and explore a brand new world in the clouds! Pick up your friends, and bring them with you as you explore the open skies. Overcome obstacles and greater enemies, in one of the most detailed adventures of this era. Being a mute, Otus struggles living up to the expectations of owl-hood. Things spiral from bad to worse with the sudden appearance of sky pirates. What follows is a journey through monster infested ruins, with unexpected encounters, well kept secrets, and burdens no one should have to bear. • A love letter to pixel art for a new audience, Owlboy is a story-driven action adventure, with a unique mix of flight and platforming. • Carry anything. Recruit Otus’s friends as gunners to fight for you, each with unique abilities and stories. • Large dungeons with big and challenging boss battles. • An adventure 10 years in the making.',
-    releaseDateDisplay: '2018-02-13T08:00:00.000Z',
+    releaseDateDisplay: '2018-02-13',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2136,7 +2136,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Pokémon UNITE',
     description:
       'Join Trainers from around the world as they head for Aeos Island to compete in Unite Battles! In Unite Battles, Trainers face off in 5-on-5 team battles to see who can score the most points within the allotted time. Teamwork is key as you and your teammates defeat wild Pokémon, level up and evolve your partner Pokémon, and knock out the opposing team’s Pokémon to prevent them from scoring points. Put your teamwork to the test, and take home the win! BATTLE IN STYLE: Take to the field while looking your best in Holowear! Thanks to a special technology developed using Aeos energy, Trainers can deck out their Pokémon in a variety of holographic outfits—with new styles arriving regularly! UNITE MOVES: Unleash the true power of your Pokémon with Unite Moves! Leverage these all-new Pokémon moves, which are only possible while in Unite Battles, and turn the tide of even the direst situations. RANK UP: Looking to prove how skilled you are? Participate in ranked matches, and earn points as you climb up the global leaderboard! COMMUNICATION IS KEY: Even the most skilled Trainers recognize how important communication is to their team’s success. Leverage signals, quick-chat messages, and—for the first time in a Pokémon title—voice chat to communicate and stay in sync with your team. CROSS-PLATFORM PLAY: Play with Trainers around the world on the Nintendo Switch™ system or on a compatible smartphone thanks to cross-platform support. Trainers may use their Pokémon Trainer Club account or Nintendo Account on both Nintendo Switch and mobile to easily…',
-    releaseDateDisplay: '2021-07-21T07:00:00.000Z',
+    releaseDateDisplay: '2021-07-21',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2181,7 +2181,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Pokémon™ Sword and Pokémon™ Shield Double Pack',
     description:
       'If you purchase the Pokémon™ Sword and Pokémon™ Shield Double Pack bundle, then you can receive two codes that will reward you with special items known as Dynamax Crystals! As a special bonus for purchasing the Pokémon Sword and Pokémon Shield Double Pack, you’ll receive two codes (one per game) that will each reward you a special item known as a Dynamax Crystal*. By using the Dynamax Crystals received via these codes, you’ll be able to face Dynamax Larvitar and Dynamax Jangmo-o in special Max Raid Battles**. These Pokémon normally can’t be encountered until later in the game! Max Raid Battles are battles in which you can recruit up to three players* via local communication or the internet to face down powerful Dynamax Pokémon! Every participant will get a chance to catch the Pokémon if you triumph in the battle! Additionally, with Dynamax Crystals, you’ll be able to attempt these Max Raid Battles as many times as it takes to win or until midnight on the day that the Dynamax Crystal was used, whichever comes first.* A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with…',
-    releaseDateDisplay: '2019-11-15T08:00:00.000Z',
+    releaseDateDisplay: '2019-11-15',
     myData: {
       played: true,
       physicalCopy: true,
@@ -2223,7 +2223,7 @@ export const switchGamesOwnedMasterList = [
     title: 'QUAKE',
     description:
       'Developed by the award-winning id Software, Quake® is the ground-breaking, original dark fantasy first-person shooter that inspires today’s retro-style FPS games. Now, experience the authentic, updated, and visually enhanced version of the original. Experience the Original Game, Enhanced Enjoy the original, authentic version of Quake, now with HD* and widescreen resolution support, enhanced models, dynamic and colored lighting, anti-aliasing, depth of field, the original, atmospheric soundtrack and theme song by Trent Reznor, and more. There’s never been a better time to play Quake. Play the Dark Fantasy Campaign You are Ranger, a warrior armed with a powerful arsenal of weapons. Fight corrupted knights, deformed ogres and an army of twisted creatures across four dark dimensions of infested military bases, ancient medieval castles, lava-filled dungeons and gothic cathedrals in search of the four magic runes. Only after you have collected the runes will you hold the power to defeat the ancient evil that threatens all of humanity. Get the Original & New Expansion Packs Quake also comes with both original expansion packs: “The Scourge of Armagon” and “Dissolution of Eternity,” as well as two expansions developed by the award-winning team at MachineGames: “Dimension of the Past,” and the all-new “Dimension of the Machine.” Discover the All-New “Dimension of the Machine” Expansion In the deepest depths of the labyrinth lies the core of lava and steel known only as The Machine. Crusade across time and space against the forces of evil to bring together the lost runes, power the dormant machine, and open the portal hiding the greatest…',
-    releaseDateDisplay: '2021-08-19T07:00:00.000Z',
+    releaseDateDisplay: '2021-08-19',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2264,7 +2264,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Rayman® Legends Definitive Edition',
     description:
       'Rayman, winner of multiple artistic and musical achievements, is coming to Nintendo Switch™ with Rayman Legends Definitive Edition. Rayman, Globox, and the Teensies are off wandering through an enchanted forest when they discover a mysterious tent filled with a series of captivating paintings. As they look more closely, they notice each painting seems to tell the story of a mythical world. While focusing on a painting that shows a medieval land, they are suddenly sucked into the painting, entering the world, and the adventure begins. The gang must run, jump, and fight their way through each world to save the day and discover the secrets of every legendary painting. Join the team with up to 4 players in local co-op! Compete with your friends in tournaments with the Kung Foot experience (local wireless multiplayer) Run, jump & smack your way through 100+ maps Jump to the rhythm and rock the party to beat the crazy musical levels',
-    releaseDateDisplay: '2017-09-12T07:00:00.000Z',
+    releaseDateDisplay: '2017-09-12',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2306,7 +2306,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Resident Evil',
     description:
       'Hailed by many as a masterpiece, this remake of the first entry in the long-running Resident Evil series is now playable in HD. Experience true terror in this genre-launching survival horror classic. The year is 1998. The Bravo Team of S.T.A.R.S., an elite special forces squad, has gone radio silent, and its Alpha Team has been dispatched to the forest on the outskirts of Raccoon City to investigate this mysterious disappearance. Attacked by bizarre and vicious dogs, alpha team members Chris and Jill manage to escape to a mysterious mansion in the middle of the forest. The horrors they encounter there are far greater than anyone might have foreseen...',
-    releaseDateDisplay: '2019-05-21T07:00:00.000Z',
+    releaseDateDisplay: '2019-05-21',
     myData: {
       played: false,
       physicalCopy: false,
@@ -2348,7 +2348,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Ring Fit Adventure',
     description:
       'Thanks for your interest in Ring Fit Adventure. Availability is extremely limited, so please check with your local retailer. Traverse grass-swept plains by jogging in place, attack enemies with overhead shoulder presses, and refill your health meter by striking some yoga poses. Two new accessories, the Ring-Con™ and Leg Strap, measure your real-world actions and help turn them into in-game movements. With additional minigames and customizable workout routines, Ring Fit Adventure is great escape for players of all skill levels and schedules. In Adventure mode, defeat enemies with attacks based on real-world exercises as you traverse more than 100 levels in over 20 worlds. As you work through each level (and possibly work up a sweat), you’ll earn experience points. Between fights, you may encounter some unusual methods of transportation such as squat-powered launch pads. Then, pass around the Ring-Con and leg strap accessories and select from a few minigames: break boxes with gusts of air, craft pottery using squats, and more. Explore a huge fantasy world and defeat enemies using real-life exercise Jog, Sprint, and high knee through over 100 levels in more than 20 worlds Control in-game movements with the new Ring-Con™ and Leg Strap accessories Play a long-form adventure or shorter minigames suitable for most skill levels and schedules Check your estimated pulse rate with the built-in IR Motion Sensor',
-    releaseDateDisplay: '2019-10-18T07:00:00.000Z',
+    releaseDateDisplay: '2019-10-18',
     myData: {
       played: true,
       physicalCopy: true,
@@ -2390,7 +2390,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Sea of Stars',
     description:
       'Sea of Stars tells the story of two Children of the Solstice who combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fighting off the monstrous creations of an evil alchemist known as The Fleshmancer. • Engaging turn-based combat. Pressing the action button in sync with the animations increases damage output while reducing incoming damage. Along with timed hits, combat features multi-character combo attacks, boosting, and a strategic "locks" system offering options to play with different damage types in order to hinder enemies while they are channeling powerful attacks or spells, all in an immersive take on the genre; no random encounters, no transitions to separate battlefields, and no grinding. • Unshackled traversal. Swim, climb, vault, jump off or hoist up ledges as you traverse seamlessly through the world with a navigation system based on platformer expertise that breaks free from the classic bound-to-the-grid tileset movement. • A story rich adventure. Dozens of original characters and story arcs will take you on a captivating journey. Sometimes epic, sometimes silly, and other times emotional, Sea of Stars does its RPG duty of exploring classic themes of adventure and friendship, while also being chock-full of the unexpected twists and events you’d expect from a Sabotage production. • A world you can touch. There are many ways to hang out in the world of Sea of Stars if you feel the need for a change of pace in your adventures. Sailing, cooking, fishing, stopping by a tavern to listen to a…',
-    releaseDateDisplay: 'Holiday 2022',
+    releaseDateDisplay: 'Holiday 20',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2475,7 +2475,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Shantae: Half-Genie Hero',
     description:
       'Shantae embarks on her first full HD adventure! When a mysterious crime wave sweeps Sequin Land, it’s up to Half-Genie Hero Shantae to save the day! Use Shantae’s devastating Hair-Whip Attack to send monsters flying, or Belly Dance to transform into a more powerful creature form! Topple the masterminds behind each criminal caper and prepare for the ultimate showdown against Shantae’s arch nemesis: the bodacious buccaneer Risky Boots! Key Features: Feel the beat with over 150 different HD Rumble events! Shantae’s trademark moves return! Dance to transform into all-new and classic creatures, or summon magical attacks! Over a dozen dances to discover in all! New Relic System allows players to unlock new powers and customize moves for Shantae and her many forms! Conquer arcade-style action stages that unfold into a full world to explore. Fast action and quest-style exploration rolled into one! When Shantae’s story ends, you’re just getting started! DLC Modes introduce new characters, levels, and bosses! Huge Bosses, humorous dialogue, and the wonderfully weird Shantae cast return, now in fully animated HD!',
-    releaseDateDisplay: '2017-06-08T07:00:00.000Z',
+    releaseDateDisplay: '2017-06-08',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2521,7 +2521,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Shovel Knight: Treasure Trove',
     description:
       "Shovel Knight: Treasure Trove is the full and complete edition of Shovel Knight, a sweeping classic action-adventure game series with awesome gameplay, memorable characters, and an 8-bit retro aesthetic! Run, jump, and battle as Shovel Knight, wielder of the Shovel Blade, in a quest for his lost beloved. Take down the nefarious knights of the Order of No Quarter and confront their menacing leader, The Enchantress. But that’s not everything! Shovel Knight: Treasure Trove also features four additional games all unto themselves! Take control of Plague Knight, Specter Knight, and King Knight on adventures of their own or battle each other in a local four player Showdown. Together, they form a grand and sweeping saga! With Shovel Knight: Treasure Trove, you get it all. Play with a friend in Shovel of Hope's cooperative campaign, test your mettle in full-featured challenge modes, battle together in Showdown, and change the game with Body Swap mode. Uphold the virtues of Shovelry, earn relics and riches, and discover the true meaning of shovel justice! Includes: Shovel Knight: Shovel of Hope – Steel your Shovel Blade and start digging through the adventure that started it all! Jump, battle foes, and discover treasures as you quest to defeat the Order of No Quarter and their vile leader, The Enchantress. Shovel Knight: Plague of Shadows – Prime your potions and become the maniacal alchemist Plague Knight in his adventure to brew the ultimate potion! Combine bomb parts to create custom combinations, discover new items, areas and bosses, and maybe even discover a bubbling…",
-    releaseDateDisplay: '2017-03-03T08:00:00.000Z',
+    releaseDateDisplay: '2017-03-03',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2563,7 +2563,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Sonic Mania',
     description:
       'Experience the ultimate celebration of past and future in Sonic Mania, an all-new 2D Sonic adventure running at a crisp 60FPS with stunning HD retro-style graphics. Multiple playable characters give you the ability to go explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. You can re-live the Sonic of the past with an exciting new twist on classic zones while fighting against new bosses and Dr. Eggman’s evil robot army. Go head to-head with players in Competition Mode or play in Co-Op Mode with a friend. Sonic Mania was developed by Christian Whitehead, Headcannon, and PagodaWest Games in collaboration with Sonic Team. Welcome to Sonic Mania!',
-    releaseDateDisplay: '2017-08-15T07:00:00.000Z',
+    releaseDateDisplay: '2017-08-15',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2605,7 +2605,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Sonic Origins',
     description:
       "Relive the classic collected adventures of Sonic The Hedgehog, Sonic The Hedgehog 2, Sonic 3 & Knuckles, and Sonic CD in the newly remastered Sonic Origins! From the iconic Green Hill Zone to the treacherous Death Egg Robot, you'll speed down memory lane to thwart the sinister plans of Doctor Robotnik in polished high definition! This latest version includes new areas to explore, exclusive animations, and a brand new Anniversary mode! Classic Re-Defined Explore the classic Sonic titles in high-resolution, with all-new opening and ending animations for each title! New Unlockables Complete various missions to collect coins to unlock new content, challenges, and Special Stages through the Museum. Classic and Anniversary Mode Choose to Spin Dash your way through the numerous zones in Classic mode with the game's original resolution and limited lives, or the new Anniversary mode with unlimited lives and revamped fullscreen resolution.",
-    releaseDateDisplay: '2022-06-23T07:00:00.000Z',
+    releaseDateDisplay: '2022-06-23',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2645,7 +2645,7 @@ export const switchGamesOwnedMasterList = [
     title: 'SteamWorld Dig 2',
     description:
       'SteamWorld Dig 2 takes you on a platform mining adventure forged in Metroidvania flames. When an old trading town is struck by mysterious earthquakes, it’s up to a lone steambot and her unlikely companion to uncover what trembling terrors lie beneath. Dig your way underground and explore vivid worlds riddled with treasure, secrets and traps. Combat dangerous enemies at every turn of the underworld’s twisted paths, including shadowy creatures and the haunted remains of an ancient electrical threat. Upgrade your gear to forge deeper into the earth and take on bigger challenges. Swing across large chasms with your Hookshot and fly through caves with the Jet Engine! And finally, learn the truth about your long lost friend...',
-    releaseDateDisplay: '2017-09-21T07:00:00.000Z',
+    releaseDateDisplay: '2017-09-21',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2687,7 +2687,7 @@ export const switchGamesOwnedMasterList = [
     title: 'SteamWorld Heist: Ultimate Edition',
     description:
       'In SteamWorld Heist you command robot pirates in epic tactical shootouts. It’s turn-based strategy with an action twist: By manually aiming your weapons you\'ll pull off insane bullet-bouncing trick shots! SteamWorld Heist: Ultimate Edition is fully optimized for Nintendo Switch™. It comes with "The Outsider" campaign, including a mysterious ally and a shipload of weapons, upgrades, hats, and missions previously only available as DLC. As the captain, you board, loot and shoot your way through enemy spaceships. Overcome the challenges of the vast frontier by upgrading your recruits with unique abilities, weapons – and even stylish hats! Key features: • Strategy focused on skill rather than chance • 15-20 hours of playtime, followed by New Game+ • Kind to newcomers, deep and challenging for veterans • Soundtrack by real-life robot troupe Steam Powered Giraffe • Optional touch controls for ultimate precision • Procedurally generated levels What critics say: 10/10 - USGamer: "Everyone should play it” 9/10 - Nintendo Life: "Excellent" 8.8/10 - IGN: "Stole my heart"',
-    releaseDateDisplay: '2017-12-28T08:00:00.000Z',
+    releaseDateDisplay: '2017-12-28',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2729,7 +2729,7 @@ export const switchGamesOwnedMasterList = [
     title: 'SteamWorld Quest: Hand of Gilgamech',
     description:
       'SteamWorld Quest is the roleplaying card game you’ve been waiting for! Lead a party of aspiring heroes through a beautifully hand-drawn world and intense battles using only your wits and a handful of cards. Take on whatever threat comes your way by crafting your own deck choosing from over 100 unique punch-cards! What awaits you is a luscious treasure chest filled with gold, dragons, vivid worlds, magic, knights in shining armor as well as XP, turn-based battles and all that good RPG stuff! The game’s humorous mix of traditional fantasy and steampunk robots makes for an unforgettable experience with lots of laughs.',
-    releaseDateDisplay: '2019-04-25T07:00:00.000Z',
+    releaseDateDisplay: '2019-04-25',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2771,7 +2771,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Streets of Rage 4',
     description:
       'Amongst the best beat’em up series ever created, jammin’ ‘90s beats and over the top street beating, the iconic series Streets of Rage comes back with a masterful tribute to and revitalization of the classic action fans adore. The all-time classic Streets of Rage, known as Bare Knuckle (ベア・ナックル Bea Nakkuru) in Japan, is a beat ‘em up series known for this timeless gameplay and electronic dance influenced music. Streets of Rage 4 builds upon the classic trilogy’s gameplay with new mechanics, beautiful hand-drawn visuals and a God tier soundtrack. Team up with iconic and brand-new characters Streets of Rage 4 got its iconic characters back: Axel, Blaze, and Adam teaming up with new brother and sister in arms Floyd Iraia and Cherry Hunter. With some brand-new moves and kickass tracks to take a listen, our heroes are ready to dish out beatdowns to a fledgling group of ill-advised criminals in full force. Nostalgia strikes again One of your dreams is coming true. In addition to the 5 new characters, unlock and play your favorite pixelated characters from the previous Streets of Rage games such as Axel, Adam, Blaze, Skate, Max and many more with their own retro SFX, in gorgeous HD hand-drawn urban environments. And for the full nostalgic experience, you will also be able to play with the music of the previous Streets of Rage games! Outstanding Hand-Drawn Visuals Streets of Rage 4 will be the first entry to the core series in 25 years, standing as Axel, Adam or Blaze’s glorious return to…',
-    releaseDateDisplay: '2020-04-30T07:00:00.000Z',
+    releaseDateDisplay: '2020-04-30',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2857,7 +2857,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Super Mario Odyssey™',
     description:
       'Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities—like the power to capture and control objects, animals, and enemies—to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans! Thanks to heroic, hat-shaped Cappy, Mario’s got new moves that’ll make you rethink his traditional run-and-jump gameplay—like cap jump, cap throw, and capture. Use captured cohorts such as enemies, objects, and animals to progress through the game and uncover loads of hidden collectibles. And if you feel like playing with a friend, just pass them a Joy-Con™ controller! Player 1 controls Mario while Player 2 controls Cappy. This sandbox-style 3D Mario adventure—the first since 1996’s beloved Super Mario 64™ and 2002’s Nintendo GameCube™ classic Super Mario Sunshine™—is packed with secrets and surprises, plus exciting new kingdoms to explore.',
-    releaseDateDisplay: '2017-10-27T07:00:00.000Z',
+    releaseDateDisplay: '2017-10-27',
     myData: {
       played: true,
       physicalCopy: true,
@@ -2899,7 +2899,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Super Mario Party™',
     description:
       'The original 4-player Mario Party series board game mode that fans love is back, and your friends and family are invited to the party! Freely walk the board: choose where to move, which Dice Block to roll, and how to win the most Stars in skill-based minigames. Wait till you see the 2 vs 2 mode with grid-based maps, the creative uses of the console, and the series’ first online minigame mode! Test your skills in sets of five minigames with the new mode, Mariothon, and see how you stack up against players across the globe in Online Mariothon*. Whether you’re pedaling tricycles, flipping meat, or who knows what else, you’ll use Joy-Con™ controllers in clever ways across 80 new minigames; some are all-out free-for-alls, others are 2 vs 2, or even 1 vs 3! Toad’s Rec Room lets you pair up two Nintendo Switch™ systems**, which you’ll lay side-by-side on a flat surface like a real tabletop game. That way you can play a mini baseball game, battle tanks in custom arenas, or even see who can match the most bananas by repositioning the systems however you see fit! *Internet access required for online play. For more info, go to support.nintendo.com. **Additional games and systems may be required; sold separately.',
-    releaseDateDisplay: '2018-10-05T07:00:00.000Z',
+    releaseDateDisplay: '2018-10-05',
     myData: {
       played: true,
       physicalCopy: false,
@@ -2982,7 +2982,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Super Mario™ 3D World + Bowser’s Fury',
     description:
       'Pounce and climb through dozens of colorful courses! Multiply the fun by teaming up with or competing against friends locally** or online*** to reach each stage’s goal. Work together to explore and uncover collectibles, or compete for the crown by earning the highest score, making for a friendly frenzy! Mario (and his friends) can use a variety of power-ups like the Super Bell, which grants catlike abilities like climbing and scratching. Power up to complete stages and take the crown! Explore a seamless feline world in the new Bowser’s Fury adventure Free-roaming Super Mario gameplay makes a return in this brand-new adventure. Bowser has become gargantuan and lost all control! Explore Lake Lapcat and its islands, complete objectives to collect Cat Shines, and team up with Bowser Jr. to bring his big, bad dad back to normal. Just watch out for Bowser’s island-wide attacks. New and improved features pounce in The Super Mario 3D World + Bowser’s Fury game features the same lively co-op gameplay, creative levels and power-ups as the original game, but with added improvements. In the Super Mario 3D World part of the game, characters move faster and the dash powers up more quickly. Both adventures support the newly added Snapshot Mode—pause the action to get the perfect shot, apply filters, and decorate with stamps! In Super Mario 3D World, choose from Mario, Luigi, Peach, and Toad and set off to save the Sprixie Kingdom. Each character has a distinct playstyle—Luigi can jump extra high and Peach can float for a short time.…',
-    releaseDateDisplay: '2021-02-12T08:00:00.000Z',
+    releaseDateDisplay: '2021-02-12',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3024,7 +3024,7 @@ export const switchGamesOwnedMasterList = [
     title: 'TOEM',
     description:
       'Set off on a delightful expedition and use your photographic eye to uncover the mysteries of the magical TOEM in this hand-drawn adventure game. Chat with quirky characters, solve their problems by snapping neat photos, and make your way through a relaxing landscape! Key Features Take photos with your camera to solve puzzles and help people! Listen to chill beats and take in your surroundings! Meet quirky characters and help them with their problems!',
-    releaseDateDisplay: '2021-09-17T07:00:00.000Z',
+    releaseDateDisplay: '2021-09-17',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3109,7 +3109,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Tetris® 99',
     description:
       'The Tetris® 99 digital game includes an online mode that is a special offer for Nintendo Switch Online members*. In large-scale, 99-player battles, it’ll take speed, skill, and strategy to knock out the competition and become the last player standing. You can target opponents by sending them Garbage Blocks, but be careful… Your rivals can target you back! Defeat opponents to acquire K.O. Badges that may give you the advantage on future attacks. Nintendo Switch Online members can also look forward to upcoming online events*!',
-    releaseDateDisplay: '2019-02-13T08:00:00.000Z',
+    releaseDateDisplay: '2019-02-13',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3151,7 +3151,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Tetris® Effect: Connected',
     description:
       'Tetris Effect: Connected is Tetris® like you\'ve never seen it, or heard it, or felt it before—an incredibly addictive, unique, and breathtakingly gorgeous reinvention of one of the most popular puzzle games of all time, from the people who brought you the award-winning Rez Infinite and legendary puzzle game Lumines. Music, backgrounds, sounds, special effects—everything, down to the Tetris pieces themselves, pulse, dance, shimmer, and explode in perfect sync with how you\'re playing, making any of the game\'s 30+ stages and 10+ modes something you\'ll want to experience over and over again. A challenge for the mind and a feast for all the senses, Tetris Effect: Connected is the perfect excuse to play Tetris again... and again...and again, and again, and again and again and again and again and again and again and... - Includes Cross-Platform Multiplayer! Players on different platforms can easily join Friend Match rooms with the new Room ID feature. - Spectator Mode is available in Friend Matches. A room can contain up to 8 total people. - Includes the “Zone” mechanic, where players can stop time (and Tetriminos falling) by entering “the Zone” and either get out of a sticky situation that could otherwise lead to “Game Over,” or rack up extra line clears for bonus rewards. - Multiplayer mode "Zone Battle," which shakes up traditional 1-on-1 Tetris gameplay via the time-stopping Zone mechanic made famous in Tetris Effect. - A "Connected" co-op mode, where up to three players can literally connect their Tetris playfields together and play as one. - Over…',
-    releaseDateDisplay: '2021-10-08T07:00:00.000Z',
+    releaseDateDisplay: '2021-10-08',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3233,7 +3233,7 @@ export const switchGamesOwnedMasterList = [
     title: 'The Legend of Zelda™: Breath of the Wild',
     description:
       'Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.',
-    releaseDateDisplay: '2017-03-03T08:00:00.000Z',
+    releaseDateDisplay: '2017-03-03',
     myData: {
       played: true,
       physicalCopy: true,
@@ -3279,7 +3279,7 @@ export const switchGamesOwnedMasterList = [
     title: 'The Witcher 3: Wild Hunt',
     description:
       'A WHOLE WORLD TO EXPLORE. AT HOME AND ON THE GO. Winner of over 250 Game of the Year awards, The Witcher 3: Wild Hunt is a story-driven, open world adventure set in a dark fantasy universe. You are Geralt of Rivia, mercenary monster slayer. At your disposal is every tool of the trade: razor-sharp swords, lethal mixtures, stealthy crossbows, and powerful combat magic. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down the Child of Prophecy, a living weapon that can alter the shape of the world. Features -A gigantic open world to explore. Visit the luxurious and corrupt city of Novigrad, face the frigid cold of the wind-swept Skellige islands, and challenge the dark forces roaming the forlorn, ravaged No Man’s Land. Sail through open seas, dive in search of long lost artifacts or gallop your mount into combat — the world of the Witcher beckons to be explored. -Unparalleled novel-like story spanning over 100 hours of gameplay. With over 100 hours of core and side-quest gameplay, The Witcher 3: Wild Hunt combines the intense, plot-driven pull of traditional RPGs with the freedom of choice only open world games can offer. Make choices and face their consequences to unlock endings tailored to how you play. -Now on Switch — play at home and on the go. Developed to take advantage of everything Nintendo Switch has to offer, the game delivers a truly powerful on-the-go experience.',
-    releaseDateDisplay: '2021-01-28T08:00:00.000Z',
+    releaseDateDisplay: '2021-01-28',
     myData: {
       played: false,
       physicalCopy: false,
@@ -3328,7 +3328,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Transistor',
     description:
       "From the creators of Bastion, Transistor is a sci-fi themed action RPG that invites you to wield an extraordinary weapon of unknown origin as you fight through a stunning futuristic city. Transistor seamlessly integrates thoughtful strategic planning into a fast-paced action experience, melding responsive gameplay and rich atmospheric storytelling. During the course of the adventure, you will piece together the Transistor's mysteries as you pursue its former owners. Key Features: An all-new world from the team that created Bastion Configure the powerful Transistor with thousands of possible Function combinations Action-packed real-time combat fused with a robust strategic planning mode Vibrant hand-painted artwork Original soundtrack changes dynamically as the action unfolds Hours of reactive voiceover create a deep and atmospheric story 'Recursion' option introduces procedural battles after finishing the story",
-    releaseDateDisplay: '2018-11-01T07:00:00.000Z',
+    releaseDateDisplay: '2018-11-01',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3411,7 +3411,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Underhero',
     description:
       'Underhero is an RPG-platformer where the chosen hero has failed, and an underling of the evil king reluctantly takes his place as the new hero. Use timing-based combat to defeat enemies as you venture across the land, face off against quirky bosses, and save the Chestnut Kingdom from your own evil boss, Mr Stitches! Key Features A side-scrolling RPG adventure, complete with lush pixel art and cartoony aesthetics Jump, slash, evade, talk, and bribe your way through a fantasy adventure with a satirical twist Turn-based combat… without the turns! Precisely timed actions are your most powerful weapons Level up, solve puzzles, find secrets in a world full of friends, foes, and weird inhabitants A wonderful original soundtrack composed by Stijn van Wakeren A story full of humor and mysteries awaits!',
-    releaseDateDisplay: '2020-02-27T08:00:00.000Z',
+    releaseDateDisplay: '2020-02-27',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3453,7 +3453,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Valfaris & Slain Double Pack',
     description:
       'Experience two of the most metal games ever made in this gore-drenched double-pack from Big Sugar and developer Steel Mantis. This bundle contains cult hit Slain: Back From Hell, and the critically acclaimed Valfaris. Slain: Back From Hell: A heavy metal inspired arcade combat game with stunning pixel art visuals, challenging old-school gameplay, and a brutal soundtrack. Fight through a Gothic world and face the deadly overlords that reign over each of its cursed realms. Defeat them to continue your quest, or fail and die gruesomely… Valfaris: A 2D action-platformer forged from heavy metal. Wield an array of deadly weaponry as you venture into the mysterious fortress of Valfaris. Uncover the truth of its doomed fate and challenge the arcane evil at its very heart. Brutal combat. Deadly enemies. Amazing pixel art. Savage soundtrack. Get ready to rip the galaxy a new wormhole.',
-    releaseDateDisplay: '2020-04-16T07:00:00.000Z',
+    releaseDateDisplay: '2020-04-16',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3535,7 +3535,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Worms W.M.D',
     description:
       'The Worms are back in their most destructive game yet. With a gorgeous, hand-drawn 2D look, a full arsenal of weapons, crafting, vehicles and buildings, Worms W.M.D is the best Worms experience ever! In Worms W.M.D for Nintendo Switch™, players will be able to feel the full power of all the game’s campaign missions, levels, customisations and updates, including Liberation and the fan favourite Forts Mode whether at home or on the go. And coming first to Nintendo Switch, a whole megaton more! A brand new theme – Space! New Mushroom and Tree forts New customisations including three new outfits and three new gravestones to mourn the passing of your invertebrate pals Worms W.M.D for Nintendo Switch™ includes support for single Joy-Con™ play, local wireless multiplayer as well as local and online multiplayer in hilarious all-out tactical worm warfare. So, wherever you are, grab your Concrete Donkeys, un-pin your Holy-Hand Grenades, and re-cape your Super Sheep as you prepare to rain hell on upon your enemies with Worms at its chaotic best! Key Features: Wonderfully 2D - The best implementation of the Worms formula yet, now with a brand new worm, and gorgeous digitally-painted 2D artwork. Vehicles – Worm warfare gets serious with the introduction of vehicles for the first time in the series. Dominate the landscape in warfare-ready tanks, take to the skies to unleash hell from from above in helicopters and more! Buildings - Gain the tactical advantage by keeping your worms’ heads down and hiding out in a building, protecting them from direct…',
-    releaseDateDisplay: '2017-11-23T08:00:00.000Z',
+    releaseDateDisplay: '2017-11-23',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3582,7 +3582,7 @@ export const switchGamesOwnedMasterList = [
     title: 'XCOM® 2 Collection',
     description:
       'The XCOM® 2 Collection includes the award-winning strategy game XCOM 2, four DLC packs (Resistance Warrior Pack, Anarchy’s Children, Alien Hunters, Shen’s Last Gift) and the War of the Chosen expansion all in one package. Activate any of the additional content (DLCs and the Expansion) or just play the base game. XCOM® 2: Aliens rule Earth, promising a brilliant future for mankind while secretly hiding a sinister agenda. As the leader of a guerrilla force facing impossible odds, you must ignite a global resistance to eliminate the alien threat and save the hum race from extinction. XCOM® 2: War of the Chosen: This expansion adds extensive new content in the fight against ADVENT including new Hero classes, powerful new enemies, as well as new missions, environments and increased depth in strategic gameplay. FOUR DLC PACKS: • Resistance Warrior Pack: Customize your squad of resistance fighters with a set of bonus outfits and head gear, as well as custom armor and face camo. • Anarchy’s Children: This rebellion-themed content pack introduces more than 100 new exotic customizations for the entire arsenal of armors available to your XCOM soldiers. These options are purely cosmetic and do not alter the stats of a soldier. • Alien Hunters: Transform the soldiers of XCOM into an elite alien hunting squad with impressive new weapons and armor to face off against new alien Rulers that will pursue your squad across an entire campaign. Additional cosmetic upgrades to soldiers and the Avenger are included, as well as a new epic mission where Central…',
-    releaseDateDisplay: '2020-05-29T07:00:00.000Z',
+    releaseDateDisplay: '2020-05-29',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3624,7 +3624,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Xenoblade Chronicles 3',
     description:
       'A vast world awaits in Xenoblade Chronicles 3, the next game in the acclaimed RPG series from developer MONOLITHSOFT. Players will step into the roles of protagonists Noah and Mio amid turmoil between the hostile nations of Keves and Agnus. Six characters hailing from those nations will take part in a grand tale with “life” as its central theme. Explore a new world that will connect the futures of both Xenoblade Chronicles and Xenoblade Chronicles 2, launching for Nintendo Switch in September 2022.',
-    releaseDateDisplay: 'September 2022',
+    releaseDateDisplay: 'September ',
     myData: {
       played: true,
       physicalCopy: true,
@@ -3665,7 +3665,7 @@ export const switchGamesOwnedMasterList = [
     title: "Yoku's Island Express",
     description:
       "Yoku has arrived on Mokumana and he’s ready for the easy life, soaking up the sun and delivering parcels on a tropical paradise! However, an ancient Island deity is trapped in a restless sleep - and it’s all down to Yoku to traverse the island using a unique blend of pinball mechanics, platforming and open world exploration, in an amazing adventure to help those in need! Flip and bump our pint-sized protagonist around the stunning hand-painted island on your quest to rebuild the post-office, and wake an old god from its deep slumber. Key Features: OPEN-WORLD PINBALL ADVENTURE: Coupled with its unique pinball platforming play style, Yoku’s Island Express offers non-linear gameplay that gives you the freedom to choose your own path across multiple questlines. WELCOME TO MOKUMANA ISLAND: Seamlessly Explore multiple regions of the island, including tropical beaches, lush jungles, snowy mountains, mysterious caves, and steamy hotsprings! UNLOCK THE AMAZING NEW ABILITIES: Help the friendly locals and earn a range of fantastic new power-ups! Vacuum explosive slugs and wake up sleepy villagers with the Noisemaker! CAPTIVATING STORY: Meet a cast of unforgettable characters across multiple storylines - whilst uncovering the islands deepest secrets. And maybe rebuild the post office too! EPIC BOSS BATTLES: Get ready to take on giant bosses using Yoku's trusty ball to 'deliver' the final blow. BEAUTIFUL ARTWORK: Feast your eyes on the breathtaking hand-painted artwork created by games industry veteran artists.",
-    releaseDateDisplay: '2018-05-29T07:00:00.000Z',
+    releaseDateDisplay: '2018-05-29',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3711,7 +3711,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Yooka-Laylee and the Impossible Lair',
     description:
       'They must run, jump and roll their way through a series of challenging 2D levels, face a puzzling Overworld and rally the Royal Bee-tallion to take down Capital B and his Impossible Lair! Each level offers beautiful, rich visuals with detail and depth. Yooka, Laylee and a whole host of colourful characters (good and bad) are realised in stunning 2.5D The overworld isn’t just a hub to hop from level to level, it provides a whole separate gaming experience! Explore and unlock more 2D levels by completing objectives and puzzles, rescue Royal Bees and find collectibles. Alternate Level States! Think you’ve got a level figured out? Try it in its alternate state! Flip switches in the overworld to create new landscapes. Bee-at the Impossible Lair! Players are free to tackle Capital B’s Impossible Lair at any time; however, they may find it too much of a challenge without the help of the Royal Bee Guards.',
-    releaseDateDisplay: '2019-10-08T07:00:00.000Z',
+    releaseDateDisplay: '2019-10-08',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3757,7 +3757,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Yoshi’s Crafted World™',
     description:
       'Jump into a new Yoshi adventure in a world made of everyday objects—like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items! It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and challenging. Pass a Joy-Con™ controller to a friend to team up as fellow Yoshis. Also, Mellow mode gives Yoshi wings for a breezier experience, which may come in handy! Finding all the flowers, coins, and Poochy Pups is no small feat! For extra protection, suit up in one of the handicraft costumes you can unlock in-game or by tapping select amiibo™ figures!',
-    releaseDateDisplay: '2019-03-29T07:00:00.000Z',
+    releaseDateDisplay: '2019-03-29',
     myData: {
       played: true,
       physicalCopy: true,

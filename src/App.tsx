@@ -66,7 +66,9 @@ function App() {
       if (data[key] === '') delete data[key]
     })
 
-    await client.models.Game.create(data)
+    const res = await client.models.Game.create(switchGamesOwnedMasterList[0])
+
+    console.log(res)
   }
 
   async function deleteGame(id: string) {
@@ -74,6 +76,14 @@ function App() {
       await client.models.Game.delete({ id })
     }
   }
+
+  const update = switchGamesOwnedMasterList.map(g => {
+    const releaseDateDisplay = g.releaseDateDisplay.slice(0, 10)
+
+    return { ...g, releaseDateDisplay }
+  })
+
+  console.log(update)
 
   return (
     <main>
