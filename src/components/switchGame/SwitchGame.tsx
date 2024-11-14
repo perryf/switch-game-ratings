@@ -48,7 +48,7 @@ function SwitchGame(props: SwitchGameProps) {
             alt="box art"
             className="box-art"
           />
-          <ul>
+          <ul className="game-stats-list">
             <li>Genres: {gameInfo.genres.join(', ')}</li>
             <li>Price: ${gameInfo.msrp}</li>
             <li>Number of Players: {gameInfo.numOfPlayers}</li>

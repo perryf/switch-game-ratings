@@ -1254,7 +1254,8 @@ export const switchGamesOwnedMasterList = [
     },
     images: {
       boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/f/fortnite-switch/boxart',
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/f/fortnite-switch/hero',
+      // 'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/f/fortnite-switch/boxart', // not working
       descriptionImage: '',
       horizontalHeaderImage:
         'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/f/fortnite-switch/hero'
