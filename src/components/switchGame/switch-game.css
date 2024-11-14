@@ -1,4 +1,9 @@
+.game-box {
+  height: 100%;
+}
+
 .game-box-inners {
+  height: 100%;
   padding: 10px;
   background: rgb(34, 193, 195);
   background: linear-gradient(
@@ -29,12 +34,11 @@
 }
 
 .game-description-box {
-  max-height: 100px;
+  /* max-height: 100px; */
 }
 
 .game-description {
   /* max-height: 50px; */
-  width: 90%;
   line-height: 1rem;
   font-size: 12px;
   text-overflow: ellipsis;
@@ -51,5 +55,6 @@
 }
 
 .box-art {
-  width: 200px;
+  max-width: 200px;
+  max-height: 300px;
 }

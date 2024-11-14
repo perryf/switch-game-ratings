@@ -4,20 +4,30 @@
   margin-block-end: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
   margin: 8px 0;
-  border: 1px solid black;
-  gap: 1px;
   background-color: black;
   border-radius: 8px;
-  overflow: auto;
+  overflow: hidden;
+  width: 100%;
 }
 
 .switch-game-list-item {
-  background-color: white;
-  padding: 0;
+  width: 50%;
+  border: 0.5px solid black;
 }
 
-.switch-game-list-item:hover {
+/* .switch-game-list-item:hover {
   background: #dadbf9;
+} */
+
+@media (max-width: 800px) {
+  .switch-game-list {
+    flex-direction: column;
+  }
+
+  .switch-game-list-item {
+    width: 100%;
+  }
 }

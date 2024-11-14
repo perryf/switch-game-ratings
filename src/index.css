@@ -6,6 +6,8 @@ body {
   width: 100vw;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 main {
