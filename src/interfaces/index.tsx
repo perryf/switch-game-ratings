@@ -24,7 +24,7 @@ export interface MyData {
   isEmulator: boolean
   physicalCopy: boolean
   played: boolean
-  rating: number // 1 -5
+  rating: number // 1 - 5
   review: string
 }
 
@@ -43,6 +43,7 @@ export interface SwitchGameBasic {
   gameInfo: GameInfo
   myData: MyData
 }
+
 
 export interface SwitchGameType extends SwitchGameBasic {
   id: string

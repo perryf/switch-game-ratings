@@ -1,29 +1,45 @@
 import { useState } from 'react'
-import { SwitchGameType } from '../../interfaces'
+import { SwitchGameBasic } from '../../interfaces'
 import './create-game-form.css'
 
-const newGameInit: SwitchGameType = {
-  datePlayed: '',
-  developedBy: '',
-  genre: [],
-  imagePath: '',
-  imagePathSmall: '',
-  lengthOfGame: '',
-  mood: '', // turn into an array on submit
-  multiplayer: false,
-  multiplayerNumberOfPlayers: 1,
-  multiplayerType: '',
-  name: '',
-  onlineFeatures: false,
-  onlineMultiplayer: false,
-  price: 0,
-  publishedBy: '',
-  rating: 1,
-  recommended: false,
-  releaseDate: '',
-  remake: false,
-  review: '',
-  tags: ''
+const newGameInit: SwitchGameBasic = {
+  title: '',
+  description: '',
+  displayTitle: '',
+  releaseDateDisplay: new Date(),
+  images: {
+    boxart: '',
+    descriptionImage: '',
+    horizontalHeaderImage: ''
+  },
+  gameInfo: {
+    developers: [],
+    engine: '',
+    esrbDescriptors: [],
+    esrbRating: '',
+    fileSize: '',
+    freeToStart: false,
+    generalFilters: [],
+    genres: [],
+    lengthOfGame: '',
+    mood: [],
+    msrp: 0.0,
+    numOfPlayers: '',
+    playerFilters: [],
+    publishers: [],
+    remake: false,
+    slug: ''
+  },
+  myData: {
+    datePlayed: '',
+    datePurchased: '',
+    emulatorSystem: '',
+    isEmulator: false,
+    physicalCopy: false,
+    played: false,
+    rating: 0,
+    review: ''
+  }
 }
 
 const switchGenreList: { name: string; value: string }[] = [
@@ -39,7 +55,7 @@ const switchGenreList: { name: string; value: string }[] = [
 ]
 
 interface CreateGameFormProps {
-  createGame: (a: SwitchGameTypeNew) => void
+  createGame: (a: SwitchGameBasic) => void
 }
 
 function CreateGameForm(props: CreateGameFormProps) {
@@ -47,7 +63,7 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const [isCreating, setIsCreating] = useState<boolean>(false)
 
-  const [newGame, setNewGame] = useState<SwitchGameTypeNew>(newGameInit)
+  const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
 
   const handleUpdateGame = (e: {
     target: {
@@ -88,7 +104,8 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   return (
     <div className="create-form-box">
-      <button onClick={() => setIsCreating(state => !state)}>+ create</button>
+      CREATE BOX
+      {/* <button onClick={() => setIsCreating(state => !state)}>+ create</button>
 
       {isCreating && (
         <form onSubmit={handleGameSubmit} className="create-form">
@@ -288,7 +305,7 @@ function CreateGameForm(props: CreateGameFormProps) {
             Submit
           </button>
         </form>
-      )}
+      )} */}
     </div>
   )
 }
