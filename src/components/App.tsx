@@ -5,7 +5,7 @@ import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
 // import { switchGamesOwnedMasterList } from '../switch-games-owned-details'
-import { SwitchGameTypeNew } from '../interfaces'
+import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 
@@ -33,7 +33,7 @@ function App() {
     return () => sub.unsubscribe()
   }, [])
 
-  async function createGame(newGame: SwitchGameTypeNew) {
+  async function createGame(newGame: SwitchGameBasic) {
     // ? not sure if this is needed -- probably a better way
     // turns comma separated strings into arrays, changes numbers that are technically strings into numbers
     // const data: {
