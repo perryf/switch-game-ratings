@@ -1,15 +1,23 @@
-.game-box {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
+.switch-game-list {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  border: 1px solid black;
+  gap: 1px;
+  background-color: black;
+  border-radius: 8px;
+  overflow: auto;
 }
 
-.game-box p {
-  width: 100%;
-  margin: 0;
-  padding: 10px;
+.switch-game-list-item {
+  background-color: white;
+  padding: 0;
 }
 
-.game-box button {
-  border-radius: 0;
+.switch-game-list-item:hover {
+  background: #dadbf9;
 }

@@ -1,10 +1,4 @@
-interface GameImages {
-  boxart: string
-  descriptionImage: string
-  horizontalHeaderImage: string
-}
-
-interface GameInfo {
+export interface GameInfo {
   developers: string[]
   engine: string
   esrbDescriptors: string[]
@@ -23,7 +17,7 @@ interface GameInfo {
   slug: string
 }
 
-interface MyData {
+export interface MyData {
   datePlayed: string
   datePurchased: string
   emulatorSystem: string
@@ -32,6 +26,12 @@ interface MyData {
   played: boolean
   rating: number // 1 -5
   review: string
+}
+
+export interface GameImages {
+  boxart: string
+  descriptionImage: string
+  horizontalHeaderImage: string
 }
 
 export interface SwitchGameBasic {

@@ -1,12 +1,5 @@
 import { useEffect, useState } from 'react'
 import { generateClient } from 'aws-amplify/data'
-import {
-  getGamesAmerica,
-  getQueriedGamesAmerica,
-  getShopsAmerica,
-  getGamesEurope,
-  getGamesJapan
-} from 'nintendo-switch-eshop'
 // import { StorageImage } from '@aws-amplify/ui-react-storage'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
@@ -24,25 +17,21 @@ interface AllGames {
 
 const client = generateClient<Schema>()
 
+// TODO -> Figure out why manually entered games did not get entered into the DB
 function App() {
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
-  const [allGames, setAllGames] = useState<AllGames[]>([])
+  // const [allGames, setAllGames] = useState<AllGames[]>([])
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
-      next: ({ items }) => setGames([...items]),
+      next: ({ items }) =>
+        setGames(
+          [...items].sort((a, b) => (a.displayTitle < b.displayTitle ? -1 : 1))
+        ),
       error: error => console.warn(error)
     })
     return () => sub.unsubscribe()
   }, [])
-
-  // useEffect(() => {
-  //   getGamesAmerica()
-  //     .then(json => {
-  //       setAllGames(json)
-  //     })
-  //     .catch(err => console.error(err))
-  // }, [])
 
   async function createGame(newGame: SwitchGameTypeNew) {
     // ? not sure if this is needed -- probably a better way
