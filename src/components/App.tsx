@@ -4,7 +4,8 @@ import { generateClient } from 'aws-amplify/data'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
-// import { switchGamesOwnedMasterList } from '../switch-games-owned-details'
+// @ts-ignore
+import { switchGamesOwnedMasterList } from '../../switch-games-owned-details'
 import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
@@ -22,15 +23,23 @@ function App() {
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
   // const [allGames, setAllGames] = useState<AllGames[]>([])
 
+  // useEffect(() => {
+  //   const sub = client.models.Game.observeQuery().subscribe({
+  //     next: ({ items }) =>
+  //       setGames(
+  //         [...items].sort((a, b) => (a.displayTitle < b.displayTitle ? -1 : 1))
+  //       ),
+  //     error: error => console.warn(error)
+  //   })
+  //   return () => sub.unsubscribe()
+  // }, [])
+
   useEffect(() => {
-    const sub = client.models.Game.observeQuery().subscribe({
-      next: ({ items }) =>
-        setGames(
-          [...items].sort((a, b) => (a.displayTitle < b.displayTitle ? -1 : 1))
-        ),
-      error: error => console.warn(error)
-    })
-    return () => sub.unsubscribe()
+    setGames(
+      switchGamesOwnedMasterList.sort((a: any, b: any) =>
+        a.displayTitle < b.displayTitle ? -1 : 1
+      )
+    )
   }, [])
 
   async function createGame(newGame: SwitchGameBasic) {
