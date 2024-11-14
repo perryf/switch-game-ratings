@@ -67,7 +67,7 @@ function App() {
   return (
     <main>
       <h1>Switch Games</h1>
-      {false && <CreateGameForm createGame={createGame} />}
+      {/* {false && <CreateGameForm createGame={createGame} />} */}
       <SwitchGameList deleteGame={deleteGame} games={games} />
     </main>
   )

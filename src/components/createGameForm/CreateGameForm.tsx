@@ -1,106 +1,106 @@
-import { useState } from 'react'
-import { SwitchGameBasic } from '../../interfaces'
+// import { useState } from 'react'
+// import { SwitchGameBasic } from '../../interfaces'
 import './create-game-form.css'
 
-const newGameInit: SwitchGameBasic = {
-  title: '',
-  description: '',
-  displayTitle: '',
-  releaseDateDisplay: new Date(),
-  images: {
-    boxart: '',
-    descriptionImage: '',
-    horizontalHeaderImage: ''
-  },
-  gameInfo: {
-    developers: [],
-    engine: '',
-    esrbDescriptors: [],
-    esrbRating: '',
-    fileSize: '',
-    freeToStart: false,
-    generalFilters: [],
-    genres: [],
-    lengthOfGame: '',
-    mood: [],
-    msrp: 0.0,
-    numOfPlayers: '',
-    playerFilters: [],
-    publishers: [],
-    remake: false,
-    slug: ''
-  },
-  myData: {
-    datePlayed: '',
-    datePurchased: '',
-    emulatorSystem: '',
-    isEmulator: false,
-    physicalCopy: false,
-    played: false,
-    rating: 0,
-    review: ''
-  }
-}
+// const newGameInit: SwitchGameBasic = {
+//   title: '',
+//   description: '',
+//   displayTitle: '',
+//   releaseDateDisplay: new Date(),
+//   images: {
+//     boxart: '',
+//     descriptionImage: '',
+//     horizontalHeaderImage: ''
+//   },
+//   gameInfo: {
+//     developers: [],
+//     engine: '',
+//     esrbDescriptors: [],
+//     esrbRating: '',
+//     fileSize: '',
+//     freeToStart: false,
+//     generalFilters: [],
+//     genres: [],
+//     lengthOfGame: '',
+//     mood: [],
+//     msrp: 0.0,
+//     numOfPlayers: '',
+//     playerFilters: [],
+//     publishers: [],
+//     remake: false,
+//     slug: ''
+//   },
+//   myData: {
+//     datePlayed: '',
+//     datePurchased: '',
+//     emulatorSystem: '',
+//     isEmulator: false,
+//     physicalCopy: false,
+//     played: false,
+//     rating: 0,
+//     review: ''
+//   }
+// }
 
-const switchGenreList: { name: string; value: string }[] = [
-  { name: 'Action', value: 'action' },
-  { name: 'Adventure', value: 'adventure' },
-  { name: 'Fighting', value: 'fighting' }, // TODO -> Better name for this?
-  { name: 'Puzzle', value: 'puzzle' },
-  { name: 'Racing', value: 'racing' },
-  { name: 'First Person Shooter', value: 'fps' },
-  { name: 'RPG', value: 'rpg' },
-  { name: 'Simulation', value: 'simulation' },
-  { name: 'Tactics', value: 'tactics' }
-]
+// const switchGenreList: { name: string; value: string }[] = [
+//   { name: 'Action', value: 'action' },
+//   { name: 'Adventure', value: 'adventure' },
+//   { name: 'Fighting', value: 'fighting' }, // TODO -> Better name for this?
+//   { name: 'Puzzle', value: 'puzzle' },
+//   { name: 'Racing', value: 'racing' },
+//   { name: 'First Person Shooter', value: 'fps' },
+//   { name: 'RPG', value: 'rpg' },
+//   { name: 'Simulation', value: 'simulation' },
+//   { name: 'Tactics', value: 'tactics' }
+// ]
 
-interface CreateGameFormProps {
-  createGame: (a: SwitchGameBasic) => void
-}
+// interface CreateGameFormProps {
+//   createGame: (a: SwitchGameBasic) => void
+// }
 
-function CreateGameForm(props: CreateGameFormProps) {
-  const { createGame } = props
+function CreateGameForm() {
+  // const { createGame } = props
 
-  const [isCreating, setIsCreating] = useState<boolean>(false)
+  // const [isCreating, setIsCreating] = useState<boolean>(false)
 
-  const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
+  // const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
 
-  const handleUpdateGame = (e: {
-    target: {
-      checked?: boolean
-      name: string
-      type: string
-      value: string | number
-    }
-  }) => {
-    const { checked, name, type, value } = e.target
+  // const handleUpdateGame = (e: {
+  //   target: {
+  //     checked?: boolean
+  //     name: string
+  //     type: string
+  //     value: string | number
+  //   }
+  // }) => {
+  //   const { checked, name, type, value } = e.target
 
-    setNewGame(game => {
-      if (type === 'checkbox') {
-        return { ...game, [name]: checked }
-      }
-      return { ...game, [name]: value }
-    })
-  }
+  //   setNewGame(game => {
+  //     if (type === 'checkbox') {
+  //       return { ...game, [name]: checked }
+  //     }
+  //     return { ...game, [name]: value }
+  //   })
+  // }
 
-  const handleUpdateSelectMulti = (e: {
-    target: {
-      name: string
-      selectedOptions: HTMLCollectionOf<HTMLOptionElement>
-    }
-  }) => {
-    const { name, selectedOptions } = e.target
+  // const handleUpdateSelectMulti = (e: {
+  //   target: {
+  //     name: string
+  //     selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+  //   }
+  // }) => {
+  //   const { name, selectedOptions } = e.target
 
-    setNewGame(game => ({
-      ...game,
-      [name]: Array.from(selectedOptions).map((o: any) => o.value)
-    }))
-  }
+  //   setNewGame(game => ({
+  //     ...game,
+  //     [name]: Array.from(selectedOptions).map((o: any) => o.value)
+  //   }))
+  // }
 
-  const handleGameSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    createGame(newGame)
-  }
+  // const handleGameSubmit = (e: { preventDefault: () => void }) => {
+  //   e.preventDefault()
+  //   createGame(newGame)
+  // }
 
   return (
     <div className="create-form-box">

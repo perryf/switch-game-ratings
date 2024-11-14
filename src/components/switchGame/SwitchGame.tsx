@@ -1,9 +1,9 @@
 import {
-  SwitchGameType,
-  GameInfo,
-  MyData,
-  GameImages,
-  SwitchGameBasic
+  SwitchGameType
+  // GameInfo,
+  // MyData,
+  // GameImages,
+  // SwitchGameBasic
 } from '../../interfaces'
 import './switch-game.css'
 
@@ -13,7 +13,7 @@ interface SwitchGameProps {
 
 function SwitchGame(props: SwitchGameProps) {
   const { game } = props
-  const { gameInfo, myData, images } = game
+  const { gameInfo, images } = game
 
   const gameReleaseDate = game.releaseDateDisplay
     ? new Date(game.releaseDateDisplay)
