@@ -75,12 +75,6 @@ function App() {
     }
   }
 
-  const updatedList = switchGamesOwnedMasterList.sort((a, b) => {
-    return a.title < b.title ? -1 : 1
-  })
-
-  console.log(updatedList)
-
   return (
     <main>
       <h1>Switch Games</h1>
