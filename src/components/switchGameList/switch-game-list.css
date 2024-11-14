@@ -1,7 +1,7 @@
 .game-box {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
 }
 
 .game-box p {

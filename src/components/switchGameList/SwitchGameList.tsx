@@ -1,4 +1,5 @@
-import { SwitchGameType } from '../interfaces'
+import { SwitchGameType } from '../../interfaces'
+import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
 
 interface SwitchGameListProps {
@@ -13,7 +14,7 @@ function SwitchGameList(props: SwitchGameListProps) {
     <ul>
       {games.map((game: SwitchGameType) => (
         <li className="game-box" key={game.id}>
-          <p>{game.title}</p>
+          <SwitchGame game={game} />
           {/* <button onClick={() => deleteGame(game.id)}>X</button> */}
         </li>
       ))}

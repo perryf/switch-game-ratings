@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { SwitchGameTypeNew } from '../interfaces'
+import { SwitchGameType } from '../../interfaces'
 import './create-game-form.css'
 
-const newGameInit: SwitchGameTypeNew = {
+const newGameInit: SwitchGameType = {
   datePlayed: '',
   developedBy: '',
   genre: [],
