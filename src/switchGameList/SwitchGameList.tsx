@@ -13,8 +13,8 @@ function SwitchGameList(props: SwitchGameListProps) {
     <ul>
       {games.map((game: SwitchGameType) => (
         <li className="game-box" key={game.id}>
-          <p>{game.name}</p>
-          <button onClick={() => deleteGame(game.id)}>X</button>
+          <p>{game.title}</p>
+          {/* <button onClick={() => deleteGame(game.id)}>X</button> */}
         </li>
       ))}
     </ul>

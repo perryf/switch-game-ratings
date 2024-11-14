@@ -1,24 +1,5 @@
 import { type ClientSchema, a, defineData } from '@aws-amplify/backend'
 
-// const schema = a.schema({
-//   Game: a
-//     .model({
-//       datePlayed: a.date(),
-//       developers: a.string().array(),
-//       genres: a.string().array(),
-//       lengthOfGame: a.string(), // small, medium, large // ***
-//       mood: a.string().array(), // chill, fast-paced, funny, etc // ***
-//       msrp: a.float(),
-//       publishers: a.string(),
-//       rating: a.integer().required(), // 1 -5
-//       releaseDateDisplay: a.date(),
-//       remake: a.boolean(), // ***
-//       review: a.string(), // ***
-//       title: a.string().required()
-//     })
-//     .authorization(allow => [allow.publicApiKey()])
-// })
-
 const schema = a.schema({
   Game: a
     .model({
@@ -40,7 +21,7 @@ const schema = a.schema({
         freeToStart: a.boolean(),
         generalFilters: a.string().array(),
         genres: a.string().array(),
-        lengthOfGame: a.string(),
+        lengthOfGame: a.string(), // enum: short, medium, or long
         mood: a.string().array(), // chill, fast-paced, funny, etc
         msrp: a.float(),
         numOfPlayers: a.string(),

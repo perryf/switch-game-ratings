@@ -11,7 +11,7 @@ import {
 import type { Schema } from '../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
-import { switchGamesOwnedMasterList } from '../switch-games-owned-details'
+// import { switchGamesOwnedMasterList } from '../switch-games-owned-details'
 import { SwitchGameTypeNew } from './interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
@@ -28,17 +28,19 @@ function App() {
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
   const [allGames, setAllGames] = useState<AllGames[]>([])
 
-  // useEffect(() => {
-  //   const sub = client.models.Game.observeQuery().subscribe({
-  //     next: ({ items }) => setGames([...items]),
-  //     error: error => console.warn(error)
-  //   })
-  //   return () => sub.unsubscribe()
-  // }, [])
+  useEffect(() => {
+    const sub = client.models.Game.observeQuery().subscribe({
+      next: ({ items }) => setGames([...items]),
+      error: error => console.warn(error)
+    })
+    return () => sub.unsubscribe()
+  }, [])
 
   // useEffect(() => {
   //   getGamesAmerica()
-  //     .then(json => { setAllGames(json) })
+  //     .then(json => {
+  //       setAllGames(json)
+  //     })
   //     .catch(err => console.error(err))
   // }, [])
 
@@ -66,9 +68,7 @@ function App() {
       if (data[key] === '') delete data[key]
     })
 
-    const res = await client.models.Game.create(switchGamesOwnedMasterList[0])
-
-    console.log(res)
+    // const res = await client.models.Game.create(switchGamesOwnedMasterList[0])
   }
 
   async function deleteGame(id: string) {
@@ -76,14 +76,6 @@ function App() {
       await client.models.Game.delete({ id })
     }
   }
-
-  const update = switchGamesOwnedMasterList.map(g => {
-    const releaseDateDisplay = g.releaseDateDisplay.slice(0, 10)
-
-    return { ...g, releaseDateDisplay }
-  })
-
-  console.log(update)
 
   return (
     <main>
