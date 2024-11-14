@@ -75,24 +75,11 @@ function App() {
     }
   }
 
-  console.log(switchGamesOwnedMasterList)
-
-  const updatedData = switchGamesOwnedMasterList.map((g: any) => {
-    const gameInfo = {
-      ...g.gameInfo,
-      lengthOfGame: '',
-      mood: [],
-    }
-
-    const myData = {
-      ...g.myData,
-      datePlayed: ''
-    }
-
-    return { ...g, gameInfo, myData }
+  const updatedList = switchGamesOwnedMasterList.sort((a, b) => {
+    return a.title < b.title ? -1 : 1
   })
 
-  console.log(updatedData)
+  console.log(updatedList)
 
   return (
     <main>

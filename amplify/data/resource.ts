@@ -6,14 +6,13 @@ const schema = a.schema({
       datePlayed: a.date(),
       developers: a.string().array(),
       genres: a.string().array(),
-      imagePath: a.string(),
-      imagePathSmall: a.string(),
+      // imagePath: a.string(),
+      // imagePathSmall: a.string(),
       lengthOfGame: a.string(), // small, medium, large
-      mood: a.string().array(), // chill, fast-paced, etc // ? maybe just include under tags?
-      multiplayer: a.boolean(),
-      multiplayerNumberOfPlayers: a.integer(),
-      multiplayerType: a.string().array(), // co-op, partial co-op, versus, online, couch // ? maybe don't include this and just have info in onlineMultiplayer
-      name: a.string().required(),
+      mood: a.string().array(), // chill, fast-paced, funny, etc 
+      // multiplayer: a.boolean(),
+      // multiplayerNumberOfPlayers: a.integer(),
+      // multiplayerType: a.string().array(), // co-op, partial co-op, versus, online, couch // ? maybe don't include this and just have info in onlineMultiplayer
       onlineFeatures: a.boolean(),
       onlineMultiplayer: a.boolean(),
       msrp: a.float(),
@@ -23,7 +22,7 @@ const schema = a.schema({
       releaseDate: a.date(),
       remake: a.boolean(),
       review: a.string(),
-      tags: a.string().array() // things like "indie", "funny" etc
+      title: a.string().required(),
     })
     .authorization(allow => [allow.publicApiKey()])
 })

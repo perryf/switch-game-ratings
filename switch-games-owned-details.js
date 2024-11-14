@@ -31,6 +31,39 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
+    title: 'Animal Well',
+    description:
+      'Explore the intricate labyrinth and uncover its many secrets. Hatch from your flower and spelunk through the beautiful and sometimes haunting world of Animal Well, a pixelated wonder rendered in intricate audio and visual detail.',
+    programer: ['Billy Basso'],
+    releaseDateDisplay: '2024-05-09',
+    myData: {
+      title: 'Animal Well',
+      dateBought: '06/28/2024',
+      paid: 23.62,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Shared Memory'],
+      esrbRating: 'Everyone',
+      msrp: 24.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Bigmode'],
+      slug: 'animal-well-switch',
+      genres: ['Platformer', 'Adventure', 'Puzzle'],
+      fileSize: '84 MB'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_500/ncom/software/switch/70010000065090/desc/0aab2d190d454b056e1f95a3a4d7c1e34d19379061ac3d4331c337cfb68cb7d9',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1065/b_white/f_auto/q_auto/ncom/software/switch/70010000065090/63c78c2b7e586401115db25168c5e13054b9fdd261b16d9b65d0f23a68a8299f',
+      descriptionImage: ''
+    }
+  },
+  {
     title: 'Axiom Verge 2',
     description:
       'The long awaited sequel to Axiom Verge, Axiom Verge 2 expands on the universe with completely new characters, abilities, and gameplay.',
@@ -59,6 +92,39 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Thomas Happ Games'],
       slug: 'axiom-verge-2-switch',
       genres: ['Adventure', 'Action', 'Platformer', 'Other']
+    }
+  },
+  {
+    title: 'Balatro',
+    description:
+      'The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-pumping, outrageous combos.',
+    releaseDateDisplay: '2024-02-20',
+    myData: {
+      title: 'Balatro',
+      dateBought: '10/18/2024',
+      paid: 13.31,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['LocalThunk'],
+      esrbRating: 'Everyone 10+',
+      msrp: 14.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Playstack'],
+      slug: 'balatro-switch',
+      genres: ['Simulation', 'Strategy'],
+      fileSize: '156 MB',
+      engine: 'Löve'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000072051/desc/248eef348b55b813c04d87bc97625a5b78771b8d3634680e7614eb6752753fda',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000072051/3e3e6ff91e23f38879a88db3b4e4de64e177e796789033519dca60af22394f81',
+      descriptionImage: ''
     }
   },
   {
@@ -94,6 +160,40 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Team17'],
       slug: 'blasphemous-switch',
       genres: ['Indie', 'Role-Playing', 'Platformer', 'Action', 'Adventure']
+    }
+  },
+  {
+    title: 'Blasphemous 2',
+    description:
+      'Awakened in a strange new land, and displaced from his final resting place, The Penitent One is thrust back into the endless cycle of life, death, and resurrection, with no other option than to explore this perilous new world and uncover its long-forgotten secrets.',
+    releaseDateDisplay: '2023-08-24',
+    myData: {
+      title: 'Blasphemous 2',
+      dateBought: '11/09/2023',
+      paid: 20.66,
+      played: false,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['The Game Kitchen'],
+      esrbRating: 'Mature',
+      msrp: 29.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Team17'],
+      slug: 'blasphemous-2-switch',
+      genres: ['Role-playing', 'Platformer', 'Action', 'Adventure'],
+      fileSize: '2.6 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/3/3c/Blasphemous_2_cover_art.jpg',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_900/ncom/software/switch/70010000062593/8a4e4212491d4f69d89f8b6d3c14250edcf3747b70148fbf1aea3ae69b3b9ebd',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_500/ncom/software/switch/70010000062593/8a4e4212491d4f69d89f8b6d3c14250edcf3747b70148fbf1aea3ae69b3b9ebd'
     }
   },
   {
@@ -215,6 +315,42 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
+    title: 'CHRONO CROSS: THE RADICAL DREAMERS EDITION',
+    description:
+      '"CHRONO CROSS: THE RADICAL DREAMERS EDITION" is a remaster of "CHRONO CROSS". The 3D models have been upgraded to HD, new illustrations have added, and all kinds of new features are now included. Additionally, the game that formed the bedrock of the story, "RADICAL DREAMERS - Le Trésor Interdit -", is included in this edition! CHRONO CROSS is an RPG that transcends time and space, unfolding across two interlinked parallel worlds. With over 40 party members to meet, people and dimensions will intertwine in this epic drama about the planet itself. New Features in the Remastered Edition ・3D models converted to HD ・Refined character illustrations ・Higher-quality background music ・Switch enemy encounters on or off ・Background filter feature ・Battle enhancement features to make combat easier ・Auto-battle function ・Switch between imitation pixel font and HD font ・Change screen resolution RADICAL DREAMERS - Le Trésor Interdit - "RADICAL DREAMERS - Le Trésor Interdit -" was released in 1996 as a standalone game, and has not been easily accesible for play in recent years. Players can experience the story that went on to become the basis for CHRONO CROSS in an audio novel format. Here, an alternate story of the RADICAL DREAMERS, a group of three thieves - Serge, Kid and Magil - unfolds in a parallel world. *You can switch between the new and old versions of the 3D models and illustrations. *The 3D models, illustrations, font and background filter cannot be toggled separately. They will all be switched together.',
+    releaseDateDisplay: '2022-04-07T07:00:00.000Z',
+    myData: {
+      dateBought: '03/12/2023',
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/c/chrono-cross-the-radical-dreamers-edition-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['SQUARE ENIX'],
+      esrbDescriptors: [
+        'Blood',
+        'Violence',
+        'Use of Tobacco',
+        'Suggestive Themes',
+        'Partial Nudity'
+      ],
+      esrbRating: 'Teen',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 19.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['SQUARE ENIX'],
+      slug: 'chrono-cross-the-radical-dreamers-edition-switch',
+      genres: ['Role-Playing']
+    }
+  },
+  {
     title: 'Cat Quest + Cat Quest II Pawsome Pack',
     description:
       'CAT QUEST Cat Quest is an open world RPG set in the pawsome world of cats! Leap into a grand adventure in purrsuit of the evil Drakoth and your catnapped sister! Explore Felingard\'s huge overworld map, risk life and limb delving into dungeons for epic loot, and lend a paw to a furry cast of characters in a flurry of side quests. Combat in Cat Quest takes place entirely in real time, allowing you to get close to enemies with a slash of your blade, dodge roll to avoid a counter-attack, and then finish them off with powerful magic! Wield the ancient spells of Lightnyan, Flamepurr, and Healpaw to vanquish your foes! (Fur real!) Outfit your catventurer with a whole basket of equipment! Prefurr casting spells? Don an arcane hood, robes, and a staff to bolster your mana reserves! Want to protect yourself from attack? Deck out your catventurer with chainmail armor to increase your health and provide an extra level of protection. Weapons, armor, and spells can be mixed and matched to create the purrfect combinations for your playstyle! The world of Felingard is littered with interesting places and people! Discover a possessed town whose residents lust for obscene amounts of meat, assist the mages Mewlin and Meowgan in their search to break a magic seal, and locate someone\'s missing delivery of "House of Parchments" and "The Pouncing Dead". Exploration is one of the main scratching posts of Cat Quest, and with locations such as Bermewda\'s Triangle, the Furbidden Fields, and Pawt City to explore,…',
@@ -312,39 +448,36 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'CHRONO CROSS: THE RADICAL DREAMERS EDITION',
+    title: 'Cult of the Lamb',
     description:
-      '"CHRONO CROSS: THE RADICAL DREAMERS EDITION" is a remaster of "CHRONO CROSS". The 3D models have been upgraded to HD, new illustrations have added, and all kinds of new features are now included. Additionally, the game that formed the bedrock of the story, "RADICAL DREAMERS - Le Trésor Interdit -", is included in this edition! CHRONO CROSS is an RPG that transcends time and space, unfolding across two interlinked parallel worlds. With over 40 party members to meet, people and dimensions will intertwine in this epic drama about the planet itself. New Features in the Remastered Edition ・3D models converted to HD ・Refined character illustrations ・Higher-quality background music ・Switch enemy encounters on or off ・Background filter feature ・Battle enhancement features to make combat easier ・Auto-battle function ・Switch between imitation pixel font and HD font ・Change screen resolution RADICAL DREAMERS - Le Trésor Interdit - "RADICAL DREAMERS - Le Trésor Interdit -" was released in 1996 as a standalone game, and has not been easily accesible for play in recent years. Players can experience the story that went on to become the basis for CHRONO CROSS in an audio novel format. Here, an alternate story of the RADICAL DREAMERS, a group of three thieves - Serge, Kid and Magil - unfolds in a parallel world. *You can switch between the new and old versions of the 3D models and illustrations. *The 3D models, illustrations, font and background filter cannot be toggled separately. They will all be switched together.',
-    releaseDateDisplay: '2022-04-07T07:00:00.000Z',
+      'Crusade through dungeons, slay heretics, build your cult, and seek new powers together. But there’s more. As well as the addition of co-op play, the Unholy Alliance expansion also adds new tarot cards, relics, buildings, fleeces, follower traits, follower quests, and other secrets to discover!',
+    releaseDateDisplay: '2022-08-11',
     myData: {
-      dateBought: '03/12/2023',
+      title: 'Cult of the Lamb: Cultist Edition',
+      dateBought: '12/22/2023',
+      paid: 19,
       played: true,
-      physicalCopy: false
-    },
-    images: {
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/c/chrono-cross-the-radical-dreamers-edition-switch/hero',
-      descriptionImage: ''
+      physicalCopy: false,
+      missingFromAPI: true
     },
     gameInfo: {
-      developers: ['SQUARE ENIX'],
-      esrbDescriptors: [
-        'Blood',
-        'Violence',
-        'Use of Tobacco',
-        'Suggestive Themes',
-        'Partial Nudity'
-      ],
+      developers: ['Massive Monster'],
       esrbRating: 'Teen',
-      franchises: [],
-      freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 19.99,
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      publishers: ['SQUARE ENIX'],
-      slug: 'chrono-cross-the-radical-dreamers-edition-switch',
-      genres: ['Role-Playing']
+      msrp: 24.99,
+      numOfPlayers: 'up to 2 players',
+      playerFilters: ['1+', '2+'],
+      publishers: ['Devolver Digital'],
+      slug: 'cult-of-the-lamb-switch',
+      genres: ['Action', 'Adventure', 'Strategy'],
+      fileSize: '1.9 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000047973/desc/e71c46a6b89539fd47a800cd522b5e094a89c56cbd55c19352c4e37898fc6290',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000047973/745538c3639a379f6124349c298e94d6a972a554d1e754ace8b04d4566f508e8',
+      descriptionImage: ''
     }
   },
   {
@@ -382,6 +515,111 @@ export const switchGamesOwnedMasterList = [
       publishers: ['BANDAI NAMCO Entertainment'],
       slug: 'dark-souls-remastered-switch',
       genres: ['Adventure', 'Action', 'Role-Playing', 'Multiplayer']
+    }
+  },
+  {
+    title: 'DOOM (1993)',
+    description:
+      'Celebrate DOOM’s 25th anniversary with the re-release of the original DOOM (1993). First released in 1993, DOOM introduced millions of gamers to the fast-paced, white-knuckle, demon-slaying action the franchise is known for. Experience the classic demon-blasting fun that popularized the genre home or on-the-go. DOOM (1993) includes: - The expansion, Episode IV: Thy Flesh Consumed, with 9 additional action-packed levels - Local 4 player deathmatch - Local 4 player co-op',
+    releaseDateDisplay: '2019-07-26T07:00:00.000Z',
+    myData: {
+      dateBought: '03/13/2024',
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-1993-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-1993-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: [],
+      esrbDescriptors: ['Blood and Gore', 'Violence'],
+      esrbRating: 'Mature',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
+      msrp: 4.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['Bethesda Softworks'],
+      slug: 'doom-1993-switch',
+      genres: ['First-Person', 'Action']
+    }
+  },
+  {
+    title: 'DOOM® Eternal',
+    description:
+      'DOOM® Eternal, the award-winning game and “one of the best first-person shooters ever” according to GameRevolution, is coming to Nintendo Switch. Developed by id Software and Panic Button, DOOM Eternal is the direct sequel to DOOM®, winner of The Game Awards’ Best Action Game of 2016. Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear…is you. Features: Slayer Threat Level at Maximum Experience the ultimate combination of speed and power in DOOM Eternal—the next leap in first-person combat powered by idTech 7. Armed with a shoulder-mounted flamethrower, wrist-mounted blade, upgraded guns, new abilities and more, you’re the greatest demon slayer in existence. Push-Forward Combat Take what you need from your enemies. Glory Kill demons to recover health, incinerate them to receive armor and cut them down with the Chainsaw to stock up on ammo. Motion Aiming Ready Improve your aim with a control option that allows you to aim using gyro controls. The option can be used in conjunction with the control stick for the perfect blend of immersion and accuracy. Enter BATTLEMODE A new 2 versus 1 multiplayer experience pits a fully-armed DOOM Slayer against two player-controlled demons, fighting it out in a best-of-five round match of intense first-person combat.',
+    releaseDateDisplay: '2020-12-08T08:00:00.000Z',
+    myData: {
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-eternal-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-eternal-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['id Software'],
+      esrbDescriptors: ['Blood and Gore', 'Intense Violence', 'Users Interact'],
+      esrbRating: 'Mature',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
+      msrp: 59.99,
+      numOfPlayers: 'up to 3 players',
+      playerFilters: ['1+', '2+', '3+'],
+      publishers: ['Bethesda'],
+      slug: 'doom-eternal-switch',
+      genres: ['Action']
+    }
+  },
+  {
+    title: 'DRAGON QUEST® XI S: Echoes of an Elusive Age – Definitive Edition',
+    description:
+      'You are the Luminary, the hunted hero who will protect the land from destruction in the latest RPG from the iconic DRAGON QUEST® series. With a ragtag band of adventurers, you’ll engage in well-balanced, turn-based battles and embark on quests across the kingdom of Erdrea. Forge gear, develop party members’ skills, and alter their outfits without changing gear in this edition of the game! This version also lets you ride and attack with monsters on the field to earn experience points, as well as change between HD or 16-bit visuals, symphonic or synth music, and English or Japanese audio. Complete the tale with new character-focused stories, and travel to past DRAGON QUEST worlds! Across the land, you’ll meet the mysterious Tockles—creatures that allow you to visit 2D, 16-bit versions of areas from popular entries in the series like DRAGON QUEST IV and DRAGON QUEST VIII! It’s fun to see these classic worlds reimagined in retro style, meshing perfectly with the main game’s 2D mode. Like all past DRAGON QUEST games, this one’s character designs are based on the signature style of famed artist Akira Toriyama. Paired with the voiced dialogue, the rich personalities of your most loyal companions and fiercest enemies are brought to life, so you can fully immerse yourself in this quest to discover the Luminary’s true heritage and awaken your power. For a greater challenge, start the game with the Draconian Quest setting, and capture your favorite moments with Photo Mode!',
+    releaseDateDisplay: '2019-09-27T07:00:00.000Z',
+    myData: {
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['SQUARE ENIX'],
+      esrbDescriptors: [
+        'Simulated Gambling',
+        'Crude Humor',
+        'Use of Alcohol',
+        'Suggestive Themes',
+        'Fantasy Violence',
+        'Mild Blood'
+      ],
+      esrbRating: 'Teen',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: [
+        'DLC available',
+        'Demo available',
+        'Nintendo Switch Online compatible'
+      ],
+      msrp: 49.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Nintendo'],
+      slug: 'dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch',
+      genres: ['Adventure', 'Role-Playing']
     }
   },
   {
@@ -481,38 +719,6 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'DOOM (1993)',
-    description:
-      'Celebrate DOOM’s 25th anniversary with the re-release of the original DOOM (1993). First released in 1993, DOOM introduced millions of gamers to the fast-paced, white-knuckle, demon-slaying action the franchise is known for. Experience the classic demon-blasting fun that popularized the genre home or on-the-go. DOOM (1993) includes: - The expansion, Episode IV: Thy Flesh Consumed, with 9 additional action-packed levels - Local 4 player deathmatch - Local 4 player co-op',
-    releaseDateDisplay: '2019-07-26T07:00:00.000Z',
-    myData: {
-      dateBought: '03/13/2024',
-      played: true,
-      physicalCopy: false
-    },
-    images: {
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-1993-switch/boxart',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-1993-switch/hero',
-      descriptionImage: ''
-    },
-    gameInfo: {
-      developers: [],
-      esrbDescriptors: ['Blood and Gore', 'Violence'],
-      esrbRating: 'Mature',
-      franchises: [],
-      freeToStart: false,
-      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
-      msrp: 4.99,
-      numOfPlayers: 'up to 4 players',
-      playerFilters: ['1+', '2+', '3+', '4+'],
-      publishers: ['Bethesda Softworks'],
-      slug: 'doom-1993-switch',
-      genres: ['First-Person', 'Action']
-    }
-  },
-  {
     title: 'Doomsday Vault',
     description:
       'Rescue Earth’s precious plant life. In your robotic suit navigate a flooded city, break into an underground lair and explore ancient pyramids. Collect seeds and return them to the safety of the Vault. Nurture seeds to grow new sustainable crops. Unlock additional tools and items to customize your suit. Featuring: Adventure missions to find precious seeds for the Vault Challenge mode with races, mazes, scores and leaderboards Vault to nurture seeds into crops Challenging puzzles and gameplay to suit all ages and experience Engaging 3D environments Play as the iconic DV Robot character Robot suit customization Beautiful soundtrack and sound effects Helpful plant information',
@@ -542,76 +748,35 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'DOOM® Eternal',
+    title: 'ENDER LILIES: Quietus of the Knights',
     description:
-      'DOOM® Eternal, the award-winning game and “one of the best first-person shooters ever” according to GameRevolution, is coming to Nintendo Switch. Developed by id Software and Panic Button, DOOM Eternal is the direct sequel to DOOM®, winner of The Game Awards’ Best Action Game of 2016. Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear…is you. Features: Slayer Threat Level at Maximum Experience the ultimate combination of speed and power in DOOM Eternal—the next leap in first-person combat powered by idTech 7. Armed with a shoulder-mounted flamethrower, wrist-mounted blade, upgraded guns, new abilities and more, you’re the greatest demon slayer in existence. Push-Forward Combat Take what you need from your enemies. Glory Kill demons to recover health, incinerate them to receive armor and cut them down with the Chainsaw to stock up on ammo. Motion Aiming Ready Improve your aim with a control option that allows you to aim using gyro controls. The option can be used in conjunction with the control stick for the perfect blend of immersion and accuracy. Enter BATTLEMODE A new 2 versus 1 multiplayer experience pits a fully-armed DOOM Slayer against two player-controlled demons, fighting it out in a best-of-five round match of intense first-person combat.',
-    releaseDateDisplay: '2020-12-08T08:00:00.000Z',
+      'Story: Long ago, in the distant reaches of Land\'s End... The unforeseen descent of the ""Rain"" transformed all living things into frenzied undead monstrosities known as the Blighted. Faced with a calamity far beyond their understanding with no recourse, the kingdom fell into ruin, with no end in sight to the accursed rain. Meanwhile, in the remnants of this ruined world, a young girl named Lily awakens in the depths of a church. About This Game: ""ENDER LILIES"" is a dark fantasy 2D action RPG that sees the players try to unravel the mystery of the kingdom destroyed by the \'""Rain of Death."" Players will journey through the sprawling and hauntedly beautiful locations of ""Land’s End,"" including a submerged forest, a sealed-off contaminated underground cavern, and a grand castle. In the many places you will visit on this sorrowful adventure, formidable bosses await that will gladly claim your life given even the slightest chance. Defeat these powerful foes and release them from their unending curse to turn them into allies. Overcome the challenges before you and search for the truth with powerful knights at your side. Key Features: ■ Immersive Exploration - An expansive and fully traversable map, open to numerous strategies. - Exploration will uncover many mysteries and discoveries to draw you in. - Complete freedom in which path to take and which bosses to confront. ■ Tense Battles and a Rewarding Adventure - Enjoy tense battles, where a wavering focus can lead one to a swift death. - Employ evasive maneuvers along with your…',
+    releaseDateDisplay: '2021-06-21T07:00:00.000Z',
     myData: {
+      dateBought: '11/09/2023',
       played: true,
       physicalCopy: false
     },
     images: {
       boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-eternal-switch/boxart',
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/e/ender-lilies-quietus-of-the-knights-switch/box_eShop',
       horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-eternal-switch/hero',
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/e/ender-lilies-quietus-of-the-knights-switch/hero',
       descriptionImage: ''
     },
     gameInfo: {
-      developers: ['id Software'],
-      esrbDescriptors: ['Blood and Gore', 'Intense Violence', 'Users Interact'],
-      esrbRating: 'Mature',
-      franchises: [],
-      freeToStart: false,
-      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
-      msrp: 59.99,
-      numOfPlayers: 'up to 3 players',
-      playerFilters: ['1+', '2+', '3+'],
-      publishers: ['Bethesda'],
-      slug: 'doom-eternal-switch',
-      genres: ['Action']
-    }
-  },
-  {
-    title: 'DRAGON QUEST® XI S: Echoes of an Elusive Age – Definitive Edition',
-    description:
-      'You are the Luminary, the hunted hero who will protect the land from destruction in the latest RPG from the iconic DRAGON QUEST® series. With a ragtag band of adventurers, you’ll engage in well-balanced, turn-based battles and embark on quests across the kingdom of Erdrea. Forge gear, develop party members’ skills, and alter their outfits without changing gear in this edition of the game! This version also lets you ride and attack with monsters on the field to earn experience points, as well as change between HD or 16-bit visuals, symphonic or synth music, and English or Japanese audio. Complete the tale with new character-focused stories, and travel to past DRAGON QUEST worlds! Across the land, you’ll meet the mysterious Tockles—creatures that allow you to visit 2D, 16-bit versions of areas from popular entries in the series like DRAGON QUEST IV and DRAGON QUEST VIII! It’s fun to see these classic worlds reimagined in retro style, meshing perfectly with the main game’s 2D mode. Like all past DRAGON QUEST games, this one’s character designs are based on the signature style of famed artist Akira Toriyama. Paired with the voiced dialogue, the rich personalities of your most loyal companions and fiercest enemies are brought to life, so you can fully immerse yourself in this quest to discover the Luminary’s true heritage and awaken your power. For a greater challenge, start the game with the Draconian Quest setting, and capture your favorite moments with Photo Mode!',
-    releaseDateDisplay: '2019-09-27T07:00:00.000Z',
-    myData: {
-      played: true,
-      physicalCopy: false
-    },
-    images: {
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch/boxart',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch/hero',
-      descriptionImage: ''
-    },
-    gameInfo: {
-      developers: ['SQUARE ENIX'],
-      esrbDescriptors: [
-        'Simulated Gambling',
-        'Crude Humor',
-        'Use of Alcohol',
-        'Suggestive Themes',
-        'Fantasy Violence',
-        'Mild Blood'
-      ],
+      developers: [],
+      esrbDescriptors: ['Blood', 'Violence'],
       esrbRating: 'Teen',
       franchises: [],
       freeToStart: false,
-      generalFilters: [
-        'DLC available',
-        'Demo available',
-        'Nintendo Switch Online compatible'
-      ],
-      msrp: 49.99,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 24.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
-      publishers: ['Nintendo'],
-      slug: 'dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch',
-      genres: ['Adventure', 'Role-Playing']
+      publishers: ['Binary Haze Interactive'],
+      slug: 'ender-lilies-quietus-of-the-knights-switch',
+      genres: ['Indie', 'Adventure', 'Action', 'Role-Playing']
     }
   },
   {
@@ -653,35 +818,34 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'ENDER LILIES: Quietus of the Knights',
+    title: 'Fall Guys',
     description:
-      'Story: Long ago, in the distant reaches of Land\'s End... The unforeseen descent of the ""Rain"" transformed all living things into frenzied undead monstrosities known as the Blighted. Faced with a calamity far beyond their understanding with no recourse, the kingdom fell into ruin, with no end in sight to the accursed rain. Meanwhile, in the remnants of this ruined world, a young girl named Lily awakens in the depths of a church. About This Game: ""ENDER LILIES"" is a dark fantasy 2D action RPG that sees the players try to unravel the mystery of the kingdom destroyed by the \'""Rain of Death."" Players will journey through the sprawling and hauntedly beautiful locations of ""Land’s End,"" including a submerged forest, a sealed-off contaminated underground cavern, and a grand castle. In the many places you will visit on this sorrowful adventure, formidable bosses await that will gladly claim your life given even the slightest chance. Defeat these powerful foes and release them from their unending curse to turn them into allies. Overcome the challenges before you and search for the truth with powerful knights at your side. Key Features: ■ Immersive Exploration - An expansive and fully traversable map, open to numerous strategies. - Exploration will uncover many mysteries and discoveries to draw you in. - Complete freedom in which path to take and which bosses to confront. ■ Tense Battles and a Rewarding Adventure - Enjoy tense battles, where a wavering focus can lead one to a swift death. - Employ evasive maneuvers along with your…',
-    releaseDateDisplay: '2021-06-21T07:00:00.000Z',
+      'Fall Guys is a free, cross-platform massively multiplayer party royale game. Clumsily compete in absurd obstacle courses with friends or build your very own chaotic course to share with the community.',
+    releaseDateDisplay: '2022-06-21',
     myData: {
-      dateBought: '11/09/2023',
+      title: 'Fall Guys',
       played: true,
-      physicalCopy: false
-    },
-    images: {
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/e/ender-lilies-quietus-of-the-knights-switch/box_eShop',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/e/ender-lilies-quietus-of-the-knights-switch/hero',
-      descriptionImage: ''
+      physicalCopy: false,
+      missingFromAPI: true
     },
     gameInfo: {
-      developers: [],
-      esrbDescriptors: ['Blood', 'Violence'],
-      esrbRating: 'Teen',
-      franchises: [],
-      freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 24.99,
-      numOfPlayers: '1 player',
+      developers: ['Mediatonic'],
+      esrbRating: 'Everyone',
+      msrp: 0,
+      numOfPlayers: 'up to 60 players',
       playerFilters: ['1+'],
-      publishers: ['Binary Haze Interactive'],
-      slug: 'ender-lilies-quietus-of-the-knights-switch',
-      genres: ['Indie', 'Adventure', 'Action', 'Role-Playing']
+      publishers: ['Devolver Digital', 'Epic Games'],
+      slug: 'fall-guys-switch',
+      genres: ['Multiplayer', 'Party'],
+      fileSize: '2.3 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart: '',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000042975/937afd0c84319831009b44c93369faf0a2c926a454809f73523df9bfb6cf6233',
+      descriptionImage:
+        'https://upload.wikimedia.org/wikipedia/en/d/d4/Fall_Guys_Post_F2P_keyart.png'
     }
   },
   {
@@ -718,6 +882,36 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Bedtime Digital'],
       slug: 'figment-switch',
       genres: ['Adventure', 'Action', 'Puzzle']
+    }
+  },
+  {
+    title: 'Fire Emblem: The Blazing Blade',
+    description: '',
+    releaseDateDisplay: '2003-04-25',
+    myData: {
+      title: 'Fire Emblem: The Blazing Blade',
+      played: true,
+      physicalCopy: false,
+      emulator: true,
+      emulatorSystem: 'Gameboy Advanced',
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Intelligent Systems'],
+      esrbRating: 'Everyone',
+      msrp: 0,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Nintendo'],
+      slug: '',
+      genres: ['Strategy', 'Role-Playing'],
+      fileSize: ''
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/e/e2/GBA_Fire_Emblem_Box.jpg',
+      horizontalHeaderImage: '',
+      descriptionImage: ''
     }
   },
   {
@@ -786,6 +980,70 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Epic Games'],
       slug: 'fortnite-switch',
       genres: ['Action', 'Strategy', 'Other']
+    }
+  },
+  {
+    title: 'Gato Roboto',
+    description: '',
+    releaseDateDisplay: '2019-05-30',
+    myData: {
+      title: 'Gato Roboto',
+      dateBought: '04/17/2023',
+      paid: 1.33,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Doinksoft'],
+      esrbRating: 'Everyone',
+      msrp: 7.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Devolver Digital'],
+      slug: 'gato-roboto-switch',
+      genres: ['Arcade', 'Action', 'Adventure', 'Platformer'],
+      fileSize: '916 MB',
+      engine: 'GameMaker Studio'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/gato-roboto-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000013632/396e84d119ad91cc9e998e17e1a8e56f0f00111a1479bcd353cde674aa930444',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/g/gato-roboto-switch/description-image'
+    }
+  },
+  {
+    title: 'Gris',
+    description:
+      'Gris is a hopeful young girl lost in her own world, dealing with a painful experience in her life. Her journey through sorrow is manifested in her dress, which grants new abilities to better navigate her faded reality. As the story unfolds, Gris will grow emotionally and see her world in a different way, revealing new paths to explore using her new abilities.',
+    releaseDateDisplay: '2018-12-13',
+    myData: {
+      title: 'Gris',
+      played: true,
+      physicalCopy: false
+    },
+    gameInfo: {
+      developers: ['Nomada Studio'],
+      esrbRating: 'Everyone',
+      msrp: 16.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Devolver Digital'],
+      slug: 'gris-switch',
+      genres: ['Adventure', 'Platformer', 'Action', 'Puzzle'],
+      fileSize: '3.9 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/gris-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000014006/bc4e849ea0ca47cffd0437b56ee9a80fbaf917d49d867f8bbf93e7106e46c1a3',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000014006/desc/91eb52276aa9b14e949ef44d0d42a93c020cbb079b8e6425210a736e7ec4e12d'
     }
   },
   {
@@ -861,6 +1119,40 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
+    title: 'Inscryption',
+    description:
+      'From the creator of Pony Island and The Hex comes the latest mind-melting, self-destructing love letter to video games. Inscryption is an inky black card-based odyssey that blends the deckbuilding roguelike, escape-room style puzzles, and psychological horror into a blood-laced smoothie. Darker still are the secrets inscrybed upon the cards...',
+    releaseDateDisplay: '2022-12-01',
+    myData: {
+      title: 'Inscryption',
+      dateBought: '04/17/2023',
+      paid: 15.65,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Daniel Mullins Games'],
+      esrbRating: 'Mature',
+      msrp: 19.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Devolver Digital'],
+      slug: 'inscryption-switch',
+      genres: ['Adventure', 'Strategy'],
+      fileSize: '4.1 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/4/48/Inscryption_Cover_Art.jpg',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000051034/5f1d65045ab88c401b8dbfda3f447eb2c2064bf1815ca966a4265c31dfcd9b68',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/i/inscryption-switch/description-image'
+    }
+  },
+  {
     title: 'Into the Breach',
     description:
       "The remnants of human civilization are threatened by gigantic creatures breeding beneath the earth. You must control powerful mechs from the future to hold off this alien threat. Each attempt to save the world presents a new randomly generated challenge in this turn-based strategy game from the makers of FTL. Features: Defend the Cities: Civilian buildings power your mechs. Defend them from the Vek and watch your fire! Perfect Your Strategy: All enemy attacks are telegraphed in minimalistic, turn-based combat. Analyze your opponent's attack and come up with the perfect counter every turn. Build the Ultimate Mech: Find powerful new weapons and unique pilots as you battle the Vek infestation across Corporate-Nation islands. Another Chance: Failure is not an option. When you are defeated, send help back through time to save another timeline!",
@@ -892,6 +1184,40 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
+    title: 'Kirby’s Return to Dream Land Deluxe',
+    description:
+      'The tough puff Kirby is back for a 1-4 player platforming adventure across Planet Popstar. Help Magolor rebuild his ship with newly added Mecha and Sand Copy Abilities!',
+    releaseDateDisplay: '2023-02-24',
+    remake: true,
+    myData: {
+      title: 'Kirby’s Return to Dream Land Deluxe',
+      dateBought: '05/12/2023',
+      paid: null,
+      redeemed: true,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['HAL Laboratory'],
+      esrbRating: 'Everyone 10+',
+      msrp: 59.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['Nintendo'],
+      slug: 'kirbys-return-to-dream-land-deluxe-switch',
+      genres: ['Action', 'Platformer'],
+      fileSize: '5 GB'
+    },
+    images: {
+      boxart: '',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/k/kirbys-return-to-dream-land-deluxe-switch/hero',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/k/kirbys-return-to-dream-land-deluxe-switch/PMP/Image'
+    }
+  },
+  {
     title: 'Kirby™ and the Forgotten Land',
     description:
       'Float off on an all-new adventure as the powerful puffball, Kirby. Explore in 3D stages as you discover a mysterious world with abandoned structures from a past civilization—like a shopping mall?! Copy enemies’ abilities like the new Drill and Ranger and use them to attack, explore your surroundings, and save the kidnapped Waddle Dees from the ferocious Beast Pack alongside the mysterious Elfilin. Hope you’re hungry for an unforgettable adventure! Get a mouthful of real-world objects for all-new, powerful transformations Feeling hungry? Kirby can inhale real-world objects and transform using Mouthful Mode! Why get one drink from a vending machine when you can swallow the whole thing? Then, use your boxy body to shoot out cans at baddies. Consume a car to gain some wheels and slam through walls. Sit back and take it all in...literally. Join up with a pointy partner, Bandana Waddle Dee, in co-op play Pass a Joy-Con™ controller to a buddy to play as the spear-wielding Bandana Waddle Dee and help each other explore and battle through this colorful world. While Kirby can float and inhale enemies, Bandana Waddle Dee can spin and stab with his sturdy spear. Find friendship in this forgotten world and save the Waddle Dees! Float over obstacles and fight through enemies on your way to each stage’s goal as you slash, poke, freeze, and hammer using Kirby’s copy abilities. The tough puff is truly put to the test in dynamic boss battles that will keep you dancing about the arena. Choose from two difficulty modes for either…',
@@ -918,6 +1244,38 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Nintendo'],
       slug: 'kirby-and-the-forgotten-land-switch',
       genres: ['Platformer', 'Action']
+    }
+  },
+  {
+    title: 'LIMBO',
+    description:
+      "Uncertain of his sister's fate, a boy enters LIMBO LIMBO is an award-winning indie adventure, critically acclaimed for its captivating puzzle design and immersive sound and visuals. Its dark, misty spaces and haunting narrative will stay with you forever. Winner of more than 100 awards, including: Gameinformer’s “Best Downloadable” Gamespot’s “Best Puzzle Game” Kotaku’s “The Best Indie Game” GameReactor’s “Digital Game of the Year” Spike TV’s “Best Independent Game” X-Play’s “Best Downloadable Game” IGN’s “Best Horror Game”",
+    releaseDateDisplay: '2018-06-28T07:00:00.000Z',
+    myData: {
+      dateBought: '05/01/2023',
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/l/limbo-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/l/limbo-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['Playdead'],
+      esrbDescriptors: ['Mild Blood', 'Mild Violence'],
+      esrbRating: 'Teen',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 9.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Playdead'],
+      slug: 'limbo-switch',
+      genres: ['Adventure', 'Puzzle']
     }
   },
   {
@@ -958,35 +1316,65 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'LIMBO',
+    title: 'Lil Gator Game',
     description:
-      "Uncertain of his sister's fate, a boy enters LIMBO LIMBO is an award-winning indie adventure, critically acclaimed for its captivating puzzle design and immersive sound and visuals. Its dark, misty spaces and haunting narrative will stay with you forever. Winner of more than 100 awards, including: Gameinformer’s “Best Downloadable” Gamespot’s “Best Puzzle Game” Kotaku’s “The Best Indie Game” GameReactor’s “Digital Game of the Year” Spike TV’s “Best Independent Game” X-Play’s “Best Downloadable Game” IGN’s “Best Horror Game”",
-    releaseDateDisplay: '2018-06-28T07:00:00.000Z',
+      'The island is your playground. There’s a buddy atop every hill in this open-world, movement-focused adventure and they all seem to need help! Bop cardboard baddies, brave serene hills and forests, and scale sheer rocks that only a kid would dare!',
+    releaseDateDisplay: '2022-12-14',
     myData: {
-      dateBought: '05/01/2023',
+      dateBought: '04/30/2023',
+      paid: 14.73,
       played: true,
-      physicalCopy: false
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['MegaWobble'],
+      esrbRating: 'Everyone',
+      msrp: 19.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Playtonic Games'],
+      slug: 'lil-gator-game-switch',
+      genres: ['Platformer', 'Adventure'],
+      fileSize: '437 MB',
+      engine: 'Unity'
     },
     images: {
       boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/l/limbo-switch/boxart',
+        'https://upload.wikimedia.org/wikipedia/en/c/c0/Lil_Gator_Game_Cover_Art.jpg',
       horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/l/limbo-switch/hero',
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_900/ncom/software/switch/70010000048663/7998b790e25b972bfb135a44f44cd1b182f4d72c3d51abd5aa818f6d09b8520d',
+      descriptionImage: ''
+    }
+  },
+  {
+    title: 'MARIO + RABBIDS SPARKS OF HOPE',
+    description:
+      "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! Build your dream team with three heroes from an eclectic roster of nine. Take down all new bosses, along with some familiar enemies throughout the galaxy. Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
+    releaseDateDisplay: '2022',
+    _distinctSeqID: 0,
+    myData: {
+      played: true,
+      physicalCopy: true
+    },
+    images: {
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/E3/2021/Games/M_jhoLGI4TZf7W/mario-plus-rabbids-sparks-of-hope-switch/hero',
       descriptionImage: ''
     },
     gameInfo: {
-      developers: ['Playdead'],
-      esrbDescriptors: ['Mild Blood', 'Mild Violence'],
-      esrbRating: 'Teen',
-      franchises: [],
+      developers: [],
+      esrbDescriptors: ['Visit www.esrb.org for rating information.'],
+      esrbRating: 'Rating Pending',
+      franchises: ['Mario'],
       freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 9.99,
-      numOfPlayers: '1 player',
+      generalFilters: [],
+      msrp: null,
+      numOfPlayers: 'To be determined',
       playerFilters: ['1+'],
-      publishers: ['Playdead'],
-      slug: 'limbo-switch',
-      genres: ['Adventure', 'Puzzle']
+      publishers: ['Ubisoft'],
+      slug: 'mario-plus-rabbids-sparks-of-hope-switch',
+      genres: ['Strategy']
     }
   },
   {
@@ -1018,36 +1406,6 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Ubisoft'],
       slug: 'mario-plus-rabbids-kingdom-battle-gold-edition-switch',
       genres: ['Adventure', 'Strategy']
-    }
-  },
-  {
-    title: 'MARIO + RABBIDS SPARKS OF HOPE',
-    description:
-      "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! Build your dream team with three heroes from an eclectic roster of nine. Take down all new bosses, along with some familiar enemies throughout the galaxy. Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
-    releaseDateDisplay: '2022',
-    _distinctSeqID: 0,
-    myData: {
-      played: true,
-      physicalCopy: true
-    },
-    images: {
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/E3/2021/Games/M_jhoLGI4TZf7W/mario-plus-rabbids-sparks-of-hope-switch/hero',
-      descriptionImage: ''
-    },
-    gameInfo: {
-      developers: [],
-      esrbDescriptors: ['Visit www.esrb.org for rating information.'],
-      esrbRating: 'Rating Pending',
-      franchises: ['Mario'],
-      freeToStart: false,
-      generalFilters: [],
-      msrp: null,
-      numOfPlayers: 'To be determined',
-      playerFilters: ['1+'],
-      publishers: ['Ubisoft'],
-      slug: 'mario-plus-rabbids-sparks-of-hope-switch',
-      genres: ['Strategy']
     }
   },
   {
@@ -1108,6 +1466,39 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Nintendo'],
       slug: 'metroid-dread-switch',
       genres: ['Action', 'Adventure']
+    }
+  },
+  {
+    title: 'Minit',
+    description:
+      'Minit is a peculiar little adventure played sixty seconds at a time. Journey outside the comfort of your home to help unusual folk, uncover countless secrets, and overcome dangerous foes, all in hopes of lifting a rather unfortunate curse that ends each day after just one minute. Minit is a collaboration between Kitty Calis, Jan Willem Nijman, Jukio Kallio & Dominik Johann.',
+    releaseDateDisplay: '2018-08-09',
+    myData: {
+      title: 'Minit',
+      dateBought: '04/07/2023',
+      paid: 2.11,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['JW', 'Kitty', 'Jukio', 'Dom'],
+      esrbRating: 'Everyone',
+      msrp: 8.49,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Devolver Digital'],
+      slug: 'minit-switch',
+      genres: ['Adventure', 'Puzzle', 'Arcade'],
+      fileSize: '178 MB',
+      engine: 'GameMaker: Studio'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/m/minit-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/m/minit-switch/hero',
+      descriptionImage: ''
     }
   },
   {
@@ -1245,37 +1636,6 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'Pokémon™ Sword and Pokémon™ Shield Double Pack',
-    description:
-      'If you purchase the Pokémon™ Sword and Pokémon™ Shield Double Pack bundle, then you can receive two codes that will reward you with special items known as Dynamax Crystals! As a special bonus for purchasing the Pokémon Sword and Pokémon Shield Double Pack, you’ll receive two codes (one per game) that will each reward you a special item known as a Dynamax Crystal*. By using the Dynamax Crystals received via these codes, you’ll be able to face Dynamax Larvitar and Dynamax Jangmo-o in special Max Raid Battles**. These Pokémon normally can’t be encountered until later in the game! Max Raid Battles are battles in which you can recruit up to three players* via local communication or the internet to face down powerful Dynamax Pokémon! Every participant will get a chance to catch the Pokémon if you triumph in the battle! Additionally, with Dynamax Crystals, you’ll be able to attempt these Max Raid Battles as many times as it takes to win or until midnight on the day that the Dynamax Crystal was used, whichever comes first.* A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with…',
-    releaseDateDisplay: '2019-11-15T08:00:00.000Z',
-    myData: {
-      played: true,
-      physicalCopy: true
-    },
-    images: {
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/boxart',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/hero',
-      descriptionImage: ''
-    },
-    gameInfo: {
-      developers: ['GAME FREAK'],
-      esrbDescriptors: ['Comic Mischief', 'Mild Cartoon Violence'],
-      esrbRating: 'Everyone',
-      franchises: ['Pokémon'],
-      freeToStart: false,
-      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
-      msrp: 119.99,
-      numOfPlayers: 'up to 4 players',
-      playerFilters: ['1+', '2+', '3+', '4+'],
-      publishers: ['Nintendo'],
-      slug: 'pokemon-sword-and-pokemon-shield-double-pack-switch',
-      genres: ['Adventure', 'Role-Playing']
-    }
-  },
-  {
     title: 'Pokémon UNITE',
     description:
       'Join Trainers from around the world as they head for Aeos Island to compete in Unite Battles! In Unite Battles, Trainers face off in 5-on-5 team battles to see who can score the most points within the allotted time. Teamwork is key as you and your teammates defeat wild Pokémon, level up and evolve your partner Pokémon, and knock out the opposing team’s Pokémon to prevent them from scoring points. Put your teamwork to the test, and take home the win! BATTLE IN STYLE: Take to the field while looking your best in Holowear! Thanks to a special technology developed using Aeos energy, Trainers can deck out their Pokémon in a variety of holographic outfits—with new styles arriving regularly! UNITE MOVES: Unleash the true power of your Pokémon with Unite Moves! Leverage these all-new Pokémon moves, which are only possible while in Unite Battles, and turn the tide of even the direst situations. RANK UP: Looking to prove how skilled you are? Participate in ranked matches, and earn points as you climb up the global leaderboard! COMMUNICATION IS KEY: Even the most skilled Trainers recognize how important communication is to their team’s success. Leverage signals, quick-chat messages, and—for the first time in a Pokémon title—voice chat to communicate and stay in sync with your team. CROSS-PLATFORM PLAY: Play with Trainers around the world on the Nintendo Switch™ system or on a compatible smartphone thanks to cross-platform support. Trainers may use their Pokémon Trainer Club account or Nintendo Account on both Nintendo Switch and mobile to easily…',
@@ -1306,6 +1666,37 @@ export const switchGamesOwnedMasterList = [
       publishers: ['The Pokémon Company'],
       slug: 'pokemon-unite-switch',
       genres: ['Action', 'Other']
+    }
+  },
+  {
+    title: 'Pokémon™ Sword and Pokémon™ Shield Double Pack',
+    description:
+      'If you purchase the Pokémon™ Sword and Pokémon™ Shield Double Pack bundle, then you can receive two codes that will reward you with special items known as Dynamax Crystals! As a special bonus for purchasing the Pokémon Sword and Pokémon Shield Double Pack, you’ll receive two codes (one per game) that will each reward you a special item known as a Dynamax Crystal*. By using the Dynamax Crystals received via these codes, you’ll be able to face Dynamax Larvitar and Dynamax Jangmo-o in special Max Raid Battles**. These Pokémon normally can’t be encountered until later in the game! Max Raid Battles are battles in which you can recruit up to three players* via local communication or the internet to face down powerful Dynamax Pokémon! Every participant will get a chance to catch the Pokémon if you triumph in the battle! Additionally, with Dynamax Crystals, you’ll be able to attempt these Max Raid Battles as many times as it takes to win or until midnight on the day that the Dynamax Crystal was used, whichever comes first.* A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with…',
+    releaseDateDisplay: '2019-11-15T08:00:00.000Z',
+    myData: {
+      played: true,
+      physicalCopy: true
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['GAME FREAK'],
+      esrbDescriptors: ['Comic Mischief', 'Mild Cartoon Violence'],
+      esrbRating: 'Everyone',
+      franchises: ['Pokémon'],
+      freeToStart: false,
+      generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
+      msrp: 119.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['Nintendo'],
+      slug: 'pokemon-sword-and-pokemon-shield-double-pack-switch',
+      genres: ['Adventure', 'Role-Playing']
     }
   },
   {
@@ -1464,6 +1855,39 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Sabotage Studio'],
       slug: 'sea-of-stars-switch',
       genres: ['Adventure', 'Role-Playing', 'Indie']
+    }
+  },
+  {
+    title: 'Shadows Over Loathing',
+    description:
+      'Shadows Over Loathing — a slapstick-figure comedy adventure-RPG full of mobsters, monsters, and mysteries. Mobsters, monsters, and mysteries — welcome to Shadows Over Loathing, the shady side of an already black-and-white world, and a follow-up to the award-winning West of Loathing.',
+    releaseDateDisplay: '2023-04-19',
+    myData: {
+      title: 'Shadows Over Loathing',
+      dateBought: '08/31/2024',
+      paid: 14.23,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Asymmetric Publications'],
+      esrbRating: 'Teen',
+      msrp: 23,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Asymmetric Publications'],
+      slug: 'shadows-over-loathing-switch',
+      genres: ['Adventure', 'Role-playing', 'Puzzle'],
+      fileSize: '874 MB',
+      engine: ''
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/6/65/Shadows_over_Loathing_cover.jpeg',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000064070/d2e82e25ed32d9372a10409c2e88177f3e6e063ff3efeb979acc14d4e8413918',
+      descriptionImage: ''
     }
   },
   {
@@ -1726,34 +2150,36 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'Super Mario™ 3D World + Bowser’s Fury',
-    description:
-      'Pounce and climb through dozens of colorful courses! Multiply the fun by teaming up with or competing against friends locally** or online*** to reach each stage’s goal. Work together to explore and uncover collectibles, or compete for the crown by earning the highest score, making for a friendly frenzy! Mario (and his friends) can use a variety of power-ups like the Super Bell, which grants catlike abilities like climbing and scratching. Power up to complete stages and take the crown! Explore a seamless feline world in the new Bowser’s Fury adventure Free-roaming Super Mario gameplay makes a return in this brand-new adventure. Bowser has become gargantuan and lost all control! Explore Lake Lapcat and its islands, complete objectives to collect Cat Shines, and team up with Bowser Jr. to bring his big, bad dad back to normal. Just watch out for Bowser’s island-wide attacks. New and improved features pounce in The Super Mario 3D World + Bowser’s Fury game features the same lively co-op gameplay, creative levels and power-ups as the original game, but with added improvements. In the Super Mario 3D World part of the game, characters move faster and the dash powers up more quickly. Both adventures support the newly added Snapshot Mode—pause the action to get the perfect shot, apply filters, and decorate with stamps! In Super Mario 3D World, choose from Mario, Luigi, Peach, and Toad and set off to save the Sprixie Kingdom. Each character has a distinct playstyle—Luigi can jump extra high and Peach can float for a short time.…',
-    releaseDateDisplay: '2021-02-12T08:00:00.000Z',
+    title: 'Super Mario Bros. Wonder',
+    description: '',
+    releaseDateDisplay: '2023-10-20',
     myData: {
+      title: 'Super Mario Bros. Wonder',
+      dateBought: '10/19/2023',
+      paid: null,
+      redeemed: true,
       played: true,
-      physicalCopy: false
-    },
-    images: {
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/boxart',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/hero',
-      descriptionImage: ''
+      physicalCopy: false,
+      missingFromAPI: true
     },
     gameInfo: {
-      developers: [],
-      esrbDescriptors: ['Mild Cartoon Violence', 'Users Interact'],
+      developers: ['Nintendo EPD'],
       esrbRating: 'Everyone',
-      franchises: ['Mario'],
-      freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
       msrp: 59.99,
       numOfPlayers: 'up to 4 players',
       playerFilters: ['1+', '2+', '3+', '4+'],
       publishers: ['Nintendo'],
-      slug: 'super-mario-3d-world-plus-bowsers-fury-switch',
-      genres: ['Platformer', 'Action']
+      slug: 'super-mario-bros-wonder-switch',
+      genres: ['Platformer', 'Action'],
+      fileSize: '0 MB',
+      engine: ''
+    },
+    images: {
+      boxart: 'https://upload.wikimedia.org/wikipedia/en/a/a3/Mariowonder.png',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/v1690926641/Marketing/pmp_smb-wonder/flower/talking-flower-2x.png'
     }
   },
   {
@@ -1816,6 +2242,103 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Nintendo'],
       slug: 'super-mario-party-switch',
       genres: ['Party', 'Multiplayer']
+    }
+  },
+  {
+    title: 'Super Mario RPG',
+    description:
+      'Enter—or revisit—a world of whimsy with Mario on a quest to repair Star Road and defeat the troublemaking Smithy Gang. Team up with a party of unlikely allies, like the monstrous Bowser and a mysterious doll named Geno, in a story-rich RPG packed with laughs and quirky characters.',
+    releaseDateDisplay: '2023-11-17',
+    remake: true,
+    myData: {
+      title: 'Super Mario RPG',
+      dateBought: '11/10/2023',
+      paid: null,
+      redeemed: true,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Square', 'ArtePiazza'],
+      esrbRating: 'Everyone',
+      msrp: 59.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Nintendo'],
+      slug: 'super-mario-rpg-switch',
+      genres: ['Role-playing', 'Adventure'],
+      fileSize: '6.5 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Marketing/pmp-super-mario-rpg-07756b0e/packshot/smrpg-packshot-2x',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/Marketing/pmp-super-mario-rpg-07756b0e/characters/bundle/characters-bundle-2x'
+    }
+  },
+  {
+    title: 'Super Mario™ 3D World + Bowser’s Fury',
+    description:
+      'Pounce and climb through dozens of colorful courses! Multiply the fun by teaming up with or competing against friends locally** or online*** to reach each stage’s goal. Work together to explore and uncover collectibles, or compete for the crown by earning the highest score, making for a friendly frenzy! Mario (and his friends) can use a variety of power-ups like the Super Bell, which grants catlike abilities like climbing and scratching. Power up to complete stages and take the crown! Explore a seamless feline world in the new Bowser’s Fury adventure Free-roaming Super Mario gameplay makes a return in this brand-new adventure. Bowser has become gargantuan and lost all control! Explore Lake Lapcat and its islands, complete objectives to collect Cat Shines, and team up with Bowser Jr. to bring his big, bad dad back to normal. Just watch out for Bowser’s island-wide attacks. New and improved features pounce in The Super Mario 3D World + Bowser’s Fury game features the same lively co-op gameplay, creative levels and power-ups as the original game, but with added improvements. In the Super Mario 3D World part of the game, characters move faster and the dash powers up more quickly. Both adventures support the newly added Snapshot Mode—pause the action to get the perfect shot, apply filters, and decorate with stamps! In Super Mario 3D World, choose from Mario, Luigi, Peach, and Toad and set off to save the Sprixie Kingdom. Each character has a distinct playstyle—Luigi can jump extra high and Peach can float for a short time.…',
+    releaseDateDisplay: '2021-02-12T08:00:00.000Z',
+    myData: {
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/boxart',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: [],
+      esrbDescriptors: ['Mild Cartoon Violence', 'Users Interact'],
+      esrbRating: 'Everyone',
+      franchises: ['Mario'],
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 59.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['Nintendo'],
+      slug: 'super-mario-3d-world-plus-bowsers-fury-switch',
+      genres: ['Platformer', 'Action']
+    }
+  },
+  {
+    title: 'TOEM',
+    description:
+      'Set off on a delightful expedition and use your photographic eye to uncover the mysteries of the magical TOEM in this hand-drawn adventure game. Chat with quirky characters, solve their problems by snapping neat photos, and make your way through a relaxing landscape! Key Features Take photos with your camera to solve puzzles and help people! Listen to chill beats and take in your surroundings! Meet quirky characters and help them with their problems!',
+    releaseDateDisplay: '2021-09-17T07:00:00.000Z',
+    myData: {
+      dateBought: '04/24/2023',
+      played: true,
+      physicalCopy: false
+    },
+    images: {
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/toem-switch/hero',
+      descriptionImage: ''
+    },
+    gameInfo: {
+      developers: ['Something We Made'],
+      esrbDescriptors: [],
+      esrbRating: 'Everyone',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 19.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Something We Made'],
+      slug: 'toem-switch',
+      genres: ['Indie', 'Adventure', 'Puzzle']
     }
   },
   {
@@ -1912,6 +2435,41 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
+    title: 'The Legend of Zelda: Tears of the Kingdom',
+    description:
+      'An epic adventure awaits in the Legend of Zelda: Tears of the Kingdom game, only on the Nintendo Switch system. In this sequel to the Legend of Zelda: Breath of the Wild game, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?',
+    releaseDateDisplay: '2023-05-12',
+    myData: {
+      title: 'The Legend of Zelda: Tears of the Kingdom',
+      dateBought: '05/12/2023',
+      paid: null,
+      redeemed: true,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Nintendo EPD'],
+      esrbRating: 'Everyone 10+',
+      msrp: 69.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Nintendo'],
+      slug: 'the-legend-of-zelda-tears-of-the-kingdom-switch',
+      genres: ['Adventure', 'Action', 'Role-playing'],
+      fileSize: '16.3 GB',
+      engine: ''
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/the-legend-of-zelda-tears-of-the-kingdom-switch/hero',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/Microsites/zelda-totk-pmp/link-highlight'
+    }
+  },
+  {
     title: 'The Legend of Zelda™: Breath of the Wild',
     description:
       'Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.',
@@ -1985,36 +2543,6 @@ export const switchGamesOwnedMasterList = [
     }
   },
   {
-    title: 'TOEM',
-    description:
-      'Set off on a delightful expedition and use your photographic eye to uncover the mysteries of the magical TOEM in this hand-drawn adventure game. Chat with quirky characters, solve their problems by snapping neat photos, and make your way through a relaxing landscape! Key Features Take photos with your camera to solve puzzles and help people! Listen to chill beats and take in your surroundings! Meet quirky characters and help them with their problems!',
-    releaseDateDisplay: '2021-09-17T07:00:00.000Z',
-    myData: {
-      dateBought: '04/24/2023',
-      played: true,
-      physicalCopy: false
-    },
-    images: {
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/toem-switch/hero',
-      descriptionImage: ''
-    },
-    gameInfo: {
-      developers: ['Something We Made'],
-      esrbDescriptors: [],
-      esrbRating: 'Everyone',
-      franchises: [],
-      freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 19.99,
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      publishers: ['Something We Made'],
-      slug: 'toem-switch',
-      genres: ['Indie', 'Adventure', 'Puzzle']
-    }
-  },
-  {
     title: 'Transistor',
     description:
       "From the creators of Bastion, Transistor is a sci-fi themed action RPG that invites you to wield an extraordinary weapon of unknown origin as you fight through a stunning futuristic city. Transistor seamlessly integrates thoughtful strategic planning into a fast-paced action experience, melding responsive gameplay and rich atmospheric storytelling. During the course of the adventure, you will piece together the Transistor's mysteries as you pursue its former owners. Key Features: An all-new world from the team that created Bastion Configure the powerful Transistor with thousands of possible Function combinations Action-packed real-time combat fused with a robust strategic planning mode Vibrant hand-painted artwork Original soundtrack changes dynamically as the action unfolds Hours of reactive voiceover create a deep and atmospheric story 'Recursion' option introduces procedural battles after finishing the story",
@@ -2043,6 +2571,40 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Supergiant Games'],
       slug: 'transistor-switch',
       genres: ['Indie', 'Adventure', 'Action', 'Role-Playing']
+    }
+  },
+  {
+    title: 'Tunic',
+    description:
+      'Explore a land filled with lost legends, ancient powers, and ferocious monsters in TUNIC, an isometric action game about a small fox on a big adventure. Stranded in a ruined land, and armed with only your own curiosity, you will confront colossal beasts, collect strange and powerful items, and unravel long-lost secrets.',
+    releaseDateDisplay: '2022-09-27',
+    myData: {
+      title: 'Tunic',
+      dateBought: '11/21/2023',
+      paid: 21.19,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Isometricorp Games'],
+      esrbRating: 'Everyone 10+',
+      msrp: 29.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Finji'],
+      slug: 'tunic-switch',
+      genres: ['Action', 'Adventure', 'Puzzle'],
+      fileSize: '2.9 GB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000045589/desc/4d91b7739fe31132d800a9cf59c27e730caab7dd19a97f454671b4fccbff00dd',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/tunic-switch/hero',
+      descriptionImage:
+        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000045589/desc/4d91b7739fe31132d800a9cf59c27e730caab7dd19a97f454671b4fccbff00dd'
     }
   },
   {
@@ -2106,6 +2668,39 @@ export const switchGamesOwnedMasterList = [
       publishers: ['Big Sugar'],
       slug: 'valfaris-and-slain-double-pack-switch',
       genres: ['Platformer', 'Action', 'Action', 'Arcade']
+    }
+  },
+  {
+    title: 'Vampire Survivors',
+    description:
+      'Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements. Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.',
+    releaseDateDisplay: '2023-08-17',
+    myData: {
+      title: 'Vampire Survivors',
+      dateBought: '09/16/2023',
+      paid: 0,
+      played: true,
+      physicalCopy: false,
+      missingFromAPI: true
+    },
+    gameInfo: {
+      developers: ['Poncle, Ltd.'],
+      esrbRating: 'Teen',
+      msrp: 4.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['Poncle, Ltd.'],
+      slug: 'vampire-survivors-switch',
+      genres: ['Adventure', 'Action'],
+      fileSize: '513 MB',
+      engine: 'Unity'
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/e/e6/Vampire_Survivors_key_art.jpg',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000059002/e2c326b8fbab42b3f48c86c10c728b8bc04cf59fa51302c54837823879e6749f',
+      descriptionImage: ''
     }
   },
   {
@@ -2305,535 +2900,5 @@ export const switchGamesOwnedMasterList = [
       slug: 'yoshis-crafted-world-switch',
       genres: ['Platformer', 'Action']
     }
-  },
-  {
-    0: {
-      title: 'Animal Well',
-      description:
-        'Explore the intricate labyrinth and uncover its many secrets. Hatch from your flower and spelunk through the beautiful and sometimes haunting world of Animal Well, a pixelated wonder rendered in intricate audio and visual detail.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_500/ncom/software/switch/70010000065090/desc/0aab2d190d454b056e1f95a3a4d7c1e34d19379061ac3d4331c337cfb68cb7d9',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1065/b_white/f_auto/q_auto/ncom/software/switch/70010000065090/63c78c2b7e586401115db25168c5e13054b9fdd261b16d9b65d0f23a68a8299f',
-      developers: ['Shared Memory'],
-      publishers: ['Bigmode'],
-      programer: ['Billy Basso'],
-      releaseDateDisplay: '2024-05-09',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Platformer', 'Adventure', 'Puzzle'],
-      fileSize: '84 MB',
-      esrbRating: 'Everyone',
-      msrp: 24.99,
-      slug: 'animal-well-switch',
-      myData: {
-        title: 'Animal Well',
-        dateBought: '06/28/2024',
-        paid: 23.62,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    1: {
-      title: 'Balatro',
-      description:
-        'The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-pumping, outrageous combos.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000072051/desc/248eef348b55b813c04d87bc97625a5b78771b8d3634680e7614eb6752753fda',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000072051/3e3e6ff91e23f38879a88db3b4e4de64e177e796789033519dca60af22394f81',
-      developers: ['LocalThunk'],
-      publishers: ['Playstack'],
-      engine: 'Löve',
-      releaseDateDisplay: '2024-02-20',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Simulation', 'Strategy'],
-      fileSize: '156 MB',
-      esrbRating: 'Everyone 10+',
-      msrp: 14.99,
-      slug: 'balatro-switch',
-      myData: {
-        title: 'Balatro',
-        dateBought: '10/18/2024',
-        paid: 13.31,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    2: {
-      title: 'Blasphemous 2',
-      description:
-        'Awakened in a strange new land, and displaced from his final resting place, The Penitent One is thrust back into the endless cycle of life, death, and resurrection, with no other option than to explore this perilous new world and uncover its long-forgotten secrets.',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/3/3c/Blasphemous_2_cover_art.jpg',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_500/ncom/software/switch/70010000062593/8a4e4212491d4f69d89f8b6d3c14250edcf3747b70148fbf1aea3ae69b3b9ebd',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_900/ncom/software/switch/70010000062593/8a4e4212491d4f69d89f8b6d3c14250edcf3747b70148fbf1aea3ae69b3b9ebd',
-      developers: ['The Game Kitchen'],
-      publishers: ['Team17'],
-      engine: 'Unity',
-      releaseDateDisplay: '2023-08-24',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Role-playing', 'Platformer', 'Action', 'Adventure'],
-      fileSize: '2.6 GB',
-      esrbRating: 'Mature',
-      msrp: 29.99,
-      slug: 'blasphemous-2-switch',
-      myData: {
-        title: 'Blasphemous 2',
-        dateBought: '11/09/2023',
-        paid: 20.66,
-        played: false,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    3: {
-      title: 'Cult of the Lamb',
-      description:
-        'Crusade through dungeons, slay heretics, build your cult, and seek new powers together. But there’s more. As well as the addition of co-op play, the Unholy Alliance expansion also adds new tarot cards, relics, buildings, fleeces, follower traits, follower quests, and other secrets to discover!',
-      boxart:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000047973/desc/e71c46a6b89539fd47a800cd522b5e094a89c56cbd55c19352c4e37898fc6290',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000047973/745538c3639a379f6124349c298e94d6a972a554d1e754ace8b04d4566f508e8',
-      developers: ['Massive Monster'],
-      publishers: ['Devolver Digital'],
-      engine: 'Unity',
-      releaseDateDisplay: '2022-08-11',
-      numOfPlayers: 'up to 2 players',
-      playerFilters: ['1+', '2+'],
-      genres: ['Action', 'Adventure', 'Strategy'],
-      fileSize: '1.9 GB',
-      esrbRating: 'Teen',
-      msrp: 24.99,
-      slug: 'cult-of-the-lamb-switch',
-      myData: {
-        title: 'Cult of the Lamb: Cultist Edition',
-        dateBought: '12/22/2023',
-        paid: 19,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    4: {
-      title: 'Fall Guys',
-      description:
-        'Fall Guys is a free, cross-platform massively multiplayer party royale game. Clumsily compete in absurd obstacle courses with friends or build your very own chaotic course to share with the community.',
-      boxart: '',
-      descriptionImage:
-        'https://upload.wikimedia.org/wikipedia/en/d/d4/Fall_Guys_Post_F2P_keyart.png',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000042975/937afd0c84319831009b44c93369faf0a2c926a454809f73523df9bfb6cf6233',
-      developers: ['Mediatonic'],
-      publishers: ['Devolver Digital', 'Epic Games'],
-      engine: 'Unity',
-      releaseDateDisplay: '2022-06-21',
-      numOfPlayers: 'up to 60 players',
-      playerFilters: ['1+'],
-      genres: ['Multiplayer', 'Party'],
-      fileSize: '2.3 GB',
-      esrbRating: 'Everyone',
-      msrp: 0,
-      slug: 'fall-guys-switch',
-      myData: {
-        title: 'Fall Guys',
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    5: {
-      title: 'Fire Emblem: The Blazing Blade',
-      description: '',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/e/e2/GBA_Fire_Emblem_Box.jpg',
-      descriptionImage: '',
-      horizontalHeaderImage: '',
-      developers: ['Intelligent Systems'],
-      publishers: ['Nintendo'],
-      releaseDateDisplay: '2003-04-25',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Strategy', 'Role-Playing'],
-      fileSize: '',
-      esrbRating: 'Everyone',
-      msrp: 0,
-      slug: '',
-      myData: {
-        title: 'Fire Emblem: The Blazing Blade',
-        played: true,
-        physicalCopy: false,
-        emulator: true,
-        emulatorSystem: 'Gameboy Advanced',
-        missingFromAPI: true
-      }
-    },
-    6: {
-      title: 'Gato Roboto',
-      description: '',
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/gato-roboto-switch/boxart',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/g/gato-roboto-switch/description-image',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000013632/396e84d119ad91cc9e998e17e1a8e56f0f00111a1479bcd353cde674aa930444',
-      developers: ['Doinksoft'],
-      publishers: ['Devolver Digital'],
-      engine: 'GameMaker Studio',
-      releaseDateDisplay: '2019-05-30',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Arcade', 'Action', 'Adventure', 'Platformer'],
-      fileSize: '916 MB',
-      esrbRating: 'Everyone',
-      msrp: 7.99,
-      slug: 'gato-roboto-switch',
-      myData: {
-        title: 'Gato Roboto',
-        dateBought: '04/17/2023',
-        paid: 1.33,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    7: {
-      title: 'Gris',
-      description:
-        'Gris is a hopeful young girl lost in her own world, dealing with a painful experience in her life. Her journey through sorrow is manifested in her dress, which grants new abilities to better navigate her faded reality. As the story unfolds, Gris will grow emotionally and see her world in a different way, revealing new paths to explore using her new abilities.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/gris-switch/boxart',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000014006/desc/91eb52276aa9b14e949ef44d0d42a93c020cbb079b8e6425210a736e7ec4e12d',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000014006/bc4e849ea0ca47cffd0437b56ee9a80fbaf917d49d867f8bbf93e7106e46c1a3',
-      developers: ['Nomada Studio'],
-      publishers: ['Devolver Digital'],
-      engine: 'Unity',
-      releaseDateDisplay: '2018-12-13',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Adventure', 'Platformer', 'Action', 'Puzzle'],
-      fileSize: '3.9 GB',
-      esrbRating: 'Everyone',
-      msrp: 16.99,
-      slug: 'gris-switch',
-      myData: {
-        title: 'Gris',
-        played: true,
-        physicalCopy: false
-      }
-    },
-    8: {
-      title: 'Inscryption',
-      description:
-        'From the creator of Pony Island and The Hex comes the latest mind-melting, self-destructing love letter to video games. Inscryption is an inky black card-based odyssey that blends the deckbuilding roguelike, escape-room style puzzles, and psychological horror into a blood-laced smoothie. Darker still are the secrets inscrybed upon the cards...',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/4/48/Inscryption_Cover_Art.jpg',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/i/inscryption-switch/description-image',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000051034/5f1d65045ab88c401b8dbfda3f447eb2c2064bf1815ca966a4265c31dfcd9b68',
-      developers: ['Daniel Mullins Games'],
-      publishers: ['Devolver Digital'],
-      engine: 'Unity',
-      releaseDateDisplay: '2022-12-01',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Adventure', 'Strategy'],
-      fileSize: '4.1 GB',
-      esrbRating: 'Mature',
-      msrp: 19.99,
-      slug: 'inscryption-switch',
-      myData: {
-        title: 'Inscryption',
-        dateBought: '04/17/2023',
-        paid: 15.65,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    9: {
-      title: 'Kirby’s Return to Dream Land Deluxe',
-      description:
-        'The tough puff Kirby is back for a 1-4 player platforming adventure across Planet Popstar. Help Magolor rebuild his ship with newly added Mecha and Sand Copy Abilities!',
-      boxart: '',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/k/kirbys-return-to-dream-land-deluxe-switch/PMP/Image',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/k/kirbys-return-to-dream-land-deluxe-switch/hero',
-      developers: ['HAL Laboratory'],
-      publishers: ['Nintendo'],
-      releaseDateDisplay: '2023-02-24',
-      numOfPlayers: 'up to 4 players',
-      playerFilters: ['1+', '2+', '3+', '4+'],
-      genres: ['Action', 'Platformer'],
-      fileSize: '5 GB',
-      esrbRating: 'Everyone 10+',
-      msrp: 59.99,
-      slug: 'kirbys-return-to-dream-land-deluxe-switch',
-      remake: true,
-      myData: {
-        title: 'Kirby’s Return to Dream Land Deluxe',
-        dateBought: '05/12/2023',
-        paid: null,
-        redeemed: true,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    10: {
-      title: 'Lil Gator Game',
-      description:
-        'The island is your playground. There’s a buddy atop every hill in this open-world, movement-focused adventure and they all seem to need help! Bop cardboard baddies, brave serene hills and forests, and scale sheer rocks that only a kid would dare!',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/c/c0/Lil_Gator_Game_Cover_Art.jpg',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_900/ncom/software/switch/70010000048663/7998b790e25b972bfb135a44f44cd1b182f4d72c3d51abd5aa818f6d09b8520d',
-      developers: ['MegaWobble'],
-      publishers: ['Playtonic Games'],
-      engine: 'Unity',
-      releaseDateDisplay: '2022-12-14',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Platformer', 'Adventure'],
-      esrbRating: 'Everyone',
-      fileSize: '437 MB',
-      msrp: 19.99,
-      slug: 'lil-gator-game-switch',
-      myData: {
-        dateBought: '04/30/2023',
-        paid: 14.73,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    11: {
-      title: 'Minit',
-      description:
-        'Minit is a peculiar little adventure played sixty seconds at a time. Journey outside the comfort of your home to help unusual folk, uncover countless secrets, and overcome dangerous foes, all in hopes of lifting a rather unfortunate curse that ends each day after just one minute. Minit is a collaboration between Kitty Calis, Jan Willem Nijman, Jukio Kallio & Dominik Johann.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/m/minit-switch/boxart',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/m/minit-switch/hero',
-      developers: ['JW', 'Kitty', 'Jukio', 'Dom'],
-      publishers: ['Devolver Digital'],
-      engine: 'GameMaker: Studio',
-      releaseDateDisplay: '2018-08-09',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Adventure', 'Puzzle', 'Arcade'],
-      fileSize: '178 MB',
-      esrbRating: 'Everyone',
-      msrp: 8.49,
-      slug: 'minit-switch',
-      myData: {
-        title: 'Minit',
-        dateBought: '04/07/2023',
-        paid: 2.11,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    12: {
-      title: 'Shadows Over Loathing',
-      description:
-        'Shadows Over Loathing — a slapstick-figure comedy adventure-RPG full of mobsters, monsters, and mysteries. Mobsters, monsters, and mysteries — welcome to Shadows Over Loathing, the shady side of an already black-and-white world, and a follow-up to the award-winning West of Loathing.',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/6/65/Shadows_over_Loathing_cover.jpeg',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000064070/d2e82e25ed32d9372a10409c2e88177f3e6e063ff3efeb979acc14d4e8413918',
-      developers: ['Asymmetric Publications'],
-      publishers: ['Asymmetric Publications'],
-      engine: '',
-      releaseDateDisplay: '2023-04-19',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Adventure', 'Role-playing', 'Puzzle'],
-      fileSize: '874 MB',
-      esrbRating: 'Teen',
-      msrp: 23,
-      slug: 'shadows-over-loathing-switch',
-      myData: {
-        title: 'Shadows Over Loathing',
-        dateBought: '08/31/2024',
-        paid: 14.23,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    13: {
-      title: 'Super Mario Bros. Wonder',
-      description: '',
-      boxart: 'https://upload.wikimedia.org/wikipedia/en/a/a3/Mariowonder.png',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/v1690926641/Marketing/pmp_smb-wonder/flower/talking-flower-2x.png',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1',
-      developers: ['Nintendo EPD'],
-      publishers: ['Nintendo'],
-      engine: '',
-      releaseDateDisplay: '2023-10-20',
-      numOfPlayers: 'up to 4 players',
-      playerFilters: ['1+', '2+', '3+', '4+'],
-      genres: ['Platformer', 'Action'],
-      fileSize: '0 MB',
-      esrbRating: 'Everyone',
-      msrp: 59.99,
-      slug: 'super-mario-bros-wonder-switch',
-      myData: {
-        title: 'Super Mario Bros. Wonder',
-        dateBought: '10/19/2023',
-        paid: null,
-        redeemed: true,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    14: {
-      title: 'Super Mario RPG',
-      description:
-        'Enter—or revisit—a world of whimsy with Mario on a quest to repair Star Road and defeat the troublemaking Smithy Gang. Team up with a party of unlikely allies, like the monstrous Bowser and a mysterious doll named Geno, in a story-rich RPG packed with laughs and quirky characters.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Marketing/pmp-super-mario-rpg-07756b0e/packshot/smrpg-packshot-2x',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/Marketing/pmp-super-mario-rpg-07756b0e/characters/bundle/characters-bundle-2x',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a',
-      developers: ['Square', 'ArtePiazza'],
-      publishers: ['Nintendo'],
-      engine: 'Unity',
-      releaseDateDisplay: '2023-11-17',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Role-playing', 'Adventure'],
-      fileSize: '6.5 GB',
-      esrbRating: 'Everyone',
-      msrp: 59.99,
-      slug: 'super-mario-rpg-switch',
-      remake: true,
-      myData: {
-        title: 'Super Mario RPG',
-        dateBought: '11/10/2023',
-        paid: null,
-        redeemed: true,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    15: {
-      title: 'The Legend of Zelda: Tears of the Kingdom',
-      description:
-        'An epic adventure awaits in the Legend of Zelda: Tears of the Kingdom game, only on the Nintendo Switch system. In this sequel to the Legend of Zelda: Breath of the Wild game, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/Microsites/zelda-totk-pmp/link-highlight',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/the-legend-of-zelda-tears-of-the-kingdom-switch/hero',
-      developers: ['Nintendo EPD'],
-      publishers: ['Nintendo'],
-      engine: '',
-      releaseDateDisplay: '2023-05-12',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Adventure', 'Action', 'Role-playing'],
-      fileSize: '16.3 GB',
-      esrbRating: 'Everyone 10+',
-      msrp: 69.99,
-      slug: 'the-legend-of-zelda-tears-of-the-kingdom-switch',
-      myData: {
-        title: 'The Legend of Zelda: Tears of the Kingdom',
-        dateBought: '05/12/2023',
-        paid: null,
-        redeemed: true,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    16: {
-      title: 'Tunic',
-      description:
-        'Explore a land filled with lost legends, ancient powers, and ferocious monsters in TUNIC, an isometric action game about a small fox on a big adventure. Stranded in a ruined land, and armed with only your own curiosity, you will confront colossal beasts, collect strange and powerful items, and unravel long-lost secrets.',
-      boxart:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000045589/desc/4d91b7739fe31132d800a9cf59c27e730caab7dd19a97f454671b4fccbff00dd',
-      descriptionImage:
-        'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/software/switch/70010000045589/desc/4d91b7739fe31132d800a9cf59c27e730caab7dd19a97f454671b4fccbff00dd',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/tunic-switch/hero',
-      developers: ['Isometricorp Games'],
-      publishers: ['Finji'],
-      engine: 'Unity',
-      releaseDateDisplay: '2022-09-27',
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      genres: ['Action', 'Adventure', 'Puzzle'],
-      fileSize: '2.9 GB',
-      esrbRating: 'Everyone 10+',
-      msrp: 29.99,
-      slug: 'tunic-switch',
-      myData: {
-        title: 'Tunic',
-        dateBought: '11/21/2023',
-        paid: 21.19,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    17: {
-      title: 'Vampire Survivors',
-      description:
-        'Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements. Mow down thousands of night creatures and survive until dawn! Vampire Survivors is a gothic horror casual game with rogue-lite elements, where your choices can allow you to quickly snowball against the hundreds of monsters that get thrown at you.',
-      boxart:
-        'https://upload.wikimedia.org/wikipedia/en/e/e6/Vampire_Survivors_key_art.jpg',
-      descriptionImage: '',
-      horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000059002/e2c326b8fbab42b3f48c86c10c728b8bc04cf59fa51302c54837823879e6749f',
-      developers: ['Poncle, Ltd.'],
-      publishers: ['Poncle, Ltd.'],
-      engine: 'Unity',
-      releaseDateDisplay: '2023-08-17',
-      numOfPlayers: 'up to 4 players',
-      playerFilters: ['1+', '2+', '3+', '4+'],
-      genres: ['Adventure', 'Action'],
-      fileSize: '513 MB',
-      esrbRating: 'Teen',
-      msrp: 4.99,
-      slug: 'vampire-survivors-switch',
-      myData: {
-        title: 'Vampire Survivors',
-        dateBought: '09/16/2023',
-        paid: 0,
-        played: true,
-        physicalCopy: false,
-        missingFromAPI: true
-      }
-    },
-    myData: {},
-    images: {
-      descriptionImage: ''
-    },
-    gameInfo: {}
   }
 ]
