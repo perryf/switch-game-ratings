@@ -77,7 +77,29 @@ function SwitchGame(props: MasonrySwitchGameProps) {
                   ? `(${gameInfo.esrbDescriptors.join(', ')})`
                   : ''}
               </li>
+              {gameInfo.fileSize && (
+                <li>
+                  <b>File Size:</b> {gameInfo.fileSize}
+                </li>
+              )}
+              {gameInfo.engine && (
+                <li>
+                  <b>Engine:</b> {gameInfo.engine}
+                </li>
+              )}
+              <li>
+                <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
+              </li>
             </ul>
+            <div className="description-art-box">
+              {images.descriptionImage && (
+                <img
+                  src={images.descriptionImage}
+                  alt="description image"
+                  className="description-art"
+                />
+              )}
+            </div>
           </div>
 
           <div className="game-description-box">

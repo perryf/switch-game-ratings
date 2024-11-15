@@ -1293,7 +1293,8 @@ export const switchGamesOwnedMasterList = [
   },
   {
     title: 'Gato Roboto',
-    description: '',
+    description:
+      'Pounce inside of your cozy armored mech and set off on a dangerous trek through an alien underworld full of irritable creatures and treacherous obstacles in a valiant effort to save your stranded captain and his crashed spaceship. Tiptoe outside the friendly confines of your technological marvel and follow your feline instincts through tight tunnels and mysterious waterways to scavenge for new weapons and gear. Adventure awaits the most curious of cats in Gato Roboto!',
     releaseDateDisplay: '2019-05-30',
     myData: {
       played: true,
@@ -2871,7 +2872,8 @@ export const switchGamesOwnedMasterList = [
   },
   {
     title: 'Super Mario Bros. Wonder',
-    description: '',
+    description:
+      'Classic Mario gameplay is turned on its head with Wonder Flowers in the Super Mario Bros. Wonder game! These game-changing items can make some wonderfully weird stuff happen. Witness pipes coming alive, wreak havoc as a giant Spike-Ball, and lots more!',
     releaseDateDisplay: '2023-10-20',
     myData: {
       played: true,
