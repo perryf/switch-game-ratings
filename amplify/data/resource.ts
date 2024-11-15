@@ -35,6 +35,7 @@ const schema = a.schema({
       myData: a.customType({
         datePlayed: a.string(),
         datePurchased: a.string(),
+        fullOrDemo: a.string(), // demo or full
         emulatorSystem: a.string(),
         isEmulator: a.boolean(),
         missingFromAPI: a.boolean(),

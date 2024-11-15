@@ -83,13 +83,13 @@ function CreateGameForm() {
   //   })
   // }
 
-  // const handleUpdateSelectMulti = (e: {
-  //   target: {
-  //     name: string
-  //     selectedOptions: HTMLCollectionOf<HTMLOptionElement>
-  //   }
-  // }) => {
-  //   const { name, selectedOptions } = e.target
+  const handleUpdateSelectMulti = (e: {
+    target: {
+      name: string
+      selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+    }
+  }) => {
+    const { name, selectedOptions } = e.target
 
   //   setNewGame(game => ({
   //     ...game,
