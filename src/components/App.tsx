@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { generateClient } from 'aws-amplify/data'
 // import { StorageImage } from '@aws-amplify/ui-react-storage'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
@@ -10,7 +9,7 @@ import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 
-const client = generateClient<Schema>()
+// const client = generateClient<Schema>()
 
 // used to sort games when imported
 const sortGames = (
@@ -24,18 +23,23 @@ const sortGames = (
   return 0
 }
 
+interface AppProps {
+  client: any
+}
+
 // TODO -> Figure out why manually entered games did not get entered into the DB
-function App() {
+function App(props: AppProps) {
+  const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
-      next: ({ items }) => {
+      next: ({ items = [] }) => {
         const data = items.sort(sortGames)
 
         setGames([...data])
       },
-      error: error => console.warn(error)
+      error: (error: {}) => console.warn(error)
     })
     return () => sub.unsubscribe()
   }, [])
