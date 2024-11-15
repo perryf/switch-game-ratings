@@ -10,23 +10,19 @@ import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 
-const filteredList = switchGamesOwnedMasterList.filter((g: any) => {
-  if (g.includeInReviews === false) return false
-  if (g.myData.played === false) return false
-
-  return true
-})
-
-console.log(filteredList)
-
-const lastCouple = [
-  'Metal Slug Tactics',
-  'Sea of Stars',
-  "Teenage Mutant Ninja Turtles: Shredder's Revenge",
-  'Xenoblade Chronicles 3'
-]
-
 const client = generateClient<Schema>()
+
+// used to sort games when imported
+const sortGames = (
+  a: { displayTitle: string },
+  b: { displayTitle: string }
+) => {
+  const aTitle = a.displayTitle.toLowerCase()
+  const bTitle = b.displayTitle.toLowerCase()
+  if (aTitle < bTitle) return -1
+  if (aTitle > bTitle) return 1
+  return 0
+}
 
 // TODO -> Figure out why manually entered games did not get entered into the DB
 function App() {
@@ -35,24 +31,7 @@ function App() {
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items }) => {
-        const data = items.sort((a, b) => {
-          const aTitle = a.displayTitle.toLowerCase()
-          const bTitle = b.displayTitle.toLowerCase()
-          if (aTitle < bTitle) return -1
-          if (aTitle > bTitle) return 1
-          return 0
-        })
-        console.log(data)
-
-        // const lastCouple = []
-
-        // filteredList.forEach(f => {
-        //   if (!data.find(d => d.displayTitle === f.displayTitle)) {
-        //     lastCouple.push(f.displayTitle)
-        //   }
-        // })
-
-        // console.log(lastCouple)
+        const data = items.sort(sortGames)
 
         setGames([...data])
       },
@@ -71,6 +50,7 @@ function App() {
   // }, [])
 
   async function createGame(newGame: SwitchGameBasic) {
+    console.log(newGame)
     // ? not sure if this is needed -- probably a better way
     // turns comma separated strings into arrays, changes numbers that are technically strings into numbers
     // const data: {
@@ -96,16 +76,6 @@ function App() {
     // const res = await client.models.Game.create(game)
     // console.log(res)
     // })
-
-    lastCouple.forEach(g => {
-      const game = filteredList.find(f => f.displayTitle === g)
-      console.log(game)
-      if (game) {
-        client.models.Game.create(g)
-          .then(res => console.log(res))
-          .catch(err => console.error(err))
-      }
-    })
   }
 
   async function deleteGame(id: string) {

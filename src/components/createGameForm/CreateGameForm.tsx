@@ -99,7 +99,10 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const handleGameSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
-    createGame(newGame)
+
+    // * Remove when ready
+    if (false) createGame(newGame)
+    setNewGame(newGameInit)
   }
 
   return (
