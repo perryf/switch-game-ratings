@@ -451,7 +451,7 @@ export const switchGamesOwnedMasterList = [
   {
     title: 'Cat Quest + Cat Quest II Pawsome Pack',
     description:
-      'CAT QUEST Cat Quest is an open world RPG set in the pawsome world of cats! Leap into a grand adventure in purrsuit of the evil Drakoth and your catnapped sister! Explore Felingard\'s huge overworld map, risk life and limb delving into dungeons for epic loot, and lend a paw to a furry cast of characters in a flurry of side quests. Combat in Cat Quest takes place entirely in real time, allowing you to get close to enemies with a slash of your blade, dodge roll to avoid a counter-attack, and then finish them off with powerful magic! Wield the ancient spells of Lightnyan, Flamepurr, and Healpaw to vanquish your foes! (Fur real!) Outfit your catventurer with a whole basket of equipment! Prefurr casting spells? Don an arcane hood, robes, and a staff to bolster your mana reserves! Want to protect yourself from attack? Deck out your catventurer with chainmail armor to increase your health and provide an extra level of protection. Weapons, armor, and spells can be mixed and matched to create the purrfect combinations for your playstyle! The world of Felingard is littered with interesting places and people! Discover a possessed town whose residents lust for obscene amounts of meat, assist the mages Mewlin and Meowgan in their search to break a magic seal, and locate someone\'s missing delivery of "House of Parchments" and "The Pouncing Dead". Exploration is one of the main scratching posts of Cat Quest, and with locations such as Bermewda\'s Triangle, the Furbidden Fields, and Pawt City to explore,…',
+      'Cat Quest is an open world RPG set in the pawsome world of cats! Leap into a grand adventure in purrsuit of the evil Drakoth and your catnapped sister! Explore Felingard\'s huge overworld map, risk life and limb delving into dungeons for epic loot, and lend a paw to a furry cast of characters in a flurry of side quests. Combat in Cat Quest takes place entirely in real time, allowing you to get close to enemies with a slash of your blade, dodge roll to avoid a counter-attack, and then finish them off with powerful magic! Wield the ancient spells of Lightnyan, Flamepurr, and Healpaw to vanquish your foes! (Fur real!) Outfit your catventurer with a whole basket of equipment! Prefurr casting spells? Don an arcane hood, robes, and a staff to bolster your mana reserves! Want to protect yourself from attack? Deck out your catventurer with chainmail armor to increase your health and provide an extra level of protection. Weapons, armor, and spells can be mixed and matched to create the purrfect combinations for your playstyle! The world of Felingard is littered with interesting places and people! Discover a possessed town whose residents lust for obscene amounts of meat, assist the mages Mewlin and Meowgan in their search to break a magic seal, and locate someone\'s missing delivery of "House of Parchments" and "The Pouncing Dead". Exploration is one of the main scratching posts of Cat Quest, and with locations such as Bermewda\'s Triangle, the Furbidden Fields, and Pawt City to explore,…',
     releaseDateDisplay: '2020-08-27',
     myData: {
       played: true,
@@ -939,10 +939,10 @@ export const switchGamesOwnedMasterList = [
     displayTitle: "Don't Starve Together"
   },
   {
-    title: 'Doomsday Vault',
+    title: 'DOOM',
     description:
-      'Rescue Earth’s precious plant life. In your robotic suit navigate a flooded city, break into an underground lair and explore ancient pyramids. Collect seeds and return them to the safety of the Vault. Nurture seeds to grow new sustainable crops. Unlock additional tools and items to customize your suit. Featuring: Adventure missions to find precious seeds for the Vault Challenge mode with races, mazes, scores and leaderboards Vault to nurture seeds into crops Challenging puzzles and gameplay to suit all ages and experience Engaging 3D environments Play as the iconic DV Robot character Robot suit customization Beautiful soundtrack and sound effects Helpful plant information',
-    releaseDateDisplay: '2021-08-05',
+      'Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat – whether you’re obliterating demon hordes through the depths of Hell in the single-player campaign, or competing against your friends in numerous multiplayer modes. There is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.',
+    releaseDateDisplay: '2017-11-10',
     myData: {
       played: true,
       physicalCopy: false,
@@ -954,30 +954,36 @@ export const switchGamesOwnedMasterList = [
       rating: 0
     },
     images: {
-      boxart: '',
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-switch/boxart',
       descriptionImage: '',
       horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doomsday-vault-switch/hero'
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/doom-switch/hero'
     },
     gameInfo: {
-      developers: ['Flightless'],
-      esrbDescriptors: ['Mild Fantasy Violence'],
-      esrbRating: 'Everyone',
+      developers: ['id Software'],
+      esrbDescriptors: [
+        'Blood and Gore',
+        'Intense Violence',
+        'Strong Language',
+        'Users Interact'
+      ],
+      esrbRating: 'Mature',
       freeToStart: false,
       generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 19.99,
-      numOfPlayers: '1 player',
-      playerFilters: ['1+'],
-      publishers: ['Flightless'],
-      slug: 'doomsday-vault-switch',
-      genres: ['Adventure', 'Puzzle', 'Action'],
+      msrp: 39.99,
+      numOfPlayers: 'up to 12 players',
+      playerFilters: ['1+', '2+'],
+      publishers: ['Bethesda'],
+      slug: 'doom-switch',
+      genres: ['First-Person', 'Action', 'Multiplayer'],
       lengthOfGame: '',
       mood: [],
       remake: false,
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Doomsday Vault'
+    displayTitle: 'DOOM (2016)'
   },
   {
     title: 'ENDER LILIES: Quietus of the Knights',

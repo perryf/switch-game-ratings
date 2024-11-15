@@ -74,6 +74,16 @@ function App() {
     }
   }
 
+  console.log(switchGamesOwnedMasterList)
+  const filteredList = switchGamesOwnedMasterList.filter(g => {
+    if (g.includeInReviews === false) return false
+    if (g.myData.played === false) return false
+
+    return true
+  })
+
+  console.log(filteredList)
+
   return (
     <main>
       <h1>Switch Games</h1>
