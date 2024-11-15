@@ -1,46 +1,46 @@
-// import { useState } from 'react'
-// import { SwitchGameBasic } from '../../interfaces'
+import { useState } from 'react'
+import { SwitchGameBasic } from '../../interfaces'
 import './create-game-form.css'
 
-// const newGameInit: SwitchGameBasic = {
-//   title: '',
-//   description: '',
-//   displayTitle: '',
-//   releaseDateDisplay: new Date(),
-//   images: {
-//     boxart: '',
-//     descriptionImage: '',
-//     horizontalHeaderImage: ''
-//   },
-//   gameInfo: {
-//     developers: [],
-//     engine: '',
-//     esrbDescriptors: [],
-//     esrbRating: '',
-//     fileSize: '',
-//     freeToStart: false,
-//     generalFilters: [],
-//     genres: [],
-//     lengthOfGame: '',
-//     mood: [],
-//     msrp: 0.0,
-//     numOfPlayers: '',
-//     playerFilters: [],
-//     publishers: [],
-//     remake: false,
-//     slug: ''
-//   },
-//   myData: {
-//     datePlayed: '',
-//     datePurchased: '',
-//     emulatorSystem: '',
-//     isEmulator: false,
-//     physicalCopy: false,
-//     played: false,
-//     rating: 0,
-//     review: ''
-//   }
-// }
+const newGameInit: SwitchGameBasic = {
+  title: '',
+  description: '',
+  displayTitle: '',
+  releaseDateDisplay: new Date(),
+  images: {
+    boxart: '',
+    descriptionImage: '',
+    horizontalHeaderImage: ''
+  },
+  gameInfo: {
+    developers: [],
+    engine: '',
+    esrbDescriptors: [],
+    esrbRating: '',
+    fileSize: '',
+    freeToStart: false,
+    generalFilters: [],
+    genres: [],
+    lengthOfGame: '',
+    mood: [],
+    msrp: 0.0,
+    numOfPlayers: '',
+    playerFilters: [],
+    publishers: [],
+    remake: false,
+    slug: ''
+  },
+  myData: {
+    datePlayed: '',
+    datePurchased: '',
+    emulatorSystem: '',
+    isEmulator: false,
+    physicalCopy: false,
+    played: false,
+    rating: 0,
+    review: ''
+  }
+}
 
 // const switchGenreList: { name: string; value: string }[] = [
 //   { name: 'Action', value: 'action' },
@@ -54,16 +54,16 @@ import './create-game-form.css'
 //   { name: 'Tactics', value: 'tactics' }
 // ]
 
-// interface CreateGameFormProps {
-//   createGame: (a: SwitchGameBasic) => void
-// }
+interface CreateGameFormProps {
+  createGame: (a: SwitchGameBasic) => void
+}
 
-function CreateGameForm() {
-  // const { createGame } = props
+function CreateGameForm(props: CreateGameFormProps) {
+  const { createGame } = props
 
-  // const [isCreating, setIsCreating] = useState<boolean>(false)
+  const [isCreating, setIsCreating] = useState<boolean>(false)
 
-  // const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
+  const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
 
   // const handleUpdateGame = (e: {
   //   target: {
@@ -83,13 +83,13 @@ function CreateGameForm() {
   //   })
   // }
 
-  const handleUpdateSelectMulti = (e: {
-    target: {
-      name: string
-      selectedOptions: HTMLCollectionOf<HTMLOptionElement>
-    }
-  }) => {
-    const { name, selectedOptions } = e.target
+  // const handleUpdateSelectMulti = (e: {
+  //   target: {
+  //     name: string
+  //     selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+  //   }
+  // }) => {
+  //   const { name, selectedOptions } = e.target
 
   //   setNewGame(game => ({
   //     ...game,
@@ -97,19 +97,17 @@ function CreateGameForm() {
   //   }))
   // }
 
-  // const handleGameSubmit = (e: { preventDefault: () => void }) => {
-  //   e.preventDefault()
-  //   createGame(newGame)
-  // }
+  const handleGameSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault()
+    createGame(newGame)
+  }
 
   return (
     <div className="create-form-box">
-      CREATE BOX
-      {/* <button onClick={() => setIsCreating(state => !state)}>+ create</button>
-
+      <button onClick={() => setIsCreating(state => !state)}>+ create</button>
       {isCreating && (
         <form onSubmit={handleGameSubmit} className="create-form">
-          <div className="create-form-row">
+          {/* <div className="create-form-row">
             <div>
               <label htmlFor="name">Name *</label>
               <input
@@ -296,16 +294,16 @@ function CreateGameForm() {
               onChange={handleUpdateGame}
               value={newGame.tags}
             />
-          </div>
+          </div> */}
 
           <button
             type="submit"
-            disabled={!newGame.name || !newGame.rating || !newGame.review}
+            // disabled={!newGame.name || !newGame.rating || !newGame.review}
           >
             Submit
           </button>
         </form>
-      )} */}
+      )}
     </div>
   )
 }

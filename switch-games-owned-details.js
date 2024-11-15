@@ -45,7 +45,6 @@ export const switchGamesOwnedMasterList = [
     title: 'Animal Well',
     description:
       'Explore the intricate labyrinth and uncover its many secrets. Hatch from your flower and spelunk through the beautiful and sometimes haunting world of Animal Well, a pixelated wonder rendered in intricate audio and visual detail.',
-    programer: ['Billy Basso'],
     releaseDateDisplay: '2024-05-09',
     myData: {
       played: true,
@@ -896,7 +895,7 @@ export const switchGamesOwnedMasterList = [
     title: "Don't Starve Together",
     description:
       "Don't Starve Together is the standalone multiplayer expansion of the uncompromising wilderness survival game, Don't Starve. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style. Play your way as you unravel the mysteries of this strange land. Cooperate with your friends in a private game, or take your chances with strangers online. Work with other players to survive the harsh environment, or strike out on your own. Do whatever it takes, but most importantly, Don't Starve.",
-    releaseDateDisplay: 'Spring 202',
+    releaseDateDisplay: '2022-04-12',
     myData: {
       played: true,
       physicalCopy: false,
@@ -1764,7 +1763,7 @@ export const switchGamesOwnedMasterList = [
     title: 'MARIO + RABBIDS SPARKS OF HOPE',
     description:
       "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! Build your dream team with three heroes from an eclectic roster of nine. Take down all new bosses, along with some familiar enemies throughout the galaxy. Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
-    releaseDateDisplay: '2022',
+    releaseDateDisplay: '2022-10-20',
     myData: {
       played: true,
       physicalCopy: true,
@@ -1845,18 +1844,19 @@ export const switchGamesOwnedMasterList = [
   },
   {
     title: 'Metal Slug Tactics',
+    displayTitle: 'Metal Slug Tactics',
     description:
       "METAL SLUG is back with a brand new entry in the METAL SLUG universe. Discover a new side of the emblematic run'n'gun and jump into a dynamic tactical RPG with roguelike elements! Super fun and lighthearted, Metal Slug Tactics takes what makes METAL SLUG so special and unique and brings it to the tactical genre! GAMEPLAY - TACTICAL RPG WITH ROGUELIKE ELEMENTS Experience the iconic dynamic battles of the METAL SLUG series with a brand new perspective. Build up your adrenaline bar to unlock super attacks and use them wisely. Gain some precious war experience after each battle and unlock weapons or bonus perks to upgrade your team’s firepower. - SOLDIERS! ASSEMBLE! Choose between iconics brothers-in-arms to create the perfect team to stop the war. Launch simultaneous attacks on your targets with the sync. mechanic to deal a hell lot of damage to the enemies! Don’t forget to call in some reinforcements if your team isn’t enough! They will send over the heavy artillery to support you: the Metal Slug, air raids, you name it, you get it! - FIGHT YOUR WAY TO VICTORY Ending the war won't be easy. Many challenges await, prepare to die again and again but never give up! Play and replay your favorite missions as much as you want! Use the skills you acquired through each battle you have won so far to take down your enemies! STORY Donald Morden is back! After a long time being hidden in a country opposed to the World Government, he patiently staged a coup…",
-    releaseDateDisplay: '2022',
+    releaseDateDisplay: '2024-11-05',
     myData: {
-      played: true,
-      physicalCopy: false,
-      review: '',
-      isEmulator: false,
-      emulatorSystem: '',
-      datePurchased: '2024-11-06',
       datePlayed: '',
-      rating: 0
+      datePurchased: '2024-11-06',
+      emulatorSystem: '',
+      isEmulator: false,
+      physicalCopy: false,
+      played: true,
+      rating: 0,
+      review: ''
     },
     images: {
       boxart: '',
@@ -1866,23 +1866,22 @@ export const switchGamesOwnedMasterList = [
     },
     gameInfo: {
       developers: ['Leikir Studio'],
+      engine: '',
       esrbDescriptors: ['Visit www.esrb.org for rating information.'],
       esrbRating: 'Rating Pending',
+      fileSize: '',
       freeToStart: false,
       generalFilters: [],
+      genres: ['Action', 'Fighting', 'Strategy', 'Indie'],
+      lengthOfGame: '',
+      mood: [],
       msrp: null,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
       publishers: ['DotEmu'],
-      slug: 'metal-slug-tactics-switch',
-      genres: ['Action', 'Fighting', 'Strategy', 'Indie'],
-      lengthOfGame: '',
-      mood: [],
       remake: false,
-      engine: '',
-      fileSize: ''
-    },
-    displayTitle: 'Metal Slug Tactics'
+      slug: 'metal-slug-tactics-switch'
+    }
   },
   {
     title: 'Metroid™ Dread',
@@ -2143,6 +2142,51 @@ export const switchGamesOwnedMasterList = [
     },
     displayTitle: 'Owlboy'
   },
+
+  {
+    title: 'Pikmin™ 4',
+    description:
+      'Guide pint-sized creatures in an endearing expedition! Meet Pikmin: small, plantlike creatures with distinct abilities that you can grow, pluck, guide, and overpower enemies with! Use your Pikmin’s miniature might (and a bit of strategy) to explore this mysterious planet in search of your crew—and treasure.',
+    releaseDateDisplay: '2023-07-21',
+    myData: {
+      played: true,
+      fullOrDemo: 'demo',
+      physicalCopy: false,
+      review: '',
+      isEmulator: false,
+      emulatorSystem: '',
+      datePlayed: '',
+      datePurchased: '',
+      rating: 0
+    },
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/4/4d/Pikmin_icon_4.jpg',
+      descriptionImage: '',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pikmin-4-switch/hero'
+    },
+    gameInfo: {
+      developers: ['Nintendo EPD', 'Eighting'],
+      esrbDescriptors: ['Comic Mischief', 'Fantasy Violence'],
+      esrbRating: 'Everyone 10+',
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible'],
+      msrp: 59.99,
+      numOfPlayers: 'up to 2 players',
+      playerFilters: ['1+', '2+'],
+      publishers: ['Nintendo'],
+      slug: 'pikmin-4-switch',
+      genres: ['Action', 'Adventure', 'Strategy'],
+      lengthOfGame: '',
+      mood: [],
+      remake: false,
+      engine: '',
+      fileSize: '10.5 GB'
+    },
+    displayTitle: 'Pikmin 4'
+  },
+
   {
     title: 'Pokémon UNITE',
     description:
@@ -2401,7 +2445,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Sea of Stars',
     description:
       'Sea of Stars tells the story of two Children of the Solstice who combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fighting off the monstrous creations of an evil alchemist known as The Fleshmancer. • Engaging turn-based combat. Pressing the action button in sync with the animations increases damage output while reducing incoming damage. Along with timed hits, combat features multi-character combo attacks, boosting, and a strategic "locks" system offering options to play with different damage types in order to hinder enemies while they are channeling powerful attacks or spells, all in an immersive take on the genre; no random encounters, no transitions to separate battlefields, and no grinding. • Unshackled traversal. Swim, climb, vault, jump off or hoist up ledges as you traverse seamlessly through the world with a navigation system based on platformer expertise that breaks free from the classic bound-to-the-grid tileset movement. • A story rich adventure. Dozens of original characters and story arcs will take you on a captivating journey. Sometimes epic, sometimes silly, and other times emotional, Sea of Stars does its RPG duty of exploring classic themes of adventure and friendship, while also being chock-full of the unexpected twists and events you’d expect from a Sabotage production. • A world you can touch. There are many ways to hang out in the world of Sea of Stars if you feel the need for a change of pace in your adventures. Sailing, cooking, fishing, stopping by a tavern to listen to a…',
-    releaseDateDisplay: 'Holiday 20',
+    releaseDateDisplay: '2023-08-29',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3076,7 +3120,7 @@ export const switchGamesOwnedMasterList = [
     title: "Teenage Mutant Ninja Turtles: Shredder's Revenge",
     description:
       'HEROES IN A HALF SHELL Teenage Mutant Ninja Turtles: Shredder’s Revenge features groundbreaking gameplay rooted in timeless classic brawling mechanics, brought to you by the beat ’em up experts at Dotemu (Streets of Rage 4) and Tribute Games. Bash your way through gorgeous pixel art environments and slay tons of hellacious enemies with your favorite Turtle, each with his own skills and moves - making each run unique! Choose a fighter, use radical combos to defeat your opponents and experience intense combats loaded with breathtaking action and outrageous ninja abilities. Stay sharp as you face off against Shredder and his faithful Foot Clan alone, or grab your best buds and play with up to four players simultaneously! TURTLE BOYS DON’T CUT KRANG NO SLACK With Bebop and Rocksteady assaulting Channel 6 and stealing super gnarly devices to support Krang and Shredder’s latest twisted plan, Teenage Mutant Ninja Turtles: Shredder’s Revenge sees the Turtles battling across a righteous range of timeless TMNT locations. From Manhattan and Coney Island, to city rooftops and dank sewers, help the fearsome foursome trounce Foot Soldiers, Triceraton Warriors, and Rock Troops all the way to Dimension X! TURTLE POWER!! Enjoy stunning full-color pixel art graphics and a vintage TMNT vibe that will rock you straight back to the awesome 80s. Every character, vehicle, weapon, item, and background is directly inspired by the 1987 TV show, making you feel like you hopped into the television -- with a dope mix of killer humor and action-packed adventures! FEATURES: Gnarly game design takes you back…',
-    releaseDateDisplay: '2022',
+    releaseDateDisplay: '2022-06-16',
     myData: {
       played: true,
       physicalCopy: false,
@@ -3636,7 +3680,7 @@ export const switchGamesOwnedMasterList = [
     title: 'Xenoblade Chronicles 3',
     description:
       'A vast world awaits in Xenoblade Chronicles 3, the next game in the acclaimed RPG series from developer MONOLITHSOFT. Players will step into the roles of protagonists Noah and Mio amid turmoil between the hostile nations of Keves and Agnus. Six characters hailing from those nations will take part in a grand tale with “life” as its central theme. Explore a new world that will connect the futures of both Xenoblade Chronicles and Xenoblade Chronicles 2, launching for Nintendo Switch in September 2022.',
-    releaseDateDisplay: 'September ',
+    releaseDateDisplay: '2022-07-29',
     myData: {
       played: true,
       physicalCopy: true,
