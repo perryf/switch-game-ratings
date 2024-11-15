@@ -350,7 +350,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Borderlands Legendary Collection'
+    displayTitle: 'Borderlands 2'
   },
   {
     title: 'Borderlands: Game of the Year Edition',
@@ -488,7 +488,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Cat Quest + Cat Quest II Pawsome Pack'
+    displayTitle: 'Cat Quest II'
   },
   {
     title: 'Celeste',
@@ -576,7 +576,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Child of Light® Ultimate Edition'
+    displayTitle: 'Child of Light: Ultimate Edition'
   },
   {
     title: 'Cult of the Lamb',
@@ -663,7 +663,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'DARK SOULS™: REMASTERED'
+    displayTitle: 'DARK SOULS: REMASTERED'
   },
   {
     title: 'DOOM (1993)',
@@ -747,7 +747,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'DOOM® Eternal'
+    displayTitle: 'DOOM Eternal'
   },
   {
     title: 'DRAGON QUEST® XI S: Echoes of an Elusive Age – Definitive Edition',
@@ -800,14 +800,13 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle:
-      'DRAGON QUEST® XI S: Echoes of an Elusive Age – Definitive Edition'
+    displayTitle: 'DRAGON QUEST XI S: Echoes of an Elusive Age'
   },
   {
-    title: 'Dexter Stardust : Adventures in Outer Space',
+    title: 'Dex',
     description:
-      'Space! Dexter Stardust barely escaped when the Vreesians, inhabitants of the menacing Planet X, sent a fleet of robots to destroy all life on Earth. Now, twenty years later, a mechanical man from the 10th planet seeks to communicate to Dexter a very important message - he is the key to saving both humans and Vreesians. Play the taco-loving Dexter Stardust as he, and his good friend Aurora, go on the greatest adventure of their lives and discover the mystery of the Robot from the Planet X! Classic Adventure Gameplay Created as a classic point and click adventure, you can walk, talk, and interact with everything in your surroundings. Use and pick up inventory items to solve puzzles in over 100 unique scenes. 5 Episodes in One Game Playing Dexter Stardust is like watching back to back episodes of a Saturday morning cartoon! With 5 total episodes, feel free to jump to or replay any episode you’d like at any time. Full Voice Acted All characters, cutscenes, and gameplay are completely voice acted! An Adventure for Everyone The whole family can go on a spacey adventure; with its non-violent gameplay, incredible story, logical puzzles, and easy controls, Dexter and gang are sure to jump off the screen and into your heart.',
-    releaseDateDisplay: '2022-03-03',
+      'You play as the mysterious blue-haired girl named Dex who is being hunted by a powerful and enigmatic organization for her unique abilities. Explore the misty, futuristic streets of Harbor Prime in this open-world dystopia. Unearth plots and intrigues, forge alliances and take the fight to your enemies on your quest to take down the system! The world of Dex is designed as a tribute to some of the greatest neo-noir and cyberpunk worlds with a mature storyline, murky atmosphere and distinct characters. Gameplay is a throwback to classic 2D platforming and action games but mixed with deep RPG elements, interactive dialogues and real-time combat. Customize your character’s skills and equipment to match your desired playstyle - kill from shadows as a silent assassin, fight the power head on as a gunfighter, use persuasion like a sly diplomat or fight from a distance in cyberspace as a hacker. Blur the line between being human and "cyborg" by installing augmentations that grant you superhuman abilities and open up new paths in Harbour Prime like classic Metroidvania titles. - Deep RPG mechanics mixed with side-scrolling 2D action - Non-linear gameplay set in a cyberpunk open-world - Intriguing and mature plot in a neo-noir atmosphere - Multiple dialogue choices with branching outcomes - Full English voice over - Multiple playstyles - stealth, open combat, diplomat, hacker or a mix of the above - Various customization options - choose your equipment, skills and even cybernetic implant skills to open up new paths in the city - Unique hacking mechanic that…',
+    releaseDateDisplay: '2020-07-24',
     myData: {
       played: true,
       physicalCopy: false,
@@ -819,30 +818,37 @@ export const switchGamesOwnedMasterList = [
       rating: 0
     },
     images: {
-      boxart: '',
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dex-switch/boxart',
       descriptionImage: '',
       horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dexter-stardust-adventures-in-outer-space-switch/hero'
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/d/dex-switch/hero'
     },
     gameInfo: {
-      developers: ['Sea Monster Media'],
-      esrbDescriptors: ['Comic Mischief', 'Fantasy Violence'],
-      esrbRating: 'Everyone 10+',
+      developers: ['Dreadlocks'],
+      esrbDescriptors: [
+        'Blood',
+        'Drug Reference',
+        'Sexual Content',
+        'Strong Language',
+        'Violence'
+      ],
+      esrbRating: 'Mature',
       freeToStart: false,
-      generalFilters: ['Nintendo Switch Online compatible'],
-      msrp: 9.99,
+      generalFilters: ['Nintendo Switch Online compatible', 'Deals'],
+      msrp: 19.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
-      publishers: ['Flynns Arcade'],
-      slug: 'dexter-stardust-adventures-in-outer-space-switch',
-      genres: ['Adventure', 'Puzzle', 'Action', 'Education'],
+      publishers: ['QubicGames'],
+      slug: 'dex-switch',
+      genres: ['Adventure', 'Other', 'Action', 'Role-Playing'],
       lengthOfGame: '',
       mood: [],
       remake: false,
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Dexter Stardust : Adventures in Outer Space'
+    displayTitle: 'Dex'
   },
   {
     title: 'Dicey Dungeons',
@@ -1235,7 +1241,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Fire Emblem™: Three Houses'
+    displayTitle: 'Fire Emblem: Three Houses'
   },
   {
     title: 'Fortnite',
@@ -1616,7 +1622,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Kirby™ and the Forgotten Land'
+    displayTitle: 'Kirby and the Forgotten Land'
   },
   {
     title: 'LIMBO',
@@ -1726,18 +1732,18 @@ export const switchGamesOwnedMasterList = [
     },
     gameInfo: {
       developers: ['MegaWobble'],
+      engine: 'Unity',
       esrbRating: 'Everyone',
+      fileSize: '437 MB',
+      genres: ['Platformer', 'Adventure'],
+      lengthOfGame: '',
+      mood: [],
       msrp: 19.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
       publishers: ['Playtonic Games'],
-      slug: 'lil-gator-game-switch',
-      genres: ['Platformer', 'Adventure'],
-      fileSize: '437 MB',
-      engine: 'Unity',
-      lengthOfGame: '',
-      mood: [],
-      remake: false
+      remake: false,
+      slug: 'lil-gator-game-switch'
     },
     images: {
       boxart:
@@ -1753,7 +1759,6 @@ export const switchGamesOwnedMasterList = [
     description:
       "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! Build your dream team with three heroes from an eclectic roster of nine. Take down all new bosses, along with some familiar enemies throughout the galaxy. Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
     releaseDateDisplay: '2022',
-    _distinctSeqID: 0,
     myData: {
       played: true,
       physicalCopy: true,
@@ -1878,7 +1883,6 @@ export const switchGamesOwnedMasterList = [
     description:
       'For a limited time, you can earn DOUBLE My Nintendo Gold Points on Metroid Dread. That means you can earn 10% in Gold Points*—which you can then use toward your next eligible digital game or DLC. Join bounty hunter Samus Aran as she tries to escape a deadly alien world in the critically-acclaimed Metroid Dread Upon investigating a mysterious transmission on Planet ZDR, Samus faces a mysterious foe that traps her in this dangerous world. The remote planet has been overrun by vicious alien lifeforms and murderous robots called E.M.M.I. Hunt or be hunted as you make your way through a labyrinth of enemies in Samus’ most intense side-scrolling adventure yet. Samus is more agile and capable than ever Guide Samus Aran, an intergalactic bounty hunter raised by an ancient tribe, and traverse the many environments of a dangerous world. Parkour over obstacles, slide through tight spaces, counter enemies, and battle your way through the planet. Through her countless missions, Samus has never experienced a threat like the dread of ZDR. Power up and find more ways to explore and secrets to uncover Gain abilities and return to previous areas to find new areas and hidden upgrades in classic Metroid™ gameplay. Planet ZDR’s sprawling map is home to many secrets to discover and powers to find. You’ll need to be prepared to evade and destroy E.M.M.I. robots and overcome the dread plaguing ZDR. New modes let you ease into ZDR or experience true Dread If this is your first time sprinting and shooting as Samus, the…',
     releaseDateDisplay: '2021-10-08',
-    _distinctSeqID: 0,
     myData: {
       played: true,
       physicalCopy: false,
@@ -1913,7 +1917,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Metroid™ Dread'
+    displayTitle: 'Metroid Dread'
   },
   {
     title: 'Minit',
@@ -1998,7 +2002,8 @@ export const switchGamesOwnedMasterList = [
     displayTitle: 'Monster Boy and the Cursed Kingdom'
   },
   {
-    title: 'Mortal Kombat 11',
+    title: 'Mortal Kombat 11',
+    displayTitle: 'Mortal Kombat 11',
     description:
       "Mortal Kombat 11 is the latest installment in the critically acclaimed franchise, providing a deeper and more personalized experience than ever before. The all new Custom Character Variations give you unprecedented control of your fighters to make them your own. Featuring a roster of new and returning Klassic Fighters, Mortal Kombat's best-in-class cinematic story mode continues the epic saga over 25 years in the making. Players take on the role of a variety of past and present characters in a time-bending new narrative that pits Raiden against Kronika, the Keeper of Time. Packed to the brim with multiple modes, including the Towers of Time, allowing players to test their skills through various challenges, providing more ways than ever to continue the Mortal Kombat 11 experience.",
     releaseDateDisplay: '2019-04-22',
@@ -2046,8 +2051,7 @@ export const switchGamesOwnedMasterList = [
       remake: false,
       engine: '',
       fileSize: ''
-    },
-    displayTitle: 'Mortal Kombat 11'
+    }
   },
   {
     title: 'New Pokémon Snap™',
@@ -2089,7 +2093,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'New Pokémon Snap™'
+    displayTitle: 'New Pokémon Snap'
   },
   {
     title: 'Owlboy',
@@ -2181,7 +2185,7 @@ export const switchGamesOwnedMasterList = [
   {
     title: 'Pokémon™ Sword and Pokémon™ Shield Double Pack',
     description:
-      'If you purchase the Pokémon™ Sword and Pokémon™ Shield Double Pack bundle, then you can receive two codes that will reward you with special items known as Dynamax Crystals! As a special bonus for purchasing the Pokémon Sword and Pokémon Shield Double Pack, you’ll receive two codes (one per game) that will each reward you a special item known as a Dynamax Crystal*. By using the Dynamax Crystals received via these codes, you’ll be able to face Dynamax Larvitar and Dynamax Jangmo-o in special Max Raid Battles**. These Pokémon normally can’t be encountered until later in the game! Max Raid Battles are battles in which you can recruit up to three players* via local communication or the internet to face down powerful Dynamax Pokémon! Every participant will get a chance to catch the Pokémon if you triumph in the battle! Additionally, with Dynamax Crystals, you’ll be able to attempt these Max Raid Battles as many times as it takes to win or until midnight on the day that the Dynamax Crystal was used, whichever comes first.* A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with…',
+      'A new generation of Pokémon is coming to the Nintendo Switch™ system. Begin your adventure as a Pokémon Trainer by choosing one of three new partner Pokémon: Grookey, Scorbunny, or Sobble. Then embark on a journey in the new Galar region, where you’ll challenge the troublemakers of Team Yell, while unraveling the mystery behind the Legendary Pokémon Zacian and Zamazenta! Explore the Wild Area, a vast expanse of land where the player can freely control the camera. Team up with three other players locally or online in the new multiplayer co-op Max Raid Battles* in which players will face off against gigantic and super-strong Pokémon known as Dynamax Pokémon.',
     releaseDateDisplay: '2019-11-15',
     myData: {
       played: true,
@@ -2195,10 +2199,10 @@ export const switchGamesOwnedMasterList = [
     },
     images: {
       boxart:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/boxart',
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-shield-switch/boxart',
       descriptionImage: '',
       horizontalHeaderImage:
-        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-sword-and-pokemon-shield-double-pack-switch/hero'
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/p/pokemon-shield-switch/hero'
     },
     gameInfo: {
       developers: ['GAME FREAK'],
@@ -2206,19 +2210,19 @@ export const switchGamesOwnedMasterList = [
       esrbRating: 'Everyone',
       freeToStart: false,
       generalFilters: ['DLC available', 'Nintendo Switch Online compatible'],
-      msrp: 119.99,
+      msrp: 59.99,
       numOfPlayers: 'up to 4 players',
       playerFilters: ['1+', '2+', '3+', '4+'],
       publishers: ['Nintendo'],
-      slug: 'pokemon-sword-and-pokemon-shield-double-pack-switch',
+      slug: 'pokemon-shield-switch',
       genres: ['Adventure', 'Role-Playing'],
       lengthOfGame: '',
       mood: [],
       remake: false,
       engine: '',
-      fileSize: ''
+      fileSize: '12.4 GB'
     },
-    displayTitle: 'Pokémon™ Sword and Pokémon™ Shield Double Pack'
+    displayTitle: 'Pokémon Shield'
   },
   {
     title: 'QUAKE',
@@ -2301,7 +2305,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Rayman® Legends Definitive Edition'
+    displayTitle: 'Rayman Legends Definitive Edition'
   },
   {
     title: 'Resident Evil',
@@ -2894,7 +2898,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Super Mario Odyssey™'
+    displayTitle: 'Super Mario Odyssey'
   },
   {
     title: 'Super Mario Party™',
@@ -2936,7 +2940,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Super Mario Party™'
+    displayTitle: 'Super Mario Party'
   },
   {
     title: 'Super Mario RPG',
@@ -2944,30 +2948,30 @@ export const switchGamesOwnedMasterList = [
       'Enter—or revisit—a world of whimsy with Mario on a quest to repair Star Road and defeat the troublemaking Smithy Gang. Team up with a party of unlikely allies, like the monstrous Bowser and a mysterious doll named Geno, in a story-rich RPG packed with laughs and quirky characters.',
     releaseDateDisplay: '2023-11-17',
     myData: {
-      played: true,
-      physicalCopy: false,
-      missingFromAPI: true,
-      review: '',
-      isEmulator: false,
-      emulatorSystem: '',
-      datePurchased: '2023-11-10',
       datePlayed: '',
-      rating: 0
+      datePurchased: '2023-11-10',
+      emulatorSystem: '',
+      isEmulator: false,
+      missingFromAPI: true,
+      physicalCopy: false,
+      played: true,
+      rating: 0,
+      review: ''
     },
     gameInfo: {
       developers: ['Square', 'ArtePiazza'],
+      engine: 'Unity',
       esrbRating: 'Everyone',
+      fileSize: '6.5 GB',
+      genres: ['Role-playing', 'Adventure'],
+      lengthOfGame: '',
+      mood: [],
       msrp: 59.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
       publishers: ['Nintendo'],
-      slug: 'super-mario-rpg-switch',
-      genres: ['Role-playing', 'Adventure'],
-      fileSize: '6.5 GB',
-      engine: 'Unity',
-      lengthOfGame: '',
-      mood: [],
-      remake: true
+      remake: true,
+      slug: 'super-mario-rpg-switch'
     },
     images: {
       boxart:
@@ -3019,7 +3023,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Super Mario™ 3D World + Bowser’s Fury'
+    displayTitle: 'Super Mario 3D World + Bowser’s Fury'
   },
   {
     title: 'TOEM',
@@ -3111,6 +3115,7 @@ export const switchGamesOwnedMasterList = [
     description:
       'The Tetris® 99 digital game includes an online mode that is a special offer for Nintendo Switch Online members*. In large-scale, 99-player battles, it’ll take speed, skill, and strategy to knock out the competition and become the last player standing. You can target opponents by sending them Garbage Blocks, but be careful… Your rivals can target you back! Defeat opponents to acquire K.O. Badges that may give you the advantage on future attacks. Nintendo Switch Online members can also look forward to upcoming online events*!',
     releaseDateDisplay: '2019-02-13',
+    includeInReviews: false,
     myData: {
       played: true,
       physicalCopy: false,
@@ -3146,7 +3151,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Tetris® 99'
+    displayTitle: 'Tetris 99'
   },
   {
     title: 'Tetris® Effect: Connected',
@@ -3187,7 +3192,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Tetris® Effect: Connected'
+    displayTitle: 'Tetris Effect: Connected'
   },
   {
     title: 'The Legend of Zelda: Tears of the Kingdom',
@@ -3274,7 +3279,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'The Legend of Zelda™: Breath of the Wild'
+    displayTitle: 'The Legend of Zelda: Breath of the Wild'
   },
   {
     title: 'The Witcher 3: Wild Hunt',
@@ -3619,7 +3624,7 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'XCOM® 2 Collection'
+    displayTitle: 'XCOM 2 Collection'
   },
   {
     title: 'Xenoblade Chronicles 3',
@@ -3794,6 +3799,6 @@ export const switchGamesOwnedMasterList = [
       engine: '',
       fileSize: ''
     },
-    displayTitle: 'Yoshi’s Crafted World™'
+    displayTitle: 'Yoshi’s Crafted World'
   }
 ]

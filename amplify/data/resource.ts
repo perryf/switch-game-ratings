@@ -7,6 +7,7 @@ const schema = a.schema({
       description: a.string(),
       displayTitle: a.string().required(),
       releaseDateDisplay: a.date(),
+      includeInReviews: a.boolean(),
       images: a.customType({
         boxart: a.string(),
         descriptionImage: a.string(),
@@ -35,6 +36,7 @@ const schema = a.schema({
         datePurchased: a.string(),
         emulatorSystem: a.string(),
         isEmulator: a.boolean(),
+        missingFromAPI: a.boolean(),
         physicalCopy: a.boolean(),
         played: a.boolean(),
         rating: a.integer().required(), // 1 -5
