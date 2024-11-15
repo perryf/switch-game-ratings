@@ -47,7 +47,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .game-date-display {
@@ -62,5 +62,6 @@
 }
 
 .game-stats-list li {
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 14px;
 }
