@@ -42,17 +42,17 @@ const newGameInit: SwitchGameBasic = {
   }
 }
 
-// const switchGenreList: { name: string; value: string }[] = [
-//   { name: 'Action', value: 'action' },
-//   { name: 'Adventure', value: 'adventure' },
-//   { name: 'Fighting', value: 'fighting' }, // TODO -> Better name for this?
-//   { name: 'Puzzle', value: 'puzzle' },
-//   { name: 'Racing', value: 'racing' },
-//   { name: 'First Person Shooter', value: 'fps' },
-//   { name: 'RPG', value: 'rpg' },
-//   { name: 'Simulation', value: 'simulation' },
-//   { name: 'Tactics', value: 'tactics' }
-// ]
+const switchGenreList: { name: string; value: string }[] = [
+  { name: 'Action', value: 'action' },
+  { name: 'Adventure', value: 'adventure' },
+  { name: 'Fighting', value: 'fighting' }, // TODO -> Better name for this?
+  { name: 'Puzzle', value: 'puzzle' },
+  { name: 'Racing', value: 'racing' },
+  { name: 'First Person Shooter', value: 'fps' },
+  { name: 'RPG', value: 'rpg' },
+  { name: 'Simulation', value: 'simulation' },
+  { name: 'Tactics', value: 'tactics' }
+]
 
 interface CreateGameFormProps {
   createGame: (a: SwitchGameBasic) => void
@@ -65,37 +65,37 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
 
-  // const handleUpdateGame = (e: {
-  //   target: {
-  //     checked?: boolean
-  //     name: string
-  //     type: string
-  //     value: string | number
-  //   }
-  // }) => {
-  //   const { checked, name, type, value } = e.target
+  const handleUpdateGame = (e: {
+    target: {
+      checked?: boolean
+      name: string
+      type: string
+      value: string | number
+    }
+  }) => {
+    const { checked, name, type, value } = e.target
 
-  //   setNewGame(game => {
-  //     if (type === 'checkbox') {
-  //       return { ...game, [name]: checked }
-  //     }
-  //     return { ...game, [name]: value }
-  //   })
-  // }
+    setNewGame(game => {
+      if (type === 'checkbox') {
+        return { ...game, [name]: checked }
+      }
+      return { ...game, [name]: value }
+    })
+  }
 
-  // const handleUpdateSelectMulti = (e: {
-  //   target: {
-  //     name: string
-  //     selectedOptions: HTMLCollectionOf<HTMLOptionElement>
-  //   }
-  // }) => {
-  //   const { name, selectedOptions } = e.target
+  const handleUpdateSelectMulti = (e: {
+    target: {
+      name: string
+      selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+    }
+  }) => {
+    const { name, selectedOptions } = e.target
 
-  //   setNewGame(game => ({
-  //     ...game,
-  //     [name]: Array.from(selectedOptions).map((o: any) => o.value)
-  //   }))
-  // }
+    setNewGame(game => ({
+      ...game,
+      [name]: Array.from(selectedOptions).map((o: any) => o.value)
+    }))
+  }
 
   const handleGameSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
@@ -107,18 +107,20 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   return (
     <div className="create-form-box">
-      <button onClick={() => setIsCreating(state => !state)}>+ create</button>
+      <button onClick={() => setIsCreating(state => !state)}>
+        {isCreating ? 'x Cancel' : '+ Create'}
+      </button>
       {isCreating && (
         <form onSubmit={handleGameSubmit} className="create-form">
-          {/* <div className="create-form-row">
+          <div className="create-form-row">
             <div>
-              <label htmlFor="name">Name *</label>
+              <label htmlFor="title">Title *</label>
               <input
-                id="name"
-                name="name"
+                id="title"
+                name="title"
                 onChange={handleUpdateGame}
                 required
-                value={newGame.name}
+                value={newGame.title}
               />
             </div>
 
@@ -128,12 +130,12 @@ function CreateGameForm(props: CreateGameFormProps) {
                 id="rating"
                 name="rating"
                 max={5}
-                min={1}
+                min={0}
                 onChange={handleUpdateGame}
                 required
                 step={1}
                 type="number"
-                value={newGame.rating}
+                value={newGame.myData.rating}
               />
             </div>
           </div>
@@ -145,7 +147,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               name="review"
               onChange={handleUpdateGame}
               required
-              value={newGame.review}
+              value={newGame.myData.review}
             />
           </div>
 
@@ -153,22 +155,26 @@ function CreateGameForm(props: CreateGameFormProps) {
 
           <div className="create-form-row">
             <div>
-              <label htmlFor="developedBy">Developed By</label>
+              <label htmlFor="developedBy">
+                Developed By (separate by commas)
+              </label>
               <input
                 id="developedBy"
                 name="developedBy"
                 onChange={handleUpdateGame}
-                value={newGame.developedBy}
+                value={newGame.gameInfo.developers}
               />
             </div>
 
             <div>
-              <label htmlFor="publishedBy">Published By</label>
+              <label htmlFor="publishedBy">
+                Published By (separate by commas)
+              </label>
               <input
                 id="publishedBy"
                 name="publishedBy"
                 onChange={handleUpdateGame}
-                value={newGame.publishedBy}
+                value={newGame.gameInfo.publishers}
               />
             </div>
           </div>
@@ -181,7 +187,12 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="releaseDate"
                 onChange={handleUpdateGame}
                 type="date"
-                value={newGame.releaseDate}
+                value={
+                  // TODO -> Clean this up
+                  newGame.releaseDateDisplay
+                    ? newGame.releaseDateDisplay.toLocaleDateString()
+                    : ''
+                }
               />
             </div>
 
@@ -192,12 +203,14 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="datePlayed"
                 onChange={handleUpdateGame}
                 type="date"
-                value={newGame.datePlayed}
+                // ? Make this date type?
+                value={newGame.myData.datePlayed}
               />
             </div>
           </div>
 
-          <div>
+          {/* // TODO -> Revisit Multiplayer stuff */}
+          {/* <div>
             <label htmlFor="multiplayer">Multiplayer?</label>
             <input
               id="multiplayer"
@@ -206,9 +219,8 @@ function CreateGameForm(props: CreateGameFormProps) {
               type="checkbox"
               checked={newGame.multiplayer}
             />
-          </div>
-
-          <div>
+          </div> */}
+          {/* <div>
             <label htmlFor="multiplayerType">Multiplayer type</label>
             <input
               id="multiplayerType"
@@ -216,9 +228,8 @@ function CreateGameForm(props: CreateGameFormProps) {
               onChange={handleUpdateGame}
               value={newGame.multiplayerType}
             />
-          </div>
-
-          <div>
+          </div> */}
+          {/* <div>
             <label htmlFor="multiplayerNumberOfPlayers">
               Number of Players
             </label>
@@ -231,7 +242,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               value={newGame.multiplayerNumberOfPlayers}
               min={1}
             />
-          </div>
+          </div> */}
 
           <hr />
 
@@ -243,7 +254,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               name="genre"
               onChange={handleUpdateSelectMulti}
               size={switchGenreList.length}
-              value={newGame.genre}
+              value={newGame.gameInfo.genres}
             >
               {switchGenreList.map(genre => (
                 <option key={genre.value} value={genre.value}>
@@ -255,6 +266,7 @@ function CreateGameForm(props: CreateGameFormProps) {
 
           <div className="create-form-row">
             <div>
+              {/* ? Should this be a string? */}
               <label htmlFor="price">Price</label>
               <input
                 id="price"
@@ -262,7 +274,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 onChange={handleUpdateGame}
                 step={0.01}
                 type="number"
-                value={newGame.price}
+                value={newGame.gameInfo.msrp}
                 min={0}
               />
             </div>
@@ -274,7 +286,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="remake"
                 onChange={handleUpdateGame}
                 type="checkbox"
-                checked={newGame.remake}
+                checked={newGame.gameInfo.remake}
               />
             </div>
           </div>
@@ -285,19 +297,9 @@ function CreateGameForm(props: CreateGameFormProps) {
               id="mood"
               name="mood"
               onChange={handleUpdateGame}
-              value={newGame.mood}
+              value={newGame.gameInfo.mood}
             />
           </div>
-
-          <div>
-            <label htmlFor="tags">Tags (separate by commas)</label>
-            <input
-              id="tags"
-              name="tags"
-              onChange={handleUpdateGame}
-              value={newGame.tags}
-            />
-          </div> */}
 
           <button
             type="submit"
