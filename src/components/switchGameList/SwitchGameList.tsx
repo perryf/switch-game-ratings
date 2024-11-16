@@ -1,7 +1,14 @@
 import { Masonry } from 'masonic'
 // import { SwitchGameType } from '../../interfaces'
+import { useWindowSize } from '../../hooks/windowSize'
 import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
+
+const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
+  if (windowSize.width > 1200) return 3
+  if (windowSize.width > 992) return 2
+  return 1
+}
 
 interface SwitchGameListProps {
   deleteGame: (a: string) => void
@@ -14,18 +21,17 @@ function SwitchGameList(props: SwitchGameListProps) {
     games
   } = props
 
+  const size = useWindowSize()
+
   return (
     <div className="switch-game-list">
       <Masonry
         items={games}
         render={SwitchGame}
-        // Adds 8px of space between the grid cells
         columnGutter={6}
-        // Sets the minimum column width to 172px
-        // columnWidth={400}
-        columnCount={2}
-        // Pre-renders 5 windows worth of content
-        // overscanBy={5}
+        maxColumnCount={getColumnCount(size)}
+        overscanBy={5}
+        itemHeightEstimate={350}
       />
 
       {

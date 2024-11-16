@@ -2,12 +2,12 @@
   height: 100%;
   box-sizing: border-box;
   border-radius: 8px;
+  transition: transform 0.3s;
 }
 
 .game-box-inners {
   border-radius: 8px;
   box-shadow: 2px 2px 2px black;
-  /* border: 2px solid black; */
   padding: 10px;
   background: var(--switch-controller-blue-glass);
   background: linear-gradient(
