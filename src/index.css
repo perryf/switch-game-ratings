@@ -19,7 +19,9 @@ body {
   /* background: linear-gradient(95deg, #111133, #333355); */
   background: var(--nintendo-blue);
   display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -70,7 +72,7 @@ label {
 }
 
 h1 {
-  font-family: 'NinFont';
+  font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   padding: 10px 20px 12px;
   color: black;
   background: var(--super-nintendo-gray);

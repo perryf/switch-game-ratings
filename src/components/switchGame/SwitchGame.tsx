@@ -67,37 +67,43 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               <li>
                 <b>Number of Players:</b> {gameInfo.numOfPlayers}
               </li>
-              <li>
-                <b>Developers:</b> {gameInfo.developers.join(', ')}
-              </li>
-              <li>
-                <b>Publishers:</b> {gameInfo.publishers.join(', ')}
-              </li>
-              <li>
-                <b>Rated:</b> {gameInfo.esrbRating}{' '}
-                {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
-                  ? `(${gameInfo.esrbDescriptors.join(', ')})`
-                  : ''}
-              </li>
-              {gameInfo.fileSize && (
-                <li>
-                  <b>File Size:</b> {gameInfo.fileSize}
-                </li>
+              {showMore && (
+                <>
+                  <li>
+                    <b>Developers:</b> {gameInfo.developers.join(', ')}
+                  </li>
+                  <li>
+                    <b>Publishers:</b> {gameInfo.publishers.join(', ')}
+                  </li>
+                  <li>
+                    <b>Rated:</b> {gameInfo.esrbRating}{' '}
+                    {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
+                      ? `(${gameInfo.esrbDescriptors.join(', ')})`
+                      : ''}
+                  </li>
+                  {gameInfo.fileSize && (
+                    <li>
+                      <b>File Size:</b> {gameInfo.fileSize}
+                    </li>
+                  )}
+                  {gameInfo.engine && (
+                    <li>
+                      <b>Engine:</b> {gameInfo.engine}
+                    </li>
+                  )}
+                  <li>
+                    <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
+                  </li>
+                </>
               )}
-              {gameInfo.engine && (
-                <li>
-                  <b>Engine:</b> {gameInfo.engine}
-                </li>
+              {!showMore && (
+                <button
+                  className="show-game-details-button"
+                  onClick={() => setShowMore(true)}
+                >
+                  + Show more
+                </button>
               )}
-              <li>
-                <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
-              </li>
-              <button
-                className="show-game-details-button"
-                onClick={() => setShowMore(!showMore)}
-              >
-                {showMore ? 'x Show less' : '+ Show more'}
-              </button>
             </ul>
           </div>
 
@@ -113,6 +119,13 @@ function SwitchGame(props: MasonrySwitchGameProps) {
         {showMore && (
           <div className="game-description-box">
             <p className="game-description">{game.description}</p>
+
+            <button
+              className="show-game-details-button"
+              onClick={() => setShowMore(false)}
+            >
+              x Show less
+            </button>
           </div>
         )}
       </div>

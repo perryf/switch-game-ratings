@@ -30,6 +30,7 @@ const schema = a.schema({
         playerFilters: a.string().array(),
         publishers: a.string().array(),
         remake: a.boolean(),
+        resourceLinks: a.string().array(),
         slug: a.string()
       }),
       myData: a.customType({

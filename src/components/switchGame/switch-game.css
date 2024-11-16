@@ -8,7 +8,7 @@
 
 .game-box:hover {
   /* transform: translateY(-10px); */
-  transform: scale(1.05, 1.05);
+  transform: scale(1.01, 1.01);
   position: relative;
   z-index: 10;
 }
@@ -27,14 +27,14 @@
 
 .game-box-inners h3 {
   margin: 0 0 4px;
-  display: flex;
-  align-items: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .game-title {
-  text-decoration: underline;
+  font-size: 1em;
+  font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .game-info-box {
