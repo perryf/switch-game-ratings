@@ -1,19 +1,23 @@
 .game-box {
   height: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .game-box-inners {
-  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px black;
+  /* border: 2px solid black; */
   padding: 10px;
-  background: rgb(34, 193, 195);
+  background: var(--switch-controller-blue-glass);
   background: linear-gradient(
     90deg,
-    rgba(34, 193, 195, 0.95) 0%,
-    rgba(253, 68, 45, 0.95) 100%
+    var(--switch-controller-blue-glass) 0%,
+    var(--switch-controller-red-glass) 100%
   );
 }
 
-.game-box h3 {
+.game-box-inners h3 {
   margin: 10px 0;
   display: flex;
   align-items: center;
@@ -21,7 +25,7 @@
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.game-box button {
+.game-box-inners button {
   border-radius: 0;
 }
 
@@ -29,8 +33,14 @@
   text-decoration: underline;
 }
 
+.game-info-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .game-info {
   display: flex;
+  justify-content: flex-start;
 }
 
 .game-description-box {
@@ -40,14 +50,13 @@
 .game-description {
   /* max-height: 50px; */
   line-height: 1rem;
-  font-size: 12px;
+  font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
   /* white-space: wrap; */
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  /* -webkit-line-clamp: 5; */
   -webkit-box-orient: vertical;
-  /* font-weight: bold; */
 }
 
 .game-date-display {
@@ -59,9 +68,23 @@
   max-width: 200px;
   max-height: 200px;
   object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px black;
+  background-color: var(--almost-black);
+}
+
+.description-art {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+
+.game-stats-list {
+  width: 100%;
 }
 
 .game-stats-list li {
-  /* font-weight: bold; */
   font-size: 14px;
 }

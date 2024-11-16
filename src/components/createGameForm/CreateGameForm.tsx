@@ -101,7 +101,7 @@ function CreateGameForm(props: CreateGameFormProps) {
     e.preventDefault()
 
     // * Remove when ready
-    if (false) createGame(newGame)
+    createGame(newGame)
     setNewGame(newGameInit)
   }
 
@@ -119,7 +119,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 id="title"
                 name="title"
                 onChange={handleUpdateGame}
-                required
+                // required
                 value={newGame.title}
               />
             </div>
@@ -132,7 +132,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 max={5}
                 min={0}
                 onChange={handleUpdateGame}
-                required
+                // required
                 step={1}
                 type="number"
                 value={newGame.myData.rating}
@@ -146,7 +146,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               id="review"
               name="review"
               onChange={handleUpdateGame}
-              required
+              // required
               value={newGame.myData.review}
             />
           </div>

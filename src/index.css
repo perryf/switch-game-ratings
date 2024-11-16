@@ -1,6 +1,23 @@
+:root {
+  --nintendo-blue: #004ca5;
+  --nintendo-red: #e60013;
+  --super-nintendo-gray: #9d9ba8;
+  --almost-black: #111;
+  --switch-controller-blue: #40bae0;
+  --switch-controller-blue-glass: #40bae0f0;
+  --switch-controller-red: #ed5e53;
+  --switch-controller-red-glass: #ed5e53f0;
+}
+
+@font-face {
+  font-family: 'NinFont';
+  src: local('NinFont'), url(./assets/nin-font.otf) format('truetype');
+}
+
 body {
   margin: 0;
-  background: linear-gradient(95deg, #111133, #333355);
+  /* background: linear-gradient(95deg, #111133, #333355); */
+  background: var(--nintendo-blue);
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   width: 100vw;
@@ -50,4 +67,13 @@ hr {
 
 label {
   margin-right: 4px;
+}
+
+h1 {
+  font-family: 'NinFont';
+  padding: 10px 20px 12px;
+  color: black;
+  background: var(--super-nintendo-gray);
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px var(--almost-black);
 }

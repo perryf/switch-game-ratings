@@ -550,3 +550,31 @@ export const ownedGamesReviewable = [
     physicalCopy: true
   }
 ]
+
+const leftOvers = [
+  {
+    title: 'Bayonetta 3', // $
+    played: false,
+    physicalCopy: true
+  },
+  {
+    title: 'Donkey Kong Country: Tropical Freeze', // $
+    played: true,
+    physicalCopy: true
+  },
+  {
+    title: 'Mario Kart 8 Deluxe', // $
+    played: true,
+    physicalCopy: true
+  },
+  {
+    title: 'NierAutomata The End of YoRHa Edition',
+    played: false,
+    physicalCopy: true
+  },
+  {
+    title: 'Super Mario Maker 2', // $
+    played: true,
+    physicalCopy: true
+  }
+]

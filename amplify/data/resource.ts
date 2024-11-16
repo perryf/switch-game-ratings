@@ -19,7 +19,7 @@ const schema = a.schema({
         esrbDescriptors: a.string().array(),
         esrbRating: a.string(),
         fileSize: a.string(),
-        franchise: a.string().array(),
+        franchises: a.string().array(),
         freeToStart: a.boolean(),
         generalFilters: a.string().array(),
         genres: a.string().array(),

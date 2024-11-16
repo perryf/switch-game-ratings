@@ -15,7 +15,7 @@ function SwitchGameList(props: SwitchGameListProps) {
   } = props
 
   return (
-    <ul className="switch-game-list">
+    <div className="switch-game-list">
       <Masonry
         items={games}
         render={SwitchGame}
@@ -36,7 +36,7 @@ function SwitchGameList(props: SwitchGameListProps) {
         //   </li>
         // ))
       }
-    </ul>
+    </div>
   )
 }
 

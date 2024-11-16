@@ -3,13 +3,14 @@ import { useEffect, useState } from 'react'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
-// @ts-ignore
-import { switchGamesOwnedMasterList } from '../../switch-games-owned-details'
+import {
+  switchGamesOwnedMasterList,
+  filteredList
+  // @ts-ignore
+} from '../../switch-games-owned-details'
 import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
-
-// const client = generateClient<Schema>()
 
 // used to sort games when imported
 const sortGames = (
@@ -27,6 +28,9 @@ interface AppProps {
   client: any
 }
 
+console.log(switchGamesOwnedMasterList)
+console.log(filteredList)
+
 // TODO -> Figure out why manually entered games did not get entered into the DB
 function App(props: AppProps) {
   const { client } = props
@@ -37,12 +41,13 @@ function App(props: AppProps) {
       next: ({ items = [] }) => {
         const data = items.sort(sortGames)
 
-        setGames([...data])
+        setGames([...filteredList])
+        // setGames([...data])
       },
       error: (error: {}) => console.warn(error)
     })
     return () => sub.unsubscribe()
-  }, [])
+  }, [client])
 
   // * Data from local json file
   // useEffect(() => {
@@ -76,9 +81,20 @@ function App(props: AppProps) {
     // Object.keys(data).forEach((key: string) => {
     //   if (data[key] === '') delete data[key]
     // })
+
     // filteredList.forEach(async (game: any) => {
-    // const res = await client.models.Game.create(game)
-    // console.log(res)
+    //   try {
+    //     const res = await client.models.Game.create(game)
+    //     console.log(res)
+
+    //     if (res.errors) {
+    //       console.log('*****************')
+    //       console.log(res.errors)
+    //     }
+    //   } catch (error) {
+    //     console.log('--------------')
+    //     console.error(error)
+    //   }
     // })
   }
 
@@ -91,7 +107,7 @@ function App(props: AppProps) {
 
   return (
     <main>
-      <h1>Switch Games</h1>
+      <h1>Switch Game Ratings</h1>
       <CreateGameForm createGame={createGame} />
       <SwitchGameList deleteGame={deleteGame} games={games} />
     </main>

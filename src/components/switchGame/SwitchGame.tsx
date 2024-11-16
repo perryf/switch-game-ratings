@@ -26,25 +26,25 @@ function SwitchGame(props: MasonrySwitchGameProps) {
     : ''
 
   return (
-    <li key={game.id} className="switch-game-list-item">
-      <div
-        className="game-box"
-        style={{
-          backgroundImage: `url(${images.horizontalHeaderImage})`,
-          backgroundColor: '#cccccc',
-          backgroundSize: 'cover'
-        }}
-      >
-        <div className="game-box-inners">
-          <h3>
-            <span className="game-title">{game.displayTitle}</span>{' '}
-            <span className="game-date-display">
-              {gameReleaseDate
-                ? `(${gameReleaseDate.toLocaleDateString('en-US')})`
-                : ''}
-            </span>
-          </h3>
+    <div
+      className="game-box"
+      style={{
+        backgroundImage: `url(${images.horizontalHeaderImage})`,
+        backgroundColor: '#cccccc',
+        backgroundSize: 'cover'
+      }}
+    >
+      <div className="game-box-inners">
+        <h3>
+          <span className="game-title">{game.displayTitle}</span>{' '}
+          <span className="game-date-display">
+            {gameReleaseDate
+              ? `(${gameReleaseDate.toLocaleDateString('en-US')})`
+              : ''}
+          </span>
+        </h3>
 
+        <div className="game-info-box">
           <div className="game-info">
             <img
               src={
@@ -91,23 +91,22 @@ function SwitchGame(props: MasonrySwitchGameProps) {
                 <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
               </li>
             </ul>
-            <div className="description-art-box">
-              {images.descriptionImage && (
-                <img
-                  src={images.descriptionImage}
-                  alt="description image"
-                  className="description-art"
-                />
-              )}
-            </div>
           </div>
 
-          <div className="game-description-box">
-            <p className="game-description">{game.description}</p>
-          </div>
+          {images.descriptionImage && (
+            <img
+              src={images.descriptionImage}
+              alt="description image"
+              className="description-art"
+            />
+          )}
+        </div>
+
+        <div className="game-description-box">
+          <p className="game-description">{game.description}</p>
         </div>
       </div>
-    </li>
+    </div>
   )
 }
 
