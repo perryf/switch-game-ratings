@@ -5,7 +5,7 @@ import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
 
 const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
-  if (windowSize.width > 1200) return 3
+  if (windowSize.width > 1400) return 3
   if (windowSize.width > 992) return 2
   return 1
 }
@@ -28,7 +28,8 @@ function SwitchGameList(props: SwitchGameListProps) {
       <Masonry
         items={games}
         render={SwitchGame}
-        columnGutter={6}
+        columnGutter={4}
+        rowGutter={4}
         maxColumnCount={getColumnCount(size)}
         overscanBy={5}
         itemHeightEstimate={350}

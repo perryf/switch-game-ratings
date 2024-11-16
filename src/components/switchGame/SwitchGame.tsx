@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   SwitchGameType
   // GameInfo,
@@ -20,6 +21,7 @@ interface MasonrySwitchGameProps {
 function SwitchGame(props: MasonrySwitchGameProps) {
   const { data: game } = props
   const { gameInfo, images } = game
+  const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay
     ? new Date(game.releaseDateDisplay)
@@ -90,6 +92,12 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               <li>
                 <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
               </li>
+              <button
+                className="show-game-details-button"
+                onClick={() => setShowMore(!showMore)}
+              >
+                {showMore ? 'x Show less' : '+ Show more'}
+              </button>
             </ul>
           </div>
 
@@ -102,9 +110,11 @@ function SwitchGame(props: MasonrySwitchGameProps) {
           )}
         </div>
 
-        <div className="game-description-box">
-          <p className="game-description">{game.description}</p>
-        </div>
+        {showMore && (
+          <div className="game-description-box">
+            <p className="game-description">{game.description}</p>
+          </div>
+        )}
       </div>
     </div>
   )

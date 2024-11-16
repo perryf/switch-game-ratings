@@ -2,7 +2,15 @@
   height: 100%;
   box-sizing: border-box;
   border-radius: 8px;
-  transition: transform 0.3s;
+  transition: transform 1s;
+  border: 1px solid var(--almost-black);
+}
+
+.game-box:hover {
+  /* transform: translateY(-10px); */
+  transform: scale(1.05, 1.05);
+  position: relative;
+  z-index: 10;
 }
 
 .game-box-inners {
@@ -18,15 +26,11 @@
 }
 
 .game-box-inners h3 {
-  margin: 10px 0;
+  margin: 0 0 4px;
   display: flex;
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.game-box-inners button {
-  border-radius: 0;
 }
 
 .game-title {
@@ -83,8 +87,15 @@
 
 .game-stats-list {
   width: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .game-stats-list li {
   font-size: 14px;
+}
+
+.show-game-details-button {
+  padding: 0.3em 0.6em;
+  transition: border-color 0.25s;
 }
