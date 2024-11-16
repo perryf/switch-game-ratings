@@ -38,12 +38,11 @@ export interface SwitchGameBasic {
   title: string
   description: string
   displayTitle: string
-  releaseDateDisplay: Date
+  releaseDateDisplay: string // ? date?
   images: GameImages
   gameInfo: GameInfo
   myData: MyData
 }
-
 
 export interface SwitchGameType extends SwitchGameBasic {
   id: string

@@ -24,7 +24,7 @@ const schema = a.schema({
         generalFilters: a.string().array(),
         genres: a.string().array(),
         lengthOfGame: a.string(), // enum: short, medium, or long
-        mood: a.string().array(), // chill, fast-paced, funny, etc
+        mood: a.string().array(), // indie, chill, fast-paced, funny, etc
         msrp: a.float(),
         numOfPlayers: a.string(),
         playerFilters: a.string().array(),
