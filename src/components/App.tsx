@@ -28,18 +28,6 @@ interface AppProps {
   client: any
 }
 
-const genres: any = []
-
-filteredList.forEach(g => {
-  const thisGameGenres = g.gameInfo.genres || []
-
-  thisGameGenres.forEach((genre: any) => {
-    if (!genres.find(g => g === genre)) {
-      genres.push(genre)
-    }
-  })
-})
-
 // TODO -> Figure out why manually entered games did not get entered into the DB
 function App(props: AppProps) {
   const { client } = props
@@ -116,7 +104,9 @@ function App(props: AppProps) {
 
   return (
     <main>
-      <h1>Switch Game Ratings</h1>
+      <h1>
+        Switch Game Ratings <i className="snes-logo"></i>
+      </h1>
       <CreateGameForm createGame={createGame} />
       <SwitchGameList deleteGame={deleteGame} games={games} />
     </main>

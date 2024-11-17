@@ -1,6 +1,7 @@
 .switch-game-list {
   margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-end: 12px;
   padding: 8px;
   width: 100vw;
+  margin-bottom: 12px;
 }

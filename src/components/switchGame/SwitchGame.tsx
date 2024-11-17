@@ -57,9 +57,17 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               alt="box art"
               className="box-art"
             />
-            <ul className="game-stats-list">
+            <ul className="nes-list is-disc game-stats-list">
               <li>
-                <b>Genres</b>: {gameInfo.genres.join(', ')}
+                <b>Genres</b>:{' '}
+                {gameInfo.genres.map((genre: string) => {
+                  const genreName = genre === 'Role-Playing' ? 'RPG' : genre
+                  return (
+                    <p className="nes-badge genre-badge">
+                      <span className="nes-badge is-warning">{genreName}</span>
+                    </p>
+                  )
+                })}
               </li>
               <li>
                 <b>Price:</b> ${gameInfo.msrp}

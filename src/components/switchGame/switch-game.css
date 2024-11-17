@@ -34,7 +34,8 @@
 
 .game-title {
   font-size: 1em;
-  font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Press Start 2P', 'NinFont', Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
 }
 
 .game-info-box {
@@ -88,7 +89,7 @@
 .game-stats-list {
   width: 100%;
   margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-end: 12px;
 }
 
 .game-stats-list li {
@@ -98,4 +99,19 @@
 .show-game-details-button {
   padding: 0.3em 0.6em;
   transition: border-color 0.25s;
+}
+
+.genre-badge {
+  position: relative;
+  margin: 0.5em;
+  width: fit-content;
+}
+
+.genre-badge span {
+  font-size: 0.8em !important;
+  position: relative !important;
+  margin: 0 !important;
+  width: initial !important;
+  height: initial !important;
+  padding: 0 2px !important;
 }
