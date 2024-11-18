@@ -1,17 +1,7 @@
 import { useState } from 'react'
-import {
-  SwitchGameEditType
-  // GameInfoType,
-  // MyDataType,
-  // GameImagesType,
-  // SwitchGameBasicType
-} from '../../interfaces'
+import { SwitchGameEditType } from '../../interfaces'
 import { isArray, convertArrayToCSV } from '../../helpers'
 import './switch-game.css'
-
-// interface SwitchGameProps {
-//   game: SwitchGameEditType
-// }
 
 interface SwitchGameTypeEdit extends SwitchGameEditType {
   startEdit: Function
@@ -23,9 +13,21 @@ interface MasonrySwitchGameProps {
   data: SwitchGameTypeEdit
 }
 
+const getHearts = (rating: number) => {
+  return (
+    <div className="heart-box">
+      <i className={`nes-icon heart ${rating < 1 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 2 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 3 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 4 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 5 && 'is-empty'}`} />
+    </div>
+  )
+}
+
 function SwitchGame(props: MasonrySwitchGameProps) {
   const { data: game } = props
-  const { gameInfo, images, startEdit } = game
+  const { gameInfo, images, myData, startEdit } = game
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay
@@ -70,9 +72,12 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               className="box-art"
             />
 
-            <ul className="nes-list is-disc game-stats-list">
+            <ul className="game-stats-list">
+              <li className="rating-list-item">
+                <b>Rating:</b> {getHearts(myData.rating)}
+              </li>
+
               <li>
-                <b>Genres</b>:{' '}
                 {isArray(gameInfo.genres) &&
                   gameInfo.genres.map((genre: string, i: number) => {
                     const genreName = genre === 'Role-Playing' ? 'RPG' : genre

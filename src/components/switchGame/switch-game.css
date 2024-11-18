@@ -62,7 +62,7 @@
 .game-description {
   /* max-height: 50px; */
   line-height: 1rem;
-  font-size: 14px;
+  font-size: 0.75rem;
   text-overflow: ellipsis;
   overflow: hidden;
   /* white-space: wrap; */
@@ -89,13 +89,26 @@
 }
 
 .game-stats-list {
+  list-style-type: none;
+  padding-left: 12px;
   width: 100%;
   margin-block-start: 0;
   margin-block-end: 12px;
+  font-size: 0.8em;
 }
 
 .game-stats-list li {
-  font-size: 14px;
+  /* font-size: 0.8rem; */
+}
+
+.rating-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heart-box {
+  margin-left: 8px;
 }
 
 .show-game-details-button {
@@ -105,12 +118,12 @@
 
 .genre-badge {
   position: relative;
-  margin: 0.5em;
+  margin: 0.25em 0.5em;
   width: fit-content;
 }
 
 .genre-badge span {
-  font-size: 0.8em !important;
+  /* font-size: 0.8em !important; */
   position: relative !important;
   margin: 0 !important;
   width: initial !important;

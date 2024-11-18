@@ -661,6 +661,7 @@ function CreateGameForm(props: CreateGameFormProps) {
           </div>
           <button
             type="submit"
+            className="nes-btn is-primary"
             // disabled={!newGame.name || !newGame.rating || !newGame.review}
           >
             Submit
