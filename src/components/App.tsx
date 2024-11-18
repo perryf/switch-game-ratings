@@ -5,7 +5,7 @@ import type { Schema } from '../../amplify/data/resource'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
-import { sortGames } from '../helpers'
+import { sortGames, isArray } from '../helpers'
 import { SwitchGameBasicType, SwitchGameEditType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
@@ -23,7 +23,21 @@ function App(props: AppProps) {
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items = [] }) => {
-        const data = items.sort(sortGames)
+        const data = items.sort(sortGames).map((g: any) => {
+          return {
+            ...g,
+            gameInfo: {
+              ...g.gameInfo,
+              // filtering out empty string in array
+              generalFilters: isArray(g.gameInfo.generalFilters)
+                ? g.gameInfo.generalFilters.filter((g: string) => g)
+                : [],
+              esrbDescriptors: isArray(g.gameInfo.esrbDescriptors)
+                ? g.gameInfo.esrbDescriptors.filter((g: string) => g)
+                : []
+            }
+          }
+        })
 
         // * data from local json
         // setGames([...filteredList])

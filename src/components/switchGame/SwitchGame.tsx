@@ -60,93 +60,88 @@ function SwitchGame(props: MasonrySwitchGameProps) {
           <button onClick={() => startEdit(game)}>Edit</button>
         </div>
 
-        <div className="game-info-box">
-          <div className="game-info">
-            <img
-              src={
-                images.boxart ||
-                images.horizontalHeaderImage ||
-                images.descriptionImage
-              }
-              alt="box art"
-              className="box-art"
-            />
+        <div className="game-info">
+          <img
+            src={
+              images.boxart ||
+              images.horizontalHeaderImage ||
+              images.descriptionImage
+            }
+            alt="box art"
+            className="box-art"
+          />
 
-            <ul className="game-stats-list">
-              <li className="rating-list-item">
-                <b>Rating:</b> {getHearts(myData.rating)}
-              </li>
+          <ul className="game-stats-list">
+            <li className="rating-list-item">
+              <b>Rating:</b> {getHearts(myData.rating)}
+            </li>
 
-              <li>
-                {isArray(gameInfo.genres) &&
-                  gameInfo.genres.map((genre: string, i: number) => {
-                    const genreName = genre === 'Role-Playing' ? 'RPG' : genre
-                    return (
-                      <p className="nes-badge genre-badge" key={`${genre}${i}`}>
-                        <span className="nes-badge is-warning">
-                          {genreName}
-                        </span>
-                      </p>
-                    )
-                  })}
-              </li>
-              <li>
-                <b>Price:</b> ${gameInfo.msrp}
-              </li>
-              <li>
-                <b>Number of Players:</b> {gameInfo.numOfPlayers}
-              </li>
-              {showMore && (
-                <>
+            <li>
+              {isArray(gameInfo.genres) &&
+                gameInfo.genres.map((genre: string, i: number) => {
+                  const genreName = genre === 'Role-Playing' ? 'RPG' : genre
+                  return (
+                    <p className="nes-badge genre-badge" key={`${genre}${i}`}>
+                      <span className="nes-badge is-warning">{genreName}</span>
+                    </p>
+                  )
+                })}
+            </li>
+            <li>
+              <b>Price:</b> ${gameInfo.msrp}
+            </li>
+            <li>
+              <b>Number of Players:</b> {gameInfo.numOfPlayers}
+            </li>
+            {showMore && (
+              <>
+                <li>
+                  <b>Developers:</b> {convertArrayToCSV(gameInfo.developers)}
+                </li>
+                <li>
+                  <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
+                </li>
+                <li>
+                  <b>Rated:</b> {gameInfo.esrbRating}{' '}
+                  {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
+                    ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
+                    : ''}
+                </li>
+                {gameInfo.fileSize && (
                   <li>
-                    <b>Developers:</b> {convertArrayToCSV(gameInfo.developers)}
+                    <b>File Size:</b> {gameInfo.fileSize}
                   </li>
+                )}
+                {gameInfo.engine && (
                   <li>
-                    <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
+                    <b>Engine:</b> {gameInfo.engine}
                   </li>
-                  <li>
-                    <b>Rated:</b> {gameInfo.esrbRating}{' '}
-                    {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
-                      ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
-                      : ''}
-                  </li>
-                  {gameInfo.fileSize && (
-                    <li>
-                      <b>File Size:</b> {gameInfo.fileSize}
-                    </li>
-                  )}
-                  {gameInfo.engine && (
-                    <li>
-                      <b>Engine:</b> {gameInfo.engine}
-                    </li>
-                  )}
-                  <li>
-                    <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
-                  </li>
-                </>
-              )}
-              {!showMore && (
-                <button
-                  className="show-game-details-button"
-                  onClick={() => setShowMore(true)}
-                >
-                  + Show more
-                </button>
-              )}
-            </ul>
-          </div>
-
-          {images.descriptionImage && (
-            <img
-              src={images.descriptionImage}
-              alt="description image"
-              className="description-art"
-            />
-          )}
+                )}
+                <li>
+                  <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
+                </li>
+              </>
+            )}
+            {!showMore && (
+              <button
+                className="show-game-details-button"
+                onClick={() => setShowMore(true)}
+              >
+                + Show more
+              </button>
+            )}
+          </ul>
         </div>
 
         {showMore && (
           <div className="game-description-box">
+            {images.descriptionImage && (
+              <img
+                src={images.descriptionImage}
+                alt="description image"
+                className="description-art"
+              />
+            )}
             <p className="game-description">{game.description}</p>
 
             <button
