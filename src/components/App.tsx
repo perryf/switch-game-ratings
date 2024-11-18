@@ -3,32 +3,17 @@ import { useEffect, useState } from 'react'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
-import {
-  switchGamesOwnedMasterList,
-  filteredList
-  // @ts-ignore
-} from '../../switch-games-owned-details'
+// @ts-ignore
+// import { filteredList } from '../../switch-games-owned-details'
+import { sortGames } from '../helpers'
 import { SwitchGameBasic } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
-
-// used to sort games when imported
-const sortGames = (
-  a: { displayTitle: string },
-  b: { displayTitle: string }
-) => {
-  const aTitle = a.displayTitle.toLowerCase()
-  const bTitle = b.displayTitle.toLowerCase()
-  if (aTitle < bTitle) return -1
-  if (aTitle > bTitle) return 1
-  return 0
-}
 
 interface AppProps {
   client: any
 }
 
-// TODO -> Figure out why manually entered games did not get entered into the DB
 function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
@@ -40,61 +25,21 @@ function App(props: AppProps) {
       next: ({ items = [] }) => {
         const data = items.sort(sortGames)
 
-        setGames([...filteredList])
-        // setGames([...data])
+        // * data from local json
+        // setGames([...filteredList])
+        setGames([...data])
       },
       error: (error: {}) => console.warn(error)
     })
     return () => sub.unsubscribe()
   }, [client])
 
-  // * Data from local json file
-  // useEffect(() => {
-  //   setGames(
-  //     switchGamesOwnedMasterList.sort((a: any, b: any) =>
-  //       a.displayTitle < b.displayTitle ? -1 : 1
-  //     )
-  //   )
-  // }, [])
-
   async function createGame(newGame: SwitchGameBasic) {
     console.log(newGame)
     // ? not sure if this is needed -- probably a better way
     // turns comma separated strings into arrays, changes numbers that are technically strings into numbers
-    // const data: {
-    //   name: string
-    //   rating: number
-    //   [key: string]: string | boolean | number | string[]
-    // } = {
-    //   ...newGame,
-    //   tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
-    //   tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
-    //   multiplayerType: newGame.multiplayerType
-    //     ? newGame.multiplayerType.split(',').map(m => m.trim())
-    //     : [],
-    //   price: +newGame.price,
-    //   multiplayerNumberOfPlayers: +newGame.multiplayerNumberOfPlayers,
-    //   rating: +newGame.rating
-    // }
-    // // remove empty strings
-    // Object.keys(data).forEach((key: string) => {
-    //   if (data[key] === '') delete data[key]
-    // })
 
-    // filteredList.forEach(async (game: any) => {
-    //   try {
-    //     const res = await client.models.Game.create(game)
-    //     console.log(res)
-
-    //     if (res.errors) {
-    //       console.log('*****************')
-    //       console.log(res.errors)
-    //     }
-    //   } catch (error) {
-    //     console.log('--------------')
-    //     console.error(error)
-    //   }
-    // })
+    // remove empty strings
   }
 
   const startEdit = (game: SwitchGameBasic | null) => {

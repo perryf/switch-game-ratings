@@ -1,23 +1,23 @@
-export interface GameInfo {
-  developers: string[]
+export interface GameInfoType {
+  developers: string[] | string // TODO -> revisit types -- this has 2 because editing easier as strings
   engine: string
-  esrbDescriptors: string[]
+  esrbDescriptors: string[] | string
   esrbRating: string
   fileSize: string
   freeToStart: boolean
-  generalFilters: string[]
-  genres: string[]
+  generalFilters: string[] | string
+  genres: string[] | string
   lengthOfGame: string // enum: short, medium, or long
-  tags: string[] // chill, fast-paced, funny, etc
   msrp: number
   numOfPlayers: string
-  playerFilters: string[]
-  publishers: string[]
+  playerFilters: string[] | string
+  publishers: string[] | string
   remake: boolean
   slug: string
+  tags: string[] // chill, fast-paced, funny, etc
 }
 
-export interface MyData {
+export interface MyDataType {
   datePlayed: string
   datePurchased: string
   emulatorSystem: string
@@ -28,7 +28,7 @@ export interface MyData {
   review: string
 }
 
-export interface GameImages {
+export interface GameImagesType {
   boxart: string
   descriptionImage: string
   horizontalHeaderImage: string
@@ -39,9 +39,9 @@ export interface SwitchGameBasic {
   description: string
   displayTitle: string
   releaseDateDisplay: string // ? date?
-  images: GameImages
-  gameInfo: GameInfo
-  myData: MyData
+  images: GameImagesType
+  gameInfo: GameInfoType
+  myData: MyDataType
 }
 
 export interface SwitchGameType extends SwitchGameBasic {

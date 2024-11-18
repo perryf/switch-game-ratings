@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import {
   SwitchGameType
-  // GameInfo,
-  // MyData,
-  // GameImages,
+  // GameInfoType,
+  // MyDataType,
+  // GameImagesType,
   // SwitchGameBasic
 } from '../../interfaces'
 import './switch-game.css'
