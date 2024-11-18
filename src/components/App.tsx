@@ -32,6 +32,8 @@ interface AppProps {
 function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
+  const [isEditing, setIsEditing] = useState<boolean>(false)
+  const [editInfo, setEditInfo] = useState<null | SwitchGameBasic>(null)
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
@@ -95,6 +97,11 @@ function App(props: AppProps) {
     // })
   }
 
+  const startEdit = (game: SwitchGameBasic | null) => {
+    setIsEditing(!isEditing)
+    setEditInfo(game)
+  }
+
   async function deleteGame(id: string) {
     console.log(id)
     if (window.confirm('Are you sure you want to delete this game?')) {
@@ -107,8 +114,16 @@ function App(props: AppProps) {
       <h1>
         Switch Game Ratings <i className="snes-logo"></i>
       </h1>
-      <CreateGameForm createGame={createGame} />
-      <SwitchGameList deleteGame={deleteGame} games={games} />
+      <CreateGameForm
+        createGame={createGame}
+        isEditing={isEditing}
+        editInfo={editInfo}
+        startEdit={startEdit}
+      />
+      <SwitchGameList
+        deleteGame={deleteGame}
+        games={games.map(g => ({ ...g, startEdit }))}
+      />
     </main>
   )
 }

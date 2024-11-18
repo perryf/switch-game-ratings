@@ -12,15 +12,19 @@ import './switch-game.css'
 //   game: SwitchGameType
 // }
 
+interface SwitchGameTypeEdit extends SwitchGameType {
+  startEdit: Function
+}
+
 interface MasonrySwitchGameProps {
   index: number
   width: number
-  data: SwitchGameType
+  data: SwitchGameTypeEdit
 }
 
 function SwitchGame(props: MasonrySwitchGameProps) {
   const { data: game } = props
-  const { gameInfo, images } = game
+  const { gameInfo, images, myData, startEdit } = game
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay
@@ -29,6 +33,8 @@ function SwitchGame(props: MasonrySwitchGameProps) {
 
   return (
     <div
+      // TODO -> remove game.title after data setup
+      key={game.id || game.title}
       className="game-box"
       style={{
         backgroundImage: `url(${images.horizontalHeaderImage})`,
@@ -37,14 +43,19 @@ function SwitchGame(props: MasonrySwitchGameProps) {
       }}
     >
       <div className="game-box-inners">
-        <h3>
-          <span className="game-title">{game.displayTitle}</span>{' '}
-          <span className="game-date-display">
-            {gameReleaseDate
-              ? `(${gameReleaseDate.toLocaleDateString('en-US')})`
-              : ''}
-          </span>
-        </h3>
+        <div className="game-box-top-row">
+          <div>
+            <h3>
+              <span className="game-title">{game.displayTitle}</span>{' '}
+              <span className="game-date-display">
+                {gameReleaseDate
+                  ? `(${gameReleaseDate.toLocaleDateString('en-US')})`
+                  : ''}
+              </span>
+            </h3>
+          </div>
+          <button onClick={() => startEdit(game)}>Edit</button>
+        </div>
 
         <div className="game-info-box">
           <div className="game-info">
@@ -63,7 +74,7 @@ function SwitchGame(props: MasonrySwitchGameProps) {
                 {gameInfo.genres.map((genre: string) => {
                   const genreName = genre === 'Role-Playing' ? 'RPG' : genre
                   return (
-                    <p className="nes-badge genre-badge">
+                    <p className="nes-badge genre-badge" key={genre}>
                       <span className="nes-badge is-warning">{genreName}</span>
                     </p>
                   )

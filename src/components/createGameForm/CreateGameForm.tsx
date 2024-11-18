@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SwitchGameBasic } from '../../interfaces'
 import './create-game-form.css'
 
@@ -67,10 +67,19 @@ const switchGenreList: { name: string; value: string }[] = [
 
 interface CreateGameFormProps {
   createGame: (a: SwitchGameBasic) => void
+  isEditing: boolean
+  editInfo: null | SwitchGameBasic
+  startEdit: (game: SwitchGameBasic | null) => void
 }
 
 function CreateGameForm(props: CreateGameFormProps) {
-  const { createGame } = props
+  const { createGame, isEditing, editInfo, startEdit } = props
+
+  useEffect(() => {
+    if (isEditing && editInfo) {
+      setNewGame(editInfo)
+    }
+  }, [editInfo, isEditing])
 
   const [isCreating, setIsCreating] = useState<boolean>(false)
   const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
@@ -146,6 +155,17 @@ function CreateGameForm(props: CreateGameFormProps) {
     }))
   }
 
+  const handleClickCreateCancel = () => {
+    setNewGame(newGameInit)
+    startEdit(null)
+
+    if (isEditing) {
+      setIsCreating(false)
+    } else {
+      setIsCreating(state => !state)
+    }
+  }
+
   const handleGameSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
 
@@ -158,15 +178,17 @@ function CreateGameForm(props: CreateGameFormProps) {
     setNewGame(newGameInit)
   }
 
+  const isCreatingEditing = isCreating || isEditing
+
   return (
     <div className="create-form-box">
       <button
-        className={`nes-btn ${isCreating ? 'is-error' : 'is-primary'}`}
-        onClick={() => setIsCreating(state => !state)}
+        className={`nes-btn ${isCreatingEditing ? 'is-error' : 'is-primary'}`}
+        onClick={handleClickCreateCancel}
       >
-        {isCreating ? 'x Cancel' : '+ Create'}
+        {isCreatingEditing ? 'x Cancel' : '+ Create'}
       </button>
-      {isCreating && (
+      {isCreatingEditing && (
         <form
           onSubmit={handleGameSubmit}
           className="create-form nes-container with-title is-centered is-dark is-rounded"

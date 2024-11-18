@@ -18,7 +18,8 @@ interface SwitchGameListProps {
 function SwitchGameList(props: SwitchGameListProps) {
   const {
     // deleteGame,
-    games
+    games,
+    // startEdit,
   } = props
 
   const size = useWindowSize()

@@ -25,17 +25,24 @@
   );
 }
 
-.game-box-inners h3 {
-  margin: 0 0 4px;
-  text-align: center;
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+.game-box-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .game-title {
   font-size: 1em;
   font-family: 'Press Start 2P', 'NinFont', Inter, system-ui, Avenir, Helvetica,
     Arial, sans-serif;
+
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.game-date-display {
+  font-size: 0.8rem;
+  padding-left: 8px;
 }
 
 .game-info-box {
@@ -62,11 +69,6 @@
   display: -webkit-box;
   /* -webkit-line-clamp: 5; */
   -webkit-box-orient: vertical;
-}
-
-.game-date-display {
-  font-size: 0.8rem;
-  padding-left: 8px;
 }
 
 .box-art {
