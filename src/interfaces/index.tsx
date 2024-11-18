@@ -8,7 +8,7 @@ export interface GameInfo {
   generalFilters: string[]
   genres: string[]
   lengthOfGame: string // enum: short, medium, or long
-  mood: string[] // chill, fast-paced, funny, etc
+  tags: string[] // chill, fast-paced, funny, etc
   msrp: number
   numOfPlayers: string
   playerFilters: string[]

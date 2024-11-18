@@ -34,7 +34,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'aggelos-switch',
       genres: ['Adventure', 'Action', 'Role-Playing', 'Platformer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -68,7 +68,7 @@ export const switchGamesOwnedMasterList = [
       genres: ['Platformer', 'Adventure', 'Puzzle'],
       fileSize: '84 MB',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: ''
     },
@@ -116,7 +116,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'axiom-verge-2-switch',
       genres: ['Adventure', 'Action', 'Platformer', 'Other'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -151,7 +151,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '156 MB',
       engine: 'Löve',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -202,7 +202,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'blasphemous-switch',
       genres: ['Role-Playing', 'Platformer', 'Action', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -237,7 +237,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '2.6 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -294,7 +294,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'bloodstained-ritual-of-the-night-switch',
       genres: ['Adventure', 'Platformer', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -344,7 +344,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'borderlands-legendary-collection-switch',
       genres: ['Action', 'First-Person', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -393,7 +393,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'borderlands-game-of-the-year-edition-switch',
       genres: ['First-Person', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -440,7 +440,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'chrono-cross-the-radical-dreamers-edition-switch',
       genres: ['Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -482,7 +482,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'cat-quest-plus-cat-quest-ii-pawsome-pack-switch',
       genres: ['Action', 'Adventure', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -528,7 +528,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'celeste-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -570,7 +570,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'child-of-light-ultimate-edition-switch',
       genres: ['Adventure', 'Platformer', 'Strategy', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -596,6 +596,7 @@ export const switchGamesOwnedMasterList = [
     gameInfo: {
       developers: ['Massive Monster'],
       esrbRating: 'Teen',
+      esrbDescriptors: ['Blood', 'Crude Humor', 'Fantasy Violence'],
       msrp: 24.99,
       numOfPlayers: 'up to 2 players',
       playerFilters: ['1+', '2+'],
@@ -605,7 +606,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '1.9 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -657,7 +658,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'dark-souls-remastered-switch',
       genres: ['Adventure', 'Action', 'Role-Playing', 'Multiplayer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -699,7 +700,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'doom-1993-switch',
       genres: ['First-Person', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -741,7 +742,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'doom-eternal-switch',
       genres: ['Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -794,7 +795,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-switch',
       genres: ['Adventure', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -842,7 +843,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'dex-switch',
       genres: ['Adventure', 'Other', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -884,7 +885,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'dicey-dungeons-switch',
       genres: ['Role-Playing', 'Strategy', 'Board Game', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -930,7 +931,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'dont-starve-together-switch',
       genres: ['Adventure', 'Multiplayer', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -977,7 +978,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'doom-switch',
       genres: ['First-Person', 'Action', 'Multiplayer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1019,7 +1020,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'ender-lilies-quietus-of-the-knights-switch',
       genres: ['Indie', 'Adventure', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1068,7 +1069,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'eastward-switch',
       genres: ['Indie', 'Adventure', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1103,7 +1104,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '2.3 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -1155,7 +1156,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'figment-switch',
       genres: ['Adventure', 'Action', 'Puzzle'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1188,7 +1189,7 @@ export const switchGamesOwnedMasterList = [
       genres: ['Strategy', 'Role-Playing'],
       fileSize: '',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: ''
     },
@@ -1241,7 +1242,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'fire-emblem-three-houses-switch',
       genres: ['Adventure', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1281,7 +1282,7 @@ export const switchGamesOwnedMasterList = [
       generalFilters: [],
       genres: ['Action', 'Strategy', 'Other'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       msrp: 0,
       numOfPlayers: 'up to 99 players',
       playerFilters: ['1+', '2+', '3+', '4+'],
@@ -1319,7 +1320,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '916 MB',
       engine: 'GameMaker Studio',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -1359,7 +1360,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '3.9 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -1413,7 +1414,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'hades-switch',
       genres: ['Indie', 'Action', 'Adventure', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1459,7 +1460,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'hyrule-warriors-age-of-calamity-switch',
       genres: ['Action', 'Adventure', 'Fighting'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1494,7 +1495,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '4.1 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -1542,7 +1543,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'into-the-breach-switch',
       genres: ['Indie', 'Puzzle', 'Board Game', 'Strategy', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1576,7 +1577,7 @@ export const switchGamesOwnedMasterList = [
       genres: ['Action', 'Platformer'],
       fileSize: '5 GB',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: true,
       engine: ''
     },
@@ -1623,7 +1624,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'kirby-and-the-forgotten-land-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1665,7 +1666,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'limbo-switch',
       genres: ['Adventure', 'Puzzle'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1713,7 +1714,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'legend-of-mana-switch',
       genres: ['Role-Playing', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1743,7 +1744,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '437 MB',
       genres: ['Platformer', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       msrp: 19.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
@@ -1794,7 +1795,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'mario-plus-rabbids-sparks-of-hope-switch',
       genres: ['Strategy'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1836,7 +1837,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'mario-plus-rabbids-kingdom-battle-gold-edition-switch',
       genres: ['Adventure', 'Strategy'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1875,7 +1876,7 @@ export const switchGamesOwnedMasterList = [
       generalFilters: [],
       genres: ['Action', 'Fighting', 'Strategy', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       msrp: null,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
@@ -1918,7 +1919,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'metroid-dread-switch',
       genres: ['Action', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -1953,7 +1954,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '178 MB',
       engine: 'GameMaker: Studio',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -2000,7 +2001,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'monster-boy-and-the-cursed-kingdom-switch',
       genres: ['Action', 'Adventure', 'Platformer', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2053,7 +2054,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'mortal-kombat11-switch',
       genres: ['Fighting'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2094,7 +2095,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'new-pokemon-snap-switch',
       genres: ['Simulation'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2136,7 +2137,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'owlboy-switch',
       genres: ['Adventure', 'Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2180,7 +2181,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'pikmin-4-switch',
       genres: ['Action', 'Adventure', 'Strategy'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: '10.5 GB'
@@ -2226,7 +2227,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'pokemon-unite-switch',
       genres: ['Action', 'Other'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2268,7 +2269,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'pokemon-shield-switch',
       genres: ['Adventure', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: '12.4 GB'
@@ -2309,7 +2310,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'quake-switch',
       genres: ['Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2351,7 +2352,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'rayman-legends-definitive-edition-switch',
       genres: ['Adventure', 'Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2393,7 +2394,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'resident-evil-switch',
       genres: ['Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: true,
       engine: '',
       fileSize: ''
@@ -2435,7 +2436,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'ring-fit-adventure-switch',
       genres: ['Sports', 'Training', 'Fitness'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2480,7 +2481,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'sea-of-stars-switch',
       genres: ['Adventure', 'Role-Playing', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2515,7 +2516,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '874 MB',
       engine: '',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -2566,7 +2567,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'shantae-half-genie-hero-switch',
       genres: ['Action', 'Adventure', 'Platformer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2608,7 +2609,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'shovel-knight-treasure-trove-switch',
       genres: ['Adventure', 'Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2650,7 +2651,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'sonic-mania-switch',
       genres: ['Action', 'Platformer', 'Arcade', 'Multiplayer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2690,7 +2691,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'sonic-origins-switch',
       genres: ['Action', 'Platformer', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2732,7 +2733,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'steamworld-dig-2-switch',
       genres: ['Action', 'Platformer', 'Adventure', 'Puzzle', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2774,7 +2775,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'steamworld-heist-ultimate-edition-switch',
       genres: ['Action', 'Strategy', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2816,7 +2817,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'steamworld-quest-hand-of-gilgamech-switch',
       genres: ['Role-Playing', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2863,7 +2864,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'streets-of-rage-4-switch',
       genres: ['Indie', 'Arcade', 'Action', 'Multiplayer', 'Fighting'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2898,7 +2899,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '0 MB',
       engine: '',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -2945,7 +2946,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'super-mario-odyssey-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -2987,7 +2988,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'super-mario-party-switch',
       genres: ['Party', 'Multiplayer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3017,7 +3018,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '6.5 GB',
       genres: ['Role-Playing', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       msrp: 59.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
@@ -3070,7 +3071,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'super-mario-3d-world-plus-bowsers-fury-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3111,7 +3112,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'toem-switch',
       genres: ['Indie', 'Adventure', 'Puzzle'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3156,7 +3157,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'teenage-mutant-ninja-turtles-shredders-revenge-switch',
       genres: ['Action', 'Multiplayer', 'Fighting', 'Arcade', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3198,7 +3199,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'tetris-99-switch',
       genres: ['Puzzle', 'Multiplayer'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3239,7 +3240,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'tetris-effect-connected-switch',
       genres: ['Indie', 'Puzzle', 'Multiplayer', 'Music', 'Arcade'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3274,7 +3275,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '16.3 GB',
       engine: '',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -3326,7 +3327,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'the-legend-of-zelda-breath-of-the-wild-switch',
       genres: ['Adventure', 'Action', 'Role-Playing', 'Other'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3375,7 +3376,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'the-witcher-3-wild-hunt-switch',
       genres: ['Role-Playing', 'Action', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3417,7 +3418,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'transistor-switch',
       genres: ['Indie', 'Adventure', 'Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3452,7 +3453,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '2.9 GB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -3500,7 +3501,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'underhero-switch',
       genres: ['Platformer', 'Role-Playing', 'Action', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3542,7 +3543,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'valfaris-and-slain-double-pack-switch',
       genres: ['Platformer', 'Action', 'Action', 'Arcade'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3577,7 +3578,7 @@ export const switchGamesOwnedMasterList = [
       fileSize: '513 MB',
       engine: 'Unity',
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false
     },
     images: {
@@ -3629,7 +3630,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'worms-wmd-switch',
       genres: ['Strategy'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3671,7 +3672,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'xcom-2-collection-switch',
       genres: ['Action', 'Strategy', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3712,7 +3713,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'xenoblade-chronicles-3-switch',
       genres: ['Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3758,7 +3759,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'yokus-island-express-switch',
       genres: ['Platformer', 'Adventure', 'Puzzle', 'Arcade', 'Indie'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3804,7 +3805,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'yooka-laylee-and-the-impossible-lair-switch',
       genres: ['Platformer', 'Action', 'Adventure'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3846,7 +3847,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'yoshis-crafted-world-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3889,7 +3890,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'super-mario-maker-2-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3932,7 +3933,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'donkey-kong-country-tropical-freeze-switch',
       genres: ['Platformer', 'Action'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -3978,7 +3979,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'mario-kart-8-deluxe-switch',
       genres: ['Racing', 'Multiplayer', 'Other'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: ''
@@ -4027,7 +4028,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'bayonetta-3-switch',
       genres: ['Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: '14.5 GB'
@@ -4075,7 +4076,7 @@ export const switchGamesOwnedMasterList = [
       slug: 'nier-automata-the-end-of-yorha-edition-switch',
       genres: ['Action', 'Role-Playing'],
       lengthOfGame: '',
-      mood: [],
+      tags: [],
       remake: false,
       engine: '',
       fileSize: '10.9 GB'

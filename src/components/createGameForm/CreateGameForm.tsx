@@ -1,6 +1,17 @@
 import { useEffect, useState } from 'react'
 import { SwitchGameBasic } from '../../interfaces'
+import { capitalize } from '../../helpers'
 import './create-game-form.css'
+
+const gameLengths: string[] = ['short', 'medium', 'long']
+const emulatorSystems: string[] = [
+  'nes',
+  'snes',
+  'sega',
+  'gameboy',
+  'gba',
+  'n64'
+]
 
 const newGameInit: SwitchGameBasic = {
   title: '',
@@ -22,7 +33,7 @@ const newGameInit: SwitchGameBasic = {
     generalFilters: [],
     genres: [],
     lengthOfGame: '',
-    mood: [],
+    tags: [],
     msrp: 0.0,
     numOfPlayers: '',
     playerFilters: [],
@@ -43,26 +54,26 @@ const newGameInit: SwitchGameBasic = {
 }
 
 const switchGenreList: { name: string; value: string }[] = [
-  { name: 'Action', value: 'action' },
-  { name: 'Adventure', value: 'adventure' },
-  { name: 'Arcade', value: 'arcade' },
-  { name: 'Board Game', value: 'board game' },
-  { name: 'Fighting', value: 'fighting' },
-  { name: 'First-Person', value: 'first-person' },
-  { name: 'Fitness', value: 'fitness' },
-  { name: 'Indie', value: 'indie' },
-  { name: 'Multiplayer', value: 'multiplayer' },
-  { name: 'Music', value: 'music' },
-  { name: 'Other', value: 'other' },
-  { name: 'Party', value: 'party' },
-  { name: 'Platformer', value: 'platformer' },
-  { name: 'Puzzle', value: 'puzzle' },
-  { name: 'Racing', value: 'racing' },
-  { name: 'Role-Playing', value: 'role-playing' },
-  { name: 'Simulation', value: 'simulation' },
-  { name: 'Sports', value: 'sports' },
-  { name: 'Strategy', value: 'strategy' },
-  { name: 'Training', value: 'training' }
+  { name: 'Action', value: 'Action' },
+  { name: 'Adventure', value: 'Adventure' },
+  { name: 'Arcade', value: 'Arcade' },
+  { name: 'Board Game', value: 'Board game' },
+  { name: 'Fighting', value: 'Fighting' },
+  { name: 'First-Person', value: 'First-person' },
+  { name: 'Fitness', value: 'Fitness' },
+  { name: 'Indie', value: 'Indie' },
+  { name: 'Multiplayer', value: 'mMultiplayer' },
+  { name: 'Music', value: 'Music' },
+  { name: 'Other', value: 'Other' },
+  { name: 'Party', value: 'Party' },
+  { name: 'Platformer', value: 'Platformer' },
+  { name: 'Puzzle', value: 'Puzzle' },
+  { name: 'Racing', value: 'Racing' },
+  { name: 'Role-Playing', value: 'Role-playing' },
+  { name: 'Simulation', value: 'Simulation' },
+  { name: 'Sports', value: 'Sports' },
+  { name: 'Strategy', value: 'Strategy' },
+  { name: 'Training', value: 'Training' }
 ]
 
 interface CreateGameFormProps {
@@ -77,7 +88,16 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   useEffect(() => {
     if (isEditing && editInfo) {
-      setNewGame(editInfo)
+      const editInfoShaped = {
+        ...editInfo,
+        gameInfo: {
+          ...editInfo.gameInfo,
+          playerFilters: editInfo.gameInfo.playerFilters?.map((f: string) =>
+            f.replace('+', '')
+          )
+        }
+      }
+      setNewGame(editInfoShaped)
     }
   }, [editInfo, isEditing])
 
@@ -180,6 +200,8 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const isCreatingEditing = isCreating || isEditing
 
+  console.log(newGame)
+
   return (
     <div className="create-form-box">
       <button
@@ -248,7 +270,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="developers"
                 className="nes-input"
                 onChange={updateGameInfo}
-                value={newGame.gameInfo.developers}
+                value={newGame.gameInfo.developers?.join(', ')}
               />
             </div>
 
@@ -261,7 +283,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="publishers"
                 className="nes-input"
                 onChange={updateGameInfo}
-                value={newGame.gameInfo.publishers}
+                value={newGame.gameInfo.publishers?.join(', ')}
               />
             </div>
 
@@ -279,9 +301,7 @@ function CreateGameForm(props: CreateGameFormProps) {
 
           <div className="create-form-row">
             <div className="nes-field">
-              <label htmlFor="esrbRating">
-                ESRB Rating (separate by commas)
-              </label>
+              <label htmlFor="esrbRating">ESRB Rating</label>
               <input
                 id="esrbRating"
                 name="esrbRating"
@@ -292,6 +312,21 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
 
             <div className="nes-field">
+              <label htmlFor="esrbDescriptors">
+                ESRB Descriptors (separate by commas)
+              </label>
+              <input
+                id="esrbDescriptors"
+                name="esrbDescriptors"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.gameInfo.esrbDescriptors?.join(', ')}
+              />
+            </div>
+          </div>
+
+          <div className="create-form-row">
+            <div className="nes-field">
               <label htmlFor="fileSize">File Size</label>
               <input
                 id="fileSize"
@@ -301,47 +336,6 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={newGame.gameInfo.fileSize}
               />
             </div>
-
-            <div className="nes-field">
-              <label htmlFor="freeToStart">
-                <input
-                  id="freeToStart"
-                  name="freeToStart"
-                  type="checkbox"
-                  className="nes-checkbox"
-                  onChange={updateGameInfo}
-                  checked={newGame.gameInfo.freeToStart}
-                />
-                <span>Free to Start?</span>
-              </label>
-            </div>
-
-            <div className="nes-field">
-              <label htmlFor="generalFilters">
-                General Filters (separate by commas)
-              </label>
-              <input
-                id="generalFilters"
-                name="generalFilters"
-                className="nes-input"
-                onChange={updateGameInfo}
-                value={newGame.gameInfo.generalFilters}
-              />
-            </div>
-
-            <div className="nes-field">
-              <label htmlFor="lengthOfGame">
-                Length of Game (short, medium, or long)
-              </label>
-              <input
-                id="lengthOfGame"
-                name="lengthOfGame"
-                className="nes-input"
-                onChange={updateGameInfo}
-                value={newGame.gameInfo.lengthOfGame}
-              />
-            </div>
-
             <div className="nes-field">
               <label htmlFor="slug">Slug</label>
               <input
@@ -351,6 +345,56 @@ function CreateGameForm(props: CreateGameFormProps) {
                 onChange={updateGameInfo}
                 value={newGame.gameInfo.slug}
               />
+            </div>
+          </div>
+          <div className="nes-field ms-20">
+            <label htmlFor="freeToStart">
+              <input
+                id="freeToStart"
+                name="freeToStart"
+                type="checkbox"
+                className="nes-checkbox is-dark"
+                onChange={updateGameInfo}
+                checked={newGame.gameInfo.freeToStart}
+              />
+              <span>Free to Start?</span>
+            </label>
+          </div>
+
+          <div className="create-form-row">
+            <div className="nes-field">
+              <label htmlFor="generalFilters">
+                {/* From Nintendo API */}
+                General Filters (separate by commas)
+              </label>
+              <input
+                id="generalFilters"
+                name="generalFilters"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.gameInfo.generalFilters?.join(', ')}
+              />
+            </div>
+
+            <div className="nes-field">
+              <label htmlFor="lengthOfGame">
+                Length of Game (short, medium, or long)
+              </label>
+              <div className="nes-select">
+                <select
+                  id="lengthOfGame"
+                  name="lengthOfGame"
+                  onChange={updateGameInfo}
+                  value={newGame.gameInfo.lengthOfGame}
+                >
+                  <option value="" />
+                  {gameLengths.map((l: string) => (
+                    <option key={l} value={l}>
+                      {capitalize(l)}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
           </div>
 
@@ -371,7 +415,6 @@ function CreateGameForm(props: CreateGameFormProps) {
                 }
               />
             </div>
-
             <div className="nes-field">
               <label htmlFor="datePlayed">Date Played</label>
               <input
@@ -384,7 +427,6 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={newGame.myData.datePlayed}
               />
             </div>
-
             <div className="nes-field">
               <label htmlFor="datePurchased">Date Purchased</label>
               <input
@@ -406,57 +448,79 @@ function CreateGameForm(props: CreateGameFormProps) {
                   id="isEmulator"
                   name="isEmulator"
                   type="checkbox"
-                  className="nes-checkbox"
+                  className="nes-checkbox is-dark"
                   onChange={updateMyData}
                   checked={newGame.myData.isEmulator}
                 />
                 <span>Is Emulator?</span>
               </label>
             </div>
-
             <div className="nes-field">
               <label htmlFor="emulatorSystem">Emulator System</label>
-              <input
-                id="emulatorSystem"
-                name="emulatorSystem"
-                className="nes-input"
-                onChange={updateMyData}
-                type="text"
-                value={newGame.myData.datePlayed}
-              />
+              <div className="nes-select">
+                <select
+                  id="emulatorSystem"
+                  name="emulatorSystem"
+                  onChange={updateMyData}
+                  value={newGame.myData.emulatorSystem}
+                >
+                  <option value="">N/A</option>
+                  {emulatorSystems.map((emulator: string) => (
+                    <option key={emulator} value={emulator}>
+                      {emulator}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
+          </div>
 
+          <div className="create-form-row">
             <div className="nes-field">
               <label htmlFor="physicalCopy">
                 <input
                   id="physicalCopy"
                   name="physicalCopy"
                   type="checkbox"
-                  className="nes-checkbox"
+                  className="nes-checkbox is-dark"
                   onChange={updateMyData}
                   checked={newGame.myData.physicalCopy}
                 />
                 <span>Physical Copy?</span>
               </label>
             </div>
-
-            <div className="nes-field">
+            <div className="nes-field ms-20">
               <label htmlFor="played">
                 <input
                   id="played"
                   name="played"
                   type="checkbox"
-                  className="nes-checkbox"
+                  className="nes-checkbox is-dark"
                   onChange={updateMyData}
                   checked={newGame.myData.played}
                 />
                 <span>Played?</span>
               </label>
             </div>
+            <div className="nes-field ms-20">
+              <label htmlFor="remake">
+                <input
+                  id="remake"
+                  name="remake"
+                  type="checkbox"
+                  className="nes-checkbox is-dark"
+                  onChange={updateGameInfo}
+                  checked={newGame.gameInfo.remake}
+                />
+                <span>Remake?</span>
+              </label>
+            </div>
           </div>
 
           <div className="nes-field">
-            <label htmlFor="numOfPlayers">Number of Players</label>
+            <label htmlFor="numOfPlayers">
+              Number of Players (i.e. "1 player", "up to 4 players")
+            </label>
             <input
               id="numOfPlayers"
               name="numOfPlayers"
@@ -480,8 +544,8 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={newGame.gameInfo.playerFilters}
               >
                 {Array.from({ length: 60 }).map((_, i: number) => (
-                  <option key={i} value={i}>
-                    {i}
+                  <option key={i + 1} value={i + 1}>
+                    {i + 1}
                   </option>
                 ))}
               </select>
@@ -530,68 +594,55 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
 
             <div className="nes-field">
-              <label htmlFor="remake">
-                <input
-                  id="remake"
-                  name="remake"
-                  type="checkbox"
-                  className="nes-checkbox"
-                  onChange={updateGameInfo}
-                  checked={newGame.gameInfo.remake}
-                />
-                <span>Remake?</span>
-              </label>
+              <label htmlFor="tags">Tags (separate by commas)</label>
+              <input
+                id="tags"
+                name="tags"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.gameInfo.tags?.join(', ')}
+              />
             </div>
           </div>
 
-          <div className="nes-field">
-            <label htmlFor="mood">Mood (separate by commas)</label>
-            <input
-              id="mood"
-              name="mood"
-              className="nes-input"
-              onChange={updateGameInfo}
-              value={newGame.gameInfo.mood}
-            />
-          </div>
+          <div className="create-form-row">
+            <div className="nes-field">
+              <label htmlFor="boxart">Boxart (include link to image)</label>
+              <input
+                id="boxart"
+                name="boxart"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.images.boxart}
+              />
+            </div>
 
-          <div className="nes-field">
-            <label htmlFor="boxart">Boxart (include link to image)</label>
-            <input
-              id="boxart"
-              name="boxart"
-              className="nes-input"
-              onChange={updateGameInfo}
-              value={newGame.images.boxart}
-            />
-          </div>
+            <div className="nes-field">
+              <label htmlFor="descriptionImage">
+                Description Image (include link to image)
+              </label>
+              <input
+                id="descriptionImage"
+                name="descriptionImage"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.images.descriptionImage}
+              />
+            </div>
 
-          <div className="nes-field">
-            <label htmlFor="descriptionImage">
-              Description Image (include link to image)
-            </label>
-            <input
-              id="descriptionImage"
-              name="descriptionImage"
-              className="nes-input"
-              onChange={updateGameInfo}
-              value={newGame.images.descriptionImage}
-            />
+            <div className="nes-field">
+              <label htmlFor="horizontalHeaderImage">
+                Horizontal Header Image (include link to image)
+              </label>
+              <input
+                id="horizontalHeaderImage"
+                name="horizontalHeaderImage"
+                className="nes-input"
+                onChange={updateGameInfo}
+                value={newGame.images.horizontalHeaderImage}
+              />
+            </div>
           </div>
-
-          <div className="nes-field">
-            <label htmlFor="horizontalHeaderImage">
-              Horizontal Header Image (include link to image)
-            </label>
-            <input
-              id="horizontalHeaderImage"
-              name="horizontalHeaderImage"
-              className="nes-input"
-              onChange={updateGameInfo}
-              value={newGame.images.horizontalHeaderImage}
-            />
-          </div>
-
           <button
             type="submit"
             // disabled={!newGame.name || !newGame.rating || !newGame.review}

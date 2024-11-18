@@ -67,7 +67,7 @@ function App(props: AppProps) {
     //   [key: string]: string | boolean | number | string[]
     // } = {
     //   ...newGame,
-    //   mood: newGame.mood ? newGame.mood.split(',').map(m => m.trim()) : [],
+    //   tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
     //   tags: newGame.tags ? newGame.tags.split(',').map(m => m.trim()) : [],
     //   multiplayerType: newGame.multiplayerType
     //     ? newGame.multiplayerType.split(',').map(m => m.trim())
