@@ -34,7 +34,7 @@ export interface GameImagesType {
   horizontalHeaderImage: string
 }
 
-export interface SwitchGameBasic {
+export interface SwitchGameBasicType {
   title: string
   description: string
   displayTitle: string
@@ -42,8 +42,9 @@ export interface SwitchGameBasic {
   images: GameImagesType
   gameInfo: GameInfoType
   myData: MyDataType
+  startEdit?: Function
 }
 
-export interface SwitchGameType extends SwitchGameBasic {
+export interface SwitchGameEditType extends SwitchGameBasicType {
   id: string
 }

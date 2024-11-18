@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
-import { GameInfoType, SwitchGameBasic } from '../../interfaces'
+import { GameInfoType, SwitchGameBasicType } from '../../interfaces'
 import {
   capitalize,
   convertCSVToArray,
-  isString,
   isArray,
   convertArrayToCSV
 } from '../../helpers'
@@ -19,7 +18,7 @@ const emulatorSystems: string[] = [
   'n64'
 ]
 
-const newGameInit: SwitchGameBasic = {
+const newGameInit: SwitchGameBasicType = {
   description: '',
   displayTitle: '',
   title: '',
@@ -83,10 +82,11 @@ const switchGenreList: { name: string; value: string }[] = [
 ]
 
 interface CreateGameFormProps {
-  createGame: (a: SwitchGameBasic) => void
+  editInfo: null | SwitchGameBasicType
   isEditing: boolean
-  editInfo: null | SwitchGameBasic
-  startEdit: (game: SwitchGameBasic | null) => void
+  stopEdit: () => void
+  submitCreateGame: (a: SwitchGameBasicType) => void
+  submitEditGame: (a: SwitchGameBasicType) => void
 }
 
 interface eventTargetType {
@@ -106,10 +106,11 @@ interface eventMultiTargetType {
 }
 
 function CreateGameForm(props: CreateGameFormProps) {
-  const { createGame, isEditing, editInfo, startEdit } = props
+  const { editInfo, isEditing, stopEdit, submitCreateGame, submitEditGame } =
+    props
 
   const [isCreating, setIsCreating] = useState<boolean>(false)
-  const [newGame, setNewGame] = useState<SwitchGameBasic>(newGameInit)
+  const [newGame, setNewGame] = useState<SwitchGameBasicType>(newGameInit)
 
   useEffect(() => {
     if (isEditing && editInfo) {
@@ -182,10 +183,8 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const handleClickCreateCancel = () => {
     setNewGame(newGameInit)
-    startEdit(null)
-
     if (isEditing) {
-      setIsCreating(false)
+      stopEdit()
     } else {
       setIsCreating(state => !state)
     }
@@ -195,7 +194,7 @@ function CreateGameForm(props: CreateGameFormProps) {
     e.preventDefault()
     const { gameInfo } = newGame
 
-    const data: SwitchGameBasic = {
+    const data: SwitchGameBasicType = {
       ...newGame,
       title: isEditing ? newGame.displayTitle : newGame.title,
       gameInfo: {
@@ -208,13 +207,16 @@ function CreateGameForm(props: CreateGameFormProps) {
       }
     }
 
-    createGame(data)
+    if (isEditing) {
+      submitEditGame(data)
+      stopEdit()
+    } else {
+      submitCreateGame(data)
+    }
     setNewGame(newGameInit)
   }
 
   const isCreatingEditing = isCreating || isEditing
-
-  console.log(newGame)
 
   return (
     <div className="create-form-box">
@@ -238,7 +240,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 name="displayTitle"
                 className="nes-input"
                 onChange={handleUpdateGame}
-                // required
+                required
                 value={newGame.displayTitle}
               />
             </div>
@@ -252,7 +254,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 max={5}
                 min={0}
                 onChange={updateMyData}
-                // required
+                required
                 step={1}
                 type="number"
                 value={newGame.myData.rating}
@@ -267,7 +269,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               id="review"
               name="review"
               onChange={updateMyData}
-              // required
+              required
               value={newGame.myData.review}
             />
           </div>

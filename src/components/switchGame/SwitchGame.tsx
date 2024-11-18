@@ -1,18 +1,19 @@
 import { useState } from 'react'
 import {
-  SwitchGameType
+  SwitchGameEditType
   // GameInfoType,
   // MyDataType,
   // GameImagesType,
-  // SwitchGameBasic
+  // SwitchGameBasicType
 } from '../../interfaces'
+import { isArray, convertArrayToCSV } from '../../helpers'
 import './switch-game.css'
 
 // interface SwitchGameProps {
-//   game: SwitchGameType
+//   game: SwitchGameEditType
 // }
 
-interface SwitchGameTypeEdit extends SwitchGameType {
+interface SwitchGameTypeEdit extends SwitchGameEditType {
   startEdit: Function
 }
 
@@ -24,7 +25,7 @@ interface MasonrySwitchGameProps {
 
 function SwitchGame(props: MasonrySwitchGameProps) {
   const { data: game } = props
-  const { gameInfo, images, myData, startEdit } = game
+  const { gameInfo, images, startEdit } = game
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay
@@ -68,17 +69,21 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               alt="box art"
               className="box-art"
             />
+
             <ul className="nes-list is-disc game-stats-list">
               <li>
                 <b>Genres</b>:{' '}
-                {gameInfo.genres.map((genre: string) => {
-                  const genreName = genre === 'Role-Playing' ? 'RPG' : genre
-                  return (
-                    <p className="nes-badge genre-badge" key={genre}>
-                      <span className="nes-badge is-warning">{genreName}</span>
-                    </p>
-                  )
-                })}
+                {isArray(gameInfo.genres) &&
+                  gameInfo.genres.map((genre: string, i: number) => {
+                    const genreName = genre === 'Role-Playing' ? 'RPG' : genre
+                    return (
+                      <p className="nes-badge genre-badge" key={`${genre}${i}`}>
+                        <span className="nes-badge is-warning">
+                          {genreName}
+                        </span>
+                      </p>
+                    )
+                  })}
               </li>
               <li>
                 <b>Price:</b> ${gameInfo.msrp}
@@ -89,15 +94,15 @@ function SwitchGame(props: MasonrySwitchGameProps) {
               {showMore && (
                 <>
                   <li>
-                    <b>Developers:</b> {gameInfo.developers.join(', ')}
+                    <b>Developers:</b> {convertArrayToCSV(gameInfo.developers)}
                   </li>
                   <li>
-                    <b>Publishers:</b> {gameInfo.publishers.join(', ')}
+                    <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
                   </li>
                   <li>
                     <b>Rated:</b> {gameInfo.esrbRating}{' '}
                     {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
-                      ? `(${gameInfo.esrbDescriptors.join(', ')})`
+                      ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
                       : ''}
                   </li>
                   {gameInfo.fileSize && (

@@ -1,5 +1,5 @@
 import { Masonry } from 'masonic'
-// import { SwitchGameType } from '../../interfaces'
+// import { SwitchGameEditType } from '../../interfaces'
 import { useWindowSize } from '../../hooks/windowSize'
 import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
@@ -37,7 +37,7 @@ function SwitchGameList(props: SwitchGameListProps) {
       />
 
       {
-        // games.map((game: SwitchGameType) => (
+        // games.map((game: SwitchGameEditType) => (
         //   <li key={game.id} className="switch-game-list-item">
         //     <SwitchGame game={game} />
         //     {/* <button onClick={() => deleteGame(game.id)}>X</button> */}

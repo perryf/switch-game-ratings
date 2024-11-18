@@ -6,7 +6,7 @@ import type { Schema } from '../../amplify/data/resource'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
 import { sortGames } from '../helpers'
-import { SwitchGameBasic } from '../interfaces'
+import { SwitchGameBasicType, SwitchGameEditType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 
@@ -18,7 +18,7 @@ function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
   const [isEditing, setIsEditing] = useState<boolean>(false)
-  const [editInfo, setEditInfo] = useState<null | SwitchGameBasic>(null)
+  const [editInfo, setEditInfo] = useState<null | SwitchGameEditType>(null)
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
@@ -34,17 +34,84 @@ function App(props: AppProps) {
     return () => sub.unsubscribe()
   }, [client])
 
-  async function createGame(newGame: SwitchGameBasic) {
-    console.log(newGame)
-    // ? not sure if this is needed -- probably a better way
-    // turns comma separated strings into arrays, changes numbers that are technically strings into numbers
-
-    // remove empty strings
+  const startEdit = (game: SwitchGameEditType | null) => {
+    setIsEditing(true)
+    setEditInfo(game)
   }
 
-  const startEdit = (game: SwitchGameBasic | null) => {
-    setIsEditing(!isEditing)
-    setEditInfo(game)
+  const stopEdit: () => void = () => {
+    setIsEditing(false)
+    setEditInfo(null)
+  }
+
+  async function submitCreateGame(newGame: SwitchGameBasicType) {
+    console.log('CREATE')
+    console.log(newGame)
+
+    try {
+      const { returnData, errors } = await client.models.Game.create(newGame)
+      console.log(['-----SUCCESS------'])
+      console.log(returnData)
+      console.log(errors)
+    } catch (err) {
+      console.log('----ERROR----')
+      console.log(err)
+    }
+  }
+
+  async function submitEditGame(newGame: SwitchGameBasicType) {
+    console.log(newGame, 'EDIT')
+
+    // * Random stuff to get around typescript && graphql
+    const data = {
+      ...newGame,
+      includeInReviews: true
+    }
+    delete data.startEdit
+    // const myDataShaped = { ...data.myData }
+    // const gameInfoShaped = { ...data.gameInfo }
+    // const imagesShaped = { ...data.images }
+    // const keys = Object.keys(data) as Array<keyof typeof data>
+    // const myDataKeys = Object.keys(myDataShaped) as Array<
+    //   keyof typeof myDataShaped
+    // >
+    // const gameInfoKeys = Object.keys(gameInfoShaped) as Array<
+    //   keyof typeof gameInfoShaped
+    // >
+    // const imagesKeys = Object.keys(imagesShaped) as Array<
+    //   keyof typeof imagesShaped
+    // >
+
+    // keys.forEach(key => {
+    //   if (data[key] === null) delete data[key]
+    // })
+    // myDataKeys.forEach(key => {
+    //   if (myDataShaped[key] === null) delete myDataShaped[key]
+    // })
+    // gameInfoKeys.forEach(key => {
+    //   if (gameInfoShaped[key] === null) delete gameInfoShaped[key]
+    // })
+    // imagesKeys.forEach(key => {
+    //   if (imagesShaped[key] === null) delete imagesShaped[key]
+    // })
+
+    // const shapedData = {
+    //   ...data,
+    //   myData: myDataShaped,
+    //   gameInfo: gameInfoShaped,
+    //   images: imagesShaped
+    // }
+
+    // console.log(shapedData)
+
+    try {
+      const res = await client.models.Game.update(data)
+      console.log(['-----SUCCESS------'])
+      console.log(res)
+    } catch (err) {
+      console.log('----ERROR----')
+      console.log(err)
+    }
   }
 
   async function deleteGame(id: string) {
@@ -60,10 +127,11 @@ function App(props: AppProps) {
         Switch Game Ratings <i className="snes-logo"></i>
       </h1>
       <CreateGameForm
-        createGame={createGame}
-        isEditing={isEditing}
         editInfo={editInfo}
-        startEdit={startEdit}
+        isEditing={isEditing}
+        stopEdit={stopEdit}
+        submitCreateGame={submitCreateGame}
+        submitEditGame={submitEditGame}
       />
       <SwitchGameList
         deleteGame={deleteGame}

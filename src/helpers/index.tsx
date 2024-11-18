@@ -1,5 +1,3 @@
-import { a } from '@aws-amplify/backend'
-
 // used for searching through Nintendo API for game titles -- makes game titles more universal
 export const shapeGameTitle: (text: string) => string = (title: string) => {
   if (!title) return ''
