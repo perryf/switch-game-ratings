@@ -23,11 +23,38 @@ export const capitalize: (text: string) => string = text => {
 // sorts games by display title -- used in sort function
 export const sortGames: (
   a: { displayTitle: string },
-  b: { displayTitle: string }
-) => number = (a, b) => {
+  b: { displayTitle: string },
+  direction?: string
+) => number = (a, b, direction = 'asc') => {
+  // console.log(a, b, direction)
+  if (!direction) return 0
+
+  const sortNum = direction === 'asc' ? -1 : 1
   const aTitle = a.displayTitle.toLowerCase()
   const bTitle = b.displayTitle.toLowerCase()
 
+  if (aTitle < bTitle) return sortNum
+  if (aTitle > bTitle) return -sortNum
+  return 0
+}
+
+export const sortByRating: (
+  a: { displayTitle: string; myData: { rating: number } },
+  b: { displayTitle: string; myData: { rating: number } },
+  direction?: string
+) => number = (a, b, direction = 'asc') => {
+  if (!direction) return 0
+
+  const sortNum = direction === 'asc' ? -1 : 1
+  const aRating = a.myData.rating || 0
+  const bRating = b.myData.rating || 0
+
+  if (aRating < bRating) return sortNum
+  if (aRating > bRating) return -sortNum
+
+  // sort by title if ratings match\
+  const aTitle = a.displayTitle.toLowerCase()
+  const bTitle = b.displayTitle.toLowerCase()
   if (aTitle < bTitle) return -1
   if (aTitle > bTitle) return 1
   return 0

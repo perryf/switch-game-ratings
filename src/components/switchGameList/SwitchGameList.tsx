@@ -4,11 +4,16 @@ import { Masonry } from 'masonic'
 import { useWindowSize } from '../../hooks/windowSize'
 import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
+import { SwitchGameBasicType } from '../../interfaces'
 
 const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
   if (windowSize.width > 1400) return 3
   if (windowSize.width > 992) return 2
   return 1
+}
+
+interface SwitchGameTypeEdit extends SwitchGameBasicType {
+  startEdit: Function
 }
 
 interface SwitchGameListProps {
@@ -18,15 +23,11 @@ interface SwitchGameListProps {
 function SwitchGameList(props: SwitchGameListProps) {
   const { games } = props
   const size = useWindowSize()
-  const [gameTiles, setGameTiles] = useState(games)
-
-  useEffect(() => {
-    setGameTiles(games)
-  }, [games.length, size])
 
   return (
     <div className="switch-game-list">
-      <Masonry
+      {/* TODO -> Figure out implementing MasonryScroller or useMasonry -- search & delete not working */}
+      {/* <Masonry
         key={games.length}
         items={gameTiles}
         render={SwitchGame}
@@ -35,16 +36,14 @@ function SwitchGameList(props: SwitchGameListProps) {
         maxColumnCount={getColumnCount(size)}
         overscanBy={20}
         itemHeightEstimate={350}
-      />
+      /> */}
 
-      {
-        // games.map((game: SwitchGameEditType) => (
-        //   <li key={game.id} className="switch-game-list-item">
-        //     <SwitchGame game={game} />
-        //     {/* <button onClick={() => deleteGame(game.id)}>X</button> */}
-        //   </li>
-        // ))
-      }
+      {games.map((game: SwitchGameTypeEdit) => (
+        <li key={game.id} className="switch-game-list-item">
+          <SwitchGame game={game} />
+          {/* <button onClick={() => deleteGame(game.id)}>X</button> */}
+        </li>
+      ))}
     </div>
   )
 }

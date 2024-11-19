@@ -5,11 +5,21 @@ import type { Schema } from '../../amplify/data/resource'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
-import { sortGames, isArray } from '../helpers'
+import { isArray, sortGames, sortByRating } from '../helpers'
 import { SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
+import Filters from './filters/Filters'
+
+const getNewSortDirection: (
+  currentDirection: string
+) => string = currentDirection => {
+  console.log(currentDirection)
+  if (currentDirection === 'asc') return 'desc'
+  if (currentDirection === 'desc') return 'asc'
+  return 'asc'
+}
 
 interface AppProps {
   client: any
@@ -18,12 +28,23 @@ interface AppProps {
 function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
+  const [gamesDisplay, setGamesDisplay] = useState<
+    Array<Schema['Game']['type']>
+  >([])
   const [isEditing, setIsEditing] = useState<boolean>(false)
   const [editInfo, setEditInfo] = useState<null | SwitchGameBasicType>(null)
 
+  const [search, setSearch] = useState<string>('')
+  const [currentSort, setCurrentSort] = useState<{
+    sortBy: string
+    direction: string
+  }>({ sortBy: 'title', direction: 'asc' })
+
   useEffect(() => {
+    console.log('____________')
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items = [] }) => {
+        // sorts every time a change is made...
         const data = items.sort(sortGames).map((g: any) => {
           return {
             ...g,
@@ -43,6 +64,7 @@ function App(props: AppProps) {
         // * data from local json
         // setGames([...filteredList])
         setGames([...data])
+        setGamesDisplay([...data])
         stopEdit()
       },
       error: (error: {}) => console.warn(error)
@@ -58,6 +80,40 @@ function App(props: AppProps) {
   const stopEdit: () => void = () => {
     setIsEditing(false)
     setEditInfo(null)
+  }
+
+  const handleChangeSearch = (s: string) => {
+    setSearch(s)
+    const gamesUpdate = games.filter((g: any) => {
+      return g.displayTitle.toLowerCase().includes(s.toLowerCase())
+    })
+
+    setGamesDisplay(gamesUpdate)
+  }
+
+  const handleSort = (name: string) => {
+    const newDirection =
+      name === currentSort.sortBy
+        ? getNewSortDirection(currentSort.direction)
+        : 'asc'
+
+    setCurrentSort(state => {
+      if (name === state.sortBy) {
+        return {
+          sortBy: name,
+          direction: newDirection
+        }
+      }
+      return { sortBy: name, direction: 'asc' }
+    })
+
+    const gamesUpdate =
+      name === 'title'
+        ? gamesDisplay.sort((a, b) => sortGames(a, b, newDirection))
+        : // @ts-ignore
+          gamesDisplay.sort((a, b) => sortByRating(a, b, newDirection))
+
+    setGamesDisplay(gamesUpdate)
   }
 
   async function submitCreateGame(newGame: SwitchGameBasicType) {
@@ -141,6 +197,12 @@ function App(props: AppProps) {
   return (
     <main>
       <MainHeading />
+      <Filters
+        search={search}
+        handleChangeSearch={handleChangeSearch}
+        currentSort={currentSort}
+        handleSort={handleSort}
+      />
       <CreateGameForm
         editInfo={editInfo}
         isEditing={isEditing}
@@ -149,7 +211,7 @@ function App(props: AppProps) {
         submitEditGame={submitEditGame}
         deleteGame={deleteGame}
       />
-      <SwitchGameList games={games.map(g => ({ ...g, startEdit }))} />
+      <SwitchGameList games={gamesDisplay.map(g => ({ ...g, startEdit }))} />
     </main>
   )
 }

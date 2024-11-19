@@ -7,10 +7,14 @@ interface SwitchGameTypeEdit extends SwitchGameBasicType {
   startEdit: Function
 }
 
-interface MasonrySwitchGameProps {
-  index: number
-  width: number
-  data: SwitchGameTypeEdit
+// interface MasonrySwitchGameProps {
+//   index: number
+//   width: number
+//   data: SwitchGameTypeEdit
+// }
+
+interface SwitchGameProps {
+  game: SwitchGameTypeEdit
 }
 
 const getHearts = (rating: number) => {
@@ -25,8 +29,8 @@ const getHearts = (rating: number) => {
   )
 }
 
-function SwitchGame(props: MasonrySwitchGameProps) {
-  const { data: game } = props
+function SwitchGame(props: SwitchGameProps) {
+  const { game } = props
   const { gameInfo, images, myData, startEdit } = game
   const [showMore, setShowMore] = useState(false)
 
