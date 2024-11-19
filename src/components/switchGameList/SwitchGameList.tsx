@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Masonry } from 'masonic'
 // import { SwitchGameEditType } from '../../interfaces'
 import { useWindowSize } from '../../hooks/windowSize'
@@ -11,28 +12,28 @@ const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
 }
 
 interface SwitchGameListProps {
-  deleteGame: (a: string) => void
   games: any
 }
 
 function SwitchGameList(props: SwitchGameListProps) {
-  const {
-    // deleteGame,
-    games,
-    // startEdit,
-  } = props
-
+  const { games } = props
   const size = useWindowSize()
+  const [gameTiles, setGameTiles] = useState(games)
+
+  useEffect(() => {
+    setGameTiles(games)
+  }, [games.length, size])
 
   return (
     <div className="switch-game-list">
       <Masonry
-        items={games}
+        key={games.length}
+        items={gameTiles}
         render={SwitchGame}
         columnGutter={4}
         rowGutter={4}
         maxColumnCount={getColumnCount(size)}
-        overscanBy={5}
+        overscanBy={20}
         itemHeightEstimate={350}
       />
 

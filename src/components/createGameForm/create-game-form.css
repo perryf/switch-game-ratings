@@ -32,3 +32,9 @@
   width: 80%;
   max-width: 800px;
 }
+
+.create-form-button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

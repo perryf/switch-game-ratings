@@ -43,8 +43,9 @@ export interface SwitchGameBasicType {
   gameInfo: GameInfoType
   myData: MyDataType
   startEdit?: Function
+  id?: number
 }
 
-export interface SwitchGameEditType extends SwitchGameBasicType {
-  id: string
-}
+// export interface SwitchGameEditType extends SwitchGameBasicType {
+//   id: string
+// }

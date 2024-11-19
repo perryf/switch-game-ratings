@@ -1,8 +1,11 @@
 :root {
   --nintendo-blue: #004ca5;
+  --nintendo-blue2: #1560ad;
   --nintendo-red: #e60013;
   --super-nintendo-gray: #9d9ba8;
+  --super-nintendo-purple: #825ab1;
   --almost-black: #111;
+  --almost-white: #ddd;
   --switch-controller-blue: #40bae0;
   --switch-controller-blue-glass: #40bae0f0;
   --switch-controller-red: #ed5e53;
@@ -16,7 +19,11 @@
 
 body {
   margin: 0;
-  background: var(--nintendo-blue);
+  background: linear-gradient(
+    90deg,
+    var(--nintendo-blue2),
+    var(--nintendo-blue)
+  );
   display: flex;
   font-family: 'Press Start 2P', 'Lucida Sans', 'Lucida Sans Regular',
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -46,15 +53,6 @@ hr {
 
 label {
   margin-right: 4px;
-}
-
-h1 {
-  font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  padding: 10px 20px 12px;
-  color: black;
-  background: var(--super-nintendo-gray);
-  border-radius: 12px;
-  box-shadow: 2px 2px 5px var(--almost-black);
 }
 
 .ms-20 {

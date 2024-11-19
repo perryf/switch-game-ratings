@@ -6,9 +6,10 @@ import type { Schema } from '../../amplify/data/resource'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
 import { sortGames, isArray } from '../helpers'
-import { SwitchGameBasicType, SwitchGameEditType } from '../interfaces'
+import { SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
+import MainHeading from './mainHeading/MainHeading'
 
 interface AppProps {
   client: any
@@ -18,7 +19,7 @@ function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
   const [isEditing, setIsEditing] = useState<boolean>(false)
-  const [editInfo, setEditInfo] = useState<null | SwitchGameEditType>(null)
+  const [editInfo, setEditInfo] = useState<null | SwitchGameBasicType>(null)
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
@@ -42,13 +43,14 @@ function App(props: AppProps) {
         // * data from local json
         // setGames([...filteredList])
         setGames([...data])
+        stopEdit()
       },
       error: (error: {}) => console.warn(error)
     })
     return () => sub.unsubscribe()
   }, [client])
 
-  const startEdit = (game: SwitchGameEditType | null) => {
+  const startEdit = (game: SwitchGameBasicType | null) => {
     setIsEditing(true)
     setEditInfo(game)
   }
@@ -73,12 +75,12 @@ function App(props: AppProps) {
     }
   }
 
-  async function submitEditGame(newGame: SwitchGameBasicType) {
-    console.log(newGame, 'EDIT')
+  async function submitEditGame(game: SwitchGameBasicType) {
+    console.log(game, 'EDIT')
 
     // * Random stuff to get around typescript && graphql
     const data = {
-      ...newGame,
+      ...game,
       includeInReviews: true
     }
     delete data.startEdit
@@ -128,29 +130,26 @@ function App(props: AppProps) {
     }
   }
 
-  async function deleteGame(id: string) {
-    console.log(id)
+  // ! Currently a bug where the Masonry package will throw an error when rendering after a delete is performed
+  async function deleteGame(id: number) {
     if (window.confirm('Are you sure you want to delete this game?')) {
-      // await client.models.Game.delete({ id })
+      await client.models.Game.delete({ id })
+      stopEdit()
     }
   }
 
   return (
     <main>
-      <h1>
-        Switch Game Ratings <i className="snes-logo"></i>
-      </h1>
+      <MainHeading />
       <CreateGameForm
         editInfo={editInfo}
         isEditing={isEditing}
         stopEdit={stopEdit}
         submitCreateGame={submitCreateGame}
         submitEditGame={submitEditGame}
-      />
-      <SwitchGameList
         deleteGame={deleteGame}
-        games={games.map(g => ({ ...g, startEdit }))}
       />
+      <SwitchGameList games={games.map(g => ({ ...g, startEdit }))} />
     </main>
   )
 }

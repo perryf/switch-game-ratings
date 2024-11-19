@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { SwitchGameEditType } from '../../interfaces'
+import { SwitchGameBasicType } from '../../interfaces'
 import { isArray, convertArrayToCSV } from '../../helpers'
 import './switch-game.css'
 
-interface SwitchGameTypeEdit extends SwitchGameEditType {
+interface SwitchGameTypeEdit extends SwitchGameBasicType {
   startEdit: Function
 }
 
@@ -37,7 +37,7 @@ function SwitchGame(props: MasonrySwitchGameProps) {
   return (
     <div
       // TODO -> remove game.title after data setup
-      key={game.id || game.title}
+      key={game.id}
       className="game-box"
       style={{
         backgroundImage: `url(${images.horizontalHeaderImage})`,

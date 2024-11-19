@@ -81,14 +81,6 @@ const switchGenreList: { name: string; value: string }[] = [
   { name: 'Training', value: 'Training' }
 ]
 
-interface CreateGameFormProps {
-  editInfo: null | SwitchGameBasicType
-  isEditing: boolean
-  stopEdit: () => void
-  submitCreateGame: (a: SwitchGameBasicType) => void
-  submitEditGame: (a: SwitchGameBasicType) => void
-}
-
 interface eventTargetType {
   target: {
     checked?: boolean
@@ -105,12 +97,29 @@ interface eventMultiTargetType {
   }
 }
 
+interface CreateGameFormProps {
+  editInfo: null | SwitchGameBasicType
+  isEditing: boolean
+  stopEdit: () => void
+  submitCreateGame: (a: SwitchGameBasicType) => void
+  submitEditGame: (a: SwitchGameBasicType) => void
+  deleteGame: (id: number) => void
+}
+
 function CreateGameForm(props: CreateGameFormProps) {
-  const { editInfo, isEditing, stopEdit, submitCreateGame, submitEditGame } =
-    props
+  const {
+    editInfo,
+    isEditing,
+    stopEdit,
+    submitCreateGame,
+    submitEditGame,
+    deleteGame
+  } = props
 
   const [isCreating, setIsCreating] = useState<boolean>(false)
-  const [newGame, setNewGame] = useState<SwitchGameBasicType>(newGameInit)
+  const [newGame, setNewGame] = useState<
+    SwitchGameBasicType | SwitchGameBasicType
+  >(newGameInit)
 
   useEffect(() => {
     if (isEditing && editInfo) {
@@ -212,8 +221,13 @@ function CreateGameForm(props: CreateGameFormProps) {
       stopEdit()
     } else {
       submitCreateGame(data)
+      setIsCreating(false)
     }
     setNewGame(newGameInit)
+  }
+
+  const handleDelete: () => void = () => {
+    if (newGame.id) deleteGame(newGame.id)
   }
 
   const isCreatingEditing = isCreating || isEditing
@@ -231,7 +245,9 @@ function CreateGameForm(props: CreateGameFormProps) {
           onSubmit={handleGameSubmit}
           className="create-form nes-container with-title is-centered is-dark is-rounded"
         >
-          <p className="displayTitle">Create Game Form</p>
+          <p className="displayTitle">
+            {isEditing ? 'Edit' : 'Create'} Game Form
+          </p>
           <div className="create-form-row">
             <div className="nes-field">
               <label htmlFor="displayTitle">Title *</label>
@@ -659,13 +675,17 @@ function CreateGameForm(props: CreateGameFormProps) {
               />
             </div>
           </div>
-          <button
-            type="submit"
-            className="nes-btn is-primary"
-            // disabled={!newGame.name || !newGame.rating || !newGame.review}
-          >
-            Submit
-          </button>
+
+          <div className="create-form-button-box">
+            {isEditing && (
+              <button className="nes-btn is-error" onClick={handleDelete}>
+                Delete
+              </button>
+            )}
+            <button type="submit" className="nes-btn is-primary">
+              Submit
+            </button>
+          </div>
         </form>
       )}
     </div>
