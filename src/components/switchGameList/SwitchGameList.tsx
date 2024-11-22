@@ -1,16 +1,15 @@
-import { useEffect, useState } from 'react'
-import { Masonry } from 'masonic'
+// import { Masonry } from 'masonic' // * Not using this for now -- was causing a lot of issues with searching / deleting.  Need to account for position/item/order changes
 // import { SwitchGameEditType } from '../../interfaces'
-import { useWindowSize } from '../../hooks/windowSize'
+// import { useWindowSize } from '../../hooks/windowSize'
 import SwitchGame from '../switchGame/SwitchGame'
 import './switch-game-list.css'
 import { SwitchGameBasicType } from '../../interfaces'
 
-const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
-  if (windowSize.width > 1400) return 3
-  if (windowSize.width > 992) return 2
-  return 1
-}
+// const getColumnCount = (windowSize = { width: 0, height: 0 }) => {
+//   if (windowSize.width > 1400) return 3
+//   if (windowSize.width > 992) return 2
+//   return 1
+// }
 
 interface SwitchGameTypeEdit extends SwitchGameBasicType {
   startEdit: Function
@@ -22,7 +21,7 @@ interface SwitchGameListProps {
 
 function SwitchGameList(props: SwitchGameListProps) {
   const { games } = props
-  const size = useWindowSize()
+  // const size = useWindowSize()
 
   return (
     <div className="switch-game-list">
@@ -39,10 +38,7 @@ function SwitchGameList(props: SwitchGameListProps) {
       /> */}
 
       {games.map((game: SwitchGameTypeEdit) => (
-        <li key={game.id} className="switch-game-list-item">
-          <SwitchGame game={game} />
-          {/* <button onClick={() => deleteGame(game.id)}>X</button> */}
-        </li>
+        <SwitchGame game={game} key={game.id} />
       ))}
     </div>
   )

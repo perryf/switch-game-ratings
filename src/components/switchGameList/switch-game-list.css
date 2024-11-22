@@ -1,7 +1,24 @@
 .switch-game-list {
-  margin-block-start: 0;
-  margin-block-end: 12px;
   padding: 8px;
   width: 100vw;
   margin-bottom: 12px;
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: auto; */
+}
+
+@media (max-width: 1440px) {
+  .switch-game-list {
+    grid-template: auto / 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .switch-game-list {
+    grid-template: auto / 1fr;
+  }
 }

@@ -4,6 +4,14 @@
   border-radius: 8px;
   transition: transform 1s;
   border: 1px solid var(--almost-black);
+  /* width: 33%; */
+  /* width: 100%; */
+  /* display: inline-block; */
+  /* float: inline-start; */
+}
+
+.game-box-details {
+  grid-row-end: span 2;
 }
 
 .game-box:hover {
@@ -16,6 +24,7 @@
 .game-box-inners {
   border-radius: 8px;
   box-shadow: 2px 2px 2px black;
+  height: 100%;
   padding: 10px;
   background: var(--switch-controller-blue-glass);
   background: linear-gradient(

@@ -40,9 +40,7 @@ function SwitchGame(props: SwitchGameProps) {
 
   return (
     <div
-      // TODO -> remove game.title after data setup
-      key={game.id}
-      className="game-box"
+      className={`game-box ${showMore ? 'game-box-details' : ''}`}
       style={{
         backgroundImage: `url(${images.horizontalHeaderImage})`,
         backgroundColor: '#cccccc',
