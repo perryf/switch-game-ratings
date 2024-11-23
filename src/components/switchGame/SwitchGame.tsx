@@ -14,12 +14,10 @@ interface SwitchGameProps {
 
 function SwitchGame(props: SwitchGameProps) {
   const { game } = props
-  const {
-    gameInfo = gameInfoInit,
-    images = imagesInit,
-    myData = myDataInit,
-    startEdit
-  } = game
+  // these or statements are here to prevent if there is a null for gameInfo, images, or myData (shouldn't really be 🤷🏻‍♀️)
+  const images = game.images || imagesInit
+  const gameInfo = game.gameInfo || gameInfoInit
+  const myData = game.myData || myDataInit
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay
@@ -47,7 +45,7 @@ function SwitchGame(props: SwitchGameProps) {
               </span>
             </h3>
           </div>
-          <button onClick={() => startEdit(game)}>Edit</button>
+          <button onClick={() => game.startEdit(game)}>Edit</button>
         </div>
 
         <div className="game-info">
