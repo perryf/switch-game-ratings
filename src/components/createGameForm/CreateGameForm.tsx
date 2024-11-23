@@ -1,16 +1,22 @@
 import { useEffect } from 'react'
 import {
-  GameImagesType,
-  GameInfoType,
-  MyDataType,
-  SwitchGameBasicType
-} from '../../interfaces'
+  gameInfoInit,
+  imagesInit,
+  myDataInit,
+  newGameInit
+} from '../../constants'
 import {
   capitalize,
   convertArrayToCSV,
   convertCSVToArray,
   isArray
 } from '../../helpers'
+import {
+  GameImagesType,
+  GameInfoType,
+  MyDataType,
+  SwitchGameBasicType
+} from '../../interfaces'
 import './create-game-form.css'
 
 const gameLengths: string[] = ['short', 'medium', 'long']
@@ -22,52 +28,6 @@ const emulatorSystems: string[] = [
   'sega',
   'snes'
 ]
-
-const gameInfoInit: GameInfoType = {
-  developers: [],
-  engine: '',
-  esrbDescriptors: [],
-  esrbRating: '',
-  fileSize: '',
-  freeToStart: false,
-  generalFilters: [],
-  genres: [],
-  lengthOfGame: '',
-  msrp: 0.0,
-  numOfPlayers: '',
-  playerFilters: [],
-  publishers: [],
-  remake: false,
-  slug: '',
-  tags: []
-}
-
-const imagesInit: GameImagesType = {
-  boxart: '',
-  descriptionImage: '',
-  horizontalHeaderImage: ''
-}
-
-const myDataInit: MyDataType = {
-  datePlayed: '',
-  datePurchased: '',
-  emulatorSystem: '',
-  isEmulator: false,
-  physicalCopy: false,
-  played: false,
-  rating: 0,
-  review: ''
-}
-
-const newGameInit: SwitchGameBasicType = {
-  description: '',
-  displayTitle: '',
-  title: '',
-  releaseDateDisplay: new Date().toISOString().slice(0, 10),
-  images: imagesInit,
-  gameInfo: gameInfoInit,
-  myData: myDataInit
-}
 
 const switchGenreList: { name: string; value: string }[] = [
   { name: 'Action', value: 'Action' },
@@ -109,38 +69,40 @@ interface eventMultiTargetType {
 }
 
 interface CreateGameFormProps {
-  editInfo: null | SwitchGameBasicType
-  isEditing: boolean
-  stopEdit: () => void
-  submitCreateGame: (a: SwitchGameBasicType) => void
-  submitEditGame: (a: SwitchGameBasicType) => void
   deleteGame: (id: number) => void
+  editInfo: null | SwitchGameBasicType
+  handleClickCreateCancel: () => void
+  isCreating: boolean
+  isEditing: boolean
   newGame: SwitchGameBasicType
+  setIsCreating: (b: boolean) => void
   setNewGame: (
     game:
       | SwitchGameBasicType
       | ((game: SwitchGameBasicType) => SwitchGameBasicType)
   ) => void
-  handleClickCreateCancel: () => void
-  isCreating: boolean
-  setIsCreating: (b: boolean) => void
+  stopEdit: () => void
+  submitCreateGame: (a: SwitchGameBasicType) => void
+  submitEditGame: (a: SwitchGameBasicType) => void
 }
 
 function CreateGameForm(props: CreateGameFormProps) {
   const {
-    editInfo,
-    isEditing,
-    stopEdit,
-    submitCreateGame,
-    submitEditGame,
     deleteGame,
-    newGame,
-    setNewGame,
+    editInfo,
     handleClickCreateCancel,
     isCreating,
-    setIsCreating
+    isEditing,
+    newGame,
+    setIsCreating,
+    setNewGame,
+    stopEdit,
+    submitCreateGame,
+    submitEditGame
   } = props
 
+  // handles user clicking "Edit" on game
+  // ? maybe move to App.tsx
   useEffect(() => {
     if (isEditing && editInfo) {
       const { gameInfo = gameInfoInit }: { gameInfo: GameInfoType } = editInfo

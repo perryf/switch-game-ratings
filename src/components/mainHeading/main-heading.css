@@ -1,4 +1,7 @@
 .main-heading-box {
+  position: sticky;
+  top: 0;
+  z-index: 666;
   width: 100vw;
   padding: 10px 20px 12px;
   margin: 0 0 8px;
@@ -7,8 +10,6 @@
   background: var(--super-nintendo-gray);
   border-radius: 0 0 8px 8px;
   box-shadow: 0 0.25em 0.25em var(--almost-black);
-  /* box-shadow: 0 0.5em #f7d51d, 0 -0.5em #f7d51d, 0.5em 0 #f7d51d,
-    -0.5em 0 #f7d51d; */
 }
 
 h1 {
@@ -20,10 +21,99 @@ h1 {
   font-size: 1.75em;
   border: 2px solid var(--almost-black);
   box-shadow: 0.1em 0.1em 0.1em var(--almost-black);
+  text-shadow: 0.05em 0.05em 0.1em var(--almost-black);
   margin: 0;
 }
 
-.heading-icon {
+h1:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+  transition: 0.5s;
+}
+
+.main-heading-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.perry-github-link {
+  margin-left: 8px;
+  font-size: 0.75em;
+  color: var(--super-nintendo-dark-gray);
+  background: var(--super-nintendo-lilac);
+  border: 2px solid var(--almost-black);
+  box-shadow: 0.1em 0.1em 0.1em var(--almost-black);
+  border-radius: 16px;
+  padding: 0 6px;
+  text-decoration: none;
+}
+
+.perry-github-link:hover {
+  color: var(--super-nintendo-dark-gray);
+  text-decoration: none;
+  animation-name: perry-hover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.perry-github-link:visited {
+  color: var(--super-nintendo-dark-gray);
+}
+
+.perry-github-link:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: 0.3s;
+}
+
+.perry-github-link p {
+  margin-bottom: 0;
+}
+
+.question-mark-box {
+  padding: 0;
+  font-size: 24px;
+  width: 2em;
+  height: 2em;
+  color: white !important;
+  text-shadow: 0.1em 0.1em var(--nintendo-yellow-very-dark);
+  background: var(--nintendo-yellow);
+  border-top: 4px solid var(--nintendo-yellow-light);
+  border-right: 4px solid var(--nintendo-yellow-dark);
+  border-bottom: 4px solid var(--nintendo-yellow-dark);
+  border-left: 4px solid var(--nintendo-yellow-light);
+  box-shadow: 0.1em 0.1em 0.1em var(--almost-black);
+  border-radius: 4px;
+}
+
+.question-mark-box:active {
+  outline: none;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: 0.3s;
+}
+
+.question-mark-box:focus {
+  outline: none;
+}
+
+@keyframes perry-hover {
+  0% {
+    color: var(--super-nintendo-dark-gray);
+  }
+  25% {
+    color: var(--super-nintendo-purple);
+  }
+  50% {
+    color: var(--switch-controller-blue);
+  }
+  75% {
+    color: var(--switch-controller-red);
+  }
+  100% {
+    color: var(--super-nintendo-dark-gray);
+  }
 }
 
 @media (max-width: 900px) {

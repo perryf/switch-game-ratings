@@ -2,14 +2,20 @@
   --nintendo-blue: #004ca5;
   --nintendo-blue2: #1560ad;
   --nintendo-red: #e60013;
+  --nintendo-yellow: #ffd323;
+  --nintendo-yellow-light: #fae282;
+  --nintendo-yellow-dark: #d3ad13;
+  --nintendo-yellow-very-dark: #625e4b;
   --super-nintendo-gray: #9d9ba8;
+  --super-nintendo-dark-gray: #545454;
+  --super-nintendo-lilac: #b1aee6;
   --super-nintendo-purple: #825ab1;
   --almost-black: #111;
   --almost-white: #ddd;
   --switch-controller-blue: #40bae0;
-  --switch-controller-blue-glass: #40bae0f0;
+  --switch-controller-blue-glass: #40bae0e8;
   --switch-controller-red: #ed5e53;
-  --switch-controller-red-glass: #ed5e53f0;
+  --switch-controller-red-glass: #ed5e53e8;
 }
 
 @font-face {
@@ -47,7 +53,7 @@ a {
 
 hr {
   width: 100%;
-  border-top: 1px dotted black;
+  border-top: 1px dotted var(--almost-white);
   border-bottom: 0;
 }
 

@@ -79,6 +79,14 @@ export const convertArrayToCSV = (a: any) => {
   return isArray(a) ? a.join(', ') : ''
 }
 
+export const getNewSortDirection: (
+  currentDirection: string
+) => string = currentDirection => {
+  if (currentDirection === 'asc') return 'desc'
+  if (currentDirection === 'desc') return 'asc'
+  return 'asc'
+}
+
 // * Loops through all json test data and POSTs them to DB
 // filteredList.forEach(async (game: any) => {
 //   try {

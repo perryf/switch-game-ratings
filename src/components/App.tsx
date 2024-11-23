@@ -4,74 +4,21 @@ import type { Schema } from '../../amplify/data/resource'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
-import { isArray, sortGames, sortByRating } from '../helpers'
 import {
-  GameImagesType,
-  GameInfoType,
-  MyDataType,
-  SwitchGameBasicType
-} from '../interfaces'
+  getNewSortDirection,
+  isArray,
+  sortByRating,
+  sortGames
+} from '../helpers'
+import { newGameInit } from '../constants'
+import { SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
 import Filters from './filters/Filters'
 
-const getNewSortDirection: (
-  currentDirection: string
-) => string = currentDirection => {
-  if (currentDirection === 'asc') return 'desc'
-  if (currentDirection === 'desc') return 'asc'
-  return 'asc'
-}
-
 interface AppProps {
   client: any
-}
-
-const gameInfoInit: GameInfoType = {
-  developers: [],
-  engine: '',
-  esrbDescriptors: [],
-  esrbRating: '',
-  fileSize: '',
-  freeToStart: false,
-  generalFilters: [],
-  genres: [],
-  lengthOfGame: '',
-  msrp: 0.0,
-  numOfPlayers: '',
-  playerFilters: [],
-  publishers: [],
-  remake: false,
-  slug: '',
-  tags: []
-}
-
-const imagesInit: GameImagesType = {
-  boxart: '',
-  descriptionImage: '',
-  horizontalHeaderImage: ''
-}
-
-const myDataInit: MyDataType = {
-  datePlayed: '',
-  datePurchased: '',
-  emulatorSystem: '',
-  isEmulator: false,
-  physicalCopy: false,
-  played: false,
-  rating: 0,
-  review: ''
-}
-
-const newGameInit: SwitchGameBasicType = {
-  description: '',
-  displayTitle: '',
-  title: '',
-  releaseDateDisplay: new Date().toISOString().slice(0, 10),
-  images: imagesInit,
-  gameInfo: gameInfoInit,
-  myData: myDataInit
 }
 
 function App(props: AppProps) {
@@ -228,17 +175,17 @@ function App(props: AppProps) {
         handleChangeRatingFilter={handleChangeRatingFilter}
       />
       <CreateGameForm
+        deleteGame={deleteGame}
         editInfo={editInfo}
+        handleClickCreateCancel={handleClickCreateCancel}
+        isCreating={isCreating}
         isEditing={isEditing}
+        newGame={newGame}
+        setIsCreating={setIsCreating}
+        setNewGame={setNewGame}
         stopEdit={stopEdit}
         submitCreateGame={submitCreateGame}
         submitEditGame={submitEditGame}
-        deleteGame={deleteGame}
-        newGame={newGame}
-        setNewGame={setNewGame}
-        handleClickCreateCancel={handleClickCreateCancel}
-        isCreating={isCreating}
-        setIsCreating={setIsCreating}
       />
       <SwitchGameList games={gamesDisplay.map(g => ({ ...g, startEdit }))} />
     </main>
