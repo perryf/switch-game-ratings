@@ -87,6 +87,19 @@ export const getNewSortDirection: (
   return 'asc'
 }
 
+// used to show rating (x out of 5 hearts)
+export const getHearts = (rating: number) => {
+  return (
+    <div className="heart-box">
+      <i className={`nes-icon heart ${rating < 1 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 2 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 3 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 4 && 'is-empty'}`} />
+      <i className={`nes-icon heart ${rating < 5 && 'is-empty'}`} />
+    </div>
+  )
+}
+
 // * Loops through all json test data and POSTs them to DB
 // filteredList.forEach(async (game: any) => {
 //   try {

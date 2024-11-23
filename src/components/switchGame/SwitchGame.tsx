@@ -1,37 +1,25 @@
 import { useState } from 'react'
+import { gameInfoInit, imagesInit, myDataInit } from '../../constants'
+import { convertArrayToCSV, isArray, getHearts } from '../../helpers'
 import { SwitchGameBasicType } from '../../interfaces'
-import { isArray, convertArrayToCSV } from '../../helpers'
 import './switch-game.css'
 
 interface SwitchGameTypeEdit extends SwitchGameBasicType {
   startEdit: Function
 }
 
-// interface MasonrySwitchGameProps {
-//   index: number
-//   width: number
-//   data: SwitchGameTypeEdit
-// }
-
 interface SwitchGameProps {
   game: SwitchGameTypeEdit
 }
 
-const getHearts = (rating: number) => {
-  return (
-    <div className="heart-box">
-      <i className={`nes-icon heart ${rating < 1 && 'is-empty'}`} />
-      <i className={`nes-icon heart ${rating < 2 && 'is-empty'}`} />
-      <i className={`nes-icon heart ${rating < 3 && 'is-empty'}`} />
-      <i className={`nes-icon heart ${rating < 4 && 'is-empty'}`} />
-      <i className={`nes-icon heart ${rating < 5 && 'is-empty'}`} />
-    </div>
-  )
-}
-
 function SwitchGame(props: SwitchGameProps) {
   const { game } = props
-  const { gameInfo, images, myData, startEdit } = game
+  const {
+    gameInfo = gameInfoInit,
+    images = imagesInit,
+    myData = myDataInit,
+    startEdit
+  } = game
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay

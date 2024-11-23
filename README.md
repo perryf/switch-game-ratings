@@ -36,7 +36,12 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - Wikipedia
 
 - Removed for now
+
   - `"@aws-amplify/ui-react": "^6.5.5"`
   - `"@aws-amplify/ui-react-storage": "^3.3.9"`
   - `"masonic": "^4.0.1"`
   - `"nintendo-switch-eshop": "^8.0.0"`
+
+- TODO...
+  - try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
+  - and adding `- npm install --package-lock-only` first line of `commands:` in `amplify.yml`
