@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import {
   GameImagesType,
   GameInfoType,
@@ -115,6 +115,15 @@ interface CreateGameFormProps {
   submitCreateGame: (a: SwitchGameBasicType) => void
   submitEditGame: (a: SwitchGameBasicType) => void
   deleteGame: (id: number) => void
+  newGame: SwitchGameBasicType
+  setNewGame: (
+    game:
+      | SwitchGameBasicType
+      | ((game: SwitchGameBasicType) => SwitchGameBasicType)
+  ) => void
+  handleClickCreateCancel: () => void
+  isCreating: boolean
+  setIsCreating: (b: boolean) => void
 }
 
 function CreateGameForm(props: CreateGameFormProps) {
@@ -124,13 +133,13 @@ function CreateGameForm(props: CreateGameFormProps) {
     stopEdit,
     submitCreateGame,
     submitEditGame,
-    deleteGame
+    deleteGame,
+    newGame,
+    setNewGame,
+    handleClickCreateCancel,
+    isCreating,
+    setIsCreating
   } = props
-
-  const [isCreating, setIsCreating] = useState<boolean>(false)
-  const [newGame, setNewGame] = useState<
-    SwitchGameBasicType | SwitchGameBasicType
-  >(newGameInit)
 
   useEffect(() => {
     if (isEditing && editInfo) {
@@ -159,7 +168,7 @@ function CreateGameForm(props: CreateGameFormProps) {
   const handleUpdateGame: (target: eventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
-    setNewGame(game => {
+    setNewGame((game: SwitchGameBasicType) => {
       if (type === 'checkbox') return { ...game, [name]: checked }
       return { ...game, [name]: value }
     })
@@ -168,7 +177,7 @@ function CreateGameForm(props: CreateGameFormProps) {
   const updateMyData: (target: eventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
-    setNewGame(game => ({
+    setNewGame((game: SwitchGameBasicType) => ({
       ...game,
       myData: {
         ...game.myData,
@@ -180,7 +189,7 @@ function CreateGameForm(props: CreateGameFormProps) {
   const updateGameInfo: (target: eventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
-    setNewGame(game => ({
+    setNewGame((game: SwitchGameBasicType) => ({
       ...game,
       gameInfo: {
         ...game.gameInfo,
@@ -192,22 +201,13 @@ function CreateGameForm(props: CreateGameFormProps) {
   const handleUpdateGameInfoMulti: (target: eventMultiTargetType) => void = ({
     target: { name, selectedOptions }
   }) => {
-    setNewGame(game => ({
+    setNewGame((game: SwitchGameBasicType) => ({
       ...game,
       gameInfo: {
         ...game.gameInfo,
         [name]: Array.from(selectedOptions).map((o: any) => o.value)
       }
     }))
-  }
-
-  const handleClickCreateCancel = () => {
-    setNewGame(newGameInit)
-    if (isEditing) {
-      stopEdit()
-    } else {
-      setIsCreating(state => !state)
-    }
   }
 
   const handleGameSubmit = (e: { preventDefault: () => void }) => {

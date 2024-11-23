@@ -83,9 +83,7 @@ function App(props: AppProps) {
   const [isEditing, setIsEditing] = useState<boolean>(false)
   const [editInfo, setEditInfo] = useState<null | SwitchGameBasicType>(null)
   const [isCreating, setIsCreating] = useState<boolean>(false)
-  const [newGame, setNewGame] = useState<
-    SwitchGameBasicType | SwitchGameBasicType
-  >(newGameInit)
+  const [newGame, setNewGame] = useState<SwitchGameBasicType>(newGameInit)
 
   const [search, setSearch] = useState<string>('')
   const [ratingFilter, setRatingFilter] = useState<string>('')
@@ -209,6 +207,15 @@ function App(props: AppProps) {
     }
   }
 
+  const handleClickCreateCancel = () => {
+    setNewGame(newGameInit)
+    if (isEditing) {
+      stopEdit()
+    } else {
+      setIsCreating(state => !state)
+    }
+  }
+
   return (
     <main>
       <MainHeading />
@@ -227,6 +234,11 @@ function App(props: AppProps) {
         submitCreateGame={submitCreateGame}
         submitEditGame={submitEditGame}
         deleteGame={deleteGame}
+        newGame={newGame}
+        setNewGame={setNewGame}
+        handleClickCreateCancel={handleClickCreateCancel}
+        isCreating={isCreating}
+        setIsCreating={setIsCreating}
       />
       <SwitchGameList games={gamesDisplay.map(g => ({ ...g, startEdit }))} />
     </main>
