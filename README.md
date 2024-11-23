@@ -34,3 +34,9 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - npm `nintendo-switch-eshop` -- wrapper around Switch Eshop
 - Nintendo.com
 - Wikipedia
+
+- Removed for now
+  - `"@aws-amplify/ui-react": "^6.5.5"`
+  - `"@aws-amplify/ui-react-storage": "^3.3.9"`
+  - `"masonic": "^4.0.1"`
+  - `"nintendo-switch-eshop": "^8.0.0"`

@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
-// import { StorageImage } from '@aws-amplify/ui-react-storage'
 import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
 import { isArray, sortGames, sortByRating } from '../helpers'
-import { SwitchGameBasicType } from '../interfaces'
+import {
+  GameImagesType,
+  GameInfoType,
+  MyDataType,
+  SwitchGameBasicType
+} from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
@@ -24,6 +28,52 @@ interface AppProps {
   client: any
 }
 
+const gameInfoInit: GameInfoType = {
+  developers: [],
+  engine: '',
+  esrbDescriptors: [],
+  esrbRating: '',
+  fileSize: '',
+  freeToStart: false,
+  generalFilters: [],
+  genres: [],
+  lengthOfGame: '',
+  msrp: 0.0,
+  numOfPlayers: '',
+  playerFilters: [],
+  publishers: [],
+  remake: false,
+  slug: '',
+  tags: []
+}
+
+const imagesInit: GameImagesType = {
+  boxart: '',
+  descriptionImage: '',
+  horizontalHeaderImage: ''
+}
+
+const myDataInit: MyDataType = {
+  datePlayed: '',
+  datePurchased: '',
+  emulatorSystem: '',
+  isEmulator: false,
+  physicalCopy: false,
+  played: false,
+  rating: 0,
+  review: ''
+}
+
+const newGameInit: SwitchGameBasicType = {
+  description: '',
+  displayTitle: '',
+  title: '',
+  releaseDateDisplay: new Date().toISOString().slice(0, 10),
+  images: imagesInit,
+  gameInfo: gameInfoInit,
+  myData: myDataInit
+}
+
 function App(props: AppProps) {
   const { client } = props
   const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
@@ -32,6 +82,10 @@ function App(props: AppProps) {
   >([])
   const [isEditing, setIsEditing] = useState<boolean>(false)
   const [editInfo, setEditInfo] = useState<null | SwitchGameBasicType>(null)
+  const [isCreating, setIsCreating] = useState<boolean>(false)
+  const [newGame, setNewGame] = useState<
+    SwitchGameBasicType | SwitchGameBasicType
+  >(newGameInit)
 
   const [search, setSearch] = useState<string>('')
   const [ratingFilter, setRatingFilter] = useState<string>('')
