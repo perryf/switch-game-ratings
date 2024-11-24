@@ -44,4 +44,4 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 
 - TODO...
   - try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
-  - and adding `- npm install --package-lock-only` first line of `commands:` in `amplify.yml`
+  - and adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
