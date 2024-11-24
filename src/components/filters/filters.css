@@ -2,5 +2,37 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  .game-filters {
+    font-size: 0.7rem;
+  }
+
+  .game-filters select {
+    padding: 0.25rem 1.25rem 0.25rem 0.5rem;
+  }
+
+  .game-filters input {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .game-filters button {
+    padding: 2px 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .game-filters {
+    font-size: 0.5rem;
+  }
+
+  .game-filters select {
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  }
+
+  .nes-select::after {
+    display: none;
+  }
 }

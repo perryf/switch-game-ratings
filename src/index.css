@@ -16,6 +16,11 @@
   --switch-controller-blue-glass: #40bae0e8;
   --switch-controller-red: #ed5e53;
   --switch-controller-red-glass: #ed5e53e8;
+
+  /* don't work in media queries but keep for referencess */
+  --breakpoint-large: 1400px;
+  --breakpoint-medium: 992px;
+  --break-point-small: 600px;
 }
 
 @font-face {

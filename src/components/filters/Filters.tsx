@@ -27,7 +27,7 @@ function Filters(props: FilterProps) {
 
   return (
     <div className="game-filters">
-      <div className="nes-field search-bar">
+      <div className="nes-field">
         <label htmlFor="search-bar">Game Title</label>
         <input
           id="search-bar"
@@ -55,14 +55,15 @@ function Filters(props: FilterProps) {
         </div>
       </div>
 
-      <div className="sort-by">
+      <div className="nes-field">
+        <label>Sort</label>
         <button onClick={() => handleSort('title')} className="nes-btn">
-          Sort By Title{' '}
+          Title{' '}
           {currentSort.sortBy === 'title' &&
             getDirectionArrow(currentSort.direction)}
         </button>
         <button onClick={() => handleSort('rating')} className="nes-btn">
-          Sort By Rating{' '}
+          Rating{' '}
           {currentSort.sortBy === 'rating' &&
             getDirectionArrow(currentSort.direction)}
         </button>
