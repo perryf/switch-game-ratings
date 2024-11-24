@@ -124,7 +124,11 @@ h1:active {
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .main-heading-box {
+    padding: 5px 10px 6px;
   }
 
   .heading-icon {
@@ -142,6 +146,10 @@ h1:active {
 @media (max-width: 600px) {
   h1 {
     font-size: 0.8rem;
+  }
+
+  .main-heading-box {
+    padding: 2px 5px 3px;
   }
 
   .heading-icon {
