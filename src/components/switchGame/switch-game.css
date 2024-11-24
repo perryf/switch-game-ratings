@@ -135,3 +135,20 @@
   height: initial !important;
   padding: 0 2px !important;
 }
+
+@media (max-width: 600px) {
+  .box-art {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .game-title {
+    font-size: 0.75em;
+    margin: 0 0 2px;
+  }
+
+  .game-date-display {
+    font-size: 0.5rem;
+    padding-left: 4px;
+  }
+}

@@ -15,7 +15,6 @@ import { GameInfoType, SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
-import Filters from './filters/Filters'
 
 interface AppProps {
   client: any
@@ -179,8 +178,7 @@ function App(props: AppProps) {
 
   return (
     <main>
-      <MainHeading />
-      <Filters
+      <MainHeading
         ratingFilter={ratingFilter}
         search={search}
         handleChangeSearch={handleChangeSearch}
