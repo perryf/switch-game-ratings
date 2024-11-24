@@ -27,14 +27,18 @@
   align-items: center;
 }
 
-.create-form textarea {
-  height: 100px;
-  width: 80%;
-  max-width: 800px;
-}
-
 .create-form-button-box {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.review-box {
+  width: 100%;
+}
+
+.create-form textarea {
+  height: 100px;
+  width: 100%;
+  max-width: 800px;
 }

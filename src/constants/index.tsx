@@ -50,3 +50,36 @@ export const newGameInit: SwitchGameBasicType = {
   images: imagesInit,
   myData: myDataInit
 }
+
+export const gameLengths: string[] = ['short', 'medium', 'long']
+export const emulatorSystems: string[] = [
+  'gameboy',
+  'gba',
+  'n64',
+  'nes',
+  'sega',
+  'snes'
+]
+
+export const switchGenreList: { name: string; value: string }[] = [
+  { name: 'Action', value: 'Action' },
+  { name: 'Adventure', value: 'Adventure' },
+  { name: 'Arcade', value: 'Arcade' },
+  { name: 'Board Game', value: 'Board game' },
+  { name: 'Fighting', value: 'Fighting' },
+  { name: 'First-Person', value: 'First-person' },
+  { name: 'Fitness', value: 'Fitness' },
+  { name: 'Indie', value: 'Indie' },
+  { name: 'Multiplayer', value: 'mMultiplayer' },
+  { name: 'Music', value: 'Music' },
+  { name: 'Other', value: 'Other' },
+  { name: 'Party', value: 'Party' },
+  { name: 'Platformer', value: 'Platformer' },
+  { name: 'Puzzle', value: 'Puzzle' },
+  { name: 'Racing', value: 'Racing' },
+  { name: 'Role-Playing', value: 'Role-playing' },
+  { name: 'Simulation', value: 'Simulation' },
+  { name: 'Sports', value: 'Sports' },
+  { name: 'Strategy', value: 'Strategy' },
+  { name: 'Training', value: 'Training' }
+]

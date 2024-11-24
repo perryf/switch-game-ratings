@@ -1,86 +1,35 @@
-import { useEffect } from 'react'
 import {
+  emulatorSystems,
   gameInfoInit,
+  gameLengths,
   imagesInit,
   myDataInit,
-  newGameInit
+  newGameInit,
+  switchGenreList
 } from '../../constants'
-import {
-  capitalize,
-  convertArrayToCSV,
-  convertCSVToArray,
-  isArray
-} from '../../helpers'
+import { capitalize, convertCSVToArray } from '../../helpers'
 import {
   GameImagesType,
   GameInfoType,
   MyDataType,
-  SwitchGameBasicType
+  SwitchGameBasicType,
+  EventTargetType,
+  EventMultiTargetType
 } from '../../interfaces'
 import './create-game-form.css'
 
-const gameLengths: string[] = ['short', 'medium', 'long']
-const emulatorSystems: string[] = [
-  'gameboy',
-  'gba',
-  'n64',
-  'nes',
-  'sega',
-  'snes'
-]
-
-const switchGenreList: { name: string; value: string }[] = [
-  { name: 'Action', value: 'Action' },
-  { name: 'Adventure', value: 'Adventure' },
-  { name: 'Arcade', value: 'Arcade' },
-  { name: 'Board Game', value: 'Board game' },
-  { name: 'Fighting', value: 'Fighting' },
-  { name: 'First-Person', value: 'First-person' },
-  { name: 'Fitness', value: 'Fitness' },
-  { name: 'Indie', value: 'Indie' },
-  { name: 'Multiplayer', value: 'mMultiplayer' },
-  { name: 'Music', value: 'Music' },
-  { name: 'Other', value: 'Other' },
-  { name: 'Party', value: 'Party' },
-  { name: 'Platformer', value: 'Platformer' },
-  { name: 'Puzzle', value: 'Puzzle' },
-  { name: 'Racing', value: 'Racing' },
-  { name: 'Role-Playing', value: 'Role-playing' },
-  { name: 'Simulation', value: 'Simulation' },
-  { name: 'Sports', value: 'Sports' },
-  { name: 'Strategy', value: 'Strategy' },
-  { name: 'Training', value: 'Training' }
-]
-
-interface eventTargetType {
-  target: {
-    checked?: boolean
-    name: string
-    type: string
-    value: string | number
-  }
-}
-
-interface eventMultiTargetType {
-  target: {
-    name: string
-    selectedOptions: HTMLCollectionOf<HTMLOptionElement>
-  }
-}
-
 interface CreateGameFormProps {
   deleteGame: (id: number) => void
-  editInfo: null | SwitchGameBasicType
+  formType: 'create' | 'edit'
   handleClickCreateCancel: () => void
-  isCreating: boolean
-  isEditing: boolean
   newGame: SwitchGameBasicType
-  setIsCreating: (b: boolean) => void
   setNewGame: (
     game:
       | SwitchGameBasicType
       | ((game: SwitchGameBasicType) => SwitchGameBasicType)
   ) => void
+  setShowForm: (b: boolean) => void
+  showForm: boolean
   stopEdit: () => void
   submitCreateGame: (a: SwitchGameBasicType) => void
   submitEditGame: (a: SwitchGameBasicType) => void
@@ -89,45 +38,23 @@ interface CreateGameFormProps {
 function CreateGameForm(props: CreateGameFormProps) {
   const {
     deleteGame,
-    editInfo,
+    formType,
     handleClickCreateCancel,
-    isCreating,
-    isEditing,
     newGame,
-    setIsCreating,
     setNewGame,
+    setShowForm,
+    showForm,
     stopEdit,
     submitCreateGame,
     submitEditGame
   } = props
 
-  // handles user clicking "Edit" on game
-  // ? maybe move to App.tsx
-  useEffect(() => {
-    if (isEditing && editInfo) {
-      const { gameInfo = gameInfoInit }: { gameInfo: GameInfoType } = editInfo
-      const editInfoShaped = {
-        ...editInfo,
-        gameInfo: {
-          ...gameInfo,
-          developers: convertArrayToCSV(gameInfo.developers),
-          esrbDescriptors: convertArrayToCSV(
-            convertArrayToCSV(gameInfo.esrbDescriptors)
-          ),
-          generalFilters: convertArrayToCSV(
-            convertArrayToCSV(gameInfo.generalFilters)
-          ),
-          publishers: convertArrayToCSV(gameInfo.publishers),
-          playerFilters: isArray(gameInfo.playerFilters)
-            ? gameInfo.playerFilters?.map((f: string) => f.replace('+', ''))
-            : []
-        }
-      }
-      setNewGame(editInfoShaped)
-    }
-  }, [editInfo, isEditing])
+  const images: GameImagesType = newGame.images || imagesInit
+  const gameInfo: GameInfoType = newGame.gameInfo || gameInfoInit
+  const myData: MyDataType = newGame.myData || myDataInit
+  const isEditing: boolean = formType === 'edit'
 
-  const handleUpdateGame: (target: eventTargetType) => void = ({
+  const handleUpdateGame: (target: EventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
     setNewGame((game: SwitchGameBasicType) => {
@@ -136,7 +63,7 @@ function CreateGameForm(props: CreateGameFormProps) {
     })
   }
 
-  const updateMyData: (target: eventTargetType) => void = ({
+  const updateMyData: (target: EventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
     setNewGame((game: SwitchGameBasicType) => ({
@@ -148,7 +75,7 @@ function CreateGameForm(props: CreateGameFormProps) {
     }))
   }
 
-  const updateGameInfo: (target: eventTargetType) => void = ({
+  const updateGameInfo: (target: EventTargetType) => void = ({
     target: { checked, name, type, value }
   }) => {
     setNewGame((game: SwitchGameBasicType) => ({
@@ -160,7 +87,7 @@ function CreateGameForm(props: CreateGameFormProps) {
     }))
   }
 
-  const handleUpdateGameInfoMulti: (target: eventMultiTargetType) => void = ({
+  const handleUpdateGameInfoMulti: (target: EventMultiTargetType) => void = ({
     target: { name, selectedOptions }
   }) => {
     setNewGame((game: SwitchGameBasicType) => ({
@@ -174,8 +101,8 @@ function CreateGameForm(props: CreateGameFormProps) {
 
   const handleGameSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
-    const { gameInfo = gameInfoInit }: { gameInfo: GameInfoType } = newGame
 
+    const gameInfo: GameInfoType = newGame.gameInfo || gameInfoInit
     const data: SwitchGameBasicType = {
       ...newGame,
       title: isEditing ? newGame.displayTitle : newGame.title,
@@ -194,7 +121,7 @@ function CreateGameForm(props: CreateGameFormProps) {
       stopEdit()
     } else {
       submitCreateGame(data)
-      setIsCreating(false)
+      setShowForm(false)
     }
     setNewGame(newGameInit)
   }
@@ -203,34 +130,20 @@ function CreateGameForm(props: CreateGameFormProps) {
     if (newGame.id) deleteGame(newGame.id)
   }
 
-  const isCreatingEditing = isCreating || isEditing
-
-  const {
-    gameInfo = gameInfoInit,
-    images = imagesInit,
-    myData = myDataInit
-  }: {
-    gameInfo: GameInfoType
-    images: GameImagesType
-    myData: MyDataType
-  } = newGame
-
   return (
     <div className="create-form-box">
       <button
-        className={`nes-btn ${isCreatingEditing ? 'is-error' : 'is-primary'}`}
+        className={`nes-btn ${showForm ? 'is-error' : 'is-primary'}`}
         onClick={handleClickCreateCancel}
       >
-        {isCreatingEditing ? 'x Cancel' : '+ Create'}
+        {showForm ? 'x Cancel' : '+ Create'}
       </button>
-      {isCreatingEditing && (
+      {showForm && (
         <form
           onSubmit={handleGameSubmit}
           className="create-form nes-container with-title is-centered is-dark is-rounded"
         >
-          <p className="displayTitle">
-            {isEditing ? 'Edit' : 'Create'} Game Form
-          </p>
+          <h3>{isEditing ? 'Edit' : 'Create'} Game Form</h3>
           <div className="create-form-row">
             <div className="nes-field">
               <label htmlFor="displayTitle">Title *</label>
@@ -261,7 +174,7 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
           </div>
 
-          <div className="nes-field">
+          <div className="nes-field review-box">
             <label htmlFor="review">Review *</label>
             <textarea
               className="nes-textarea"
@@ -631,7 +544,9 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={images.boxart || ''}
               />
             </div>
+          </div>
 
+          <div className="create-form-row">
             <div className="nes-field">
               <label htmlFor="descriptionImage">
                 Description Image (include link to image)
@@ -644,7 +559,9 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={images.descriptionImage || ''}
               />
             </div>
+          </div>
 
+          <div className="create-form-row">
             <div className="nes-field">
               <label htmlFor="horizontalHeaderImage">
                 Horizontal Header Image (include link to image)

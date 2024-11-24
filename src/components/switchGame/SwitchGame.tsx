@@ -1,23 +1,25 @@
 import { useState } from 'react'
 import { gameInfoInit, imagesInit, myDataInit } from '../../constants'
 import { convertArrayToCSV, isArray, getHearts } from '../../helpers'
-import { SwitchGameBasicType } from '../../interfaces'
+import {
+  GameImagesType,
+  GameInfoType,
+  MyDataType,
+  SwitchGameEditType
+} from '../../interfaces'
 import './switch-game.css'
 
-interface SwitchGameTypeEdit extends SwitchGameBasicType {
-  startEdit: Function
-}
-
 interface SwitchGameProps {
-  game: SwitchGameTypeEdit
+  game: SwitchGameEditType
 }
 
 function SwitchGame(props: SwitchGameProps) {
   const { game } = props
   // these or statements are here to prevent if there is a null for gameInfo, images, or myData (shouldn't really be 🤷🏻‍♀️)
-  const images = game.images || imagesInit
-  const gameInfo = game.gameInfo || gameInfoInit
-  const myData = game.myData || myDataInit
+  const images: GameImagesType = game.images || imagesInit
+  const gameInfo: GameInfoType = game.gameInfo || gameInfoInit
+  const myData: MyDataType = game.myData || myDataInit
+
   const [showMore, setShowMore] = useState(false)
 
   const gameReleaseDate = game.releaseDateDisplay

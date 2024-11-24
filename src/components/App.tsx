@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react'
-import type { Schema } from '../../amplify/data/resource'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
+import { gameInfoInit, newGameInit } from '../constants'
 import {
+  convertArrayToCSV,
   getNewSortDirection,
   isArray,
   sortByRating,
   sortGames
 } from '../helpers'
-import { newGameInit } from '../constants'
-import { SwitchGameBasicType } from '../interfaces'
+import { GameInfoType, SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
@@ -23,13 +23,11 @@ interface AppProps {
 
 function App(props: AppProps) {
   const { client } = props
-  const [games, setGames] = useState<Array<Schema['Game']['type']>>([])
-  const [gamesDisplay, setGamesDisplay] = useState<
-    Array<Schema['Game']['type']>
-  >([])
-  const [isEditing, setIsEditing] = useState<boolean>(false)
-  const [editInfo, setEditInfo] = useState<null | SwitchGameBasicType>(null)
-  const [isCreating, setIsCreating] = useState<boolean>(false)
+  const [games, setGames] = useState<SwitchGameBasicType[]>([])
+  const [gamesDisplay, setGamesDisplay] = useState<SwitchGameBasicType[]>([])
+
+  const [formType, setFormType] = useState<'create' | 'edit'>('create')
+  const [showForm, setShowForm] = useState<boolean>(false)
   const [newGame, setNewGame] = useState<SwitchGameBasicType>(newGameInit)
 
   const [search, setSearch] = useState<string>('')
@@ -43,7 +41,7 @@ function App(props: AppProps) {
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items = [] }) => {
         // sorts every time a change is made...
-        const data = items.sort(sortGames).map((g: any) => {
+        const data = items.sort(sortGames).map((g: SwitchGameBasicType) => {
           const gameInfo = g?.gameInfo || {}
           return {
             ...g,
@@ -60,7 +58,7 @@ function App(props: AppProps) {
           }
         })
 
-        // * data from local json
+        // * data from local json -- delete once not needed
         // setGames([...filteredList])
         setGames([...data])
         setGamesDisplay([...data])
@@ -71,14 +69,35 @@ function App(props: AppProps) {
     return () => sub.unsubscribe()
   }, [client])
 
-  const startEdit = (game: SwitchGameBasicType | null) => {
-    setIsEditing(true)
-    setEditInfo(game)
+  const startEdit = (game: SwitchGameBasicType) => {
+    const gameInfo: GameInfoType = game.gameInfo || gameInfoInit
+    const editInfoShaped = {
+      ...game,
+      gameInfo: {
+        ...gameInfo,
+        // turn some of the arrays into CSVs so they fit into text inputs
+        developers: convertArrayToCSV(gameInfo.developers),
+        esrbDescriptors: convertArrayToCSV(
+          convertArrayToCSV(gameInfo.esrbDescriptors)
+        ),
+        generalFilters: convertArrayToCSV(
+          convertArrayToCSV(gameInfo.generalFilters)
+        ),
+        publishers: convertArrayToCSV(gameInfo.publishers),
+        playerFilters: isArray(gameInfo.playerFilters)
+          ? gameInfo.playerFilters?.map((f: string) => f.replace('+', ''))
+          : []
+      }
+    }
+
+    setNewGame(editInfoShaped)
+    setFormType('edit')
+    setShowForm(true)
   }
 
   const stopEdit: () => void = () => {
-    setIsEditing(false)
-    setEditInfo(null)
+    setShowForm(false)
+    setFormType('create')
   }
 
   const handleChangeSearch = (s: string) => {
@@ -119,8 +138,7 @@ function App(props: AppProps) {
     const gamesUpdate =
       name === 'title'
         ? gamesDisplay.sort((a, b) => sortGames(a, b, newDirection))
-        : // @ts-ignore
-          gamesDisplay.sort((a, b) => sortByRating(a, b, newDirection))
+        : gamesDisplay.sort((a, b) => sortByRating(a, b, newDirection))
 
     setGamesDisplay(gamesUpdate)
   }
@@ -144,7 +162,6 @@ function App(props: AppProps) {
     if (errors) console.log('----ERROR----', errors)
   }
 
-  // ! Currently a bug where the Masonry package will throw an error when rendering after a delete is performed
   async function deleteGame(id: number) {
     if (window.confirm('Are you sure you want to delete this game?')) {
       const { returnData, errors } = await client.models.Game.delete({ id })
@@ -156,11 +173,8 @@ function App(props: AppProps) {
 
   const handleClickCreateCancel = () => {
     setNewGame(newGameInit)
-    if (isEditing) {
-      stopEdit()
-    } else {
-      setIsCreating(state => !state)
-    }
+    setShowForm(state => !state)
+    setFormType('create')
   }
 
   return (
@@ -176,12 +190,11 @@ function App(props: AppProps) {
       />
       <CreateGameForm
         deleteGame={deleteGame}
-        editInfo={editInfo}
         handleClickCreateCancel={handleClickCreateCancel}
-        isCreating={isCreating}
-        isEditing={isEditing}
+        showForm={showForm}
+        formType={formType}
         newGame={newGame}
-        setIsCreating={setIsCreating}
+        setShowForm={setShowForm}
         setNewGame={setNewGame}
         stopEdit={stopEdit}
         submitCreateGame={submitCreateGame}

@@ -46,6 +46,22 @@ export interface SwitchGameBasicType {
   id?: number
 }
 
-// export interface SwitchGameEditType extends SwitchGameBasicType {
-//   id: string
-// }
+export interface SwitchGameEditType extends SwitchGameBasicType {
+  startEdit: Function
+}
+
+export interface EventTargetType {
+  target: {
+    checked?: boolean
+    name: string
+    type: string
+    value: string | number
+  }
+}
+
+export interface EventMultiTargetType {
+  target: {
+    name: string
+    selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+  }
+}
