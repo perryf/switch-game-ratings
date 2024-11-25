@@ -33,7 +33,7 @@ function Filters(props: FilterProps) {
         className="nes-btn show-filters-btn"
         onClick={() => setShowFilters(!showFilters)}
       >
-        show filters
+        {showFilters ? 'hide' : 'show'} filters
       </button>
       {showFilters && (
         <div className="game-filters">

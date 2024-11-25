@@ -44,4 +44,12 @@
   .nes-select::after {
     display: none;
   }
+
+  .show-filters-btn {
+    display: block;
+    margin: 4px auto;
+    font-size: 0.4rem;
+    padding: 0;
+    line-height: 4px;
+  }
 }

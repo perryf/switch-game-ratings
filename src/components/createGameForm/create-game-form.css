@@ -12,7 +12,6 @@
   align-items: center;
   max-width: 1200px;
   width: 80%;
-  min-width: 600px;
   border-radius: 20px;
 }
 
@@ -41,4 +40,42 @@
   height: 100px;
   width: 100%;
   max-width: 800px;
+}
+
+@media (max-width: 992px) {
+  .create-form-box {
+    font-size: 0.7rem;
+  }
+
+  .create-form-box button {
+    padding: 2px 3px;
+  }
+
+  .create-form {
+    width: 90%;
+  }
+
+  /* TODO -> Consolidate this with filters css */
+  .create-form select {
+    padding: 0.25rem 1.25rem 0.25rem 0.5rem;
+  }
+
+  .create-form input {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .create-form button {
+    padding: 2px 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .create-form-box {
+    font-size: 0.5rem;
+    line-height: 6px;
+  }
+
+  .create-form select {
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  }
 }
