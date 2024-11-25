@@ -1,25 +1,25 @@
 import { useState } from 'react'
-import { getHearts } from '../../helpers'
 import Filters from '../filters/Filters'
+import Instructions from '../instructions/Instructions'
 import './main-heading.css'
 
 interface MainHeadingProps {
-  ratingFilter: string
+  currentSort: { sortBy: string; direction: string }
   handleChangeRatingFilter: (x: string) => void
-  search: string
   handleChangeSearch: (x: string) => void
   handleSort: (name: string) => void
-  currentSort: { sortBy: string; direction: string }
+  ratingFilter: string
+  search: string
 }
 
 function MainHeading(props: MainHeadingProps) {
   const {
-    search,
+    currentSort,
+    handleChangeRatingFilter,
     handleChangeSearch,
     handleSort,
-    currentSort,
     ratingFilter,
-    handleChangeRatingFilter
+    search
   } = props
   const [showInstructions, setShowInstructions] = useState<boolean>(false)
 
@@ -45,49 +45,17 @@ function MainHeading(props: MainHeadingProps) {
           ?
         </button>
       </div>
-      <div className={`instructions ${showInstructions ? 'show' : ''}`}>
-        <p>
-          Here's my very subjective rating system. Keep in mind I'm only playing
-          games that look decent and I'll think I'll like.
-        </p>
-        <ul>
-          <li>
-            {getHearts(1)}
-            <span>Yikes! Not good, real stinkeroo</span>
-          </li>
-          <li>
-            {getHearts(2)}
-            <span>= Eh, not too great. You can probably skip this one.</span>
-          </li>
-          <li>
-            {getHearts(3)}
-            <span>
-              = Not bad, may be worth playing if you're into this kind of game.
-            </span>
-          </li>
-          <li>
-            {getHearts(4)}
-            <span>= Great game! Enjoyable, fun, recommended.</span>
-          </li>
-          <li>
-            {getHearts(5)}
-            <span>
-              = Wow! Amazing! Such game! One of the best games I've played on
-              the switch.
-            </span>
-          </li>
-        </ul>
-        <button className="nes-btn" onClick={() => setShowInstructions(false)}>
-          Close
-        </button>
-      </div>
+      <Instructions
+        setShowInstructions={setShowInstructions}
+        showInstructions={showInstructions}
+      />
       <Filters
+        currentSort={currentSort}
+        handleChangeRatingFilter={handleChangeRatingFilter}
+        handleChangeSearch={handleChangeSearch}
+        handleSort={handleSort}
         ratingFilter={ratingFilter}
         search={search}
-        handleChangeSearch={handleChangeSearch}
-        currentSort={currentSort}
-        handleSort={handleSort}
-        handleChangeRatingFilter={handleChangeRatingFilter}
       />
     </div>
   )
