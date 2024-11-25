@@ -101,8 +101,23 @@ function App(props: AppProps) {
 
   const handleChangeSearch = (s: string) => {
     setSearch(s)
-    const gamesUpdate = games.filter((g: any) => {
-      return g.displayTitle.toLowerCase().includes(s.toLowerCase())
+    // TODO -> Refactor
+    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
+      let isMatch: boolean = false
+
+      if (!s) {
+        isMatch = true
+      } else {
+        isMatch = g.displayTitle.toLowerCase().includes(s.toLowerCase())
+      }
+
+      if (!isMatch) return false
+
+      if (ratingFilter) {
+        return g.myData.rating === Number(ratingFilter)
+      }
+
+      return true
     })
 
     setGamesDisplay(gamesUpdate)
@@ -110,9 +125,20 @@ function App(props: AppProps) {
 
   const handleChangeRatingFilter = (s: string) => {
     setRatingFilter(s)
-    const gamesUpdate = games.filter((g: any) => {
-      if (!s) return true
-      return g.myData.rating === Number(s)
+    // TODO -> Refactor
+    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
+      let isMatch: boolean = false
+
+      if (!s) isMatch = true
+      else isMatch = g.myData.rating === Number(s)
+
+      if (!isMatch) return false
+
+      if (search) {
+        return g.displayTitle.toLowerCase().includes(search.toLowerCase())
+      }
+
+      return true
     })
 
     setGamesDisplay(gamesUpdate)
