@@ -276,7 +276,7 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
           </div>
           <div className="nes-field ms-20">
-            <label htmlFor="freeToStart">
+            <label htmlFor="freeToStart" className="checkbox-label">
               <input
                 id="freeToStart"
                 name="freeToStart"
@@ -355,23 +355,25 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={myData.datePlayed || ''}
               />
             </div>
-            <div className="nes-field">
-              <label htmlFor="datePurchased">Date Purchased</label>
-              <input
-                id="datePurchased"
-                name="datePurchased"
-                className="nes-input"
-                onChange={updateMyData}
-                type="date"
-                // ? Make this date type?
-                value={myData.datePurchased || ''}
-              />
-            </div>
+            {false && (
+              <div className="nes-field">
+                <label htmlFor="datePurchased">Date Purchased</label>
+                <input
+                  id="datePurchased"
+                  name="datePurchased"
+                  className="nes-input"
+                  onChange={updateMyData}
+                  type="date"
+                  // ? Make this date type?
+                  value={myData.datePurchased || ''}
+                />
+              </div>
+            )}
           </div>
 
           <div className="create-form-row">
             <div className="nes-field">
-              <label htmlFor="isEmulator">
+              <label htmlFor="isEmulator" className="checkbox-label">
                 <input
                   id="isEmulator"
                   name="isEmulator"
@@ -405,7 +407,7 @@ function CreateGameForm(props: CreateGameFormProps) {
 
           <div className="create-form-row">
             <div className="nes-field">
-              <label htmlFor="physicalCopy">
+              <label htmlFor="physicalCopy" className="checkbox-label">
                 <input
                   id="physicalCopy"
                   name="physicalCopy"
@@ -418,7 +420,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               </label>
             </div>
             <div className="nes-field ms-20">
-              <label htmlFor="played">
+              <label htmlFor="played" className="checkbox-label">
                 <input
                   id="played"
                   name="played"
@@ -431,7 +433,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               </label>
             </div>
             <div className="nes-field ms-20">
-              <label htmlFor="remake">
+              <label htmlFor="remake" className="checkbox-label">
                 <input
                   id="remake"
                   name="remake"

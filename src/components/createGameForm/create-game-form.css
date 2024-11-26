@@ -15,9 +15,17 @@
   border-radius: 20px;
 }
 
+.create-form label {
+  margin-bottom: 0.25rem;
+}
+
+.create-form label.checkbox-label {
+  margin-bottom: 0.75rem;
+}
+
 .create-form input,
 .create-form button {
-  margin: 8px;
+  margin: 4px 8px 8px;
 }
 
 .create-form-row {
