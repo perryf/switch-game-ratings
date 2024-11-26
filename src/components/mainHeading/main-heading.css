@@ -4,8 +4,8 @@
   z-index: 666;
   width: 100%;
   background: var(--super-nintendo-gray);
-  padding: 10px 20px 12px;
-  margin: 0 0 8px;
+  padding: 6px 20px;
+  margin: 0 0 6px;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 0.25em 0.25em var(--almost-black);
 }
@@ -18,7 +18,7 @@
 
 h1 {
   font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  padding: 4px 20px 4px;
+  padding: 4px 20px;
   border-radius: 20px;
   color: var(--almost-white);
   background: var(--super-nintendo-purple);
@@ -184,7 +184,8 @@ h1:active {
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 4px 12px;
   }
 
   .instructions {
@@ -192,7 +193,7 @@ h1:active {
   }
 
   .main-heading-box {
-    padding: 5px 10px 6px;
+    padding: 5px 10px;
   }
 
   .heading-icon {
@@ -215,11 +216,47 @@ h1:active {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+
+  .perry-github-link {
+    margin-left: 6px;
   }
 
   .main-heading-box {
-    padding: 2px 5px 3px;
+    padding: 2px 5px;
+  }
+
+  .heading-icon {
+    transform: scale(0.5);
+  }
+
+  .heart {
+    transform: scale(1.5);
+    width: 10px;
+    height: 10px;
+  }
+
+  .question-mark-box {
+    font-size: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 0.7rem;
+  }
+
+  .perry-github-link {
+    font-size: 0.4rem;
+  }
+
+  .main-heading-box {
+    padding: 2px 4px 2px;
   }
 
   .heading-icon {

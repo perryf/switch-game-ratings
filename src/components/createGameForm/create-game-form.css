@@ -56,7 +56,7 @@
   }
 
   .create-form-box button {
-    padding: 2px 3px;
+    padding: 3px 4px;
   }
 
   .create-form {
@@ -70,10 +70,6 @@
 
   .create-form input {
     padding: 0.25rem 0.5rem;
-  }
-
-  .create-form button {
-    padding: 2px 3px;
   }
 }
 

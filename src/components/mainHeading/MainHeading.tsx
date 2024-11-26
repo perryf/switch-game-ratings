@@ -32,7 +32,7 @@ function MainHeading(props: MainHeadingProps) {
       <div className="main-heading-box-top">
         <i className="snes-logo heading-icon" />
         <div className="main-heading-middle">
-          <h1 onClick={handleTitleClick}>Switch Game Ratings</h1>
+          <h1 onClick={handleTitleClick}>Switch Ratings</h1>
 
           <a href="https://github.com/perryf" className="perry-github-link">
             <p>by Perry</p>
