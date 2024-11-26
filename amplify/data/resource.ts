@@ -46,7 +46,7 @@ const schema = a.schema({
         review: a.string()
       })
     })
-    .authorization(allow => [allow.publicApiKey()])
+    .authorization(allow => [allow.publicApiKey().to(['read']), allow.owner()])
 })
 
 export type Schema = ClientSchema<typeof schema>
