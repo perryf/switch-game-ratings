@@ -11,6 +11,9 @@ function Instructions(props: InstructionsProps) {
 
   return (
     <div className={`instructions ${showInstructions ? 'show' : ''}`}>
+      <button className="nes-btn close-x-button" onClick={() => setShowInstructions(false)}>
+        X
+      </button>
       <p>
         Here's my very subjective rating system. Keep in mind I'm only playing
         games that look decent and I'll think I'll like.
