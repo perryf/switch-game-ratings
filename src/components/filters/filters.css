@@ -8,6 +8,10 @@
   align-items: flex-start;
 }
 
+.game-filters > * {
+  margin-right: 8px;
+}
+
 .show-filters-btn {
   display: block;
   margin: 6px auto 0;
@@ -38,6 +42,10 @@
 @media (max-width: 600px) {
   .game-filters-box {
     font-size: 0.5rem;
+  }
+
+  .game-filters > * {
+    margin-right: 4px;
   }
 
   .game-filters-box select {

@@ -13,7 +13,7 @@
 .main-heading-box-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 h1 {
@@ -38,6 +38,8 @@ h1:active {
 .main-heading-middle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .perry-github-link {

@@ -44,9 +44,10 @@
   width: 100%;
 }
 
-.create-form textarea {
+.review-box textarea {
   height: 100px;
   width: 100%;
+  margin: 0 auto;
   max-width: 800px;
 }
 
