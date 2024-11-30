@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 // import { ownedGamesReviewable } from '../switch-games-owned'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
-// import { filteredList } from '../../switch-games-owned-details'
+import { filteredList } from '../../switch-games-owned-details'
 import { gameInfoInit, newGameInit } from '../constants'
 import {
   convertArrayToCSV,
@@ -67,7 +67,6 @@ function App(props: AppProps) {
         })
 
         // * data from local json -- delete once not needed
-        // setGames([...filteredList])
         setGames([...data])
         setGamesDisplay([...data])
         stopEdit()

@@ -100,6 +100,38 @@ export const getHearts = (rating: number) => {
   )
 }
 
+export const stringSort = (a: string, b: string) => {
+  if (a < b) return -1
+  if (b < a) return 1
+  return 0
+}
+
+// * Used to sort object keys
+export const gameObjTidy = (game: any) => {
+  const update: any = {
+    images: {},
+    myData: {},
+    gameInfo: {}
+  }
+
+  Object.keys(game.gameInfo)
+    .sort((a, b) => stringSort(a, b))
+    .forEach(key => (update.gameInfo[key] = game.gameInfo[key]))
+  Object.keys(game.images)
+    .sort((a, b) => stringSort(a, b))
+    .forEach(key => (update.images[key] = game.images[key]))
+  Object.keys(game.myData)
+    .sort((a, b) => stringSort(a, b))
+    .forEach(key => (update.myData[key] = game.myData[key]))
+
+  update.title = game.title
+  update.displayTitle = game.displayTitle
+  update.releaseDateDisplay = game.releaseDateDisplay
+  update.description = game.description
+
+  return update
+}
+
 // * Loops through all json test data and POSTs them to DB
 // filteredList.forEach(async (game: any) => {
 //   try {
