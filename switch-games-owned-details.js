@@ -4065,23 +4065,125 @@ export const switchGamesOwnedMasterList = [
         'Strong Language',
         'Violence'
       ],
+      engine: '',
       esrbRating: 'Mature',
+      fileSize: '10.9 GB',
       franchises: ['Bayonetta'],
       freeToStart: false,
       generalFilters: [],
+      genres: ['Action', 'Role-Playing'],
+      lengthOfGame: '',
       msrp: 39.99,
       numOfPlayers: '1 player',
       playerFilters: ['1+'],
       publishers: ['SQUARE ENIX'],
-      slug: 'nier-automata-the-end-of-yorha-edition-switch',
-      genres: ['Action', 'Role-Playing'],
-      lengthOfGame: '',
-      tags: [],
       remake: false,
-      engine: '',
-      fileSize: '10.9 GB'
+      slug: 'nier-automata-the-end-of-yorha-edition-switch',
+      tags: []
     },
     displayTitle: 'NieR:Automata The End of YoRHa Edition'
+  },
+  {
+    title: 'Neon White',
+    displayTitle: 'Neon White',
+    releaseDateDisplay: '2022-06-16',
+    description:
+      'Neon White is a lightning fast first-person action game about exterminating demons in Heaven. You are White, an assassin handpicked from Hell to compete with other demon slayers for a chance to live permanently in Heaven. The other assassins seem familiar, though… did you know them in a past life? Features: • You play as Neon White, an assassin plucked from Hell to compete with other demon slayers for a shot at redemption. • Collect “Soul Cards” to attack your foes or discard them to use unique movement abilities. • Compete for the best times by cleverly combining cards to discover massive shortcuts. • Uncover Heaven’s mysteries by getting to know the other assassins… did you know them in a past life?',
+    images: {
+      boxart:
+        'https://upload.wikimedia.org/wikipedia/en/c/ce/Neon_White_cover_art.jpg',
+      descriptionImage: '',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/n/neon-white-switch/hero'
+    },
+    myData: {
+      played: true,
+      physicalCopy: false,
+      review: '',
+      isEmulator: false,
+      emulatorSystem: '',
+      datePlayed: '',
+      datePurchased: '',
+      rating: 0
+    },
+    gameInfo: {
+      developers: ['Angel Matrix'],
+      esrbDescriptors: [
+        'Fantasy Violence',
+        'Language',
+        'Mild Blood',
+        'Mild Suggestive Themes',
+        'Use of Tobacco'
+      ],
+      engine: 'Unity',
+      esrbRating: 'Teen',
+      featured: false,
+      fileSize: '4.8 GB',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: ['Nintendo Switch Online compatible', 'Deals'],
+      genres: ['First-Person', 'Action', 'Adventure'],
+      msrp: 24.99,
+      numOfPlayers: '1 player',
+      playerFilters: ['1+'],
+      publishers: ['Annapurna Interactive'],
+      remake: false,
+      slug: 'neon-white-switch',
+      tags: []
+    }
+  },
+  {
+    title: 'Guacamelee! 2',
+    displayTitle: 'Guacamelee! 2',
+    releaseDateDisplay: '2018-12-10',
+    description:
+      'Luchador Juan Aguacate is out of retirement for a stunning new Metroidvania-style adventure. Explore a huge, hand-crafted world inspired by Mexican culture and folklore, filled with sassy new villains and weirdos (and a few old friends!). Learn bone-crunching wrestling moves to fend off skeletal hordes and overcome skillful platforming challenges... and who said anything about a Chicken Illuminati? Certainly not us! Check out these features: Drop-in 4-player local co-op for you and your best amigos! New upgrade system: discover “trainers” around the world to learn new skill sets for movement, combat, and more! All new areas. Explore from the Mangrove Swamp to Hell itself! Double the enemy types of the original, and a roster of eccentric new bosses! Electro-Mexican soundtrack, and more gorgeous visuals thanks to a fancy new rendering engine! Definitely no secret society of chickens that teaches you ancient chicken abilities!',
+    images: {
+      boxart:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/guacamelee-2-switch/boxart',
+      descriptionImage: '',
+      horizontalHeaderImage:
+        'https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/g/guacamelee-2-switch/hero'
+    },
+    myData: {
+      played: true,
+      physicalCopy: false,
+      review: '',
+      isEmulator: false,
+      emulatorSystem: '',
+      datePlayed: '',
+      datePurchased: '',
+      rating: 0
+    },
+    gameInfo: {
+      developers: ['Angel Matrix'],
+      developers: ['DrinkBox Studios'],
+      engine: '',
+      esrbDescriptors: [
+        'Mild Language',
+        'Fantasy Violence',
+        'Use of Alcohol',
+        'Suggestive Themes',
+        'Mild Blood'
+      ],
+      esrbRating: 'Everyone 10+',
+      fileSize: '2.2 GB',
+      franchises: [],
+      freeToStart: false,
+      generalFilters: [
+        'DLC available',
+        'Nintendo Switch Online compatible',
+        'Deals'
+      ],
+      genres: ['Action', 'Platformer'],
+      msrp: 19.99,
+      numOfPlayers: 'up to 4 players',
+      playerFilters: ['1+', '2+', '3+', '4+'],
+      publishers: ['DrinkBox Studios'],
+      remake: false,
+      slug: 'guacamelee-2-switch',
+      tags: ['metroidvania']
+    }
   }
 ]
 
