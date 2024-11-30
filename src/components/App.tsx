@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
-import { useAuthenticator } from '@aws-amplify/ui-react'
+// import { useAuthenticator } from '@aws-amplify/ui-react'
 import { gameInfoInit, newGameInit } from '../constants'
 import {
   convertArrayToCSV,
@@ -50,11 +50,20 @@ function App(props: AppProps) {
             gameInfo: {
               ...gameInfo,
               // filtering out empty string in array
+              esrbDescriptors: isArray(gameInfo.esrbDescriptors)
+                ? gameInfo.esrbDescriptors.filter((g: string) => g)
+                : [],
+              developers: isArray(gameInfo.developers)
+                ? gameInfo.developers.filter((g: string) => g)
+                : [],
+              publishers: isArray(gameInfo.publishers)
+                ? gameInfo.publishers.filter((g: string) => g)
+                : [],
               generalFilters: isArray(gameInfo.generalFilters)
                 ? gameInfo.generalFilters.filter((g: string) => g)
                 : [],
-              esrbDescriptors: isArray(gameInfo.esrbDescriptors)
-                ? gameInfo.esrbDescriptors.filter((g: string) => g)
+              tags: isArray(gameInfo.tags)
+                ? gameInfo.tags.filter((g: string) => g)
                 : []
             }
           }

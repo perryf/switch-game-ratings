@@ -85,23 +85,27 @@ function SwitchGame(props: SwitchGameProps) {
             </li>
             {showMore && (
               <>
-                <li>
-                  <b>Developers:</b> {convertArrayToCSV(gameInfo.developers)}
-                </li>
-                <li>
-                  <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
-                </li>
+                {gameInfo.fileSize && (
+                  <li>
+                    <b>File Size:</b> {gameInfo.fileSize}
+                  </li>
+                )}
+                {!!gameInfo.developers?.length && (
+                  <li>
+                    <b>Developers:</b> {convertArrayToCSV(gameInfo.developers)}
+                  </li>
+                )}
+                {!!gameInfo.publishers?.length && (
+                  <li>
+                    <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
+                  </li>
+                )}
                 <li>
                   <b>Rated:</b> {gameInfo.esrbRating}{' '}
                   {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
                     ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
                     : ''}
                 </li>
-                {gameInfo.fileSize && (
-                  <li>
-                    <b>File Size:</b> {gameInfo.fileSize}
-                  </li>
-                )}
                 {gameInfo.engine && (
                   <li>
                     <b>Engine:</b> {gameInfo.engine}
@@ -110,6 +114,11 @@ function SwitchGame(props: SwitchGameProps) {
                 <li>
                   <b>Remake:</b> {gameInfo.remake ? 'Yes' : 'No'}
                 </li>
+                {!!gameInfo.tags?.length && (
+                  <li>
+                    <b>Tags:</b> {convertArrayToCSV(gameInfo.tags)}
+                  </li>
+                )}
               </>
             )}
             {!showMore && (
