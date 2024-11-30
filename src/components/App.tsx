@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 // import switchGameListFull from '../switch-games-list-full.json'
 // @ts-ignore
 // import { filteredList } from '../../switch-games-owned-details'
-// import { useAuthenticator } from '@aws-amplify/ui-react'
 import { gameInfoInit, newGameInit } from '../constants'
 import {
   convertArrayToCSV,
@@ -36,8 +35,6 @@ function App(props: AppProps) {
     sortBy: string
     direction: string
   }>({ sortBy: 'title', direction: 'asc' })
-
-  // const { signOut } = useAuthenticator()
 
   useEffect(() => {
     const sub = client.models.Game.observeQuery().subscribe({
@@ -216,7 +213,6 @@ function App(props: AppProps) {
 
   return (
     <main>
-      {/* <button onClick={signOut}>Sign out</button> */}
       <MainHeading
         ratingFilter={ratingFilter}
         search={search}
