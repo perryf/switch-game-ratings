@@ -141,7 +141,15 @@ function SwitchGame(props: SwitchGameProps) {
                 className="description-art"
               />
             )}
-            <p className="game-description">{game.description}</p>
+            <p className="game-description">
+              <b>Description: </b>
+              {game.description}
+            </p>
+
+            <p className="game-description">
+              <b>My Review: </b>
+              {myData.review}
+            </p>
 
             <button
               className="show-game-details-button"
