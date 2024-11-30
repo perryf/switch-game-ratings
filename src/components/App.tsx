@@ -177,9 +177,26 @@ function App(props: AppProps) {
   }
 
   async function submitCreateGame(newGame: SwitchGameBasicType) {
-    const { returnData, errors } = await client.models.Game.create(newGame)
-    if (returnData) console.log('-----SUCCESS------', returnData)
-    if (errors) console.log('----ERROR----', errors)
+    console.log(newGame)
+    filteredList.forEach(async (game: any) => {
+      try {
+        const res = await client.models.Game.create(game)
+        console.log(res)
+
+        if (res.errors) {
+          console.log('*****************')
+          console.log(game)
+          console.log(res.errors)
+        }
+      } catch (error) {
+        console.log('--------------')
+        console.error(error)
+      }
+    })
+
+    // const { returnData, errors } = await client.models.Game.create(newGame)
+    // if (returnData) console.log('-----SUCCESS------', returnData)
+    // if (errors) console.log('----ERROR----', errors)
   }
 
   async function submitEditGame(game: SwitchGameBasicType) {
