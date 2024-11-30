@@ -37,12 +37,11 @@ h1:active {
 
 .main-heading-middle {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
 .perry-github-link {
-  margin-left: 8px;
+  margin: 4px 0 0 8px;
   font-size: 0.75em;
   color: var(--super-nintendo-dark-gray);
   background: var(--super-nintendo-lilac);
@@ -53,7 +52,7 @@ h1:active {
   text-decoration: none;
 }
 
-.perry-github-link:hover {
+.perry-github-link a:hover {
   color: var(--super-nintendo-dark-gray);
   text-decoration: none;
   animation-name: perry-hover;
@@ -61,11 +60,11 @@ h1:active {
   animation-iteration-count: infinite;
 }
 
-.perry-github-link:visited {
+.perry-github-link a:visited {
   color: var(--super-nintendo-dark-gray);
 }
 
-.perry-github-link:active {
+.perry-github-link a:active {
   box-shadow: none;
   transform: translate(1px, 1px);
   transition: 0.3s;
@@ -73,6 +72,12 @@ h1:active {
 
 .perry-github-link p {
   margin-bottom: 0;
+}
+
+.main-heading-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 @keyframes perry-hover {

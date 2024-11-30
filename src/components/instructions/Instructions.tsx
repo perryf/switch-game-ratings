@@ -11,7 +11,10 @@ function Instructions(props: InstructionsProps) {
 
   return (
     <div className={`instructions ${showInstructions ? 'show' : ''}`}>
-      <button className="nes-btn close-x-button" onClick={() => setShowInstructions(false)}>
+      <button
+        className="nes-btn close-x-button"
+        onClick={() => setShowInstructions(false)}
+      >
         X
       </button>
       <p>
@@ -21,7 +24,7 @@ function Instructions(props: InstructionsProps) {
       <ul>
         <li>
           {getHearts(1)}
-          <span>Yikes! Not good, real stinkeroo</span>
+          <span> = Yikes! Not good, real stinkeroo</span>
         </li>
         <li>
           {getHearts(2)}
@@ -30,7 +33,8 @@ function Instructions(props: InstructionsProps) {
         <li>
           {getHearts(3)}
           <span>
-            = Not bad, may be worth playing if you're into this kind of game.
+            = Pretty good, may be worth playing if you're into this kind of
+            game.
           </span>
         </li>
         <li>

@@ -34,6 +34,7 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - npm `nintendo-switch-eshop` -- wrapper around Switch Eshop
 - Nintendo.com
 - Wikipedia
+- https://spritedatabase.net (favicon)
 
 - Removed for now
 

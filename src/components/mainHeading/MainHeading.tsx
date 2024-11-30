@@ -33,29 +33,30 @@ function MainHeading(props: MainHeadingProps) {
         <i className="snes-logo heading-icon" />
         <div className="main-heading-middle">
           <h1 onClick={handleTitleClick}>Switch Ratings</h1>
-
-          <a href="https://github.com/perryf" className="perry-github-link">
-            <p>by Perry</p>
-          </a>
+          <Filters
+            currentSort={currentSort}
+            handleChangeRatingFilter={handleChangeRatingFilter}
+            handleChangeSearch={handleChangeSearch}
+            handleSort={handleSort}
+            ratingFilter={ratingFilter}
+            search={search}
+          />
         </div>
-        <button
-          className="question-mark-box"
-          onClick={() => setShowInstructions(!showInstructions)}
-        >
-          ?
-        </button>
+        <div className="main-heading-left">
+          <button
+            className="question-mark-box"
+            onClick={() => setShowInstructions(!showInstructions)}
+          >
+            ?
+          </button>
+          <p className="perry-github-link">
+            <a href="https://github.com/perryf">by Perry</a>
+          </p>
+        </div>
       </div>
       <Instructions
         setShowInstructions={setShowInstructions}
         showInstructions={showInstructions}
-      />
-      <Filters
-        currentSort={currentSort}
-        handleChangeRatingFilter={handleChangeRatingFilter}
-        handleChangeSearch={handleChangeSearch}
-        handleSort={handleSort}
-        ratingFilter={ratingFilter}
-        search={search}
       />
     </div>
   )
