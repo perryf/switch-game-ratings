@@ -17,7 +17,8 @@
 }
 
 h1 {
-  font-family: 'NinFont', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'NinFont', 'Press Start 2P', Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
   padding: 4px 20px;
   border-radius: 20px;
   color: var(--almost-white);

@@ -46,3 +46,10 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - TODO...
   - try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
   - and adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
+
+## To Deploy on Github Pages
+
+- npm run build locally
+- add relative paths to anything with "/assests"
+  - i.e. change "/assests/" to "./assests/"
+- need to figure out a way around this...
