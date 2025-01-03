@@ -53,3 +53,5 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - add relative paths to anything with "/assests"
   - i.e. change "/assests/" to "./assests/"
 - need to figure out a way around this...
+
+-- todo -- add castlevania collection, borderlands presequal, pokemon card game, earthbound

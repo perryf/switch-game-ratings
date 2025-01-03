@@ -70,7 +70,7 @@ export const switchGenreList: { name: string; value: string }[] = [
   { name: 'First-Person', value: 'First-person' },
   { name: 'Fitness', value: 'Fitness' },
   { name: 'Indie', value: 'Indie' },
-  { name: 'Metroidvania', value: 'metroidvania' },
+  { name: 'Metroidvania', value: 'Metroidvania' },
   { name: 'Multiplayer', value: 'Multiplayer' },
   { name: 'Music', value: 'Music' },
   { name: 'Other', value: 'Other' },
