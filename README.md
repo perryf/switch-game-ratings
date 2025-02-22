@@ -54,4 +54,4 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
   - i.e. change "/assests/" to "./assests/"
 - need to figure out a way around this...
 
--- todo -- add castlevania collection, borderlands presequal, pokemon card game, earthbound
+-- todo -- add castlevania collection, borderlands presequal, pokemon card game, earthbound, dredge, witcher
