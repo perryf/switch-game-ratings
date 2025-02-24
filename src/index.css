@@ -10,14 +10,16 @@
   --super-nintendo-dark-gray: #444;
   --super-nintendo-lilac: #b1aee6;
   --super-nintendo-purple: #825ab1;
-  --almost-black: #111;
+
+  --button-border-gray: #545454;
+  --almost-black: #222;
   --almost-white: #ddd;
   --switch-controller-blue: #40bae0;
   --switch-controller-blue-glass: #40bae0e8;
   --switch-controller-red: #ed5e53;
   --switch-controller-red-glass: #ed5e53e8;
 
-  /* don't work in media queries but keep for referencess */
+  /* don't work in media queries but keep for references */
   --breakpoint-large: 1400px;
   --breakpoint-medium: 992px;
   --break-point-small: 600px;

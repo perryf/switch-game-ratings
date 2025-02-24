@@ -19,6 +19,12 @@
   border-width: 3px;
   color: var(--super-nintendo-dark-gray);
   background: var(--super-nintendo-lilac);
+
+  box-shadow: 0.05em 0.05em var(--almost-black);
+}
+
+.show-filters-btn:focus {
+  outline: none;
 }
 
 @media (max-width: 992px) {
