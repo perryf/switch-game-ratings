@@ -1,4 +1,8 @@
 :root {
+  --almost-black: #222;
+  --almost-white: #ddd;
+  --button-border-gray: #545454;
+
   --nintendo-blue: #004ca5;
   --nintendo-blue2: #1560ad;
   --nintendo-red: #e60013;
@@ -6,14 +10,12 @@
   --nintendo-yellow-light: #fae282;
   --nintendo-yellow-dark: #d3ad13;
   --nintendo-yellow-very-dark: #625e4b;
+  
   --super-nintendo-gray: #9d9ba8;
   --super-nintendo-dark-gray: #444;
   --super-nintendo-lilac: #b1aee6;
   --super-nintendo-purple: #825ab1;
 
-  --button-border-gray: #545454;
-  --almost-black: #222;
-  --almost-white: #ddd;
   --switch-controller-blue: #40bae0;
   --switch-controller-blue-glass: #40bae0e8;
   --switch-controller-red: #ed5e53;
@@ -65,6 +67,14 @@ hr {
 
 label {
   margin-right: 4px;
+}
+
+button {
+  border-width: 3px;
+}
+
+button:focus {
+  outline: none;
 }
 
 .ms-20 {

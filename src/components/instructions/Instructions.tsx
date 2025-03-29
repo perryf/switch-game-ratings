@@ -50,9 +50,19 @@ function Instructions(props: InstructionsProps) {
           </span>
         </li>
       </ul>
-      <button className="nes-btn" onClick={() => setShowInstructions(false)}>
-        Close
-      </button>
+
+      <div className="instructions-footer">
+        <a
+          href="https://github.com/perryf/switch-game-ratings"
+          target="_blank"
+          className="perry-github-link"
+        >
+          Made by Perry
+        </a>
+        <button className="nes-btn" onClick={() => setShowInstructions(false)}>
+          Close
+        </button>
+      </div>
     </div>
   )
 }

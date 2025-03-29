@@ -133,7 +133,7 @@ function SwitchGame(props: SwitchGameProps) {
         </div>
 
         {showMore && (
-          <div className="game-description-box">
+          <>
             {images.descriptionImage && (
               <img
                 src={images.descriptionImage}
@@ -157,7 +157,7 @@ function SwitchGame(props: SwitchGameProps) {
             >
               x Show less
             </button>
-          </div>
+          </>
         )}
       </div>
     </div>

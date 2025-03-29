@@ -90,6 +90,67 @@
   line-height: 0;
 }
 
+.instructions-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perry-github-link {
+  margin: 4px 0 0;
+  font-size: 0.75em;
+  color: var(--nintendo-blue);
+  background: var(--super-nintendo-lilac);
+
+  border-top: 3px solid var(--button-border-gray);
+  border-right: 3px solid var(--almost-black);
+  border-bottom: 3px solid var(--almost-black);
+  border-left: 3px solid var(--button-border-gray);
+
+  box-shadow: 0.1rem 0.1rem var(--almost-black);
+  border-radius: 4px;
+  padding: 6px;
+  text-decoration: none;
+  transition: background 6.66s;
+}
+
+.perry-github-link:hover {
+  background: var(--super-nintendo-purple);
+  text-decoration: none;
+
+  transition: background 6.66s;
+  animation-name: perry-hover;
+  animation-duration: 6.66s;
+  animation-iteration-count: infinite;
+}
+
+.perry-github-link:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: 0.3s;
+}
+
+.perry-github-link p {
+  margin-bottom: 0;
+}
+
+@keyframes perry-hover {
+  0% {
+    color: var(--nintendo-blue);
+  }
+  25% {
+    color: var(--switch-controller-red);
+  }
+  50% {
+    color: var(--nintendo-yellow);
+  }
+  75% {
+    color: var(--switch-controller-red-glass);
+  }
+  100% {
+    color: var(--nintendo-blue);
+  }
+}
+
 @media (max-width: 992px) {
   .heart {
     transform: scale(1.75);
