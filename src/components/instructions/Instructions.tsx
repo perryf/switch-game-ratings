@@ -19,7 +19,7 @@ function Instructions(props: InstructionsProps) {
       </button>
       <p>
         Here's my very subjective rating system. Keep in mind I'm only playing
-        games that look decent and I'll think I'll like. Also, I played many of
+        games that look decent and I think I'll like. Also, I played many of
         these a couple years ago, so going off of memory here.
       </p>
       <ul>

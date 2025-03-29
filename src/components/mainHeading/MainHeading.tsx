@@ -51,7 +51,7 @@ function MainHeading(props: MainHeadingProps) {
           </button>
           <p className="perry-github-link">
             <a href="https://github.com/perryf" target="_blank">
-              by Perry
+              By Perry
             </a>
           </p>
         </div>

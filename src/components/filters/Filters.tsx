@@ -33,7 +33,7 @@ function Filters(props: FilterProps) {
         className="show-filters-btn"
         onClick={() => setShowFilters(!showFilters)}
       >
-        {showFilters ? 'hide' : 'show'} filters
+        {showFilters ? 'Hide' : 'Show'} filters
       </button>
       {showFilters && (
         <div className="game-filters">
