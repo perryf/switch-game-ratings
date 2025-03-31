@@ -87,6 +87,18 @@ function CreateGameForm(props: CreateGameFormProps) {
     }))
   }
 
+  const updateImageInfo: (target: EventTargetType) => void = ({
+    target: { name, value }
+  }) => {
+    setNewGame((game: SwitchGameBasicType) => ({
+      ...game,
+      images: {
+        ...game.images,
+        [name]: value
+      }
+    }))
+  }
+
   const handleUpdateGameInfoMulti: (target: EventMultiTargetType) => void = ({
     target: { name, selectedOptions }
   }) => {
@@ -542,7 +554,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 id="boxart"
                 name="boxart"
                 className="nes-input"
-                onChange={updateGameInfo}
+                onChange={updateImageInfo}
                 value={images.boxart || ''}
               />
             </div>
@@ -557,7 +569,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 id="descriptionImage"
                 name="descriptionImage"
                 className="nes-input"
-                onChange={updateGameInfo}
+                onChange={updateImageInfo}
                 value={images.descriptionImage || ''}
               />
             </div>
@@ -572,7 +584,7 @@ function CreateGameForm(props: CreateGameFormProps) {
                 id="horizontalHeaderImage"
                 name="horizontalHeaderImage"
                 className="nes-input"
-                onChange={updateGameInfo}
+                onChange={updateImageInfo}
                 value={images.horizontalHeaderImage || ''}
               />
             </div>
