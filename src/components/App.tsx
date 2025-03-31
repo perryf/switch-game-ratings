@@ -1,8 +1,4 @@
 import { useEffect, useState } from 'react'
-// import { ownedGamesReviewable } from '../switch-games-owned'
-// import switchGameListFull from '../switch-games-list-full.json'
-// @ts-ignore
-// import { filteredList } from '../../switch-games-owned-details'
 import { gameInfoInit, newGameInit } from '../constants'
 import {
   convertArrayToCSV,

@@ -186,6 +186,19 @@ function CreateGameForm(props: CreateGameFormProps) {
             </div>
           </div>
 
+          {/* usually got from the nintendo site game's description*/}
+          <div className="nes-field review-box">
+            <label htmlFor="description">Description *</label>
+            <textarea
+              className="nes-textarea"
+              id="description"
+              name="description"
+              onChange={handleUpdateGame}
+              required
+              value={newGame.description}
+            />
+          </div>
+
           <div className="nes-field review-box">
             <label htmlFor="review">Review *</label>
             <textarea
@@ -530,8 +543,6 @@ function CreateGameForm(props: CreateGameFormProps) {
                 value={Number(gameInfo.msrp)}
                 min={0}
                 max={1000}
-
-                // onBlur={e => ({})}
               />
             </div>
 
