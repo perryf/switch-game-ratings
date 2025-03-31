@@ -58,3 +58,6 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 -- if price is 0, don't show price field
 -- add games: witcher, star of providence, toejam and earl
 -- check other games I've missed
+-- remove \n fake line break I put in reviews
+-- proof read reviews
+-- finish filtering
