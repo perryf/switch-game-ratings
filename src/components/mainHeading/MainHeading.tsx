@@ -5,29 +5,29 @@ import './main-heading.css'
 
 interface MainHeadingProps {
   currentSort: { sortBy: string; direction: string }
-  handleChangeRatingFilter: (x: string) => void
-  handleChangeSearch: (x: string) => void
   handleSort: (name: string) => void
   ratingFilter: string
   search: string
   isMultiplayer: boolean
-  handleChangeIsMultiPlayer: (x: boolean) => void
   genreFilter: string
-  handleChangeGenreFilter: (name: string) => void
+  setSearch: (s: string) => void
+  setRatingFilter: (s: string) => void
+  setGenreFilter: (s: string) => void
+  setIsMultiplayer: (b: boolean) => void
 }
 
 function MainHeading(props: MainHeadingProps) {
   const {
     currentSort,
-    handleChangeRatingFilter,
-    handleChangeSearch,
     handleSort,
     ratingFilter,
     search,
     isMultiplayer,
-    handleChangeIsMultiPlayer,
     genreFilter,
-    handleChangeGenreFilter
+    setSearch,
+    setRatingFilter,
+    setGenreFilter,
+    setIsMultiplayer
   } = props
   const [showInstructions, setShowInstructions] = useState<boolean>(false)
 
@@ -43,15 +43,15 @@ function MainHeading(props: MainHeadingProps) {
           <h1 onClick={handleTitleClick}>Switch Ratings</h1>
           <Filters
             currentSort={currentSort}
-            handleChangeRatingFilter={handleChangeRatingFilter}
-            handleChangeSearch={handleChangeSearch}
-            handleChangeIsMultiPlayer={handleChangeIsMultiPlayer}
             handleSort={handleSort}
             ratingFilter={ratingFilter}
             search={search}
             isMultiplayer={isMultiplayer}
             genreFilter={genreFilter}
-            handleChangeGenreFilter={handleChangeGenreFilter}
+            setSearch={setSearch}
+            setRatingFilter={setRatingFilter}
+            setGenreFilter={setGenreFilter}
+            setIsMultiplayer={setIsMultiplayer}
           />
         </div>
         <div className="main-heading-left">

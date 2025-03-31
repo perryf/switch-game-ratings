@@ -10,29 +10,29 @@ const getDirectionArrow = (direction: string) => {
 
 interface FilterProps {
   ratingFilter: string
-  handleChangeRatingFilter: (x: string) => void
   search: string
-  handleChangeSearch: (x: string) => void
   handleSort: (name: string) => void
   currentSort: { sortBy: string; direction: string }
   isMultiplayer: boolean
-  handleChangeIsMultiPlayer: (x: boolean) => void
   genreFilter: string
-  handleChangeGenreFilter: (name: string) => void
+  setSearch: (s: string) => void
+  setRatingFilter: (s: string) => void
+  setGenreFilter: (s: string) => void
+  setIsMultiplayer: (b: boolean) => void
 }
 
 function Filters(props: FilterProps) {
   const {
     search,
-    handleChangeSearch,
     handleSort,
     currentSort,
     ratingFilter,
-    handleChangeRatingFilter,
-    handleChangeIsMultiPlayer,
     isMultiplayer,
     genreFilter,
-    handleChangeGenreFilter
+    setSearch,
+    setRatingFilter,
+    setGenreFilter,
+    setIsMultiplayer
   } = props
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
@@ -52,7 +52,7 @@ function Filters(props: FilterProps) {
               id="search-bar"
               name="search-bar"
               className="nes-input"
-              onChange={e => handleChangeSearch(e.target.value)}
+              onChange={e => setSearch(e.target.value)}
               value={search}
             />
           </div>
@@ -63,7 +63,7 @@ function Filters(props: FilterProps) {
               <select
                 id="rating-filter"
                 name="rating-filter"
-                onChange={e => handleChangeRatingFilter(e.target.value)}
+                onChange={e => setRatingFilter(e.target.value)}
                 value={ratingFilter}
               >
                 <option value="" />
@@ -82,7 +82,7 @@ function Filters(props: FilterProps) {
               <select
                 id="genre-filter"
                 name="genre-filter"
-                onChange={e => handleChangeGenreFilter(e.target.value)}
+                onChange={e => setGenreFilter(e.target.value)}
                 value={genreFilter}
               >
                 <option value="" />
@@ -101,7 +101,7 @@ function Filters(props: FilterProps) {
                 type="checkbox"
                 className="nes-checkbox"
                 checked={isMultiplayer}
-                onChange={e => handleChangeIsMultiPlayer(e.target.checked)}
+                onChange={e => setIsMultiplayer(e.target.checked)}
               />
               <span>Has Multiplayer</span>
             </label>

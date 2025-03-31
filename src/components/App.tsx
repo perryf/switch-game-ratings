@@ -28,7 +28,7 @@ function App(props: AppProps) {
   const [search, setSearch] = useState<string>('')
   const [ratingFilter, setRatingFilter] = useState<string>('')
   const [genreFilter, setGenreFilter] = useState<string>('')
-  const [isMultiplayer, setIsMultiPlayer] = useState<boolean>(false)
+  const [isMultiplayer, setIsMultiplayer] = useState<boolean>(false)
   const [currentSort, setCurrentSort] = useState<{
     sortBy: string
     direction: string
@@ -74,6 +74,35 @@ function App(props: AppProps) {
     return () => sub.unsubscribe()
   }, [client])
 
+  useEffect(() => {
+    // TODO -> handle sorting
+    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
+      if (search) {
+        if (!g.displayTitle.toLowerCase().includes(search.toLowerCase())) {
+          return false
+        }
+      }
+      if (ratingFilter) {
+        if (g.myData.rating !== Number(ratingFilter)) {
+          return false
+        }
+      }
+      if (isMultiplayer) {
+        if (g.gameInfo.playerFilters.length <= 1) {
+          return false
+        }
+      }
+      if (genreFilter) {
+        if (!g.gameInfo.genres.find((genre: string) => genre === genreFilter)) {
+          return false
+        }
+      }
+      return true
+    })
+
+    setGamesDisplay(gamesUpdate)
+  }, [search, ratingFilter, genreFilter, isMultiplayer, currentSort])
+
   const startEdit = (game: SwitchGameBasicType) => {
     const gameInfo: GameInfoType = game.gameInfo || gameInfoInit
     const editInfoShaped = {
@@ -103,61 +132,6 @@ function App(props: AppProps) {
   const stopEdit: () => void = () => {
     setShowForm(false)
     setFormType('create')
-  }
-
-  const handleChangeSearch = (s: string) => {
-    setSearch(s)
-    // TODO -> Refactor
-    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
-      let isMatch: boolean = false
-
-      if (!s) {
-        isMatch = true
-      } else {
-        isMatch = g.displayTitle.toLowerCase().includes(s.toLowerCase())
-      }
-
-      if (!isMatch) return false
-
-      if (ratingFilter) {
-        return g.myData.rating === Number(ratingFilter)
-      }
-
-      return true
-    })
-
-    setGamesDisplay(gamesUpdate)
-  }
-
-  const handleChangeRatingFilter = (s: string) => {
-    setRatingFilter(s)
-    // TODO -> Refactor
-    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
-      let isMatch: boolean = false
-
-      if (!s) isMatch = true
-      else isMatch = g.myData.rating === Number(s)
-
-      if (!isMatch) return false
-
-      if (search) {
-        return g.displayTitle.toLowerCase().includes(search.toLowerCase())
-      }
-
-      return true
-    })
-
-    setGamesDisplay(gamesUpdate)
-  }
-
-  const handleChangeIsMultiPlayer = (x: boolean) => {
-    setIsMultiPlayer(x)
-    // TODO
-  }
-
-  const handleChangeGenreFilter = (genre: string) => {
-    setGenreFilter(genre)
-    // TODO
   }
 
   const handleSort = (name: string) => {
@@ -222,15 +196,15 @@ function App(props: AppProps) {
     <main>
       <MainHeading
         currentSort={currentSort}
-        handleChangeRatingFilter={handleChangeRatingFilter}
-        handleChangeSearch={handleChangeSearch}
         handleSort={handleSort}
         ratingFilter={ratingFilter}
         search={search}
         isMultiplayer={isMultiplayer}
-        handleChangeIsMultiPlayer={handleChangeIsMultiPlayer}
-        handleChangeGenreFilter={handleChangeGenreFilter}
         genreFilter={genreFilter}
+        setSearch={setSearch}
+        setRatingFilter={setRatingFilter}
+        setGenreFilter={setGenreFilter}
+        setIsMultiplayer={setIsMultiplayer}
       />
       <CreateGameForm
         deleteGame={deleteGame}

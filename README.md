@@ -60,4 +60,4 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 -- check other games I've missed
 -- remove \n fake line break I put in reviews
 -- proof read reviews
--- finish filtering
+-- finish filtering & sorting
