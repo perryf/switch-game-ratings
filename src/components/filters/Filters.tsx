@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { switchGenreList } from '../../constants'
 import './filters.css'
 
 const getDirectionArrow = (direction: string) => {
@@ -14,6 +15,10 @@ interface FilterProps {
   handleChangeSearch: (x: string) => void
   handleSort: (name: string) => void
   currentSort: { sortBy: string; direction: string }
+  isMultiplayer: boolean
+  handleChangeIsMultiPlayer: (x: boolean) => void
+  genreFilter: string
+  handleChangeGenreFilter: (name: string) => void
 }
 
 function Filters(props: FilterProps) {
@@ -23,7 +28,11 @@ function Filters(props: FilterProps) {
     handleSort,
     currentSort,
     ratingFilter,
-    handleChangeRatingFilter
+    handleChangeRatingFilter,
+    handleChangeIsMultiPlayer,
+    isMultiplayer,
+    genreFilter,
+    handleChangeGenreFilter
   } = props
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
@@ -41,6 +50,7 @@ function Filters(props: FilterProps) {
             <label htmlFor="search-bar">Game Title</label>
             <input
               id="search-bar"
+              name="search-bar"
               className="nes-input"
               onChange={e => handleChangeSearch(e.target.value)}
               value={search}
@@ -48,10 +58,11 @@ function Filters(props: FilterProps) {
           </div>
 
           <div className="nes-field">
-            <label htmlFor="rating-filter">Rating Filter</label>
+            <label htmlFor="rating-filter">Rating</label>
             <div className="nes-select">
               <select
                 id="rating-filter"
+                name="rating-filter"
                 onChange={e => handleChangeRatingFilter(e.target.value)}
                 value={ratingFilter}
               >
@@ -63,6 +74,37 @@ function Filters(props: FilterProps) {
                 <option value="5">5</option>
               </select>
             </div>
+          </div>
+
+          <div className="nes-field">
+            <label htmlFor="genre-filter">Genre</label>
+            <div className="nes-select">
+              <select
+                id="genre-filter"
+                name="genre-filter"
+                onChange={e => handleChangeGenreFilter(e.target.value)}
+                value={genreFilter}
+              >
+                <option value="" />
+                {switchGenreList.map(genre => (
+                  <option value={genre.value}>{genre.name}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="nes-field">
+            <label htmlFor="is-multiplayer">
+              <input
+                name="is-multiplayer"
+                id="is-multiplayer"
+                type="checkbox"
+                className="nes-checkbox"
+                checked={isMultiplayer}
+                onChange={e => handleChangeIsMultiPlayer(e.target.checked)}
+              />
+              <span>Has Multiplayer</span>
+            </label>
           </div>
 
           <div className="nes-field">

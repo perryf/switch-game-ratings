@@ -27,6 +27,8 @@ function App(props: AppProps) {
 
   const [search, setSearch] = useState<string>('')
   const [ratingFilter, setRatingFilter] = useState<string>('')
+  const [genreFilter, setGenreFilter] = useState<string>('')
+  const [isMultiplayer, setIsMultiPlayer] = useState<boolean>(false)
   const [currentSort, setCurrentSort] = useState<{
     sortBy: string
     direction: string
@@ -148,6 +150,16 @@ function App(props: AppProps) {
     setGamesDisplay(gamesUpdate)
   }
 
+  const handleChangeIsMultiPlayer = (x: boolean) => {
+    setIsMultiPlayer(x)
+    // TODO
+  }
+
+  const handleChangeGenreFilter = (genre: string) => {
+    setGenreFilter(genre)
+    // TODO
+  }
+
   const handleSort = (name: string) => {
     const newDirection =
       name === currentSort.sortBy
@@ -209,12 +221,16 @@ function App(props: AppProps) {
   return (
     <main>
       <MainHeading
+        currentSort={currentSort}
+        handleChangeRatingFilter={handleChangeRatingFilter}
+        handleChangeSearch={handleChangeSearch}
+        handleSort={handleSort}
         ratingFilter={ratingFilter}
         search={search}
-        handleChangeSearch={handleChangeSearch}
-        currentSort={currentSort}
-        handleSort={handleSort}
-        handleChangeRatingFilter={handleChangeRatingFilter}
+        isMultiplayer={isMultiplayer}
+        handleChangeIsMultiPlayer={handleChangeIsMultiPlayer}
+        handleChangeGenreFilter={handleChangeGenreFilter}
+        genreFilter={genreFilter}
       />
       <CreateGameForm
         deleteGame={deleteGame}

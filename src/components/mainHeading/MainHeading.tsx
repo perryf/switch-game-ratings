@@ -10,6 +10,10 @@ interface MainHeadingProps {
   handleSort: (name: string) => void
   ratingFilter: string
   search: string
+  isMultiplayer: boolean
+  handleChangeIsMultiPlayer: (x: boolean) => void
+  genreFilter: string
+  handleChangeGenreFilter: (name: string) => void
 }
 
 function MainHeading(props: MainHeadingProps) {
@@ -19,7 +23,11 @@ function MainHeading(props: MainHeadingProps) {
     handleChangeSearch,
     handleSort,
     ratingFilter,
-    search
+    search,
+    isMultiplayer,
+    handleChangeIsMultiPlayer,
+    genreFilter,
+    handleChangeGenreFilter
   } = props
   const [showInstructions, setShowInstructions] = useState<boolean>(false)
 
@@ -37,9 +45,13 @@ function MainHeading(props: MainHeadingProps) {
             currentSort={currentSort}
             handleChangeRatingFilter={handleChangeRatingFilter}
             handleChangeSearch={handleChangeSearch}
+            handleChangeIsMultiPlayer={handleChangeIsMultiPlayer}
             handleSort={handleSort}
             ratingFilter={ratingFilter}
             search={search}
+            isMultiplayer={isMultiplayer}
+            genreFilter={genreFilter}
+            handleChangeGenreFilter={handleChangeGenreFilter}
           />
         </div>
         <div className="main-heading-left">
