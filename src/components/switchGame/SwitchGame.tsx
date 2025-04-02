@@ -77,9 +77,11 @@ function SwitchGame(props: SwitchGameProps) {
                   )
                 })}
             </li>
-            <li>
-              <b>Price:</b> ${gameInfo.msrp}
-            </li>
+            {gameInfo.msrp > 0 && (
+              <li>
+                <b>Price:</b> ${gameInfo.msrp}
+              </li>
+            )}
             <li>
               <b>Number of Players:</b> {gameInfo.numOfPlayers}
             </li>

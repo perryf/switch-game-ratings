@@ -134,6 +134,15 @@ function App(props: AppProps) {
     setFormType('create')
   }
 
+  const resetFilters: () => void = () => {
+    setSearch('')
+    setRatingFilter('')
+    setGenreFilter('')
+    setIsMultiplayer(false)
+    setCurrentSort({ sortBy: 'title', direction: 'asc' })
+  }
+
+  // TODO -> combine with filter above in useEffect
   const handleSort = (name: string) => {
     const newDirection =
       name === currentSort.sortBy
@@ -201,6 +210,7 @@ function App(props: AppProps) {
         search={search}
         isMultiplayer={isMultiplayer}
         genreFilter={genreFilter}
+        resetFilters={resetFilters}
         setSearch={setSearch}
         setRatingFilter={setRatingFilter}
         setGenreFilter={setGenreFilter}

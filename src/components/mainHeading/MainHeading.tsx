@@ -10,6 +10,7 @@ interface MainHeadingProps {
   search: string
   isMultiplayer: boolean
   genreFilter: string
+  resetFilters: () => void
   setSearch: (s: string) => void
   setRatingFilter: (s: string) => void
   setGenreFilter: (s: string) => void
@@ -24,6 +25,7 @@ function MainHeading(props: MainHeadingProps) {
     search,
     isMultiplayer,
     genreFilter,
+    resetFilters,
     setSearch,
     setRatingFilter,
     setGenreFilter,
@@ -48,6 +50,7 @@ function MainHeading(props: MainHeadingProps) {
             search={search}
             isMultiplayer={isMultiplayer}
             genreFilter={genreFilter}
+            resetFilters={resetFilters}
             setSearch={setSearch}
             setRatingFilter={setRatingFilter}
             setGenreFilter={setGenreFilter}

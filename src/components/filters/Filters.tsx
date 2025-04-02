@@ -15,6 +15,7 @@ interface FilterProps {
   currentSort: { sortBy: string; direction: string }
   isMultiplayer: boolean
   genreFilter: string
+  resetFilters: () => void
   setSearch: (s: string) => void
   setRatingFilter: (s: string) => void
   setGenreFilter: (s: string) => void
@@ -29,6 +30,7 @@ function Filters(props: FilterProps) {
     ratingFilter,
     isMultiplayer,
     genreFilter,
+    resetFilters,
     setSearch,
     setRatingFilter,
     setGenreFilter,
@@ -36,12 +38,14 @@ function Filters(props: FilterProps) {
   } = props
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
+  const handleOpenCloseFilter = () => {
+    setShowFilters(!showFilters)
+    if (showFilters) resetFilters()
+  }
+
   return (
     <div className="game-filters-box">
-      <button
-        className="show-filters-btn"
-        onClick={() => setShowFilters(!showFilters)}
-      >
+      <button className="show-filters-btn" onClick={handleOpenCloseFilter}>
         {showFilters ? 'Hide' : 'Show'} filters
       </button>
       {showFilters && (

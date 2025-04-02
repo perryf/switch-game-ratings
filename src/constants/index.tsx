@@ -66,8 +66,9 @@ export const switchGenreList: { name: string; value: string }[] = [
   { name: 'Adventure', value: 'Adventure' },
   { name: 'Arcade', value: 'Arcade' },
   { name: 'Board Game', value: 'Board game' },
+  { name: 'Card & Board', value: 'Card & board' },
   { name: 'Fighting', value: 'Fighting' },
-  { name: 'First-Person', value: 'First-person' },
+  { name: 'First-Person Shooter', value: 'First-person' },
   { name: 'Fitness', value: 'Fitness' },
   { name: 'Indie', value: 'Indie' },
   { name: 'Metroidvania', value: 'Metroidvania' },
@@ -78,9 +79,11 @@ export const switchGenreList: { name: string; value: string }[] = [
   { name: 'Platformer', value: 'Platformer' },
   { name: 'Puzzle', value: 'Puzzle' },
   { name: 'Racing', value: 'Racing' },
+  { name: 'Roguelike', value: 'Roguelike' },
   { name: 'Role-Playing', value: 'Role-playing' },
   { name: 'Simulation', value: 'Simulation' },
   { name: 'Sports', value: 'Sports' },
   { name: 'Strategy', value: 'Strategy' },
+  { name: 'Survival', value: 'Survival' },
   { name: 'Training', value: 'Training' }
 ]

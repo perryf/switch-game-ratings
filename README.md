@@ -55,9 +55,14 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - need to figure out a way around this...
 
 -- todos...
--- if price is 0, don't show price field
--- add games: witcher, star of providence, toejam and earl
+-- if price is 0, don't show price field $
+-- add games: witcher, star of providence, toejam and earl, earthbound
+---- review these as well
 -- check other games I've missed
 -- remove \n fake line break I put in reviews
 -- proof read reviews
 -- finish filtering & sorting
+-- fix number of players input
+-- add genres roguelike, etc $
+-- remove extra files like switch-games-owned, etc...
+-- clear filters when close filters -- need to test
