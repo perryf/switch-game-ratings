@@ -21,11 +21,12 @@
   box-shadow: 2px 2px 2px black;
   height: 100%;
   padding: 10px;
-  background: var(--switch-controller-blue-glass);
+  background: white;
+  background: var(--switch-controller-blue-glass-light);
   background: linear-gradient(
     90deg,
-    var(--switch-controller-blue-glass) 0%,
-    var(--switch-controller-red-glass) 100%
+    var(--switch-controller-blue-glass-light) 0%,
+    var(--switch-controller-red-glass-light) 100%
   );
 }
 
@@ -95,7 +96,7 @@
   width: 100%;
   margin-block-start: 0;
   margin-block-end: 12px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .rating-list-item {
@@ -107,12 +108,12 @@
 .show-game-details-button {
   padding: 0.3rem 0.6rem;
   transition: border-color 0.25s;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .game-description {
-  line-height: 1rem;
-  font-size: 0.75rem;
+  /* line-height: 1.1rem; */
+  font-size: 0.85rem;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -127,12 +128,12 @@
   }
 
   .game-title {
-    font-size: 0.75rem;
+    /* font-size: 0.9rem; */
     margin: 0 0 2px;
   }
 
   .game-date-display {
-    font-size: 0.5rem;
+    /* font-size: 0.7rem; */
     padding-left: 4px;
   }
 }
