@@ -10,7 +10,7 @@
   --nintendo-yellow-light: #fae282;
   --nintendo-yellow-dark: #d3ad13;
   --nintendo-yellow-very-dark: #625e4b;
-  
+
   --super-nintendo-gray: #9d9ba8;
   --super-nintendo-dark-gray: #444;
   --super-nintendo-lilac: #b1aee6;
@@ -79,4 +79,24 @@ button:focus {
 
 .ms-20 {
   margin-left: 20px;
+}
+
+.nes-field {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 992px) {
+  label {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  label {
+    margin-bottom: 2px;
+  }
+
+  .nes-field {
+    margin-bottom: 2px;
+  }
 }
