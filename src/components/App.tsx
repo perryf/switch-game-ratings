@@ -35,6 +35,7 @@ function App(props: AppProps) {
   }>({ sortBy: 'title', direction: 'asc' })
 
   useEffect(() => {
+    console.log('here')
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items = [] }) => {
         // sorts every time a change is made...
@@ -64,7 +65,6 @@ function App(props: AppProps) {
           }
         })
 
-        // * data from local json -- delete once not needed
         setGames([...data])
         setGamesDisplay([...data])
         stopEdit()
@@ -75,7 +75,6 @@ function App(props: AppProps) {
   }, [client])
 
   useEffect(() => {
-    // TODO -> handle sorting
     const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
       if (search) {
         if (!g.displayTitle.toLowerCase().includes(search.toLowerCase())) {
@@ -100,7 +99,12 @@ function App(props: AppProps) {
       return true
     })
 
-    setGamesDisplay(gamesUpdate)
+    const gamesUpdateSorted =
+      currentSort.sortBy === 'title'
+        ? gamesUpdate.sort((a, b) => sortGames(a, b, currentSort.direction))
+        : gamesUpdate.sort((a, b) => sortByRating(a, b, currentSort.direction))
+
+    setGamesDisplay(gamesUpdateSorted)
   }, [search, ratingFilter, genreFilter, isMultiplayer, currentSort])
 
   const startEdit = (game: SwitchGameBasicType) => {
@@ -142,29 +146,16 @@ function App(props: AppProps) {
     setCurrentSort({ sortBy: 'title', direction: 'asc' })
   }
 
-  // TODO -> combine with filter above in useEffect
   const handleSort = (name: string) => {
-    const newDirection =
-      name === currentSort.sortBy
-        ? getNewSortDirection(currentSort.direction)
-        : 'asc'
-
     setCurrentSort(state => {
       if (name === state.sortBy) {
         return {
           sortBy: name,
-          direction: newDirection
+          direction: state.sortBy ? getNewSortDirection(state.direction) : 'asc'
         }
       }
       return { sortBy: name, direction: 'asc' }
     })
-
-    const gamesUpdate =
-      name === 'title'
-        ? gamesDisplay.sort((a, b) => sortGames(a, b, newDirection))
-        : gamesDisplay.sort((a, b) => sortByRating(a, b, newDirection))
-
-    setGamesDisplay(gamesUpdate)
   }
 
   async function submitCreateGame(newGame: SwitchGameBasicType) {

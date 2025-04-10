@@ -1,11 +1,13 @@
 .game-filters-box {
   width: 100%;
+  font-size: 12px;
 }
 
 .game-filters {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .game-filters > * {
@@ -70,4 +72,9 @@
     padding: 0;
     line-height: 6px;
   }
+}
+
+@media (max-width: 575px) {
+  /* .game-filters {
+  } */
 }

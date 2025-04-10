@@ -70,7 +70,7 @@ function Filters(props: FilterProps) {
                 onChange={e => setRatingFilter(e.target.value)}
                 value={ratingFilter}
               >
-                <option value="" />
+                <option value="">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -89,9 +89,11 @@ function Filters(props: FilterProps) {
                 onChange={e => setGenreFilter(e.target.value)}
                 value={genreFilter}
               >
-                <option value="" />
+                <option value="">All</option>
                 {switchGenreList.map(genre => (
-                  <option value={genre.value}>{genre.name}</option>
+                  <option value={genre.value} key={genre.value}>
+                    {genre.name}
+                  </option>
                 ))}
               </select>
             </div>
