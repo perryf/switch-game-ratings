@@ -10,13 +10,19 @@
   flex-wrap: wrap;
 }
 
+.game-filters-top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .game-filters > * {
   margin-right: 8px;
 }
 
 .show-filters-btn {
   display: block;
-  margin: 6px auto 0;
+  margin: 6px;
   border-radius: 4px;
   border-width: 3px;
   color: var(--almost-black);

@@ -7,13 +7,13 @@ import {
   sortByRating,
   sortGames
 } from '../helpers'
-import { GameInfoType, SwitchGameBasicType } from '../interfaces'
+import { ClientType, GameInfoType, SwitchGameBasicType } from '../interfaces'
 import CreateGameForm from './createGameForm/CreateGameForm'
 import SwitchGameList from './switchGameList/SwitchGameList'
 import MainHeading from './mainHeading/MainHeading'
 
 interface AppProps {
-  client: any
+  client: ClientType
 }
 
 function App(props: AppProps) {
@@ -35,7 +35,6 @@ function App(props: AppProps) {
   }>({ sortBy: 'title', direction: 'asc' })
 
   useEffect(() => {
-    console.log('here')
     const sub = client.models.Game.observeQuery().subscribe({
       next: ({ items = [] }) => {
         // sorts every time a change is made...
@@ -75,29 +74,33 @@ function App(props: AppProps) {
   }, [client])
 
   useEffect(() => {
-    const gamesUpdate: SwitchGameBasicType[] = games.filter((g: any) => {
-      if (search) {
-        if (!g.displayTitle.toLowerCase().includes(search.toLowerCase())) {
-          return false
+    const gamesUpdate: SwitchGameBasicType[] = games.filter(
+      (g: SwitchGameBasicType) => {
+        if (search) {
+          if (!g.displayTitle.toLowerCase().includes(search.toLowerCase())) {
+            return false
+          }
         }
-      }
-      if (ratingFilter) {
-        if (g.myData.rating !== Number(ratingFilter)) {
-          return false
+        if (ratingFilter) {
+          if (g.myData.rating !== Number(ratingFilter)) {
+            return false
+          }
         }
-      }
-      if (isMultiplayer) {
-        if (g.gameInfo.playerFilters.length <= 1) {
-          return false
+        if (isMultiplayer) {
+          if (g.gameInfo.playerFilters.length <= 1) {
+            return false
+          }
         }
-      }
-      if (genreFilter) {
-        if (!g.gameInfo.genres.find((genre: string) => genre === genreFilter)) {
-          return false
+        if (genreFilter) {
+          if (
+            !g.gameInfo.genres.find((genre: string) => genre === genreFilter)
+          ) {
+            return false
+          }
         }
+        return true
       }
-      return true
-    })
+    )
 
     const gamesUpdateSorted =
       currentSort.sortBy === 'title'
@@ -196,25 +199,25 @@ function App(props: AppProps) {
     <main>
       <MainHeading
         currentSort={currentSort}
-        handleSort={handleSort}
-        ratingFilter={ratingFilter}
-        search={search}
-        isMultiplayer={isMultiplayer}
         genreFilter={genreFilter}
+        handleSort={handleSort}
+        isMultiplayer={isMultiplayer}
+        ratingFilter={ratingFilter}
         resetFilters={resetFilters}
-        setSearch={setSearch}
-        setRatingFilter={setRatingFilter}
+        search={search}
         setGenreFilter={setGenreFilter}
         setIsMultiplayer={setIsMultiplayer}
+        setRatingFilter={setRatingFilter}
+        setSearch={setSearch}
       />
       <CreateGameForm
         deleteGame={deleteGame}
-        handleClickCreateCancel={handleClickCreateCancel}
-        showForm={showForm}
         formType={formType}
+        handleClickCreateCancel={handleClickCreateCancel}
         newGame={newGame}
-        setShowForm={setShowForm}
         setNewGame={setNewGame}
+        setShowForm={setShowForm}
+        showForm={showForm}
         stopEdit={stopEdit}
         submitCreateGame={submitCreateGame}
         submitEditGame={submitEditGame}

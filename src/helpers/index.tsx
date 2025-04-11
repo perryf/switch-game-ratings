@@ -71,11 +71,11 @@ export const isArray = (value: any) => {
 }
 
 // converts comma separated string into an array and trims whitespace
-export const convertCSVToArray = (s: any) => {
+export const convertCSVToArray = (s: string | string[]) => {
   return isString(s) ? s.split(',').map(s => s.trim()) : []
 }
 
-export const convertArrayToCSV = (a: any) => {
+export const convertArrayToCSV = (a: string | string[]) => {
   return isArray(a) ? a.join(', ') : ''
 }
 

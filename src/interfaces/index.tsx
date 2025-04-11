@@ -6,7 +6,7 @@ export interface GameInfoType {
   fileSize: string
   freeToStart: boolean
   generalFilters: string[] | string
-  genres: string[] | string
+  genres: string[]
   lengthOfGame: string // enum: short, medium, or long
   msrp: number
   numOfPlayers: string
@@ -63,5 +63,21 @@ export interface EventMultiTargetType {
   target: {
     name: string
     selectedOptions: HTMLCollectionOf<HTMLOptionElement>
+  }
+}
+
+export interface ClientType {
+  models: {
+    Game: {
+      observeQuery: () => {
+        subscribe: (subscription: {
+          next: ({ items }: { items: [] }) => void
+          error: (error: {}) => void
+        }) => { unsubscribe: () => void }
+      }
+      create: (game: SwitchGameBasicType) => { returnData: {}; errors: {} }
+      update: (game: SwitchGameBasicType) => { returnData: {}; errors: {} }
+      delete: (game: { id: number }) => { returnData: {}; errors: {} }
+    }
   }
 }

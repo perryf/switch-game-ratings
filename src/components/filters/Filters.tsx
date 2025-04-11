@@ -9,45 +9,53 @@ const getDirectionArrow = (direction: string) => {
 }
 
 interface FilterProps {
-  ratingFilter: string
-  search: string
-  handleSort: (name: string) => void
   currentSort: { sortBy: string; direction: string }
-  isMultiplayer: boolean
   genreFilter: string
+  handleSort: (name: string) => void
+  isMultiplayer: boolean
+  ratingFilter: string
   resetFilters: () => void
-  setSearch: (s: string) => void
-  setRatingFilter: (s: string) => void
+  search: string
   setGenreFilter: (s: string) => void
   setIsMultiplayer: (b: boolean) => void
+  setRatingFilter: (s: string) => void
+  setSearch: (s: string) => void
 }
 
 function Filters(props: FilterProps) {
   const {
-    search,
-    handleSort,
     currentSort,
-    ratingFilter,
-    isMultiplayer,
     genreFilter,
+    handleSort,
+    isMultiplayer,
+    ratingFilter,
     resetFilters,
-    setSearch,
-    setRatingFilter,
+    search,
     setGenreFilter,
-    setIsMultiplayer
+    setIsMultiplayer,
+    setRatingFilter,
+    setSearch
   } = props
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
+  const hasFilter = genreFilter || isMultiplayer || ratingFilter || search
+
   const handleOpenCloseFilter = () => {
     setShowFilters(!showFilters)
-    if (showFilters) resetFilters()
   }
 
   return (
     <div className="game-filters-box">
-      <button className="show-filters-btn" onClick={handleOpenCloseFilter}>
-        {showFilters ? 'Hide' : 'Show'} filters
-      </button>
+      <div className="game-filters-top-row">
+        <button className="show-filters-btn" onClick={handleOpenCloseFilter}>
+          {showFilters ? 'Hide' : 'Show'} filters
+        </button>
+        {hasFilter && (
+          <button className="show-filters-btn" onClick={resetFilters}>
+            Clear
+          </button>
+        )}
+      </div>
       {showFilters && (
         <div className="game-filters">
           <div className="nes-field">

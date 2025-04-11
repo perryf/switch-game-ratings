@@ -106,7 +106,9 @@ function CreateGameForm(props: CreateGameFormProps) {
       ...game,
       gameInfo: {
         ...game.gameInfo,
-        [name]: Array.from(selectedOptions).map((o: any) => o.value)
+        [name]: Array.from(selectedOptions).map(
+          (o: { value: string }) => o.value
+        )
       }
     }))
   }
