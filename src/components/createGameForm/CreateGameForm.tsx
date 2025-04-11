@@ -480,7 +480,7 @@ function CreateGameForm(props: CreateGameFormProps) {
               id="numOfPlayers"
               name="numOfPlayers"
               className="nes-input"
-              onChange={handleUpdateGame}
+              onChange={updateGameInfo}
               type="text"
               value={gameInfo.numOfPlayers || ''}
             />

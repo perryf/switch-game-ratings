@@ -82,9 +82,11 @@ function SwitchGame(props: SwitchGameProps) {
                 <b>Price:</b> ${gameInfo.msrp}
               </li>
             )}
-            <li>
-              <b>Number of Players:</b> {gameInfo.numOfPlayers}
-            </li>
+            {gameInfo.numOfPlayers && (
+              <li>
+                <b>Number of Players:</b> {gameInfo.numOfPlayers}
+              </li>
+            )}
             {showMore && (
               <>
                 {gameInfo.fileSize && (
@@ -102,12 +104,14 @@ function SwitchGame(props: SwitchGameProps) {
                     <b>Publishers:</b> {convertArrayToCSV(gameInfo.publishers)}
                   </li>
                 )}
-                <li>
-                  <b>Rated:</b> {gameInfo.esrbRating}{' '}
-                  {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
-                    ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
-                    : ''}
-                </li>
+                {gameInfo.esrbRating && (
+                  <li>
+                    <b>Rated:</b> {gameInfo.esrbRating}{' '}
+                    {gameInfo.esrbDescriptors && gameInfo.esrbDescriptors.length
+                      ? `(${convertArrayToCSV(gameInfo.esrbDescriptors)})`
+                      : ''}
+                  </li>
+                )}
                 {gameInfo.engine && (
                   <li>
                     <b>Engine:</b> {gameInfo.engine}
