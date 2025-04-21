@@ -46,14 +46,15 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 ## To Deploy on Github Pages
 
 - npm run build locally
-- add relative paths to anything with "/assests"
-  - i.e. change "/assests/" to "./assests/"
+- add relative paths to anything with "/assets"
+  - i.e. change "/assets/" to "./assets/"
 - need to figure out a way around this...
 
-- TODO...
+## TODO
+
 - try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
-- and adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
--- add games: toejam and earl, links awakening, double check if missing others
--- finish all review these as well
--- remove \n fake line break I put in reviews
--- proof read reviews
+- look into adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
+- remove unused assets
+- double check missing games
+- finish all reviews
+- proof read reviews

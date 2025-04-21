@@ -29,11 +29,6 @@
   --break-point-small: 600px;
 }
 
-@font-face {
-  font-family: 'NinFont';
-  src: local('NinFont'), url(./assets/nin-font.otf) format('truetype');
-}
-
 body {
   margin: 0;
   background: linear-gradient(
