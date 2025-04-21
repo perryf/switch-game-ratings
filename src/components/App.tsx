@@ -210,18 +210,20 @@ function App(props: AppProps) {
         setRatingFilter={setRatingFilter}
         setSearch={setSearch}
       />
-      <CreateGameForm
-        deleteGame={deleteGame}
-        formType={formType}
-        handleClickCreateCancel={handleClickCreateCancel}
-        newGame={newGame}
-        setNewGame={setNewGame}
-        setShowForm={setShowForm}
-        showForm={showForm}
-        stopEdit={stopEdit}
-        submitCreateGame={submitCreateGame}
-        submitEditGame={submitEditGame}
-      />
+      {false && (
+        <CreateGameForm
+          deleteGame={deleteGame}
+          formType={formType}
+          handleClickCreateCancel={handleClickCreateCancel}
+          newGame={newGame}
+          setNewGame={setNewGame}
+          setShowForm={setShowForm}
+          showForm={showForm}
+          stopEdit={stopEdit}
+          submitCreateGame={submitCreateGame}
+          submitEditGame={submitEditGame}
+        />
+      )}
       <SwitchGameList games={gamesDisplay.map(g => ({ ...g, startEdit }))} />
     </main>
   )
