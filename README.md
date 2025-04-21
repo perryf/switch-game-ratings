@@ -43,10 +43,6 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
   - `"masonic": "^4.0.1"`
   - `"nintendo-switch-eshop": "^8.0.0"`
 
-- TODO...
-  - try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
-  - and adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
-
 ## To Deploy on Github Pages
 
 - npm run build locally
@@ -54,15 +50,10 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
   - i.e. change "/assests/" to "./assests/"
 - need to figure out a way around this...
 
--- todos...
--- if price is 0, don't show price field $
--- add games: witcher, star of providence, toejam and earl, earthbound
----- review these as well
--- check other games I've missed
+- TODO...
+- try getting rid of `json-schema-to-ts` & `ts-algebra` in `package.json` (should be in package-lock as dependencies of other packages)
+- and adding `npm install --package-lock-only` first line of `commands:` in `amplify.yml`
+-- add games: toejam and earl, links awakening, double check if missing others
+-- finish all review these as well
 -- remove \n fake line break I put in reviews
 -- proof read reviews
--- finish filtering & sorting
--- fix number of players input
--- add genres roguelike, etc $
--- remove extra files like switch-games-owned, etc...
--- clear filters when close filters -- need to test
