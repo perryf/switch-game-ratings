@@ -47,7 +47,7 @@ function SwitchGame(props: SwitchGameProps) {
               </span>
             </h3>
           </div>
-          {/* <button onClick={() => game.startEdit(game)}>Edit</button> */}
+          <button onClick={() => game.startEdit(game)}>Edit</button>
         </div>
 
         <div className="game-info">
