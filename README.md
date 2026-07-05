@@ -40,7 +40,8 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - npm run build locally
 - add relative paths to anything with "/assets"
   - i.e. change "/assets/" to "./assets/"
-- need to figure out a way around this...
+  - (need to figure out a way around this...)
+- git push
 
 ## TODO
 
