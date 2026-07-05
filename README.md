@@ -50,3 +50,4 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 - double check missing games
 - finish all reviews
 - proof read reviews
+- improve and document deployment method
